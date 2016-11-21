@@ -1,0 +1,216 @@
+C:\Users\BH\AppData\Local\Temporary Projects\Cond_Rating\bin\Debug\Cond_Rating.exe.config
+D:\BH_VB_Cond\Cond_Rating\Cond_Rating\bin\Debug\Cond_Rating.exe.config
+D:\BH_VB_Cond\Cond_Rating\Cond_Rating\bin\Debug\Cond_Rating.exe
+D:\BH_VB_Cond\Cond_Rating\Cond_Rating\bin\Debug\Cond_Rating.pdb
+D:\BH_VB_Cond\Cond_Rating\Cond_Rating\bin\Debug\Cond_Rating.xml
+D:\BH_VB_Cond\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.vbprojResolveAssemblyReference.cache
+D:\BH_VB_Cond\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.Form1.resources
+D:\BH_VB_Cond\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.Resources.resources
+D:\BH_VB_Cond\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.vbproj.GenerateResource.Cache
+D:\BH_VB_Cond\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.exe
+D:\BH_VB_Cond\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.xml
+D:\BH_VB_Cond\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.pdb
+C:\Users\LBH\Desktop\Cond_Rating\Cond_Rating\bin\Debug\Cond_Rating.exe.config
+C:\Users\LBH\Desktop\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.exe
+C:\Users\LBH\Desktop\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.xml
+C:\Users\LBH\Desktop\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.pdb
+C:\Users\LBH\Desktop\Cond_Rating\Cond_Rating\bin\Debug\Cond_Rating.exe
+C:\Users\LBH\Desktop\Cond_Rating\Cond_Rating\bin\Debug\Cond_Rating.pdb
+C:\Users\LBH\Desktop\Cond_Rating\Cond_Rating\bin\Debug\Cond_Rating.xml
+C:\Users\LBH\Desktop\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.vbprojResolveAssemblyReference.cache
+C:\Users\LBH\Desktop\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.Form1.resources
+C:\Users\LBH\Desktop\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.Resources.resources
+C:\Users\LBH\Desktop\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.vbproj.GenerateResource.Cache
+C:\Users\BH\Desktop\Cond_Rating\Cond_Rating\bin\Debug\Cond_Rating.exe.config
+C:\Users\BH\Desktop\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.exe
+C:\Users\BH\Desktop\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.xml
+C:\Users\BH\Desktop\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.pdb
+C:\Users\BH\Desktop\Cond_Rating\Cond_Rating\bin\Debug\Cond_Rating.exe
+C:\Users\BH\Desktop\Cond_Rating\Cond_Rating\bin\Debug\Cond_Rating.pdb
+C:\Users\BH\Desktop\Cond_Rating\Cond_Rating\bin\Debug\Cond_Rating.xml
+C:\Users\BH\Desktop\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.vbprojResolveAssemblyReference.cache
+C:\Users\BH\Desktop\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.Form1.resources
+C:\Users\BH\Desktop\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.Resources.resources
+C:\Users\BH\Desktop\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.vbproj.GenerateResource.Cache
+C:\Users\BH\Desktop\Test\Cond_Rating\Cond_Rating\bin\Debug\Cond_Rating.exe.config
+C:\Users\BH\Desktop\Test\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.exe
+C:\Users\BH\Desktop\Test\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.xml
+C:\Users\BH\Desktop\Test\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.pdb
+C:\Users\BH\Desktop\Test\Cond_Rating\Cond_Rating\bin\Debug\Cond_Rating.exe
+C:\Users\BH\Desktop\Test\Cond_Rating\Cond_Rating\bin\Debug\Cond_Rating.pdb
+C:\Users\BH\Desktop\Test\Cond_Rating\Cond_Rating\bin\Debug\Cond_Rating.xml
+C:\Users\BH\Desktop\Test\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.vbprojResolveAssemblyReference.cache
+C:\Users\BH\Desktop\Test\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.Form1.resources
+C:\Users\BH\Desktop\Test\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.Resources.resources
+C:\Users\BH\Desktop\Test\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.vbproj.GenerateResource.Cache
+C:\Users\LBH\Desktop\Test\Cond_Rating\Cond_Rating\bin\Debug\Cond_Rating.exe.config
+C:\Users\LBH\Desktop\Test\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.exe
+C:\Users\LBH\Desktop\Test\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.xml
+C:\Users\LBH\Desktop\Test\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.pdb
+C:\Users\LBH\Desktop\Test\Cond_Rating\Cond_Rating\bin\Debug\Cond_Rating.exe
+C:\Users\LBH\Desktop\Test\Cond_Rating\Cond_Rating\bin\Debug\Cond_Rating.pdb
+C:\Users\LBH\Desktop\Test\Cond_Rating\Cond_Rating\bin\Debug\Cond_Rating.xml
+C:\Users\LBH\Desktop\Test\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.vbprojResolveAssemblyReference.cache
+C:\Users\LBH\Desktop\Test\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.Form1.resources
+C:\Users\LBH\Desktop\Test\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.Resources.resources
+C:\Users\LBH\Desktop\Test\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.vbproj.GenerateResource.Cache
+C:\Users\BH\Desktop\Cycle\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.exe
+C:\Users\BH\Desktop\Cycle\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.xml
+C:\Users\BH\Desktop\Cycle\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.pdb
+C:\Users\BH\Desktop\Cycle\Cond_Rating\Cond_Rating\bin\Debug\Cond_Rating.exe
+C:\Users\BH\Desktop\Cycle\Cond_Rating\Cond_Rating\bin\Debug\Cond_Rating.pdb
+C:\Users\BH\Desktop\Cycle\Cond_Rating\Cond_Rating\bin\Debug\Cond_Rating.xml
+C:\Users\BH\Desktop\Cycle\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.vbprojResolveAssemblyReference.cache
+C:\Users\BH\Desktop\Cycle\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.Form1.resources
+C:\Users\BH\Desktop\Cycle\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.Resources.resources
+C:\Users\BH\Desktop\Cycle\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.vbproj.GenerateResource.Cache
+C:\Users\LBH\Desktop\508\Cycle\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.exe
+C:\Users\LBH\Desktop\508\Cycle\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.xml
+C:\Users\LBH\Desktop\508\Cycle\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.pdb
+C:\Users\LBH\Desktop\508\Cycle\Cond_Rating\Cond_Rating\bin\Debug\Cond_Rating.exe
+C:\Users\LBH\Desktop\508\Cycle\Cond_Rating\Cond_Rating\bin\Debug\Cond_Rating.pdb
+C:\Users\LBH\Desktop\508\Cycle\Cond_Rating\Cond_Rating\bin\Debug\Cond_Rating.xml
+C:\Users\LBH\Desktop\508\Cycle\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.vbprojResolveAssemblyReference.cache
+C:\Users\LBH\Desktop\508\Cycle\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.Form1.resources
+C:\Users\LBH\Desktop\508\Cycle\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.Resources.resources
+C:\Users\LBH\Desktop\508\Cycle\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.vbproj.GenerateResource.Cache
+F:\Delta\508\Cycle\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.exe
+F:\Delta\508\Cycle\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.xml
+F:\Delta\508\Cycle\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.pdb
+F:\Delta\508\Cycle\Cond_Rating\Cond_Rating\bin\Debug\Cond_Rating.exe
+F:\Delta\508\Cycle\Cond_Rating\Cond_Rating\bin\Debug\Cond_Rating.pdb
+F:\Delta\508\Cycle\Cond_Rating\Cond_Rating\bin\Debug\Cond_Rating.xml
+F:\Delta\508\Cycle\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.vbprojResolveAssemblyReference.cache
+F:\Delta\508\Cycle\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.Form1.resources
+F:\Delta\508\Cycle\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.Resources.resources
+F:\Delta\508\Cycle\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.vbproj.GenerateResource.Cache
+C:\Users\BH\Desktop\BaseLine\Cycle\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.exe
+C:\Users\BH\Desktop\BaseLine\Cycle\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.xml
+C:\Users\BH\Desktop\BaseLine\Cycle\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.pdb
+C:\Users\BH\Desktop\BaseLine\Cycle\Cond_Rating\Cond_Rating\bin\Debug\Cond_Rating.exe
+C:\Users\BH\Desktop\BaseLine\Cycle\Cond_Rating\Cond_Rating\bin\Debug\Cond_Rating.pdb
+C:\Users\BH\Desktop\BaseLine\Cycle\Cond_Rating\Cond_Rating\bin\Debug\Cond_Rating.xml
+C:\Users\BH\Desktop\BaseLine\Cycle\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.vbprojResolveAssemblyReference.cache
+C:\Users\BH\Desktop\BaseLine\Cycle\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.Form1.resources
+C:\Users\BH\Desktop\BaseLine\Cycle\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.Resources.resources
+C:\Users\BH\Desktop\BaseLine\Cycle\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.vbproj.GenerateResource.Cache
+C:\Users\LBH\Desktop\Cycle\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.exe
+C:\Users\LBH\Desktop\Cycle\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.xml
+C:\Users\LBH\Desktop\Cycle\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.pdb
+C:\Users\LBH\Desktop\Cycle\Cond_Rating\Cond_Rating\bin\Debug\Cond_Rating.exe
+C:\Users\LBH\Desktop\Cycle\Cond_Rating\Cond_Rating\bin\Debug\Cond_Rating.pdb
+C:\Users\LBH\Desktop\Cycle\Cond_Rating\Cond_Rating\bin\Debug\Cond_Rating.xml
+C:\Users\LBH\Desktop\Cycle\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.vbprojResolveAssemblyReference.cache
+C:\Users\LBH\Desktop\Cycle\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.Form1.resources
+C:\Users\LBH\Desktop\Cycle\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.Resources.resources
+C:\Users\LBH\Desktop\Cycle\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.vbproj.GenerateResource.Cache
+C:\Users\BH\Desktop\BaseLine\GUI\Cycle\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.exe
+C:\Users\BH\Desktop\BaseLine\GUI\Cycle\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.xml
+C:\Users\BH\Desktop\BaseLine\GUI\Cycle\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.pdb
+C:\Users\BH\Desktop\BaseLine\GUI\Cycle\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.vbprojResolveAssemblyReference.cache
+C:\Users\BH\Desktop\BaseLine\GUI\Cycle\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.Form1.resources
+C:\Users\BH\Desktop\BaseLine\GUI\Cycle\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.Resources.resources
+C:\Users\BH\Desktop\BaseLine\GUI\Cycle\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.vbproj.GenerateResource.Cache
+C:\Users\BH\Desktop\BaseLine\GUI\Cycle\Cond_Rating\Cond_Rating\bin\Debug\Cond_Rating.exe
+C:\Users\BH\Desktop\BaseLine\GUI\Cycle\Cond_Rating\Cond_Rating\bin\Debug\Cond_Rating.pdb
+C:\Users\BH\Desktop\BaseLine\GUI\Cycle\Cond_Rating\Cond_Rating\bin\Debug\Cond_Rating.xml
+C:\Users\user\Desktop\Delta_Kaohsiung\Cycle\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.exe
+C:\Users\user\Desktop\Delta_Kaohsiung\Cycle\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.xml
+C:\Users\user\Desktop\Delta_Kaohsiung\Cycle\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.pdb
+C:\Users\user\Desktop\Delta_Kaohsiung\Cycle\Cond_Rating\Cond_Rating\bin\Debug\Cond_Rating.exe
+C:\Users\user\Desktop\Delta_Kaohsiung\Cycle\Cond_Rating\Cond_Rating\bin\Debug\Cond_Rating.pdb
+C:\Users\user\Desktop\Delta_Kaohsiung\Cycle\Cond_Rating\Cond_Rating\bin\Debug\Cond_Rating.xml
+C:\Users\user\Desktop\Delta_Kaohsiung\Cycle\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.vbprojResolveAssemblyReference.cache
+C:\Users\user\Desktop\Delta_Kaohsiung\Cycle\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.Form1.resources
+C:\Users\user\Desktop\Delta_Kaohsiung\Cycle\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.Resources.resources
+C:\Users\user\Desktop\Delta_Kaohsiung\Cycle\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.vbproj.GenerateResource.Cache
+C:\Users\BH\Desktop\BacktoHsinchu\Cycle\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.exe
+C:\Users\BH\Desktop\BacktoHsinchu\Cycle\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.xml
+C:\Users\BH\Desktop\BacktoHsinchu\Cycle\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.pdb
+C:\Users\BH\Desktop\BacktoHsinchu\Cycle\Cond_Rating\Cond_Rating\bin\Debug\Cond_Rating.exe
+C:\Users\BH\Desktop\BacktoHsinchu\Cycle\Cond_Rating\Cond_Rating\bin\Debug\Cond_Rating.pdb
+C:\Users\BH\Desktop\BacktoHsinchu\Cycle\Cond_Rating\Cond_Rating\bin\Debug\Cond_Rating.xml
+C:\Users\BH\Desktop\BacktoHsinchu\Cycle\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.vbprojResolveAssemblyReference.cache
+C:\Users\BH\Desktop\BacktoHsinchu\Cycle\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.Form1.resources
+C:\Users\BH\Desktop\BacktoHsinchu\Cycle\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.Resources.resources
+C:\Users\BH\Desktop\BacktoHsinchu\Cycle\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.vbproj.GenerateResource.Cache
+C:\Users\BH\Desktop\BH_Stay\Cycle\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.exe
+C:\Users\BH\Desktop\BH_Stay\Cycle\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.xml
+C:\Users\BH\Desktop\BH_Stay\Cycle\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.pdb
+C:\Users\BH\Desktop\BH_Stay\Cycle\Cond_Rating\Cond_Rating\bin\Debug\Cond_Rating.exe
+C:\Users\BH\Desktop\BH_Stay\Cycle\Cond_Rating\Cond_Rating\bin\Debug\Cond_Rating.pdb
+C:\Users\BH\Desktop\BH_Stay\Cycle\Cond_Rating\Cond_Rating\bin\Debug\Cond_Rating.xml
+C:\Users\BH\Desktop\BH_Stay\Cycle\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.vbprojResolveAssemblyReference.cache
+C:\Users\BH\Desktop\BH_Stay\Cycle\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.Form1.resources
+C:\Users\BH\Desktop\BH_Stay\Cycle\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.Resources.resources
+C:\Users\BH\Desktop\BH_Stay\Cycle\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.vbproj.GenerateResource.Cache
+C:\Users\BH\Desktop\BH_Stay\Delta_20160706_A\Cycle\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.exe
+C:\Users\BH\Desktop\BH_Stay\Delta_20160706_A\Cycle\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.xml
+C:\Users\BH\Desktop\BH_Stay\Delta_20160706_A\Cycle\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.pdb
+C:\Users\BH\Desktop\BH_Stay\Delta_20160706_A\Cycle\Cond_Rating\Cond_Rating\bin\Debug\Cond_Rating.exe
+C:\Users\BH\Desktop\BH_Stay\Delta_20160706_A\Cycle\Cond_Rating\Cond_Rating\bin\Debug\Cond_Rating.pdb
+C:\Users\BH\Desktop\BH_Stay\Delta_20160706_A\Cycle\Cond_Rating\Cond_Rating\bin\Debug\Cond_Rating.xml
+C:\Users\BH\Desktop\BH_Stay\Delta_20160706_A\Cycle\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.vbprojResolveAssemblyReference.cache
+C:\Users\BH\Desktop\BH_Stay\Delta_20160706_A\Cycle\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.Form1.resources
+C:\Users\BH\Desktop\BH_Stay\Delta_20160706_A\Cycle\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.Resources.resources
+C:\Users\BH\Desktop\BH_Stay\Delta_20160706_A\Cycle\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.vbproj.GenerateResource.Cache
+C:\Users\LBH\Desktop\BH_Stay\Delta_20160706_A\Cycle\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.exe
+C:\Users\LBH\Desktop\BH_Stay\Delta_20160706_A\Cycle\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.xml
+C:\Users\LBH\Desktop\BH_Stay\Delta_20160706_A\Cycle\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.pdb
+C:\Users\LBH\Desktop\BH_Stay\Delta_20160706_A\Cycle\Cond_Rating\Cond_Rating\bin\Debug\Cond_Rating.exe
+C:\Users\LBH\Desktop\BH_Stay\Delta_20160706_A\Cycle\Cond_Rating\Cond_Rating\bin\Debug\Cond_Rating.pdb
+C:\Users\LBH\Desktop\BH_Stay\Delta_20160706_A\Cycle\Cond_Rating\Cond_Rating\bin\Debug\Cond_Rating.xml
+C:\Users\LBH\Desktop\BH_Stay\Delta_20160706_A\Cycle\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.vbprojResolveAssemblyReference.cache
+C:\Users\LBH\Desktop\BH_Stay\Delta_20160706_A\Cycle\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.Form1.resources
+C:\Users\LBH\Desktop\BH_Stay\Delta_20160706_A\Cycle\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.Resources.resources
+C:\Users\LBH\Desktop\BH_Stay\Delta_20160706_A\Cycle\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.vbproj.GenerateResource.Cache
+C:\Users\BH\Google 雲端硬碟\碩論\Exp\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.exe
+C:\Users\BH\Google 雲端硬碟\碩論\Exp\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.xml
+C:\Users\BH\Google 雲端硬碟\碩論\Exp\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.pdb
+C:\Users\BH\Google 雲端硬碟\碩論\Exp\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.vbprojResolveAssemblyReference.cache
+C:\Users\BH\Google 雲端硬碟\碩論\Exp\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.Form1.resources
+C:\Users\BH\Google 雲端硬碟\碩論\Exp\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.Resources.resources
+C:\Users\BH\Google 雲端硬碟\碩論\Exp\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.vbproj.GenerateResource.Cache
+C:\Users\BH\Google 雲端硬碟\碩論\Exp\Cond_Rating\Cond_Rating\bin\Debug\Cond_Rating.exe
+C:\Users\BH\Google 雲端硬碟\碩論\Exp\Cond_Rating\Cond_Rating\bin\Debug\Cond_Rating.pdb
+C:\Users\BH\Google 雲端硬碟\碩論\Exp\Cond_Rating\Cond_Rating\bin\Debug\Cond_Rating.xml
+C:\Users\LBH\Desktop\VS\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.exe
+C:\Users\LBH\Desktop\VS\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.xml
+C:\Users\LBH\Desktop\VS\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.pdb
+C:\Users\LBH\Desktop\VS\Cond_Rating\Cond_Rating\bin\Debug\Cond_Rating.exe
+C:\Users\LBH\Desktop\VS\Cond_Rating\Cond_Rating\bin\Debug\Cond_Rating.pdb
+C:\Users\LBH\Desktop\VS\Cond_Rating\Cond_Rating\bin\Debug\Cond_Rating.xml
+C:\Users\LBH\Desktop\VS\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.vbprojResolveAssemblyReference.cache
+C:\Users\LBH\Desktop\VS\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.Form1.resources
+C:\Users\LBH\Desktop\VS\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.Resources.resources
+C:\Users\LBH\Desktop\VS\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.vbproj.GenerateResource.Cache
+C:\Users\BH\Desktop\VS\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.exe
+C:\Users\BH\Desktop\VS\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.xml
+C:\Users\BH\Desktop\VS\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.pdb
+C:\Users\BH\Desktop\VS\Cond_Rating\Cond_Rating\bin\Debug\Cond_Rating.exe
+C:\Users\BH\Desktop\VS\Cond_Rating\Cond_Rating\bin\Debug\Cond_Rating.pdb
+C:\Users\BH\Desktop\VS\Cond_Rating\Cond_Rating\bin\Debug\Cond_Rating.xml
+C:\Users\BH\Desktop\VS\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.vbprojResolveAssemblyReference.cache
+C:\Users\BH\Desktop\VS\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.Form1.resources
+C:\Users\BH\Desktop\VS\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.Resources.resources
+C:\Users\BH\Desktop\VS\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.vbproj.GenerateResource.Cache
+C:\Users\LBH\Google 雲端硬碟\碩論\DeltaShare\Ver03_20160802\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.exe
+C:\Users\LBH\Google 雲端硬碟\碩論\DeltaShare\Ver03_20160802\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.xml
+C:\Users\LBH\Google 雲端硬碟\碩論\DeltaShare\Ver03_20160802\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.pdb
+C:\Users\LBH\Google 雲端硬碟\碩論\DeltaShare\Ver03_20160802\Cond_Rating\Cond_Rating\bin\Debug\Cond_Rating.exe
+C:\Users\LBH\Google 雲端硬碟\碩論\DeltaShare\Ver03_20160802\Cond_Rating\Cond_Rating\bin\Debug\Cond_Rating.pdb
+C:\Users\LBH\Google 雲端硬碟\碩論\DeltaShare\Ver03_20160802\Cond_Rating\Cond_Rating\bin\Debug\Cond_Rating.xml
+C:\Users\LBH\Google 雲端硬碟\碩論\DeltaShare\Ver03_20160802\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.vbprojResolveAssemblyReference.cache
+C:\Users\LBH\Google 雲端硬碟\碩論\DeltaShare\Ver03_20160802\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.Form1.resources
+C:\Users\LBH\Google 雲端硬碟\碩論\DeltaShare\Ver03_20160802\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.Resources.resources
+C:\Users\LBH\Google 雲端硬碟\碩論\DeltaShare\Ver03_20160802\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.vbproj.GenerateResource.Cache
+D:\Ver03_20160802\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.exe
+D:\Ver03_20160802\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.xml
+D:\Ver03_20160802\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.pdb
+D:\Ver03_20160802\Cond_Rating\Cond_Rating\bin\Debug\Cond_Rating.exe
+D:\Ver03_20160802\Cond_Rating\Cond_Rating\bin\Debug\Cond_Rating.pdb
+D:\Ver03_20160802\Cond_Rating\Cond_Rating\bin\Debug\Cond_Rating.xml
+D:\Ver03_20160802\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.vbprojResolveAssemblyReference.cache
+D:\Ver03_20160802\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.Form1.resources
+D:\Ver03_20160802\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.Resources.resources
+D:\Ver03_20160802\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.vbproj.GenerateResource.Cache
