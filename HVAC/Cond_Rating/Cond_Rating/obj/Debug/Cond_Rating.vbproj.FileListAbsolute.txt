@@ -214,3 +214,13 @@ D:\Ver03_20160802\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.vbprojResolveAss
 D:\Ver03_20160802\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.Form1.resources
 D:\Ver03_20160802\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.Resources.resources
 D:\Ver03_20160802\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.vbproj.GenerateResource.Cache
+C:\Users\BH\Dropbox\VS_MASTER\Porject_Beta\HVAC\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.exe
+C:\Users\BH\Dropbox\VS_MASTER\Porject_Beta\HVAC\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.xml
+C:\Users\BH\Dropbox\VS_MASTER\Porject_Beta\HVAC\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.pdb
+C:\Users\BH\Dropbox\VS_MASTER\Porject_Beta\HVAC\Cond_Rating\Cond_Rating\bin\Debug\Cond_Rating.exe
+C:\Users\BH\Dropbox\VS_MASTER\Porject_Beta\HVAC\Cond_Rating\Cond_Rating\bin\Debug\Cond_Rating.pdb
+C:\Users\BH\Dropbox\VS_MASTER\Porject_Beta\HVAC\Cond_Rating\Cond_Rating\bin\Debug\Cond_Rating.xml
+C:\Users\BH\Dropbox\VS_MASTER\Porject_Beta\HVAC\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.vbprojResolveAssemblyReference.cache
+C:\Users\BH\Dropbox\VS_MASTER\Porject_Beta\HVAC\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.Form1.resources
+C:\Users\BH\Dropbox\VS_MASTER\Porject_Beta\HVAC\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.Resources.resources
+C:\Users\BH\Dropbox\VS_MASTER\Porject_Beta\HVAC\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.vbproj.GenerateResource.Cache

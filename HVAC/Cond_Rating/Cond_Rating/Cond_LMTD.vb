@@ -2,44 +2,68 @@
 
     Sub Cond_LMTD()
 
-        'Pre processing !!!!!
+
         'Class Fluid Setup (C_Sat / C_Sup / C_Air_Inlet) <===============================================================================================================================
         Dim Q3 As Double
         C_QA1 = 0
         C_QA2 = 0
         Q3 = 0
 
-        'C.Sat_Refrigerants
+        'C.Sat_Refrigerants // declare condenser saturation property(Tsat(K))
         Dim C_sat As New Fluid(Influid, "si", "tp")
         C_sat.SatProp(CDbl(Form1.CTsat.Text))
 
-        'C.Sup_Refrigerants
+        'C.Sup_Refrigerants // declare condenser superheated region property (Tsup(K) , P(Psat))
         Dim C_sup As New Fluid(Influid, "si", "tp")
         C_sup.Properties(CDbl(Form1.T1_2.Text), CDbl(Form1.CPsat.Text))
 
-        'C.In_Air
+        'C.In_Air // declare air inlet propery (Tain(oC) -> (K), P (atmosphere pressure(MPa)) )
         Dim C_air As New Fluid("air", "si", "tp")
         C_air.Properties(CtoK(Form1.TextBox31.Text), 0.101325)
 
-        'Initialization <==========================================================================================================================
-
-        'S_initial = Entropy("r22", "TP", "SI", CtoK(T1_2.Text), C_sat.P)  ' for Cycle iteration
+        'Initialization <=================================================================================================================================================================
 
         'refrigerant side'
-        C_Trin = KtoC(CDbl(Form1.T1_2.Text))
-        C_Cprin = C_sup.cp : C_rhorin = C_sup.rho : C_krin = C_sup.k : C_Viscrin = C_sup.Visc : C_Prin = C_sup.Pr
-        C_PrsG = C_sat.PrG : C_PrsL = C_sat.PrL : C_rhosL = C_sat.rhoL : C_rhosG = C_sat.rhoG
-        C_ViscsL = C_sat.viscL : C_ViscsG = C_sat.viscG : C_CpsL = C_sat.CpL : C_CpsG = C_sat.CpG : C_ksL = C_sat.kL : C_ksG = C_sat.kG
-        C_Ts = KtoC(CDbl(Form1.CTsat.Text)) : C_mr = CDbl(Form1.MFR.Text) '0.02083
-        C_Pr = 0.437 : C_isLG = C_sat.ifg / 1000
+        C_Trin = KtoC(CDbl(Form1.T1_2.Text))    '(oC)
+        C_Cprin = C_sup.cp                      '(J/kg.K)
+        C_rhorin = C_sup.rho                    '(kg/m^3)
+        C_krin = C_sup.k                        '(W/m.k)
+        C_Viscrin = C_sup.Visc                  '(N.s/m^2)
+        C_Prin = C_sup.Pr                       '(X)
+        C_PrsG = C_sat.PrG                      '(X)
+        C_PrsL = C_sat.PrL                      '(X)
+        C_rhosL = C_sat.rhoL                    '(kg/m^3)
+        C_rhosG = C_sat.rhoG                    '(kg/m^3)
+        C_ViscsL = C_sat.viscL                  '(N.s/m^2)
+        C_ViscsG = C_sat.viscG                  '(N.s/m^2)
+        C_CpsL = C_sat.CpL                      '(J/kg.K)
+        C_CpsG = C_sat.CpG                      '(J/kg.K)
+        C_ksL = C_sat.kL                        '(W/m.k)
+        C_ksG = C_sat.kG                        '(W/m.k)
+        C_Ts = KtoC(CDbl(Form1.CTsat.Text))     '(oC)
+        C_mr = CDbl(Form1.MFR.Text) '0.02083    '(kg/s)
+        C_Pr = 0.437                            '(reduce pressure)
+        C_isLG = C_sat.ifg / 1000               '(kJ/kg)
 
         'air side'
-        C_Tain = CDbl(Form1.TextBox31.Text) : C_Vfr = CDbl(Form1.TextBox36.Text)
-        C_rhoa = CDbl(Form1.TextBox5.Text) : C_Visca = CDbl(Form1.TextBox6.Text) : C_Cpa = CDbl(Form1.TextBox7.Text) : C_Pra = CDbl(Form1.TextBox8.Text)
+        C_Tain = CDbl(Form1.TextBox31.Text)     '(oC)
+        C_Vfr = CDbl(Form1.TextBox36.Text)      '(m/s)
+        C_rhoa = CDbl(Form1.TextBox5.Text)      '(kg/m^3)
+        C_Visca = CDbl(Form1.TextBox6.Text)     '(N.s/m^2)
+        C_Cpa = CDbl(Form1.TextBox7.Text)       '(J/kg.K)
+        C_Pra = CDbl(Form1.TextBox8.Text)       '(X)
 
         'HX geometry'
-        C_W = Form1.TextBox20.Text : C_H = Form1.TextBox19.Text : C_N = Form1.TextBox21.Text : C_df = Form1.TextBox26.Text : C_Fp = Form1.TextBox22.Text
-        C_Pt = Form1.TextBox23.Text : C_Pl = Form1.TextBox24.Text : C_dc = Form1.TextBox29.Text : C_dw = Form1.TextBox28.Text : C_di = Form1.TextBox27.Text
+        C_W = Form1.TextBox20.Text              '(m)
+        C_H = Form1.TextBox19.Text              '(m)
+        C_N = Form1.TextBox21.Text              '(m)
+        C_df = Form1.TextBox26.Text             '(m)
+        C_Fp = Form1.TextBox22.Text             '(m)
+        C_Pt = Form1.TextBox23.Text             '(m)
+        C_Pl = Form1.TextBox24.Text             '(m)
+        C_dc = Form1.TextBox29.Text             '(m)
+        C_dw = Form1.TextBox28.Text             '(m)
+        C_di = Form1.TextBox27.Text             '(m)
 
 
         '_________________________________________________________________________________
@@ -293,5 +317,7 @@
         Form1.QCtxt.Text = ((C_QA1 + C_QA2 + Q3) / 1000).ToString("0.###")
 
     End Sub
+
+    'S_initial = Entropy("r22", "TP", "SI", CtoK(T1_2.Text), C_sat.P)  ' for Cycle iteration
 
 End Module
