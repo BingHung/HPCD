@@ -73,34 +73,34 @@
 
         pi = Math.PI
 
-        C_Afr = C_W * C_H
-        C_NT = C_H / C_Pt
-        C_NF = C_W / C_Fp
-        C_Ac = C_Afr - C_NT * (C_dc * C_W + C_NF * C_df * (C_Pt - C_dc))
-        C_sigma = C_Ac / C_Afr
+        C_Afr = C_W * C_H                                                       '(m^2)
+        C_NT = C_H / C_Pt                                                       '(m^2)
+        C_NF = C_W / C_Fp                                                       '(#)
+        C_Ac = C_Afr - C_NT * (C_dc * C_W + C_NF * C_df * (C_Pt - C_dc))        '(#)
+        C_sigma = C_Ac / C_Afr                                                  '(X)
 
         Form1.TextBox3.Text = C_sigma.ToString("0.###")
 
         'HX total area'
-        C_Af = 2 * C_NF * (C_Pl * C_H - pi / 4 * C_dc * C_dc * C_NT) * C_N + 2 * C_df * C_NF * (C_H + C_Pl * C_N)
-        C_At = pi * C_dc * (C_W - C_NF * C_df) * C_NT * C_N
-        C_Ao = C_Af + C_At
-        C_Dh = 4 * C_Ac * C_Pl * C_N / C_Ao
-        C_Ai = pi * C_di * C_W * C_NT * C_N
+        C_Af = 2 * C_NF * (C_Pl * C_H - pi / 4 * C_dc * C_dc * C_NT) * C_N + 2 * C_df * C_NF * (C_H + C_Pl * C_N)   '(m^2)
+        C_At = pi * C_dc * (C_W - C_NF * C_df) * C_NT * C_N                                                         '(m^2)
+        C_Ao = C_Af + C_At                                                                                          '(m^2)
+        C_Dh = 4 * C_Ac * C_Pl * C_N / C_Ao                                                                         '(m)
+        C_Ai = pi * C_di * C_W * C_NT * C_N                                                                         '(m^2)
 
         Form1.TextBox2.Text = C_Ao.ToString("0.###")
         Form1.TextBox4.Text = (C_Ao / C_Ai).ToString("0.###")
         Dim ratio As Double
-        ratio = C_Ao / C_Ai
+        ratio = C_Ao / C_Ai                                                                                         '(X)
 
 
         'heat transfer coefficient'
-        C_Redc = C_rhoa * C_Vfr * C_dc / C_Visca / C_sigma
+        C_Redc = C_rhoa * C_Vfr * C_dc / C_Visca / C_sigma                                                          '(X)
 
         '====== Replacing Fin =====
 
-        ' Plain Fin N=1
-        ' C_P1 = 1.9 - 0.23 * Math.Log(C_Redc)
+        'Plain Fin N=1
+        'C_P1 = 1.9 - 0.23 * Math.Log(C_Redc)
         'C_P2 = -0.236 + 0.126 * Math.Log(C_Redc)
         'C_j = 0.108 * C_Redc ^ (-0.29) * (C_Pt / C_Pl) ^ (C_P1) * (C_Fp / C_dc) ^ (-1.084) * (C_Fp / C_Dh) ^ (-0.786) * (C_Fp / C_Pt) ^ (C_P2)
 
@@ -116,19 +116,19 @@
 
         '====== Replacing Fin End =====
 
-        C_Vc = C_Vfr / C_sigma
-        C_ho = C_j * C_rhoa * C_Vc * C_Cpa / (C_Pra) ^ (2 / 3)
+        C_Vc = C_Vfr / C_sigma                                                      '(m/s)
+        C_ho = C_j * C_rhoa * C_Vc * C_Cpa / (C_Pra) ^ (2 / 3)                      '(W/m^2.K)
 
-        C_kf = Form1.TextBox38.Text
-        C_m = (2 * C_ho / C_kf / C_df) ^ (0.5)
-        C_XL = ((C_Pt / 2) ^ 2 + C_Pl ^ 2) ^ 0.5 / 2 'staggerd 'C_Pl / 2 Inline
-        C_XM = C_Pt / 2 '((Pl / 2) ^ 2 + (Pl) ^ 2) ^ 0.5 / 2'
-        C_r = C_dc / 2
-        C_reqr = 1.28 * C_XM * ((C_XL / C_XM) - 0.2) ^ (0.5) / C_r
-        C_phi = (C_reqr - 1) * (1 + 0.35 * Math.Log(C_reqr))
-        C_nf_efficiency = Math.Tanh(C_m * C_r * C_phi) / (C_m * C_r * C_phi)
-        C_no_efficiency = 1 - (C_Af / C_Ao) * (1 - C_nf_efficiency)
-        C_noho = C_no_efficiency * C_ho
+        C_kf = Form1.TextBox38.Text                                                 '(X)
+        C_m = (2 * C_ho / C_kf / C_df) ^ (0.5)                                      '(m^-1)
+        C_XL = ((C_Pt / 2) ^ 2 + C_Pl ^ 2) ^ 0.5 / 2 'staggerd 'C_Pl / 2 Inline     '(m)
+        C_XM = C_Pt / 2 '((Pl / 2) ^ 2 + (Pl) ^ 2) ^ 0.5 / 2'                       '(m)
+        C_r = C_dc / 2                                                              '(m)
+        C_reqr = 1.28 * C_XM * ((C_XL / C_XM) - 0.2) ^ (0.5) / C_r                  '(X)
+        C_phi = (C_reqr - 1) * (1 + 0.35 * Math.Log(C_reqr))                        '(X)
+        C_nf_efficiency = Math.Tanh(C_m * C_r * C_phi) / (C_m * C_r * C_phi)        '(X)
+        C_no_efficiency = 1 - (C_Af / C_Ao) * (1 - C_nf_efficiency)                 '(X)
+        C_noho = C_no_efficiency * C_ho                                             '(W/m^K)
 
         Form1.TextBox1.Text = C_noho.ToString("0.###")
 
@@ -136,7 +136,7 @@
 
         'Claculate A1 Region
         ' [1] get hiA1
-        C_A1_CprG = (C_Cprin + C_CpsG) / 2
+        C_A1_CprG = (C_Cprin + C_CpsG) / 2                                          '()
         C_QA1 = C_mr * C_A1_CprG * (C_Trin - C_Ts)
         C_A1_Cr = C_mr * C_A1_CprG
         C_ma = C_rhoa * C_Vfr * C_Afr
