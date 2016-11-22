@@ -134,7 +134,7 @@
 
         ' [End]=============================================================================================== Pre processing
 
-        'Claculate A1 Region
+        'Claculate A1 Region ===============================================================================================
         ' [1] get hiA1
         C_A1_CprG = (C_Cprin + C_CpsG) / 2                                          '()
         C_QA1 = C_mr * C_A1_CprG * (C_Trin - C_Ts)
@@ -165,7 +165,7 @@
 
         '[End of A1]
 
-        'Claculate A2 Region
+        'Claculate A2 Region ===============================================================================================
         ' [1] get hcm
         C_A2_hL = (C_ksL / C_di) * 0.023 * (C_A1_G * C_di / C_ViscsL) ^ 0.8 * C_PrsL ^ 0.4
         C_A2_hcm = C_A2_hL * (0.55 + 2.09 / (C_Pr ^ 0.38))
@@ -185,7 +185,7 @@
         'Dim State_A2 As bridge to Expansion device
 
         If A2 > A2_real Then
-            'MsgBox("saturation region")
+            'MsgBox("saturation region") ===============================================================================================
             State_A2 = 1
 
             Dim xL, xR As Double
@@ -223,7 +223,7 @@
             Form1.T2_3.Text = CDbl(Form1.CTsat.Text).ToString("0.###")
 
         ElseIf A2 < A2_real Then
-            'MsgBox("subcooled region")
+            'MsgBox("subcooled region") ===============================================================================================
             State_A2 = 2
 
             Dim A3, UA_A3, LMTD_A3, dT1_A3, dT2_A3, TAir_A3_out, Q3_check As Double
@@ -286,12 +286,6 @@
                 Q3_check = E * Qmax
                 Q3 = Cr * (C_Ts - C_Tout)
 
-                'Q3 = C_mr * C_A3_CpL * (C_Ts - C_Tout)
-                'TAir_A3_out = Q3 / (C_ma * C_Cpa) + C_Tain
-                'dT1_A3 = C_Ts - TAir_A3_out
-                'dT2_A3 = C_Tout - C_Tain
-                'LMTD_A3 = (dT1_A3 - dT2_A3) / Math.Log(dT1_A3 / dT2_A3)
-                'Q3_check = UA_A3 * F * LMTD_A3
 
                 If Q3 - Q3_check < 0.01 Then
                     TR = C_Tout

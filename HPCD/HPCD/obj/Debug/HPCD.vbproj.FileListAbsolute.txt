@@ -1,0 +1,2 @@
+C:\Users\BH\AppData\Local\Temporary Projects\HPCD\bin\Debug\HPCD.exe.config
+C:\Users\BH\Dropbox\VS_MASTER\Porject_Beta\HPCD\HPCD\bin\Debug\HPCD.exe.config
