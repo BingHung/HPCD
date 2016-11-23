@@ -180,10 +180,10 @@ Partial Class HPCD
         Me.Qcond_tot_txt = New System.Windows.Forms.TextBox()
         Me.Label19 = New System.Windows.Forms.Label()
         Me.GroupBox6 = New System.Windows.Forms.GroupBox()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.Teapa_rin_txt = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.TextBox14 = New System.Windows.Forms.TextBox()
-        Me.Label14 = New System.Windows.Forms.Label()
+        Me.Xexpa_rin_txt = New System.Windows.Forms.TextBox()
+        Me.Xexpa_ = New System.Windows.Forms.Label()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.TextBox5 = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
@@ -1743,10 +1743,10 @@ Partial Class HPCD
         '
         'GroupBox6
         '
-        Me.GroupBox6.Controls.Add(Me.Label14)
-        Me.GroupBox6.Controls.Add(Me.TextBox14)
+        Me.GroupBox6.Controls.Add(Me.Xexpa_)
+        Me.GroupBox6.Controls.Add(Me.Xexpa_rin_txt)
         Me.GroupBox6.Controls.Add(Me.Label4)
-        Me.GroupBox6.Controls.Add(Me.TextBox4)
+        Me.GroupBox6.Controls.Add(Me.Teapa_rin_txt)
         Me.GroupBox6.Location = New System.Drawing.Point(760, 25)
         Me.GroupBox6.Name = "GroupBox6"
         Me.GroupBox6.Size = New System.Drawing.Size(243, 346)
@@ -1754,12 +1754,12 @@ Partial Class HPCD
         Me.GroupBox6.TabStop = False
         Me.GroupBox6.Text = "Expansion Device"
         '
-        'TextBox4
+        'Teapa_rin_txt
         '
-        Me.TextBox4.Location = New System.Drawing.Point(70, 35)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(114, 22)
-        Me.TextBox4.TabIndex = 0
+        Me.Teapa_rin_txt.Location = New System.Drawing.Point(70, 35)
+        Me.Teapa_rin_txt.Name = "Teapa_rin_txt"
+        Me.Teapa_rin_txt.Size = New System.Drawing.Size(114, 22)
+        Me.Teapa_rin_txt.TabIndex = 0
         '
         'Label4
         '
@@ -1770,21 +1770,21 @@ Partial Class HPCD
         Me.Label4.TabIndex = 1
         Me.Label4.Text = "Teapa_rin"
         '
-        'TextBox14
+        'Xexpa_rin_txt
         '
-        Me.TextBox14.Location = New System.Drawing.Point(70, 63)
-        Me.TextBox14.Name = "TextBox14"
-        Me.TextBox14.Size = New System.Drawing.Size(114, 22)
-        Me.TextBox14.TabIndex = 14
+        Me.Xexpa_rin_txt.Location = New System.Drawing.Point(70, 63)
+        Me.Xexpa_rin_txt.Name = "Xexpa_rin_txt"
+        Me.Xexpa_rin_txt.Size = New System.Drawing.Size(114, 22)
+        Me.Xexpa_rin_txt.TabIndex = 14
         '
-        'Label14
+        'Xexpa_
         '
-        Me.Label14.AutoSize = True
-        Me.Label14.Location = New System.Drawing.Point(15, 66)
-        Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(54, 12)
-        Me.Label14.TabIndex = 15
-        Me.Label14.Text = "Xexpa_rin"
+        Me.Xexpa_.AutoSize = True
+        Me.Xexpa_.Location = New System.Drawing.Point(15, 66)
+        Me.Xexpa_.Name = "Xexpa_"
+        Me.Xexpa_.Size = New System.Drawing.Size(54, 12)
+        Me.Xexpa_.TabIndex = 15
+        Me.Xexpa_.Text = "Xexpa_rin"
         '
         'GroupBox2
         '
@@ -2071,10 +2071,10 @@ Partial Class HPCD
     Friend WithEvents TextBox5 As TextBox
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents GroupBox6 As GroupBox
-    Friend WithEvents Label14 As Label
-    Friend WithEvents TextBox14 As TextBox
+    Friend WithEvents Xexpa_ As Label
+    Friend WithEvents Xexpa_rin_txt As TextBox
     Friend WithEvents Label4 As Label
-    Friend WithEvents TextBox4 As TextBox
+    Friend WithEvents Teapa_rin_txt As TextBox
     Friend WithEvents GroupBox5 As GroupBox
     Friend WithEvents Label19 As Label
     Friend WithEvents Qcond_tot_txt As TextBox
