@@ -25,6 +25,10 @@ Partial Class HPCD
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(HPCD))
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
+        Me.Expa_Launch = New System.Windows.Forms.Button()
+        Me.Cond_Launch = New System.Windows.Forms.Button()
+        Me.Comp_Launch = New System.Windows.Forms.Button()
+        Me.Evap_Launch = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.Label5 = New System.Windows.Forms.Label()
@@ -74,6 +78,8 @@ Partial Class HPCD
         Me.TextBox6 = New System.Windows.Forms.TextBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
+        Me.Label47 = New System.Windows.Forms.Label()
+        Me.Label46 = New System.Windows.Forms.Label()
         Me.Label45 = New System.Windows.Forms.Label()
         Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
@@ -163,38 +169,32 @@ Partial Class HPCD
         Me.Label79 = New System.Windows.Forms.Label()
         Me.Label80 = New System.Windows.Forms.Label()
         Me.Label81 = New System.Windows.Forms.Label()
-        Me.TextBox38 = New System.Windows.Forms.TextBox()
+        Me.C_kf_txt = New System.Windows.Forms.TextBox()
         Me.Label31 = New System.Windows.Forms.Label()
-        Me.TextBox27 = New System.Windows.Forms.TextBox()
+        Me.C_di_txt = New System.Windows.Forms.TextBox()
         Me.Label21 = New System.Windows.Forms.Label()
-        Me.TextBox28 = New System.Windows.Forms.TextBox()
+        Me.C_dw_txt = New System.Windows.Forms.TextBox()
         Me.Label23 = New System.Windows.Forms.Label()
-        Me.TextBox29 = New System.Windows.Forms.TextBox()
+        Me.C_dc_txt = New System.Windows.Forms.TextBox()
         Me.Label24 = New System.Windows.Forms.Label()
-        Me.TextBox26 = New System.Windows.Forms.TextBox()
+        Me.C_df_txt = New System.Windows.Forms.TextBox()
         Me.Label22 = New System.Windows.Forms.Label()
-        Me.TextBox24 = New System.Windows.Forms.TextBox()
+        Me.C_Pl_txt = New System.Windows.Forms.TextBox()
         Me.Label25 = New System.Windows.Forms.Label()
-        Me.TextBox23 = New System.Windows.Forms.TextBox()
+        Me.C_Pt_txt = New System.Windows.Forms.TextBox()
         Me.Label26 = New System.Windows.Forms.Label()
-        Me.TextBox22 = New System.Windows.Forms.TextBox()
+        Me.C_Fp_txt = New System.Windows.Forms.TextBox()
         Me.Label27 = New System.Windows.Forms.Label()
-        Me.TextBox21 = New System.Windows.Forms.TextBox()
-        Me.TextBox25 = New System.Windows.Forms.TextBox()
-        Me.TextBox30 = New System.Windows.Forms.TextBox()
+        Me.C_N_txt = New System.Windows.Forms.TextBox()
+        Me.C_W_txt = New System.Windows.Forms.TextBox()
+        Me.C_H_txt = New System.Windows.Forms.TextBox()
         Me.Label28 = New System.Windows.Forms.Label()
         Me.Label29 = New System.Windows.Forms.Label()
         Me.Label30 = New System.Windows.Forms.Label()
-        Me.Label46 = New System.Windows.Forms.Label()
-        Me.Label47 = New System.Windows.Forms.Label()
         Me.TabPage3 = New System.Windows.Forms.TabPage()
         Me.TextBox40 = New System.Windows.Forms.TextBox()
         Me.TabPage4 = New System.Windows.Forms.TabPage()
         Me.TextBox50 = New System.Windows.Forms.TextBox()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
-        Me.Button5 = New System.Windows.Forms.Button()
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
@@ -230,10 +230,10 @@ Partial Class HPCD
         '
         'TabPage1
         '
-        Me.TabPage1.Controls.Add(Me.Button5)
-        Me.TabPage1.Controls.Add(Me.Button4)
-        Me.TabPage1.Controls.Add(Me.Button3)
-        Me.TabPage1.Controls.Add(Me.Button2)
+        Me.TabPage1.Controls.Add(Me.Expa_Launch)
+        Me.TabPage1.Controls.Add(Me.Cond_Launch)
+        Me.TabPage1.Controls.Add(Me.Comp_Launch)
+        Me.TabPage1.Controls.Add(Me.Evap_Launch)
         Me.TabPage1.Controls.Add(Me.Button1)
         Me.TabPage1.Controls.Add(Me.GroupBox2)
         Me.TabPage1.Controls.Add(Me.GroupBox1)
@@ -245,6 +245,42 @@ Partial Class HPCD
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "System Overview"
         Me.TabPage1.UseVisualStyleBackColor = True
+        '
+        'Expa_Launch
+        '
+        Me.Expa_Launch.Location = New System.Drawing.Point(812, 717)
+        Me.Expa_Launch.Name = "Expa_Launch"
+        Me.Expa_Launch.Size = New System.Drawing.Size(133, 31)
+        Me.Expa_Launch.TabIndex = 11
+        Me.Expa_Launch.Text = "Expansion Device"
+        Me.Expa_Launch.UseVisualStyleBackColor = True
+        '
+        'Cond_Launch
+        '
+        Me.Cond_Launch.Location = New System.Drawing.Point(565, 717)
+        Me.Cond_Launch.Name = "Cond_Launch"
+        Me.Cond_Launch.Size = New System.Drawing.Size(133, 31)
+        Me.Cond_Launch.TabIndex = 10
+        Me.Cond_Launch.Text = "Condenser"
+        Me.Cond_Launch.UseVisualStyleBackColor = True
+        '
+        'Comp_Launch
+        '
+        Me.Comp_Launch.Location = New System.Drawing.Point(316, 717)
+        Me.Comp_Launch.Name = "Comp_Launch"
+        Me.Comp_Launch.Size = New System.Drawing.Size(133, 31)
+        Me.Comp_Launch.TabIndex = 9
+        Me.Comp_Launch.Text = "Compressor"
+        Me.Comp_Launch.UseVisualStyleBackColor = True
+        '
+        'Evap_Launch
+        '
+        Me.Evap_Launch.Location = New System.Drawing.Point(61, 717)
+        Me.Evap_Launch.Name = "Evap_Launch"
+        Me.Evap_Launch.Size = New System.Drawing.Size(133, 31)
+        Me.Evap_Launch.TabIndex = 8
+        Me.Evap_Launch.Text = "Evaporator"
+        Me.Evap_Launch.UseVisualStyleBackColor = True
         '
         'Button1
         '
@@ -704,6 +740,24 @@ Partial Class HPCD
         Me.TabPage2.TabIndex = 1
         Me.TabPage2.Text = "Geometry Settings"
         Me.TabPage2.UseVisualStyleBackColor = True
+        '
+        'Label47
+        '
+        Me.Label47.AutoSize = True
+        Me.Label47.Location = New System.Drawing.Point(1017, 736)
+        Me.Label47.Name = "Label47"
+        Me.Label47.Size = New System.Drawing.Size(75, 12)
+        Me.Label47.TabIndex = 64
+        Me.Label47.Text = "Capillary Tube"
+        '
+        'Label46
+        '
+        Me.Label46.AutoSize = True
+        Me.Label46.Location = New System.Drawing.Point(977, 538)
+        Me.Label46.Name = "Label46"
+        Me.Label46.Size = New System.Drawing.Size(147, 12)
+        Me.Label46.TabIndex = 63
+        Me.Label46.Text = "Reciprocating Compressor Fig"
         '
         'Label45
         '
@@ -1466,25 +1520,25 @@ Partial Class HPCD
         Me.GroupBox7.Controls.Add(Me.Label79)
         Me.GroupBox7.Controls.Add(Me.Label80)
         Me.GroupBox7.Controls.Add(Me.Label81)
-        Me.GroupBox7.Controls.Add(Me.TextBox38)
+        Me.GroupBox7.Controls.Add(Me.C_kf_txt)
         Me.GroupBox7.Controls.Add(Me.Label31)
-        Me.GroupBox7.Controls.Add(Me.TextBox27)
+        Me.GroupBox7.Controls.Add(Me.C_di_txt)
         Me.GroupBox7.Controls.Add(Me.Label21)
-        Me.GroupBox7.Controls.Add(Me.TextBox28)
+        Me.GroupBox7.Controls.Add(Me.C_dw_txt)
         Me.GroupBox7.Controls.Add(Me.Label23)
-        Me.GroupBox7.Controls.Add(Me.TextBox29)
+        Me.GroupBox7.Controls.Add(Me.C_dc_txt)
         Me.GroupBox7.Controls.Add(Me.Label24)
-        Me.GroupBox7.Controls.Add(Me.TextBox26)
+        Me.GroupBox7.Controls.Add(Me.C_df_txt)
         Me.GroupBox7.Controls.Add(Me.Label22)
-        Me.GroupBox7.Controls.Add(Me.TextBox24)
+        Me.GroupBox7.Controls.Add(Me.C_Pl_txt)
         Me.GroupBox7.Controls.Add(Me.Label25)
-        Me.GroupBox7.Controls.Add(Me.TextBox23)
+        Me.GroupBox7.Controls.Add(Me.C_Pt_txt)
         Me.GroupBox7.Controls.Add(Me.Label26)
-        Me.GroupBox7.Controls.Add(Me.TextBox22)
+        Me.GroupBox7.Controls.Add(Me.C_Fp_txt)
         Me.GroupBox7.Controls.Add(Me.Label27)
-        Me.GroupBox7.Controls.Add(Me.TextBox21)
-        Me.GroupBox7.Controls.Add(Me.TextBox25)
-        Me.GroupBox7.Controls.Add(Me.TextBox30)
+        Me.GroupBox7.Controls.Add(Me.C_N_txt)
+        Me.GroupBox7.Controls.Add(Me.C_W_txt)
+        Me.GroupBox7.Controls.Add(Me.C_H_txt)
         Me.GroupBox7.Controls.Add(Me.Label28)
         Me.GroupBox7.Controls.Add(Me.Label29)
         Me.GroupBox7.Controls.Add(Me.Label30)
@@ -1594,13 +1648,13 @@ Partial Class HPCD
         Me.Label81.TabIndex = 69
         Me.Label81.Text = "<熱交換器高度>"
         '
-        'TextBox38
+        'C_kf_txt
         '
-        Me.TextBox38.Location = New System.Drawing.Point(109, 316)
-        Me.TextBox38.Name = "TextBox38"
-        Me.TextBox38.Size = New System.Drawing.Size(102, 22)
-        Me.TextBox38.TabIndex = 68
-        Me.TextBox38.Text = "204"
+        Me.C_kf_txt.Location = New System.Drawing.Point(109, 316)
+        Me.C_kf_txt.Name = "C_kf_txt"
+        Me.C_kf_txt.Size = New System.Drawing.Size(102, 22)
+        Me.C_kf_txt.TabIndex = 68
+        Me.C_kf_txt.Text = "204"
         '
         'Label31
         '
@@ -1611,13 +1665,13 @@ Partial Class HPCD
         Me.Label31.TabIndex = 67
         Me.Label31.Text = "kf"
         '
-        'TextBox27
+        'C_di_txt
         '
-        Me.TextBox27.Location = New System.Drawing.Point(109, 284)
-        Me.TextBox27.Name = "TextBox27"
-        Me.TextBox27.Size = New System.Drawing.Size(102, 22)
-        Me.TextBox27.TabIndex = 66
-        Me.TextBox27.Text = "0.0095"
+        Me.C_di_txt.Location = New System.Drawing.Point(109, 284)
+        Me.C_di_txt.Name = "C_di_txt"
+        Me.C_di_txt.Size = New System.Drawing.Size(102, 22)
+        Me.C_di_txt.TabIndex = 66
+        Me.C_di_txt.Text = "0.0095"
         '
         'Label21
         '
@@ -1628,13 +1682,13 @@ Partial Class HPCD
         Me.Label21.TabIndex = 65
         Me.Label21.Text = "di (m)"
         '
-        'TextBox28
+        'C_dw_txt
         '
-        Me.TextBox28.Location = New System.Drawing.Point(109, 256)
-        Me.TextBox28.Name = "TextBox28"
-        Me.TextBox28.Size = New System.Drawing.Size(102, 22)
-        Me.TextBox28.TabIndex = 64
-        Me.TextBox28.Text = "0.0003"
+        Me.C_dw_txt.Location = New System.Drawing.Point(109, 256)
+        Me.C_dw_txt.Name = "C_dw_txt"
+        Me.C_dw_txt.Size = New System.Drawing.Size(102, 22)
+        Me.C_dw_txt.TabIndex = 64
+        Me.C_dw_txt.Text = "0.0003"
         '
         'Label23
         '
@@ -1645,13 +1699,13 @@ Partial Class HPCD
         Me.Label23.TabIndex = 63
         Me.Label23.Text = "dw (m)"
         '
-        'TextBox29
+        'C_dc_txt
         '
-        Me.TextBox29.Location = New System.Drawing.Point(109, 228)
-        Me.TextBox29.Name = "TextBox29"
-        Me.TextBox29.Size = New System.Drawing.Size(102, 22)
-        Me.TextBox29.TabIndex = 62
-        Me.TextBox29.Text = "0.01034"
+        Me.C_dc_txt.Location = New System.Drawing.Point(109, 228)
+        Me.C_dc_txt.Name = "C_dc_txt"
+        Me.C_dc_txt.Size = New System.Drawing.Size(102, 22)
+        Me.C_dc_txt.TabIndex = 62
+        Me.C_dc_txt.Text = "0.01034"
         '
         'Label24
         '
@@ -1662,13 +1716,13 @@ Partial Class HPCD
         Me.Label24.TabIndex = 61
         Me.Label24.Text = "dc (m)"
         '
-        'TextBox26
+        'C_df_txt
         '
-        Me.TextBox26.Location = New System.Drawing.Point(109, 196)
-        Me.TextBox26.Name = "TextBox26"
-        Me.TextBox26.Size = New System.Drawing.Size(102, 22)
-        Me.TextBox26.TabIndex = 60
-        Me.TextBox26.Text = "0.00012"
+        Me.C_df_txt.Location = New System.Drawing.Point(109, 196)
+        Me.C_df_txt.Name = "C_df_txt"
+        Me.C_df_txt.Size = New System.Drawing.Size(102, 22)
+        Me.C_df_txt.TabIndex = 60
+        Me.C_df_txt.Text = "0.00012"
         '
         'Label22
         '
@@ -1679,13 +1733,13 @@ Partial Class HPCD
         Me.Label22.TabIndex = 59
         Me.Label22.Text = "df (m)"
         '
-        'TextBox24
+        'C_Pl_txt
         '
-        Me.TextBox24.Location = New System.Drawing.Point(109, 168)
-        Me.TextBox24.Name = "TextBox24"
-        Me.TextBox24.Size = New System.Drawing.Size(102, 22)
-        Me.TextBox24.TabIndex = 58
-        Me.TextBox24.Text = "0.022"
+        Me.C_Pl_txt.Location = New System.Drawing.Point(109, 168)
+        Me.C_Pl_txt.Name = "C_Pl_txt"
+        Me.C_Pl_txt.Size = New System.Drawing.Size(102, 22)
+        Me.C_Pl_txt.TabIndex = 58
+        Me.C_Pl_txt.Text = "0.022"
         '
         'Label25
         '
@@ -1696,13 +1750,13 @@ Partial Class HPCD
         Me.Label25.TabIndex = 57
         Me.Label25.Text = "Pl (m)"
         '
-        'TextBox23
+        'C_Pt_txt
         '
-        Me.TextBox23.Location = New System.Drawing.Point(109, 140)
-        Me.TextBox23.Name = "TextBox23"
-        Me.TextBox23.Size = New System.Drawing.Size(102, 22)
-        Me.TextBox23.TabIndex = 56
-        Me.TextBox23.Text = "0.0254"
+        Me.C_Pt_txt.Location = New System.Drawing.Point(109, 140)
+        Me.C_Pt_txt.Name = "C_Pt_txt"
+        Me.C_Pt_txt.Size = New System.Drawing.Size(102, 22)
+        Me.C_Pt_txt.TabIndex = 56
+        Me.C_Pt_txt.Text = "0.0254"
         '
         'Label26
         '
@@ -1713,13 +1767,13 @@ Partial Class HPCD
         Me.Label26.TabIndex = 55
         Me.Label26.Text = "Pt (m)"
         '
-        'TextBox22
+        'C_Fp_txt
         '
-        Me.TextBox22.Location = New System.Drawing.Point(109, 112)
-        Me.TextBox22.Name = "TextBox22"
-        Me.TextBox22.Size = New System.Drawing.Size(102, 22)
-        Me.TextBox22.TabIndex = 54
-        Me.TextBox22.Text = "0.00128"
+        Me.C_Fp_txt.Location = New System.Drawing.Point(109, 112)
+        Me.C_Fp_txt.Name = "C_Fp_txt"
+        Me.C_Fp_txt.Size = New System.Drawing.Size(102, 22)
+        Me.C_Fp_txt.TabIndex = 54
+        Me.C_Fp_txt.Text = "0.00128"
         '
         'Label27
         '
@@ -1730,38 +1784,38 @@ Partial Class HPCD
         Me.Label27.TabIndex = 53
         Me.Label27.Text = "FinPitch (m)"
         '
-        'TextBox21
+        'C_N_txt
         '
-        Me.TextBox21.Location = New System.Drawing.Point(109, 84)
-        Me.TextBox21.Name = "TextBox21"
-        Me.TextBox21.Size = New System.Drawing.Size(102, 22)
-        Me.TextBox21.TabIndex = 52
-        Me.TextBox21.Text = "4"
+        Me.C_N_txt.Location = New System.Drawing.Point(109, 84)
+        Me.C_N_txt.Name = "C_N_txt"
+        Me.C_N_txt.Size = New System.Drawing.Size(102, 22)
+        Me.C_N_txt.TabIndex = 52
+        Me.C_N_txt.Text = "4"
         '
-        'TextBox25
+        'C_W_txt
         '
-        Me.TextBox25.Location = New System.Drawing.Point(109, 45)
-        Me.TextBox25.Name = "TextBox25"
-        Me.TextBox25.Size = New System.Drawing.Size(102, 22)
-        Me.TextBox25.TabIndex = 51
-        Me.TextBox25.Text = "1"
+        Me.C_W_txt.Location = New System.Drawing.Point(109, 45)
+        Me.C_W_txt.Name = "C_W_txt"
+        Me.C_W_txt.Size = New System.Drawing.Size(102, 22)
+        Me.C_W_txt.TabIndex = 51
+        Me.C_W_txt.Text = "1"
         '
-        'TextBox30
+        'C_H_txt
         '
-        Me.TextBox30.Location = New System.Drawing.Point(109, 18)
-        Me.TextBox30.Name = "TextBox30"
-        Me.TextBox30.Size = New System.Drawing.Size(102, 22)
-        Me.TextBox30.TabIndex = 50
-        Me.TextBox30.Text = "0.8"
+        Me.C_H_txt.Location = New System.Drawing.Point(109, 18)
+        Me.C_H_txt.Name = "C_H_txt"
+        Me.C_H_txt.Size = New System.Drawing.Size(102, 22)
+        Me.C_H_txt.TabIndex = 50
+        Me.C_H_txt.Text = "0.8"
         '
         'Label28
         '
         Me.Label28.AutoSize = True
         Me.Label28.Location = New System.Drawing.Point(24, 85)
         Me.Label28.Name = "Label28"
-        Me.Label28.Size = New System.Drawing.Size(27, 12)
+        Me.Label28.Size = New System.Drawing.Size(46, 12)
         Me.Label28.TabIndex = 49
-        Me.Label28.Text = "Row"
+        Me.Label28.Text = "Row (N)"
         '
         'Label29
         '
@@ -1780,24 +1834,6 @@ Partial Class HPCD
         Me.Label30.Size = New System.Drawing.Size(56, 12)
         Me.Label30.TabIndex = 47
         Me.Label30.Text = "Height (m)"
-        '
-        'Label46
-        '
-        Me.Label46.AutoSize = True
-        Me.Label46.Location = New System.Drawing.Point(977, 538)
-        Me.Label46.Name = "Label46"
-        Me.Label46.Size = New System.Drawing.Size(147, 12)
-        Me.Label46.TabIndex = 63
-        Me.Label46.Text = "Reciprocating Compressor Fig"
-        '
-        'Label47
-        '
-        Me.Label47.AutoSize = True
-        Me.Label47.Location = New System.Drawing.Point(1017, 736)
-        Me.Label47.Name = "Label47"
-        Me.Label47.Size = New System.Drawing.Size(75, 12)
-        Me.Label47.TabIndex = 64
-        Me.Label47.Text = "Capillary Tube"
         '
         'TabPage3
         '
@@ -1843,49 +1879,13 @@ Partial Class HPCD
         Me.TextBox50.Text = "You can follow the latest veriosn on my github" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "2016/11/23 " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "> Set up Basic GUI" &
     ""
         '
-        'Button2
-        '
-        Me.Button2.Location = New System.Drawing.Point(61, 717)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(133, 31)
-        Me.Button2.TabIndex = 8
-        Me.Button2.Text = "Evaporator"
-        Me.Button2.UseVisualStyleBackColor = True
-        '
-        'Button3
-        '
-        Me.Button3.Location = New System.Drawing.Point(316, 717)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(133, 31)
-        Me.Button3.TabIndex = 9
-        Me.Button3.Text = "Compressor"
-        Me.Button3.UseVisualStyleBackColor = True
-        '
-        'Button4
-        '
-        Me.Button4.Location = New System.Drawing.Point(565, 717)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(133, 31)
-        Me.Button4.TabIndex = 10
-        Me.Button4.Text = "Condenser"
-        Me.Button4.UseVisualStyleBackColor = True
-        '
-        'Button5
-        '
-        Me.Button5.Location = New System.Drawing.Point(812, 717)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(133, 31)
-        Me.Button5.TabIndex = 11
-        Me.Button5.Text = "Expansion Device"
-        Me.Button5.UseVisualStyleBackColor = True
-        '
-        'Form1
+        'HPCD
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1288, 805)
         Me.Controls.Add(Me.TabControl1)
-        Me.Name = "Form1"
+        Me.Name = "HPCD"
         Me.Text = "HPCD"
         Me.TabControl1.ResumeLayout(False)
         Me.TabPage1.ResumeLayout(False)
@@ -2062,25 +2062,25 @@ Partial Class HPCD
     Friend WithEvents Label79 As Label
     Friend WithEvents Label80 As Label
     Friend WithEvents Label81 As Label
-    Friend WithEvents TextBox38 As TextBox
+    Friend WithEvents C_kf_txt As TextBox
     Friend WithEvents Label31 As Label
-    Friend WithEvents TextBox27 As TextBox
+    Friend WithEvents C_di_txt As TextBox
     Friend WithEvents Label21 As Label
-    Friend WithEvents TextBox28 As TextBox
+    Friend WithEvents C_dw_txt As TextBox
     Friend WithEvents Label23 As Label
-    Friend WithEvents TextBox29 As TextBox
+    Friend WithEvents C_dc_txt As TextBox
     Friend WithEvents Label24 As Label
-    Friend WithEvents TextBox26 As TextBox
+    Friend WithEvents C_df_txt As TextBox
     Friend WithEvents Label22 As Label
-    Friend WithEvents TextBox24 As TextBox
+    Friend WithEvents C_Pl_txt As TextBox
     Friend WithEvents Label25 As Label
-    Friend WithEvents TextBox23 As TextBox
+    Friend WithEvents C_Pt_txt As TextBox
     Friend WithEvents Label26 As Label
-    Friend WithEvents TextBox22 As TextBox
+    Friend WithEvents C_Fp_txt As TextBox
     Friend WithEvents Label27 As Label
-    Friend WithEvents TextBox21 As TextBox
-    Friend WithEvents TextBox25 As TextBox
-    Friend WithEvents TextBox30 As TextBox
+    Friend WithEvents C_N_txt As TextBox
+    Friend WithEvents C_W_txt As TextBox
+    Friend WithEvents C_H_txt As TextBox
     Friend WithEvents Label28 As Label
     Friend WithEvents Label29 As Label
     Friend WithEvents Label30 As Label
@@ -2089,9 +2089,9 @@ Partial Class HPCD
     Friend WithEvents TabPage3 As TabPage
     Friend WithEvents TextBox40 As TextBox
     Friend WithEvents TabPage4 As TabPage
-    Friend WithEvents Button5 As Button
-    Friend WithEvents Button4 As Button
-    Friend WithEvents Button3 As Button
-    Friend WithEvents Button2 As Button
+    Friend WithEvents Expa_Launch As Button
+    Friend WithEvents Cond_Launch As Button
+    Friend WithEvents Comp_Launch As Button
+    Friend WithEvents Evap_Launch As Button
     Friend WithEvents TextBox50 As TextBox
 End Class

@@ -1,2 +1,12 @@
 C:\Users\BH\AppData\Local\Temporary Projects\HPCD\bin\Debug\HPCD.exe.config
 C:\Users\BH\Dropbox\VS_MASTER\Porject_Beta\HPCD\HPCD\bin\Debug\HPCD.exe.config
+C:\Users\BH\Dropbox\VS_MASTER\Porject_Beta\HPCD\HPCD\bin\Debug\HPCD.exe
+C:\Users\BH\Dropbox\VS_MASTER\Porject_Beta\HPCD\HPCD\bin\Debug\HPCD.pdb
+C:\Users\BH\Dropbox\VS_MASTER\Porject_Beta\HPCD\HPCD\bin\Debug\HPCD.xml
+C:\Users\BH\Dropbox\VS_MASTER\Porject_Beta\HPCD\HPCD\obj\Debug\HPCD.vbprojResolveAssemblyReference.cache
+C:\Users\BH\Dropbox\VS_MASTER\Porject_Beta\HPCD\HPCD\obj\Debug\HPCD.HPCD.resources
+C:\Users\BH\Dropbox\VS_MASTER\Porject_Beta\HPCD\HPCD\obj\Debug\HPCD.Resources.resources
+C:\Users\BH\Dropbox\VS_MASTER\Porject_Beta\HPCD\HPCD\obj\Debug\HPCD.vbproj.GenerateResource.Cache
+C:\Users\BH\Dropbox\VS_MASTER\Porject_Beta\HPCD\HPCD\obj\Debug\HPCD.exe
+C:\Users\BH\Dropbox\VS_MASTER\Porject_Beta\HPCD\HPCD\obj\Debug\HPCD.xml
+C:\Users\BH\Dropbox\VS_MASTER\Porject_Beta\HPCD\HPCD\obj\Debug\HPCD.pdb

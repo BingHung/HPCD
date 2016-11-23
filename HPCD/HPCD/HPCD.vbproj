@@ -74,6 +74,7 @@
   <ItemGroup>
     <Compile Include="API_REFPROP.VB" />
     <Compile Include="API_wet_reduction.vb" />
+    <Compile Include="CondenserModel.vb" />
     <Compile Include="Fluid.vb" />
     <Compile Include="GlobalVar.vb" />
     <Compile Include="HPCD.vb">
