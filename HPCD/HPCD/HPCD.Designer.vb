@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Form1
+Partial Class HPCD
     Inherits System.Windows.Forms.Form
 
     'Form 覆寫 Dispose 以清除元件清單。
@@ -22,7 +22,7 @@ Partial Class Form1
     '請勿使用程式碼編輯器進行修改。
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(HPCD))
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
         Me.Button1 = New System.Windows.Forms.Button()
@@ -190,6 +190,11 @@ Partial Class Form1
         Me.TabPage3 = New System.Windows.Forms.TabPage()
         Me.TextBox40 = New System.Windows.Forms.TextBox()
         Me.TabPage4 = New System.Windows.Forms.TabPage()
+        Me.TextBox50 = New System.Windows.Forms.TextBox()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.Button3 = New System.Windows.Forms.Button()
+        Me.Button4 = New System.Windows.Forms.Button()
+        Me.Button5 = New System.Windows.Forms.Button()
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
@@ -208,6 +213,7 @@ Partial Class Form1
         Me.GroupBox8.SuspendLayout()
         Me.GroupBox7.SuspendLayout()
         Me.TabPage3.SuspendLayout()
+        Me.TabPage4.SuspendLayout()
         Me.SuspendLayout()
         '
         'TabControl1
@@ -224,6 +230,10 @@ Partial Class Form1
         '
         'TabPage1
         '
+        Me.TabPage1.Controls.Add(Me.Button5)
+        Me.TabPage1.Controls.Add(Me.Button4)
+        Me.TabPage1.Controls.Add(Me.Button3)
+        Me.TabPage1.Controls.Add(Me.Button2)
         Me.TabPage1.Controls.Add(Me.Button1)
         Me.TabPage1.Controls.Add(Me.GroupBox2)
         Me.TabPage1.Controls.Add(Me.GroupBox1)
@@ -238,7 +248,7 @@ Partial Class Form1
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(575, 717)
+        Me.Button1.Location = New System.Drawing.Point(1073, 717)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(133, 31)
         Me.Button1.TabIndex = 7
@@ -1813,6 +1823,7 @@ Partial Class Form1
         '
         'TabPage4
         '
+        Me.TabPage4.Controls.Add(Me.TextBox50)
         Me.TabPage4.Location = New System.Drawing.Point(4, 22)
         Me.TabPage4.Name = "TabPage4"
         Me.TabPage4.Padding = New System.Windows.Forms.Padding(3)
@@ -1820,6 +1831,53 @@ Partial Class Form1
         Me.TabPage4.TabIndex = 3
         Me.TabPage4.Text = "Version Control"
         Me.TabPage4.UseVisualStyleBackColor = True
+        '
+        'TextBox50
+        '
+        Me.TextBox50.Location = New System.Drawing.Point(79, 47)
+        Me.TextBox50.Multiline = True
+        Me.TextBox50.Name = "TextBox50"
+        Me.TextBox50.ReadOnly = True
+        Me.TextBox50.Size = New System.Drawing.Size(1105, 665)
+        Me.TextBox50.TabIndex = 0
+        Me.TextBox50.Text = "You can follow the latest veriosn on my github" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "2016/11/23 " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "> Set up Basic GUI" &
+    ""
+        '
+        'Button2
+        '
+        Me.Button2.Location = New System.Drawing.Point(61, 717)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(133, 31)
+        Me.Button2.TabIndex = 8
+        Me.Button2.Text = "Evaporator"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
+        'Button3
+        '
+        Me.Button3.Location = New System.Drawing.Point(316, 717)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(133, 31)
+        Me.Button3.TabIndex = 9
+        Me.Button3.Text = "Compressor"
+        Me.Button3.UseVisualStyleBackColor = True
+        '
+        'Button4
+        '
+        Me.Button4.Location = New System.Drawing.Point(565, 717)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(133, 31)
+        Me.Button4.TabIndex = 10
+        Me.Button4.Text = "Condenser"
+        Me.Button4.UseVisualStyleBackColor = True
+        '
+        'Button5
+        '
+        Me.Button5.Location = New System.Drawing.Point(812, 717)
+        Me.Button5.Name = "Button5"
+        Me.Button5.Size = New System.Drawing.Size(133, 31)
+        Me.Button5.TabIndex = 11
+        Me.Button5.Text = "Expansion Device"
+        Me.Button5.UseVisualStyleBackColor = True
         '
         'Form1
         '
@@ -1858,6 +1916,8 @@ Partial Class Form1
         Me.GroupBox7.PerformLayout()
         Me.TabPage3.ResumeLayout(False)
         Me.TabPage3.PerformLayout()
+        Me.TabPage4.ResumeLayout(False)
+        Me.TabPage4.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -2029,4 +2089,9 @@ Partial Class Form1
     Friend WithEvents TabPage3 As TabPage
     Friend WithEvents TextBox40 As TextBox
     Friend WithEvents TabPage4 As TabPage
+    Friend WithEvents Button5 As Button
+    Friend WithEvents Button4 As Button
+    Friend WithEvents Button3 As Button
+    Friend WithEvents Button2 As Button
+    Friend WithEvents TextBox50 As TextBox
 End Class
