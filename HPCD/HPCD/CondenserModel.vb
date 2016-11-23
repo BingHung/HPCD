@@ -46,14 +46,14 @@
 
         '// Get the air-side heat tansfer coefficient
         C_Redc = C_rhoa * C_Vfr * C_dc / C_Visca / C_sigma
-        C_j = Louver_Fin()
+        C_j = Plain_Fin()
 
         C_Vc = C_Vfr / C_sigma                                                      '(m/s)
         C_ho = C_j * C_rhoa * C_Vc * C_Cpa / (C_Pra) ^ (2 / 3)                      '(W/m^2.K)
         C_m = (2 * C_ho / C_kf / C_df) ^ (0.5)                                      '(m^-1)
 
         '// Staggered and  Inline Tube Arrangement Issue
-        C_XL = ((C_Pt / 2) ^ 2 + C_Pl ^ 2) ^ 0.5 / 2 'staggerd 'C_Pl / 2 Inline     '(m)
+        C_XL = C_Pl / 2 '((C_Pt / 2) ^ 2 + C_Pl ^ 2) ^ 0.5 / 2 'staggerd 'C_Pl / 2 Inline     '(m)
         C_XM = C_Pt / 2                                                             '(m)
         C_r = C_dc / 2                                                              '(m)
         C_reqr = 1.28 * C_XM * ((C_XL / C_XM) - 0.2) ^ (0.5) / C_r                  '(X)
@@ -77,6 +77,15 @@
         Return C_j
 
     End Function
+
+    Function Plain_Fin() As Double
+        C_P1 = 1.9 - 0.23 * Math.Log(C_Redc)
+        C_P2 = -0.236 + 0.126 * Math.Log(C_Redc)
+        C_j = 0.108 * C_Redc ^ (-0.29) * (C_Pt / C_Pl) ^ (C_P1) * (C_Fp / C_dc) ^ (-1.084) * (C_Fp / C_Dh) ^ (-0.786) * (C_Fp / C_Pt) ^ (C_P2)
+        Return C_j
+
+    End Function
+
 
     Dim Cond_State_Flag As String = "" '// define cond outlet state
 

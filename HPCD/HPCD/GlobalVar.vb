@@ -64,7 +64,6 @@
 
     '    All of the units above is (m)
 
-    Public pi As Double
     Public C_NT, C_NF As Double
     Public C_Afr, C_sigma, C_Ac, C_ratio As Double
     Public C_Ao, C_Af, C_At, C_Dh, C_Ai As Double
