@@ -113,6 +113,45 @@
         C_Viscrin = C_sup.Visc                  '(N.s/m^2)
         C_Prin = C_sup.Pr                       '(X)
 
+        '# Calculation concept  =================================================================================
+
+        'Super heated region -> Asup / Tsup.out
+        'Saturated region -> Asat / Xsat.out
+        'Subcooled region -> Tsub.out
+
+        '# Super Heated Calculation -> Asup / Tsup ===============================================================
+
+        ' [1] get hiA1 -> Get hi Property
+        C_A1_CprG = (C_Cprin + C_CpsG) / 2
+        C_QA1 = C_mr * C_A1_CprG * (C_Trin - C_Ts)
+        C_A1_Cr = C_mr * C_A1_CprG
+        C_ma = C_rhoa * C_Vfr * C_Afr
+        C_CA = C_ma * C_Cpa
+
+        C_A1_ViscG = (C_Viscrin + C_ViscsG) / 2
+        C_A1_kG = (C_krin + C_ksG) / 2
+        C_A1_PrG = (C_Prin + C_PrsG) / 2
+        C_A1_G = C_mr / (pi * C_di * C_di / 4)
+        C_A1_ReG = C_A1_G * C_di / C_A1_ViscG
+        C_A1_f = (1.58 * Math.Log(C_A1_ReG) - 3.28) ^ (-2)
+        C_A1_Nu = ((C_A1_f / 2) * (C_A1_ReG - 1000) * C_A1_PrG) / (1.07 + 12.7 * (C_A1_f / 2) ^ 0.5 * (C_A1_PrG ^ (2 / 3) - 1))
+        C_A1_hi = C_A1_Nu * C_A1_kG / C_di
+
+        '[2] get A1* , A1 area
+        Dim LMTD_A1, TAir_A1_out, dT1_A1, dT2_A1, UA_A1, F, A1 As Double
+        F = 0.9
+        TAir_A1_out = C_QA1 / (C_ma * C_Cpa) + C_Tain
+        dT1_A1 = C_Trin - TAir_A1_out
+        dT2_A1 = C_Ts - C_Tain
+        LMTD_A1 = (dT1_A1 - dT2_A1) / Math.Log(dT1_A1 / dT2_A1)
+        UA_A1 = C_QA1 / LMTD_A1 / F
+        A1 = (1 / C_noho + C_ratio / C_A1_hi) * UA_A1 '// ......... Sup heated region End
+
+        '# Saturation Calculation -> Asat / Xsat ===============================================================
+
+        ' [1] get hcm
+        C_A2_hL = (C_ksL / C_di) * 0.023 * (C_A1_G * C_di / C_ViscsL) ^ 0.8 * C_PrsL ^ 0.4
+        C_A2_hcm = C_A2_hL * (0.55 + 2.09 / (C_Pr ^ 0.38))
 
     End Sub
 
