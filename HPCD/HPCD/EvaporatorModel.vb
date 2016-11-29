@@ -114,6 +114,61 @@
         Wai = W                          '[kg-water-vapor/kg-dry-air]
 
 
+        Dim outFluid As String
+
+        outFluid = "air"
+        ' outFluid = "nitrogen;7812;argon;0092;oxygen;2096"
+
+        Dim vapor As New Fluid("water", "SI", "TP")
+
+        Dim Rea, Gc As Double
+        Gc = mair / Ac                      ' [kg/m²s] Mass Flux maximum (i.e, at minimum free flow area, Ac)
+        Rea = Gc * d_c / Air.Visc           ' [] Reynolds number of air
+        Dim ja, fa, eFiningF, hco As Double
+        eFiningF = Ao / Apo
+        ' ja = 0.4 * Rea ^ (-0.468 + 0.04076 * Nrows) * (eFiningF ^ 0.159) * Nrows ^ -1.261   '[dimensionless] Colburn j factor for air, wet - Plain fins
+        ' hco = (ja * Gc * air.cp) * air.Pr ^ (-2 / 3) 'wet heat transfer coefficient
+        fa = 28.209 * (Rea ^ -0.5653) * Nrows ^ -0.1026 * ((Fp / d_c) ^ -1.3405) * eFiningF ^ -1.3343
+        'Dim j1 As Double '<............................................................................Debug
+        'j1 = 0.3745 - 1.554 * (Fp / d_c) ^ 0.24 * (Pl / Pt) ^ 0.12 * Nrows ^ -0.19
+        'ja = 19.36 * Rea ^ j1 * (Fp / d_c) ^ 1.352 * (Pl / Pt) ^ 0.6795 * Nrows ^ -1.291 ' for plain fin
+        Dim jl1, jl2, jl3 As Double
+        Dim Lp As Double
+        'Dim angle As Double
+        Lp = 0.0025
+        jl1 = -0.023634 - 1.2475 * (Fp / d_c) ^ 0.65 * (Pl / Pt) ^ 0.2 * Nrows ^ -0.18
+        jl2 = 0.856 * Math.Exp(0.36397)
+        jl3 = 0.25 * Math.Log(Rea)
+        ja = 9.717 * Rea ^ jl1 * (Fp / d_c) ^ jl2 * (Pl / Pt) ^ jl3 * Math.Log(3 - Lp / Fp) ^ 0.07162 * Nrows ^ -0.543 ' for louver fin P224
+
+        hco = (ja * Gc * Air.cp) * Air.Pr ^ (-2 / 3) 'wet heat transfer coefficient<............................................................................Debug
+
+
+    End Sub
+
+    Public Sub Evap_Iteration()
+
+        HPCD.Qevap_sat_txt.Text = ""
+        HPCD.Qevap_sup_txt.Text = ""
+        HPCD.Qevap_tot_txt.Text = ""
+
+        Tri = CDbl(HPCD.Tevap_sat_txt.Text)     '[K] Saturation temperature of refrigerant
+        xri = CDbl(HPCD.Xevap_rin_txt.Text)     'Quality of refrigerant
+        mref = CDbl(HPCD.Comp_MFR_txt.Text)     '[kg/s]
+
+        Dim mix As New Fluid(Influid, "SI", "TP")
+        Prsat = mix.Psat(Tri)   'Regrigerant Psat corresponding to Tsat
+        mix.SatProp(Tri)
+
+        '=> Calculation procedure ////////////////////////////////////////////////////////////////////
+        ' Need to handle !!!
+        ' Saturation :  Asat.evap (goto Sup) / Xsat.Evap
+        ' Super heated region  : Tsup.evap
+
+
+
+
+
     End Sub
 
 End Module
