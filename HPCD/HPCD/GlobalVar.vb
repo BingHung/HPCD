@@ -13,6 +13,24 @@
     '==========================================================================================
     '[ Evaporator Parameters ] 
 
+    '// Eavp _Geometry
+    Public E_W, E_H, d_i, d_o, d_c, Fp, Pt, Pl, thickFIN, thickTUBE, Nrows, Ntube, Ncr, kp, kf As Double
+    Public Tdry, Twet, Tdew, Wai, mair As Double
+    Public Pai, Prsat, Tri, xri, xre, mref As Double
+    Public Tdry_out, Wair_out As Double
+    Public Nfins As Integer
+
+    Public Afr, Ac, contractionR, Apo, Api, Apm, Afin, Ao, hi, Af As Double
+    Public A4, A5, T5, Ta5 As Double
+
+    '// Evap_Moist Air Calculation (RH,DBT) -> ()
+    Public Patm, Ra As Double
+    Public RH, DBT, Ps, Pv As Double
+    Public Dew, W, rhoai, iai As Double
+    Public a As Double
+    Public Cpa, Visca, Pra As Double
+    Public W2, Pg2, hfg2, hf2, WBT As Double
+    Public W1, Ps1, Pg1, hg1 As Double
 
     '==========================================================================================
 
