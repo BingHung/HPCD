@@ -247,8 +247,8 @@ Partial Class Form1
         Me.Cycle = New System.Windows.Forms.TabControl()
         Me.FAQ = New System.Windows.Forms.TabPage()
         Me.TextBox30 = New System.Windows.Forms.TextBox()
-        Me.TextBox25 = New System.Windows.Forms.TextBox()
         Me.Label116 = New System.Windows.Forms.Label()
+        Me.GroupBox9 = New System.Windows.Forms.GroupBox()
         Me.TabPage3.SuspendLayout()
         Me.GroupBox7.SuspendLayout()
         Me.GroupBox6.SuspendLayout()
@@ -1871,6 +1871,7 @@ Partial Class Form1
         '
         'System
         '
+        Me.System.Controls.Add(Me.GroupBox9)
         Me.System.Controls.Add(Me.PictureBox1)
         Me.System.Controls.Add(Me.GroupBox15)
         Me.System.Controls.Add(Me.Button1)
@@ -1886,16 +1887,17 @@ Partial Class Form1
         Me.System.Location = New System.Drawing.Point(4, 22)
         Me.System.Name = "System"
         Me.System.Padding = New System.Windows.Forms.Padding(3)
-        Me.System.Size = New System.Drawing.Size(1303, 747)
+        Me.System.Size = New System.Drawing.Size(1284, 738)
         Me.System.TabIndex = 0
-        Me.System.Text = "System"
+        Me.System.Text = "SystemOverview"
         '
         'PictureBox1
         '
+        Me.PictureBox1.BackgroundImage = Global.Cond_Rating.My.Resources.Resources.Compressor1
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(15, 19)
+        Me.PictureBox1.Location = New System.Drawing.Point(122, 19)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(590, 302)
+        Me.PictureBox1.Size = New System.Drawing.Size(626, 311)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox1.TabIndex = 80
         Me.PictureBox1.TabStop = False
@@ -1907,7 +1909,7 @@ Partial Class Form1
         Me.GroupBox15.Controls.Add(Me.TextBox18)
         Me.GroupBox15.Controls.Add(Me.InFluid)
         Me.GroupBox15.Controls.Add(Me.Label2)
-        Me.GroupBox15.Location = New System.Drawing.Point(622, 19)
+        Me.GroupBox15.Location = New System.Drawing.Point(890, 29)
         Me.GroupBox15.Name = "GroupBox15"
         Me.GroupBox15.Size = New System.Drawing.Size(382, 150)
         Me.GroupBox15.TabIndex = 79
@@ -1959,7 +1961,7 @@ Partial Class Form1
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(622, 175)
+        Me.Button1.Location = New System.Drawing.Point(890, 185)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(382, 50)
         Me.Button1.TabIndex = 66
@@ -2415,7 +2417,7 @@ Partial Class Form1
         '
         'Start
         '
-        Me.Start.Location = New System.Drawing.Point(622, 231)
+        Me.Start.Location = New System.Drawing.Point(890, 241)
         Me.Start.Name = "Start"
         Me.Start.Size = New System.Drawing.Size(382, 50)
         Me.Start.TabIndex = 0
@@ -2433,13 +2435,12 @@ Partial Class Form1
         Me.Cycle.Location = New System.Drawing.Point(12, 3)
         Me.Cycle.Name = "Cycle"
         Me.Cycle.SelectedIndex = 0
-        Me.Cycle.Size = New System.Drawing.Size(1311, 773)
+        Me.Cycle.Size = New System.Drawing.Size(1292, 764)
         Me.Cycle.TabIndex = 16
         '
         'FAQ
         '
         Me.FAQ.Controls.Add(Me.TextBox30)
-        Me.FAQ.Controls.Add(Me.TextBox25)
         Me.FAQ.Controls.Add(Me.Label116)
         Me.FAQ.Location = New System.Drawing.Point(4, 22)
         Me.FAQ.Name = "FAQ"
@@ -2451,25 +2452,14 @@ Partial Class Form1
         '
         'TextBox30
         '
-        Me.TextBox30.Location = New System.Drawing.Point(467, 15)
+        Me.TextBox30.Location = New System.Drawing.Point(363, 49)
         Me.TextBox30.Margin = New System.Windows.Forms.Padding(5)
         Me.TextBox30.Multiline = True
         Me.TextBox30.Name = "TextBox30"
         Me.TextBox30.ReadOnly = True
-        Me.TextBox30.Size = New System.Drawing.Size(539, 598)
+        Me.TextBox30.Size = New System.Drawing.Size(539, 629)
         Me.TextBox30.TabIndex = 3
         Me.TextBox30.Text = resources.GetString("TextBox30.Text")
-        '
-        'TextBox25
-        '
-        Me.TextBox25.Location = New System.Drawing.Point(218, 15)
-        Me.TextBox25.Margin = New System.Windows.Forms.Padding(5)
-        Me.TextBox25.Multiline = True
-        Me.TextBox25.Name = "TextBox25"
-        Me.TextBox25.ReadOnly = True
-        Me.TextBox25.Size = New System.Drawing.Size(239, 595)
-        Me.TextBox25.TabIndex = 2
-        Me.TextBox25.Text = resources.GetString("TextBox25.Text")
         '
         'Label116
         '
@@ -2479,12 +2469,21 @@ Partial Class Form1
         Me.Label116.Size = New System.Drawing.Size(0, 12)
         Me.Label116.TabIndex = 0
         '
+        'GroupBox9
+        '
+        Me.GroupBox9.Location = New System.Drawing.Point(1010, 358)
+        Me.GroupBox9.Name = "GroupBox9"
+        Me.GroupBox9.Size = New System.Drawing.Size(246, 325)
+        Me.GroupBox9.TabIndex = 10
+        Me.GroupBox9.TabStop = False
+        Me.GroupBox9.Text = "Dryer"
+        '
         'Form1
         '
-        Me.ClientSize = New System.Drawing.Size(1327, 779)
+        Me.ClientSize = New System.Drawing.Size(1313, 778)
         Me.Controls.Add(Me.Cycle)
         Me.Name = "Form1"
-        Me.Text = "Delta_10kW"
+        Me.Text = "HPCD"
         Me.TabPage3.ResumeLayout(False)
         Me.GroupBox7.ResumeLayout(False)
         Me.GroupBox7.PerformLayout()
@@ -2748,9 +2747,9 @@ Partial Class Form1
     Friend WithEvents Label108 As Label
     Friend WithEvents Label109 As Label
     Friend WithEvents Label116 As Label
-    Friend WithEvents TextBox25 As TextBox
     Friend WithEvents TextBox30 As TextBox
     Friend WithEvents GroupBox16 As GroupBox
     Friend WithEvents TextBox35 As TextBox
     Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents GroupBox9 As GroupBox
 End Class

@@ -1558,7 +1558,7 @@
   <data name="PictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAA2cAAAHGCAYAAADwlPMHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsEAAA7BAbiRa+0AAP+lSURBVHhe7P0HmC1VlTf+O+O8M+OMOuoYMWAEBQMiJgQT
+        YQUAAAAJcEhZcwAADsAAAA7AAWrWiQkAAP+lSURBVHhe7P0HmC1VlTf+O+O8M+OMOuoYMWAEBQMiJgQT
         ggoiYiKqIEHJAiIoIqiABMlZEESCDig5CYIoIAgoEiUoKhJ8B8SE6U31/332zLr/8nj63r63+/bt0/39
         Ps9+6pyKu3ZVrbW+a62998O6IAiCIAiCIAhGGv/v//2/OSUYXYScBUEQBEEQBMGIAyn7P//n/3T/9//+
         3/9eE4wiQs6CIAiCIAiCYMSBnCFmiZyNNkLOgiAIgiAIgiAIpgFCzoIgCIIgCIJgBFF9zKoEo4+QsyAI
@@ -2745,9 +2745,6 @@
         AAAASUVORK5CYII=
 </value>
   </data>
-  <metadata name="TextBox30.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <data name="TextBox30.Text" xml:space="preserve">
     <value>Condensor Reference
 
@@ -2799,43 +2796,6 @@ Evaporator Reference
 
 8.Dittus Boelter =&gt; Single Phase heat transfer coefficient
 </value>
-  </data>
-  <metadata name="TextBox25.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="TextBox25.Text" xml:space="preserve">
-    <value>2016/07/23
-
-1.  加註，中文說明 
-
-2.  整體系統版面更新 
-
-3. 新增 FAQ 做版別更新管理
-
-4. 更換  R134a 冷媒
-
-5. 毛細管，直彎管效應考量
-
---------------------------------------------------------
-2016/07/24
-
-1. 蒸發器，兩相區疊算可能，修正
-
---------------------------------------------------------
-2016/07/25
-
-1. 存檔，讀檔，另存功能新增
---------------------------------------------------------
-2016/07/26
-
-1. 程式測試，Examples 取樣
-
---------------------------------------------------------
-2016/08/02
-
-1. 開放調整權限
-
-2.如需進一步設定，台達可以參照SourceCode，再自行修改</value>
   </data>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>81</value>
