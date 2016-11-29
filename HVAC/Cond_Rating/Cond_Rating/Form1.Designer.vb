@@ -255,15 +255,6 @@ Partial Class Form1
         Me.TextBox30 = New System.Windows.Forms.TextBox()
         Me.TextBox25 = New System.Windows.Forms.TextBox()
         Me.Label116 = New System.Windows.Forms.Label()
-        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
-        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.mnuOpenFile = New System.Windows.Forms.ToolStripMenuItem()
-        Me.mnuSave = New System.Windows.Forms.ToolStripMenuItem()
-        Me.mnuSaveAs = New System.Windows.Forms.ToolStripMenuItem()
-        Me.mnuEnd = New System.Windows.Forms.ToolStripMenuItem()
-        Me.mnuDefault = New System.Windows.Forms.ToolStripMenuItem()
-        Me.dlgOpen = New System.Windows.Forms.OpenFileDialog()
-        Me.dlgSave = New System.Windows.Forms.SaveFileDialog()
         Me.TabPage3.SuspendLayout()
         Me.GroupBox7.SuspendLayout()
         Me.GroupBox6.SuspendLayout()
@@ -298,7 +289,6 @@ Partial Class Form1
         Me.GroupBox1.SuspendLayout()
         Me.Cycle.SuspendLayout()
         Me.FAQ.SuspendLayout()
-        Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'TabPage3
@@ -1916,7 +1906,7 @@ Partial Class Form1
         Me.System.Location = New System.Drawing.Point(4, 22)
         Me.System.Name = "System"
         Me.System.Padding = New System.Windows.Forms.Padding(3)
-        Me.System.Size = New System.Drawing.Size(1161, 621)
+        Me.System.Size = New System.Drawing.Size(1205, 703)
         Me.System.TabIndex = 0
         Me.System.Text = "System"
         '
@@ -2531,10 +2521,10 @@ Partial Class Form1
         Me.Cycle.Controls.Add(Me.TabPage2)
         Me.Cycle.Controls.Add(Me.TabPage3)
         Me.Cycle.Controls.Add(Me.FAQ)
-        Me.Cycle.Location = New System.Drawing.Point(12, 39)
+        Me.Cycle.Location = New System.Drawing.Point(12, 3)
         Me.Cycle.Name = "Cycle"
         Me.Cycle.SelectedIndex = 0
-        Me.Cycle.Size = New System.Drawing.Size(1169, 647)
+        Me.Cycle.Size = New System.Drawing.Size(1213, 729)
         Me.Cycle.TabIndex = 16
         '
         'FAQ
@@ -2580,62 +2570,10 @@ Partial Class Form1
         Me.Label116.Size = New System.Drawing.Size(0, 12)
         Me.Label116.TabIndex = 0
         '
-        'MenuStrip1
-        '
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem, Me.mnuDefault})
-        Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
-        Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(1196, 24)
-        Me.MenuStrip1.TabIndex = 17
-        Me.MenuStrip1.Text = "MenuStrip1"
-        '
-        'FileToolStripMenuItem
-        '
-        Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnuOpenFile, Me.mnuSave, Me.mnuSaveAs, Me.mnuEnd})
-        Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
-        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(39, 20)
-        Me.FileToolStripMenuItem.Text = "File"
-        '
-        'mnuOpenFile
-        '
-        Me.mnuOpenFile.Name = "mnuOpenFile"
-        Me.mnuOpenFile.Size = New System.Drawing.Size(116, 22)
-        Me.mnuOpenFile.Text = "Open"
-        '
-        'mnuSave
-        '
-        Me.mnuSave.Name = "mnuSave"
-        Me.mnuSave.Size = New System.Drawing.Size(116, 22)
-        Me.mnuSave.Text = "Save"
-        '
-        'mnuSaveAs
-        '
-        Me.mnuSaveAs.Name = "mnuSaveAs"
-        Me.mnuSaveAs.Size = New System.Drawing.Size(116, 22)
-        Me.mnuSaveAs.Text = "SaveAs"
-        '
-        'mnuEnd
-        '
-        Me.mnuEnd.Name = "mnuEnd"
-        Me.mnuEnd.Size = New System.Drawing.Size(116, 22)
-        Me.mnuEnd.Text = "Exit"
-        '
-        'mnuDefault
-        '
-        Me.mnuDefault.Name = "mnuDefault"
-        Me.mnuDefault.Size = New System.Drawing.Size(61, 20)
-        Me.mnuDefault.Text = "Default"
-        '
-        'dlgOpen
-        '
-        Me.dlgOpen.FileName = "OpenFileDialog1"
-        '
         'Form1
         '
-        Me.ClientSize = New System.Drawing.Size(1196, 698)
+        Me.ClientSize = New System.Drawing.Size(1228, 735)
         Me.Controls.Add(Me.Cycle)
-        Me.Controls.Add(Me.MenuStrip1)
-        Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "Form1"
         Me.Text = "Delta_10kW"
         Me.TabPage3.ResumeLayout(False)
@@ -2691,10 +2629,7 @@ Partial Class Form1
         Me.Cycle.ResumeLayout(False)
         Me.FAQ.ResumeLayout(False)
         Me.FAQ.PerformLayout()
-        Me.MenuStrip1.ResumeLayout(False)
-        Me.MenuStrip1.PerformLayout()
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
     Friend WithEvents TabPage3 As TabPage
@@ -2928,14 +2863,5 @@ Partial Class Form1
     Friend WithEvents GroupBox16 As GroupBox
     Friend WithEvents Button3 As Button
     Friend WithEvents Button2 As Button
-    Friend WithEvents MenuStrip1 As MenuStrip
-    Friend WithEvents FileToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents mnuDefault As ToolStripMenuItem
-    Friend WithEvents mnuOpenFile As ToolStripMenuItem
-    Friend WithEvents mnuSave As ToolStripMenuItem
-    Friend WithEvents mnuSaveAs As ToolStripMenuItem
-    Friend WithEvents mnuEnd As ToolStripMenuItem
-    Friend WithEvents dlgOpen As OpenFileDialog
-    Friend WithEvents dlgSave As SaveFileDialog
     Friend WithEvents TextBox35 As TextBox
 End Class
