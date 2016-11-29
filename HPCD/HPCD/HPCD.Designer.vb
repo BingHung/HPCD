@@ -1389,7 +1389,7 @@ Partial Class HPCD
         Me.GroupBox1.Controls.Add(Me.GroupBox5)
         Me.GroupBox1.Controls.Add(Me.GroupBox4)
         Me.GroupBox1.Controls.Add(Me.GroupBox3)
-        Me.GroupBox1.Location = New System.Drawing.Point(1, 326)
+        Me.GroupBox1.Location = New System.Drawing.Point(232, 326)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(1017, 385)
         Me.GroupBox1.TabIndex = 5
@@ -1790,9 +1790,9 @@ Partial Class HPCD
         '
         Me.GroupBox2.Controls.Add(Me.Label5)
         Me.GroupBox2.Controls.Add(Me.TextBox5)
-        Me.GroupBox2.Location = New System.Drawing.Point(1024, 326)
+        Me.GroupBox2.Location = New System.Drawing.Point(7, 326)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(226, 385)
+        Me.GroupBox2.Size = New System.Drawing.Size(219, 385)
         Me.GroupBox2.TabIndex = 6
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Dryer"
@@ -1815,7 +1815,7 @@ Partial Class HPCD
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(1073, 717)
+        Me.Button1.Location = New System.Drawing.Point(56, 717)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(133, 31)
         Me.Button1.TabIndex = 7
@@ -1824,7 +1824,7 @@ Partial Class HPCD
         '
         'Evap_Launch
         '
-        Me.Evap_Launch.Location = New System.Drawing.Point(61, 717)
+        Me.Evap_Launch.Location = New System.Drawing.Point(292, 717)
         Me.Evap_Launch.Name = "Evap_Launch"
         Me.Evap_Launch.Size = New System.Drawing.Size(133, 31)
         Me.Evap_Launch.TabIndex = 8
@@ -1833,7 +1833,7 @@ Partial Class HPCD
         '
         'Comp_Launch
         '
-        Me.Comp_Launch.Location = New System.Drawing.Point(316, 717)
+        Me.Comp_Launch.Location = New System.Drawing.Point(547, 717)
         Me.Comp_Launch.Name = "Comp_Launch"
         Me.Comp_Launch.Size = New System.Drawing.Size(133, 31)
         Me.Comp_Launch.TabIndex = 9
@@ -1842,7 +1842,7 @@ Partial Class HPCD
         '
         'Cond_Launch
         '
-        Me.Cond_Launch.Location = New System.Drawing.Point(565, 717)
+        Me.Cond_Launch.Location = New System.Drawing.Point(796, 717)
         Me.Cond_Launch.Name = "Cond_Launch"
         Me.Cond_Launch.Size = New System.Drawing.Size(133, 31)
         Me.Cond_Launch.TabIndex = 10
@@ -1851,7 +1851,7 @@ Partial Class HPCD
         '
         'Expa_Launch
         '
-        Me.Expa_Launch.Location = New System.Drawing.Point(812, 717)
+        Me.Expa_Launch.Location = New System.Drawing.Point(1043, 717)
         Me.Expa_Launch.Name = "Expa_Launch"
         Me.Expa_Launch.Size = New System.Drawing.Size(133, 31)
         Me.Expa_Launch.TabIndex = 11
