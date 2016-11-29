@@ -104,6 +104,15 @@
         End While
 
 
+        '-Air'
+        Tdry = DBT
+        Twet = WBT
+        Pai = Patm / 1000
+        RH = RH
+        mair = CDbl(HPCD.E_mair_txt.Text) '[kg/s]
+        Tdew = Dew                      '[K] Dew point temperature
+        Wai = W                          '[kg-water-vapor/kg-dry-air]
+
 
     End Sub
 

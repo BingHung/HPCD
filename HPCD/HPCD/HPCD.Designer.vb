@@ -201,6 +201,8 @@ Partial Class HPCD
         Me.RH_txt = New System.Windows.Forms.TextBox()
         Me.Label59 = New System.Windows.Forms.Label()
         Me.Tevap_ain_txt = New System.Windows.Forms.TextBox()
+        Me.Label14 = New System.Windows.Forms.Label()
+        Me.E_mair_txt = New System.Windows.Forms.TextBox()
         Me.TabPage3.SuspendLayout()
         Me.TabPage2.SuspendLayout()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -1770,6 +1772,8 @@ Partial Class HPCD
         '
         'GroupBox3
         '
+        Me.GroupBox3.Controls.Add(Me.Label14)
+        Me.GroupBox3.Controls.Add(Me.E_mair_txt)
         Me.GroupBox3.Controls.Add(Me.Label52)
         Me.GroupBox3.Controls.Add(Me.RH_txt)
         Me.GroupBox3.Controls.Add(Me.Label59)
@@ -1920,7 +1924,7 @@ Partial Class HPCD
         'Label52
         '
         Me.Label52.AutoSize = True
-        Me.Label52.Location = New System.Drawing.Point(20, 173)
+        Me.Label52.Location = New System.Drawing.Point(20, 163)
         Me.Label52.Name = "Label52"
         Me.Label52.Size = New System.Drawing.Size(21, 12)
         Me.Label52.TabIndex = 31
@@ -1928,7 +1932,7 @@ Partial Class HPCD
         '
         'RH_txt
         '
-        Me.RH_txt.Location = New System.Drawing.Point(75, 170)
+        Me.RH_txt.Location = New System.Drawing.Point(75, 160)
         Me.RH_txt.Name = "RH_txt"
         Me.RH_txt.Size = New System.Drawing.Size(114, 22)
         Me.RH_txt.TabIndex = 30
@@ -1937,7 +1941,7 @@ Partial Class HPCD
         'Label59
         '
         Me.Label59.AutoSize = True
-        Me.Label59.Location = New System.Drawing.Point(20, 145)
+        Me.Label59.Location = New System.Drawing.Point(20, 135)
         Me.Label59.Name = "Label59"
         Me.Label59.Size = New System.Drawing.Size(54, 12)
         Me.Label59.TabIndex = 29
@@ -1945,11 +1949,28 @@ Partial Class HPCD
         '
         'Tevap_ain_txt
         '
-        Me.Tevap_ain_txt.Location = New System.Drawing.Point(75, 142)
+        Me.Tevap_ain_txt.Location = New System.Drawing.Point(75, 132)
         Me.Tevap_ain_txt.Name = "Tevap_ain_txt"
         Me.Tevap_ain_txt.Size = New System.Drawing.Size(114, 22)
         Me.Tevap_ain_txt.TabIndex = 28
         Me.Tevap_ain_txt.Text = "300.15"
+        '
+        'Label14
+        '
+        Me.Label14.AutoSize = True
+        Me.Label14.Location = New System.Drawing.Point(20, 191)
+        Me.Label14.Name = "Label14"
+        Me.Label14.Size = New System.Drawing.Size(39, 12)
+        Me.Label14.TabIndex = 33
+        Me.Label14.Text = "E_mair"
+        '
+        'E_mair_txt
+        '
+        Me.E_mair_txt.Location = New System.Drawing.Point(75, 188)
+        Me.E_mair_txt.Name = "E_mair_txt"
+        Me.E_mair_txt.Size = New System.Drawing.Size(114, 22)
+        Me.E_mair_txt.TabIndex = 32
+        Me.E_mair_txt.Text = "0.1666"
         '
         'HPCD
         '
@@ -2170,4 +2191,6 @@ Partial Class HPCD
     Friend WithEvents RH_txt As TextBox
     Friend WithEvents Label59 As Label
     Friend WithEvents Tevap_ain_txt As TextBox
+    Friend WithEvents Label14 As Label
+    Friend WithEvents E_mair_txt As TextBox
 End Class
