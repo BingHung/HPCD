@@ -56,6 +56,8 @@
     Public Tdry_out, Wair_out As Double
     Public Nfins As Integer
 
+
+
     Public Afr, Ac, contractionR, Apo, Api, Apm, Afin, Ao, hi, Af As Double
     Public A4, A5, T5, Ta5 As Double
 

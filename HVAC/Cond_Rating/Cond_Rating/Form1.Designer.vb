@@ -1,4 +1,6 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
+﻿Imports System.Windows
+
+<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Form1
     Inherits System.Windows.Forms.Form
 
@@ -186,69 +188,61 @@ Partial Class Form1
         Me.TextBox31 = New System.Windows.Forms.TextBox()
         Me.Label18 = New System.Windows.Forms.Label()
         Me.System = New System.Windows.Forms.TabPage()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.GroupBox15 = New System.Windows.Forms.GroupBox()
         Me.TextBox35 = New System.Windows.Forms.TextBox()
         Me.Label75 = New System.Windows.Forms.Label()
         Me.TextBox18 = New System.Windows.Forms.TextBox()
         Me.InFluid = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.GroupBox14 = New System.Windows.Forms.GroupBox()
-        Me.TextBox11 = New System.Windows.Forms.TextBox()
-        Me.Label46 = New System.Windows.Forms.Label()
-        Me.MFR = New System.Windows.Forms.TextBox()
-        Me.Label52 = New System.Windows.Forms.Label()
-        Me.QCtxt = New System.Windows.Forms.TextBox()
-        Me.GroupBox13 = New System.Windows.Forms.GroupBox()
-        Me.Label49 = New System.Windows.Forms.Label()
-        Me.Label22 = New System.Windows.Forms.Label()
-        Me.Label17 = New System.Windows.Forms.Label()
-        Me.QA5txt = New System.Windows.Forms.TextBox()
-        Me.QEtxt = New System.Windows.Forms.TextBox()
-        Me.QA4txt = New System.Windows.Forms.TextBox()
-        Me.GroupBox12 = New System.Windows.Forms.GroupBox()
-        Me.Label74 = New System.Windows.Forms.Label()
-        Me.Label71 = New System.Windows.Forms.Label()
-        Me.Label72 = New System.Windows.Forms.Label()
-        Me.Label73 = New System.Windows.Forms.Label()
-        Me.QA3txt = New System.Windows.Forms.TextBox()
-        Me.QA2txt = New System.Windows.Forms.TextBox()
-        Me.QA1txt = New System.Windows.Forms.TextBox()
-        Me.TextBox16 = New System.Windows.Forms.TextBox()
-        Me.GroupBox11 = New System.Windows.Forms.GroupBox()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Expabtn = New System.Windows.Forms.Button()
         Me.Evapbtn = New System.Windows.Forms.Button()
         Me.Condbtn = New System.Windows.Forms.Button()
         Me.Compbtn = New System.Windows.Forms.Button()
-        Me.GroupBox10 = New System.Windows.Forms.GroupBox()
-        Me.EPsat = New System.Windows.Forms.TextBox()
-        Me.ETsat = New System.Windows.Forms.TextBox()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label12 = New System.Windows.Forms.Label()
-        Me.GroupBox9 = New System.Windows.Forms.GroupBox()
+        Me.GroupBox4 = New System.Windows.Forms.GroupBox()
         Me.CTsat = New System.Windows.Forms.TextBox()
         Me.Label10 = New System.Windows.Forms.Label()
+        Me.Label74 = New System.Windows.Forms.Label()
+        Me.QCtxt = New System.Windows.Forms.TextBox()
         Me.CPsat = New System.Windows.Forms.TextBox()
+        Me.Label71 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
-        Me.GroupBox4 = New System.Windows.Forms.GroupBox()
         Me.T1_2 = New System.Windows.Forms.TextBox()
+        Me.Label72 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
+        Me.Label73 = New System.Windows.Forms.Label()
+        Me.TextBox16 = New System.Windows.Forms.TextBox()
+        Me.QA3txt = New System.Windows.Forms.TextBox()
+        Me.QA1txt = New System.Windows.Forms.TextBox()
+        Me.QA2txt = New System.Windows.Forms.TextBox()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
         Me.TextBox17 = New System.Windows.Forms.TextBox()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.T2_3 = New System.Windows.Forms.TextBox()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.EPsat = New System.Windows.Forms.TextBox()
+        Me.Label49 = New System.Windows.Forms.Label()
+        Me.ETsat = New System.Windows.Forms.TextBox()
+        Me.Label3 = New System.Windows.Forms.Label()
         Me.TextBox10 = New System.Windows.Forms.TextBox()
+        Me.Label12 = New System.Windows.Forms.Label()
+        Me.Label22 = New System.Windows.Forms.Label()
         Me.T3_4 = New System.Windows.Forms.TextBox()
+        Me.Label17 = New System.Windows.Forms.Label()
         Me.Label63 = New System.Windows.Forms.Label()
+        Me.QA5txt = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
+        Me.QEtxt = New System.Windows.Forms.TextBox()
+        Me.QA4txt = New System.Windows.Forms.TextBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.TextBox11 = New System.Windows.Forms.TextBox()
+        Me.Label46 = New System.Windows.Forms.Label()
         Me.T4_1 = New System.Windows.Forms.TextBox()
+        Me.MFR = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label52 = New System.Windows.Forms.Label()
         Me.Start = New System.Windows.Forms.Button()
         Me.Cycle = New System.Windows.Forms.TabControl()
         Me.FAQ = New System.Windows.Forms.TabPage()
@@ -275,14 +269,8 @@ Partial Class Form1
         Me.TabPage5.SuspendLayout()
         Me.TabPage6.SuspendLayout()
         Me.System.SuspendLayout()
-        Me.GroupBox15.SuspendLayout()
-        Me.GroupBox14.SuspendLayout()
-        Me.GroupBox13.SuspendLayout()
-        Me.GroupBox12.SuspendLayout()
-        Me.GroupBox11.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.GroupBox10.SuspendLayout()
-        Me.GroupBox9.SuspendLayout()
+        Me.GroupBox15.SuspendLayout()
         Me.GroupBox4.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
@@ -299,7 +287,7 @@ Partial Class Form1
         Me.TabPage3.Location = New System.Drawing.Point(4, 22)
         Me.TabPage3.Name = "TabPage3"
         Me.TabPage3.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage3.Size = New System.Drawing.Size(1161, 621)
+        Me.TabPage3.Size = New System.Drawing.Size(1303, 747)
         Me.TabPage3.TabIndex = 4
         Me.TabPage3.Text = "Compressor"
         Me.TabPage3.UseVisualStyleBackColor = True
@@ -516,7 +504,7 @@ Partial Class Form1
         Me.TabPage2.Location = New System.Drawing.Point(4, 22)
         Me.TabPage2.Name = "TabPage2"
         Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage2.Size = New System.Drawing.Size(1161, 621)
+        Me.TabPage2.Size = New System.Drawing.Size(1303, 747)
         Me.TabPage2.TabIndex = 3
         Me.TabPage2.Text = "ExpansionDevice"
         Me.TabPage2.UseVisualStyleBackColor = True
@@ -662,7 +650,7 @@ Partial Class Form1
         Me.TabPage1.Location = New System.Drawing.Point(4, 22)
         Me.TabPage1.Name = "TabPage1"
         Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage1.Size = New System.Drawing.Size(1161, 621)
+        Me.TabPage1.Size = New System.Drawing.Size(1303, 747)
         Me.TabPage1.TabIndex = 2
         Me.TabPage1.Text = "Evaporator"
         Me.TabPage1.UseVisualStyleBackColor = True
@@ -1246,7 +1234,7 @@ Partial Class Form1
         Me.Parameters.Location = New System.Drawing.Point(4, 22)
         Me.Parameters.Name = "Parameters"
         Me.Parameters.Padding = New System.Windows.Forms.Padding(3)
-        Me.Parameters.Size = New System.Drawing.Size(1161, 621)
+        Me.Parameters.Size = New System.Drawing.Size(1303, 747)
         Me.Parameters.TabIndex = 1
         Me.Parameters.Text = "Condensor"
         Me.Parameters.UseVisualStyleBackColor = True
@@ -1883,21 +1871,13 @@ Partial Class Form1
         '
         'System
         '
-        Me.System.Controls.Add(Me.Button3)
-        Me.System.Controls.Add(Me.Button2)
+        Me.System.Controls.Add(Me.PictureBox1)
         Me.System.Controls.Add(Me.GroupBox15)
-        Me.System.Controls.Add(Me.GroupBox14)
-        Me.System.Controls.Add(Me.QCtxt)
-        Me.System.Controls.Add(Me.GroupBox13)
-        Me.System.Controls.Add(Me.GroupBox12)
-        Me.System.Controls.Add(Me.GroupBox11)
         Me.System.Controls.Add(Me.Button1)
         Me.System.Controls.Add(Me.Expabtn)
         Me.System.Controls.Add(Me.Evapbtn)
         Me.System.Controls.Add(Me.Condbtn)
         Me.System.Controls.Add(Me.Compbtn)
-        Me.System.Controls.Add(Me.GroupBox10)
-        Me.System.Controls.Add(Me.GroupBox9)
         Me.System.Controls.Add(Me.GroupBox4)
         Me.System.Controls.Add(Me.GroupBox3)
         Me.System.Controls.Add(Me.GroupBox2)
@@ -1906,27 +1886,19 @@ Partial Class Form1
         Me.System.Location = New System.Drawing.Point(4, 22)
         Me.System.Name = "System"
         Me.System.Padding = New System.Windows.Forms.Padding(3)
-        Me.System.Size = New System.Drawing.Size(1205, 703)
+        Me.System.Size = New System.Drawing.Size(1303, 747)
         Me.System.TabIndex = 0
         Me.System.Text = "System"
         '
-        'Button3
+        'PictureBox1
         '
-        Me.Button3.Location = New System.Drawing.Point(374, 527)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(83, 50)
-        Me.Button3.TabIndex = 81
-        Me.Button3.Text = "LOAD"
-        Me.Button3.UseVisualStyleBackColor = True
-        '
-        'Button2
-        '
-        Me.Button2.Location = New System.Drawing.Point(463, 527)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(83, 50)
-        Me.Button2.TabIndex = 80
-        Me.Button2.Text = "SAVE"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
+        Me.PictureBox1.Location = New System.Drawing.Point(15, 19)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(590, 302)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 80
+        Me.PictureBox1.TabStop = False
         '
         'GroupBox15
         '
@@ -1935,9 +1907,9 @@ Partial Class Form1
         Me.GroupBox15.Controls.Add(Me.TextBox18)
         Me.GroupBox15.Controls.Add(Me.InFluid)
         Me.GroupBox15.Controls.Add(Me.Label2)
-        Me.GroupBox15.Location = New System.Drawing.Point(580, 12)
+        Me.GroupBox15.Location = New System.Drawing.Point(622, 19)
         Me.GroupBox15.Name = "GroupBox15"
-        Me.GroupBox15.Size = New System.Drawing.Size(319, 97)
+        Me.GroupBox15.Size = New System.Drawing.Size(382, 150)
         Me.GroupBox15.TabIndex = 79
         Me.GroupBox15.TabStop = False
         Me.GroupBox15.Text = "System Monitor"
@@ -1985,236 +1957,11 @@ Partial Class Form1
         Me.Label2.TabIndex = 51
         Me.Label2.Text = "In_Fluid"
         '
-        'GroupBox14
-        '
-        Me.GroupBox14.Controls.Add(Me.TextBox11)
-        Me.GroupBox14.Controls.Add(Me.Label46)
-        Me.GroupBox14.Controls.Add(Me.MFR)
-        Me.GroupBox14.Controls.Add(Me.Label52)
-        Me.GroupBox14.Location = New System.Drawing.Point(284, 11)
-        Me.GroupBox14.Name = "GroupBox14"
-        Me.GroupBox14.Size = New System.Drawing.Size(267, 98)
-        Me.GroupBox14.TabIndex = 78
-        Me.GroupBox14.TabStop = False
-        Me.GroupBox14.Text = "Compressor Situation"
-        '
-        'TextBox11
-        '
-        Me.TextBox11.Location = New System.Drawing.Point(154, 60)
-        Me.TextBox11.Name = "TextBox11"
-        Me.TextBox11.ReadOnly = True
-        Me.TextBox11.Size = New System.Drawing.Size(102, 22)
-        Me.TextBox11.TabIndex = 62
-        '
-        'Label46
-        '
-        Me.Label46.AutoSize = True
-        Me.Label46.Location = New System.Drawing.Point(17, 63)
-        Me.Label46.Name = "Label46"
-        Me.Label46.Size = New System.Drawing.Size(70, 12)
-        Me.Label46.TabIndex = 61
-        Me.Label46.Text = "Wcomp (kW)"
-        '
-        'MFR
-        '
-        Me.MFR.Location = New System.Drawing.Point(154, 32)
-        Me.MFR.Name = "MFR"
-        Me.MFR.Size = New System.Drawing.Size(102, 22)
-        Me.MFR.TabIndex = 50
-        Me.MFR.Text = "0.058"
-        '
-        'Label52
-        '
-        Me.Label52.AutoSize = True
-        Me.Label52.Location = New System.Drawing.Point(17, 35)
-        Me.Label52.Name = "Label52"
-        Me.Label52.Size = New System.Drawing.Size(108, 12)
-        Me.Label52.TabIndex = 49
-        Me.Label52.Text = "Mass Flow Rate (kg/s)"
-        '
-        'QCtxt
-        '
-        Me.QCtxt.Location = New System.Drawing.Point(1007, 250)
-        Me.QCtxt.Name = "QCtxt"
-        Me.QCtxt.ReadOnly = True
-        Me.QCtxt.Size = New System.Drawing.Size(100, 22)
-        Me.QCtxt.TabIndex = 55
-        '
-        'GroupBox13
-        '
-        Me.GroupBox13.Controls.Add(Me.Label49)
-        Me.GroupBox13.Controls.Add(Me.Label22)
-        Me.GroupBox13.Controls.Add(Me.Label17)
-        Me.GroupBox13.Controls.Add(Me.QA5txt)
-        Me.GroupBox13.Controls.Add(Me.QEtxt)
-        Me.GroupBox13.Controls.Add(Me.QA4txt)
-        Me.GroupBox13.Location = New System.Drawing.Point(11, 117)
-        Me.GroupBox13.Name = "GroupBox13"
-        Me.GroupBox13.Size = New System.Drawing.Size(224, 127)
-        Me.GroupBox13.TabIndex = 77
-        Me.GroupBox13.TabStop = False
-        Me.GroupBox13.Text = "Evaporator_Heat Exchanger"
-        '
-        'Label49
-        '
-        Me.Label49.AutoSize = True
-        Me.Label49.Location = New System.Drawing.Point(13, 90)
-        Me.Label49.Name = "Label49"
-        Me.Label49.Size = New System.Drawing.Size(66, 12)
-        Me.Label49.TabIndex = 70
-        Me.Label49.Text = "E_Q_tot (W)"
-        '
-        'Label22
-        '
-        Me.Label22.AutoSize = True
-        Me.Label22.Location = New System.Drawing.Point(13, 62)
-        Me.Label22.Name = "Label22"
-        Me.Label22.Size = New System.Drawing.Size(70, 12)
-        Me.Label22.TabIndex = 69
-        Me.Label22.Text = "E_Q_sup (W)"
-        '
-        'Label17
-        '
-        Me.Label17.AutoSize = True
-        Me.Label17.Location = New System.Drawing.Point(13, 34)
-        Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(66, 12)
-        Me.Label17.TabIndex = 68
-        Me.Label17.Text = "E_Q_sat (W)"
-        '
-        'QA5txt
-        '
-        Me.QA5txt.Location = New System.Drawing.Point(114, 59)
-        Me.QA5txt.Name = "QA5txt"
-        Me.QA5txt.ReadOnly = True
-        Me.QA5txt.Size = New System.Drawing.Size(100, 22)
-        Me.QA5txt.TabIndex = 57
-        '
-        'QEtxt
-        '
-        Me.QEtxt.Location = New System.Drawing.Point(115, 87)
-        Me.QEtxt.Name = "QEtxt"
-        Me.QEtxt.ReadOnly = True
-        Me.QEtxt.Size = New System.Drawing.Size(100, 22)
-        Me.QEtxt.TabIndex = 56
-        '
-        'QA4txt
-        '
-        Me.QA4txt.Location = New System.Drawing.Point(115, 31)
-        Me.QA4txt.Name = "QA4txt"
-        Me.QA4txt.ReadOnly = True
-        Me.QA4txt.Size = New System.Drawing.Size(100, 22)
-        Me.QA4txt.TabIndex = 11
-        '
-        'GroupBox12
-        '
-        Me.GroupBox12.Controls.Add(Me.Label74)
-        Me.GroupBox12.Controls.Add(Me.Label71)
-        Me.GroupBox12.Controls.Add(Me.Label72)
-        Me.GroupBox12.Controls.Add(Me.Label73)
-        Me.GroupBox12.Controls.Add(Me.QA3txt)
-        Me.GroupBox12.Controls.Add(Me.QA2txt)
-        Me.GroupBox12.Controls.Add(Me.QA1txt)
-        Me.GroupBox12.Controls.Add(Me.TextBox16)
-        Me.GroupBox12.Location = New System.Drawing.Point(916, 104)
-        Me.GroupBox12.Name = "GroupBox12"
-        Me.GroupBox12.Size = New System.Drawing.Size(225, 140)
-        Me.GroupBox12.TabIndex = 76
-        Me.GroupBox12.TabStop = False
-        Me.GroupBox12.Text = "Condensor-Heat Exchange"
-        '
-        'Label74
-        '
-        Me.Label74.AutoSize = True
-        Me.Label74.Location = New System.Drawing.Point(8, 25)
-        Me.Label74.Name = "Label74"
-        Me.Label74.Size = New System.Drawing.Size(70, 12)
-        Me.Label74.TabIndex = 74
-        Me.Label74.Text = "E_Q_sup (W)"
-        '
-        'Label71
-        '
-        Me.Label71.AutoSize = True
-        Me.Label71.Location = New System.Drawing.Point(11, 109)
-        Me.Label71.Name = "Label71"
-        Me.Label71.Size = New System.Drawing.Size(66, 12)
-        Me.Label71.TabIndex = 73
-        Me.Label71.Text = "E_Q_tot (W)"
-        '
-        'Label72
-        '
-        Me.Label72.AutoSize = True
-        Me.Label72.Location = New System.Drawing.Point(11, 81)
-        Me.Label72.Name = "Label72"
-        Me.Label72.Size = New System.Drawing.Size(70, 12)
-        Me.Label72.TabIndex = 72
-        Me.Label72.Text = "E_Q_sub (W)"
-        '
-        'Label73
-        '
-        Me.Label73.AutoSize = True
-        Me.Label73.Location = New System.Drawing.Point(8, 53)
-        Me.Label73.Name = "Label73"
-        Me.Label73.Size = New System.Drawing.Size(66, 12)
-        Me.Label73.TabIndex = 71
-        Me.Label73.Text = "E_Q_sat (W)"
-        '
-        'QA3txt
-        '
-        Me.QA3txt.Location = New System.Drawing.Point(91, 78)
-        Me.QA3txt.Name = "QA3txt"
-        Me.QA3txt.ReadOnly = True
-        Me.QA3txt.Size = New System.Drawing.Size(100, 22)
-        Me.QA3txt.TabIndex = 54
-        '
-        'QA2txt
-        '
-        Me.QA2txt.Location = New System.Drawing.Point(91, 50)
-        Me.QA2txt.Name = "QA2txt"
-        Me.QA2txt.ReadOnly = True
-        Me.QA2txt.Size = New System.Drawing.Size(100, 22)
-        Me.QA2txt.TabIndex = 53
-        '
-        'QA1txt
-        '
-        Me.QA1txt.Location = New System.Drawing.Point(91, 22)
-        Me.QA1txt.Name = "QA1txt"
-        Me.QA1txt.ReadOnly = True
-        Me.QA1txt.Size = New System.Drawing.Size(100, 22)
-        Me.QA1txt.TabIndex = 10
-        '
-        'TextBox16
-        '
-        Me.TextBox16.Location = New System.Drawing.Point(91, 106)
-        Me.TextBox16.Name = "TextBox16"
-        Me.TextBox16.ReadOnly = True
-        Me.TextBox16.Size = New System.Drawing.Size(100, 22)
-        Me.TextBox16.TabIndex = 63
-        '
-        'GroupBox11
-        '
-        Me.GroupBox11.Controls.Add(Me.PictureBox1)
-        Me.GroupBox11.Location = New System.Drawing.Point(244, 127)
-        Me.GroupBox11.Name = "GroupBox11"
-        Me.GroupBox11.Size = New System.Drawing.Size(665, 360)
-        Me.GroupBox11.TabIndex = 67
-        Me.GroupBox11.TabStop = False
-        Me.GroupBox11.Text = "System Contour"
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(29, 21)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(616, 333)
-        Me.PictureBox1.TabIndex = 1
-        Me.PictureBox1.TabStop = False
-        '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(1072, 565)
+        Me.Button1.Location = New System.Drawing.Point(622, 175)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(83, 50)
+        Me.Button1.Size = New System.Drawing.Size(382, 50)
         Me.Button1.TabIndex = 66
         Me.Button1.Text = "CYCLE"
         Me.Button1.UseVisualStyleBackColor = True
@@ -2222,164 +1969,193 @@ Partial Class Form1
         '
         'Expabtn
         '
-        Me.Expabtn.Location = New System.Drawing.Point(606, 527)
+        Me.Expabtn.Location = New System.Drawing.Point(502, 687)
         Me.Expabtn.Name = "Expabtn"
-        Me.Expabtn.Size = New System.Drawing.Size(83, 50)
+        Me.Expabtn.Size = New System.Drawing.Size(246, 50)
         Me.Expabtn.TabIndex = 65
-        Me.Expabtn.Text = "EXPA"
+        Me.Expabtn.Text = "Expansion Device"
         Me.Expabtn.UseVisualStyleBackColor = True
         '
         'Evapbtn
         '
-        Me.Evapbtn.Location = New System.Drawing.Point(192, 561)
+        Me.Evapbtn.Location = New System.Drawing.Point(261, 687)
         Me.Evapbtn.Name = "Evapbtn"
-        Me.Evapbtn.Size = New System.Drawing.Size(83, 50)
+        Me.Evapbtn.Size = New System.Drawing.Size(226, 50)
         Me.Evapbtn.TabIndex = 60
-        Me.Evapbtn.Text = "Evap"
+        Me.Evapbtn.Text = "Evaporator Model"
         Me.Evapbtn.UseVisualStyleBackColor = True
         Me.Evapbtn.Visible = False
         '
         'Condbtn
         '
-        Me.Condbtn.Location = New System.Drawing.Point(103, 560)
+        Me.Condbtn.Location = New System.Drawing.Point(15, 687)
         Me.Condbtn.Name = "Condbtn"
-        Me.Condbtn.Size = New System.Drawing.Size(83, 50)
+        Me.Condbtn.Size = New System.Drawing.Size(240, 50)
         Me.Condbtn.TabIndex = 59
-        Me.Condbtn.Text = "Cond"
+        Me.Condbtn.Text = "Condenser Model"
         Me.Condbtn.UseVisualStyleBackColor = True
         Me.Condbtn.Visible = False
         '
         'Compbtn
         '
-        Me.Compbtn.Location = New System.Drawing.Point(14, 561)
+        Me.Compbtn.Location = New System.Drawing.Point(754, 687)
         Me.Compbtn.Name = "Compbtn"
-        Me.Compbtn.Size = New System.Drawing.Size(83, 50)
+        Me.Compbtn.Size = New System.Drawing.Size(250, 50)
         Me.Compbtn.TabIndex = 58
-        Me.Compbtn.Text = "Comp"
+        Me.Compbtn.Text = "Compressor Model"
         Me.Compbtn.UseVisualStyleBackColor = True
         Me.Compbtn.Visible = False
         '
-        'GroupBox10
+        'GroupBox4
         '
-        Me.GroupBox10.Controls.Add(Me.EPsat)
-        Me.GroupBox10.Controls.Add(Me.ETsat)
-        Me.GroupBox10.Controls.Add(Me.Label3)
-        Me.GroupBox10.Controls.Add(Me.Label12)
-        Me.GroupBox10.Location = New System.Drawing.Point(12, 266)
-        Me.GroupBox10.Name = "GroupBox10"
-        Me.GroupBox10.Size = New System.Drawing.Size(161, 88)
-        Me.GroupBox10.TabIndex = 9
-        Me.GroupBox10.TabStop = False
-        Me.GroupBox10.Text = "LowPressureSide"
-        '
-        'EPsat
-        '
-        Me.EPsat.Location = New System.Drawing.Point(62, 43)
-        Me.EPsat.Name = "EPsat"
-        Me.EPsat.ReadOnly = True
-        Me.EPsat.Size = New System.Drawing.Size(82, 22)
-        Me.EPsat.TabIndex = 5
-        '
-        'ETsat
-        '
-        Me.ETsat.Location = New System.Drawing.Point(61, 15)
-        Me.ETsat.Name = "ETsat"
-        Me.ETsat.Size = New System.Drawing.Size(82, 22)
-        Me.ETsat.TabIndex = 5
-        Me.ETsat.Text = "280.15"
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(11, 46)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(49, 12)
-        Me.Label3.TabIndex = 3
-        Me.Label3.Text = "P (Mpa) :"
-        '
-        'Label12
-        '
-        Me.Label12.AutoSize = True
-        Me.Label12.Location = New System.Drawing.Point(11, 22)
-        Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(44, 12)
-        Me.Label12.TabIndex = 4
-        Me.Label12.Text = "TL (K) :"
-        '
-        'GroupBox9
-        '
-        Me.GroupBox9.Controls.Add(Me.CTsat)
-        Me.GroupBox9.Controls.Add(Me.Label10)
-        Me.GroupBox9.Controls.Add(Me.CPsat)
-        Me.GroupBox9.Controls.Add(Me.Label7)
-        Me.GroupBox9.Location = New System.Drawing.Point(974, 281)
-        Me.GroupBox9.Name = "GroupBox9"
-        Me.GroupBox9.Size = New System.Drawing.Size(161, 88)
-        Me.GroupBox9.TabIndex = 8
-        Me.GroupBox9.TabStop = False
-        Me.GroupBox9.Text = "HighPressureSide"
+        Me.GroupBox4.Controls.Add(Me.CTsat)
+        Me.GroupBox4.Controls.Add(Me.Label10)
+        Me.GroupBox4.Controls.Add(Me.Label74)
+        Me.GroupBox4.Controls.Add(Me.QCtxt)
+        Me.GroupBox4.Controls.Add(Me.CPsat)
+        Me.GroupBox4.Controls.Add(Me.Label71)
+        Me.GroupBox4.Controls.Add(Me.Label7)
+        Me.GroupBox4.Controls.Add(Me.T1_2)
+        Me.GroupBox4.Controls.Add(Me.Label72)
+        Me.GroupBox4.Controls.Add(Me.Label6)
+        Me.GroupBox4.Controls.Add(Me.Label73)
+        Me.GroupBox4.Controls.Add(Me.TextBox16)
+        Me.GroupBox4.Controls.Add(Me.QA3txt)
+        Me.GroupBox4.Controls.Add(Me.QA1txt)
+        Me.GroupBox4.Controls.Add(Me.QA2txt)
+        Me.GroupBox4.Location = New System.Drawing.Point(15, 356)
+        Me.GroupBox4.Name = "GroupBox4"
+        Me.GroupBox4.Size = New System.Drawing.Size(241, 325)
+        Me.GroupBox4.TabIndex = 3
+        Me.GroupBox4.TabStop = False
+        Me.GroupBox4.Text = "Condenser"
         '
         'CTsat
         '
-        Me.CTsat.Location = New System.Drawing.Point(61, 15)
+        Me.CTsat.Location = New System.Drawing.Point(115, 52)
         Me.CTsat.Name = "CTsat"
-        Me.CTsat.Size = New System.Drawing.Size(82, 22)
+        Me.CTsat.Size = New System.Drawing.Size(99, 22)
         Me.CTsat.TabIndex = 5
         Me.CTsat.Text = "343.82"
         '
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(11, 22)
+        Me.Label10.Location = New System.Drawing.Point(16, 55)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(45, 12)
+        Me.Label10.Size = New System.Drawing.Size(72, 12)
         Me.Label10.TabIndex = 4
-        Me.Label10.Text = "TH (K) :"
+        Me.Label10.Text = "Tcond_sat (K)"
+        '
+        'Label74
+        '
+        Me.Label74.AutoSize = True
+        Me.Label74.Location = New System.Drawing.Point(16, 115)
+        Me.Label74.Name = "Label74"
+        Me.Label74.Size = New System.Drawing.Size(71, 12)
+        Me.Label74.TabIndex = 74
+        Me.Label74.Text = "C_Q_sup (W)"
+        '
+        'QCtxt
+        '
+        Me.QCtxt.Location = New System.Drawing.Point(114, 236)
+        Me.QCtxt.Name = "QCtxt"
+        Me.QCtxt.ReadOnly = True
+        Me.QCtxt.Size = New System.Drawing.Size(100, 22)
+        Me.QCtxt.TabIndex = 55
         '
         'CPsat
         '
-        Me.CPsat.Location = New System.Drawing.Point(61, 46)
+        Me.CPsat.Location = New System.Drawing.Point(115, 80)
         Me.CPsat.Name = "CPsat"
         Me.CPsat.ReadOnly = True
-        Me.CPsat.Size = New System.Drawing.Size(82, 22)
+        Me.CPsat.Size = New System.Drawing.Size(99, 22)
         Me.CPsat.TabIndex = 7
+        '
+        'Label71
+        '
+        Me.Label71.AutoSize = True
+        Me.Label71.Location = New System.Drawing.Point(19, 199)
+        Me.Label71.Name = "Label71"
+        Me.Label71.Size = New System.Drawing.Size(67, 12)
+        Me.Label71.TabIndex = 73
+        Me.Label71.Text = "C_Q_tot (W)"
         '
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(10, 49)
+        Me.Label7.Location = New System.Drawing.Point(16, 86)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(49, 12)
+        Me.Label7.Size = New System.Drawing.Size(93, 12)
         Me.Label7.TabIndex = 5
-        Me.Label7.Text = "P (Mpa) :"
-        '
-        'GroupBox4
-        '
-        Me.GroupBox4.Controls.Add(Me.T1_2)
-        Me.GroupBox4.Controls.Add(Me.Label6)
-        Me.GroupBox4.Location = New System.Drawing.Point(954, 6)
-        Me.GroupBox4.Name = "GroupBox4"
-        Me.GroupBox4.Size = New System.Drawing.Size(187, 87)
-        Me.GroupBox4.TabIndex = 3
-        Me.GroupBox4.TabStop = False
-        Me.GroupBox4.Text = "State (Compressor => Condensor)"
+        Me.Label7.Text = "Pcond_sat  (Mpa) :"
         '
         'T1_2
         '
-        Me.T1_2.Location = New System.Drawing.Point(67, 31)
+        Me.T1_2.Location = New System.Drawing.Point(116, 28)
         Me.T1_2.Name = "T1_2"
-        Me.T1_2.Size = New System.Drawing.Size(82, 22)
+        Me.T1_2.Size = New System.Drawing.Size(98, 22)
         Me.T1_2.TabIndex = 8
         Me.T1_2.Text = "368"
+        '
+        'Label72
+        '
+        Me.Label72.AutoSize = True
+        Me.Label72.Location = New System.Drawing.Point(19, 171)
+        Me.Label72.Name = "Label72"
+        Me.Label72.Size = New System.Drawing.Size(71, 12)
+        Me.Label72.TabIndex = 72
+        Me.Label72.Text = "C_Q_sub (W)"
         '
         'Label6
         '
         Me.Label6.AutoSize = True
         Me.Label6.Location = New System.Drawing.Point(16, 31)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(37, 12)
+        Me.Label6.Size = New System.Drawing.Size(76, 12)
         Me.Label6.TabIndex = 4
-        Me.Label6.Text = "T (K) :"
+        Me.Label6.Text = "Tcond_sup (K)"
+        '
+        'Label73
+        '
+        Me.Label73.AutoSize = True
+        Me.Label73.Location = New System.Drawing.Point(16, 143)
+        Me.Label73.Name = "Label73"
+        Me.Label73.Size = New System.Drawing.Size(67, 12)
+        Me.Label73.TabIndex = 71
+        Me.Label73.Text = "C_Q_sat (W)"
+        '
+        'TextBox16
+        '
+        Me.TextBox16.Location = New System.Drawing.Point(114, 196)
+        Me.TextBox16.Name = "TextBox16"
+        Me.TextBox16.ReadOnly = True
+        Me.TextBox16.Size = New System.Drawing.Size(100, 22)
+        Me.TextBox16.TabIndex = 63
+        '
+        'QA3txt
+        '
+        Me.QA3txt.Location = New System.Drawing.Point(114, 168)
+        Me.QA3txt.Name = "QA3txt"
+        Me.QA3txt.ReadOnly = True
+        Me.QA3txt.Size = New System.Drawing.Size(100, 22)
+        Me.QA3txt.TabIndex = 54
+        '
+        'QA1txt
+        '
+        Me.QA1txt.Location = New System.Drawing.Point(114, 112)
+        Me.QA1txt.Name = "QA1txt"
+        Me.QA1txt.ReadOnly = True
+        Me.QA1txt.Size = New System.Drawing.Size(100, 22)
+        Me.QA1txt.TabIndex = 10
+        '
+        'QA2txt
+        '
+        Me.QA2txt.Location = New System.Drawing.Point(114, 140)
+        Me.QA2txt.Name = "QA2txt"
+        Me.QA2txt.ReadOnly = True
+        Me.QA2txt.Size = New System.Drawing.Size(100, 22)
+        Me.QA2txt.TabIndex = 53
         '
         'GroupBox3
         '
@@ -2387,16 +2163,16 @@ Partial Class Form1
         Me.GroupBox3.Controls.Add(Me.Label9)
         Me.GroupBox3.Controls.Add(Me.T2_3)
         Me.GroupBox3.Controls.Add(Me.Label8)
-        Me.GroupBox3.Location = New System.Drawing.Point(974, 475)
+        Me.GroupBox3.Location = New System.Drawing.Point(502, 356)
         Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(181, 80)
+        Me.GroupBox3.Size = New System.Drawing.Size(246, 325)
         Me.GroupBox3.TabIndex = 3
         Me.GroupBox3.TabStop = False
-        Me.GroupBox3.Text = "State (Condesor=>Expasion.D)"
+        Me.GroupBox3.Text = "Expanson Device"
         '
         'TextBox17
         '
-        Me.TextBox17.Location = New System.Drawing.Point(67, 49)
+        Me.TextBox17.Location = New System.Drawing.Point(96, 46)
         Me.TextBox17.Name = "TextBox17"
         Me.TextBox17.ReadOnly = True
         Me.TextBox17.Size = New System.Drawing.Size(82, 22)
@@ -2407,13 +2183,13 @@ Partial Class Form1
         Me.Label9.AutoSize = True
         Me.Label9.Location = New System.Drawing.Point(16, 52)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(35, 12)
+        Me.Label9.Size = New System.Drawing.Size(53, 12)
         Me.Label9.TabIndex = 8
-        Me.Label9.Text = "x _in :"
+        Me.Label9.Text = "Xexpa_in "
         '
         'T2_3
         '
-        Me.T2_3.Location = New System.Drawing.Point(67, 21)
+        Me.T2_3.Location = New System.Drawing.Point(96, 21)
         Me.T2_3.Name = "T2_3"
         Me.T2_3.ReadOnly = True
         Me.T2_3.Size = New System.Drawing.Size(82, 22)
@@ -2424,91 +2200,224 @@ Partial Class Form1
         Me.Label8.AutoSize = True
         Me.Label8.Location = New System.Drawing.Point(16, 24)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(37, 12)
+        Me.Label8.Size = New System.Drawing.Size(68, 12)
         Me.Label8.TabIndex = 4
-        Me.Label8.Text = "T (K) :"
+        Me.Label8.Text = "Texpa_in (K)"
         '
         'GroupBox2
         '
+        Me.GroupBox2.Controls.Add(Me.EPsat)
+        Me.GroupBox2.Controls.Add(Me.Label49)
+        Me.GroupBox2.Controls.Add(Me.ETsat)
+        Me.GroupBox2.Controls.Add(Me.Label3)
         Me.GroupBox2.Controls.Add(Me.TextBox10)
+        Me.GroupBox2.Controls.Add(Me.Label12)
+        Me.GroupBox2.Controls.Add(Me.Label22)
         Me.GroupBox2.Controls.Add(Me.T3_4)
+        Me.GroupBox2.Controls.Add(Me.Label17)
         Me.GroupBox2.Controls.Add(Me.Label63)
+        Me.GroupBox2.Controls.Add(Me.QA5txt)
         Me.GroupBox2.Controls.Add(Me.Label4)
-        Me.GroupBox2.Location = New System.Drawing.Point(12, 471)
+        Me.GroupBox2.Controls.Add(Me.QEtxt)
+        Me.GroupBox2.Controls.Add(Me.QA4txt)
+        Me.GroupBox2.Location = New System.Drawing.Point(262, 356)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(214, 84)
+        Me.GroupBox2.Size = New System.Drawing.Size(225, 325)
         Me.GroupBox2.TabIndex = 3
         Me.GroupBox2.TabStop = False
-        Me.GroupBox2.Text = "State (Expasnsion.D=>Evaporator)"
+        Me.GroupBox2.Text = "Evaporator"
+        '
+        'EPsat
+        '
+        Me.EPsat.Location = New System.Drawing.Point(108, 109)
+        Me.EPsat.Name = "EPsat"
+        Me.EPsat.ReadOnly = True
+        Me.EPsat.Size = New System.Drawing.Size(100, 22)
+        Me.EPsat.TabIndex = 5
+        '
+        'Label49
+        '
+        Me.Label49.AutoSize = True
+        Me.Label49.Location = New System.Drawing.Point(16, 198)
+        Me.Label49.Name = "Label49"
+        Me.Label49.Size = New System.Drawing.Size(66, 12)
+        Me.Label49.TabIndex = 70
+        Me.Label49.Text = "E_Q_tot (W)"
+        '
+        'ETsat
+        '
+        Me.ETsat.Location = New System.Drawing.Point(109, 81)
+        Me.ETsat.Name = "ETsat"
+        Me.ETsat.Size = New System.Drawing.Size(99, 22)
+        Me.ETsat.TabIndex = 5
+        Me.ETsat.Text = "280.15"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(16, 112)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(83, 12)
+        Me.Label3.TabIndex = 3
+        Me.Label3.Text = "Pevap_sat (Mpa)"
         '
         'TextBox10
         '
-        Me.TextBox10.Location = New System.Drawing.Point(59, 53)
+        Me.TextBox10.Location = New System.Drawing.Point(109, 53)
         Me.TextBox10.Name = "TextBox10"
-        Me.TextBox10.Size = New System.Drawing.Size(84, 22)
+        Me.TextBox10.Size = New System.Drawing.Size(99, 22)
         Me.TextBox10.TabIndex = 58
         Me.TextBox10.Text = "0.2"
         '
+        'Label12
+        '
+        Me.Label12.AutoSize = True
+        Me.Label12.Location = New System.Drawing.Point(14, 84)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(44, 12)
+        Me.Label12.TabIndex = 4
+        Me.Label12.Text = "TL (K) :"
+        '
+        'Label22
+        '
+        Me.Label22.AutoSize = True
+        Me.Label22.Location = New System.Drawing.Point(16, 170)
+        Me.Label22.Name = "Label22"
+        Me.Label22.Size = New System.Drawing.Size(70, 12)
+        Me.Label22.TabIndex = 69
+        Me.Label22.Text = "E_Q_sup (W)"
+        '
         'T3_4
         '
-        Me.T3_4.Location = New System.Drawing.Point(62, 24)
+        Me.T3_4.Location = New System.Drawing.Point(108, 25)
         Me.T3_4.Name = "T3_4"
-        Me.T3_4.Size = New System.Drawing.Size(82, 22)
+        Me.T3_4.Size = New System.Drawing.Size(101, 22)
         Me.T3_4.TabIndex = 4
         Me.T3_4.Text = "280.15"
+        '
+        'Label17
+        '
+        Me.Label17.AutoSize = True
+        Me.Label17.Location = New System.Drawing.Point(16, 142)
+        Me.Label17.Name = "Label17"
+        Me.Label17.Size = New System.Drawing.Size(66, 12)
+        Me.Label17.TabIndex = 68
+        Me.Label17.Text = "E_Q_sat (W)"
         '
         'Label63
         '
         Me.Label63.AutoSize = True
-        Me.Label63.Location = New System.Drawing.Point(12, 56)
+        Me.Label63.Location = New System.Drawing.Point(14, 56)
         Me.Label63.Name = "Label63"
-        Me.Label63.Size = New System.Drawing.Size(32, 12)
+        Me.Label63.Size = New System.Drawing.Size(50, 12)
         Me.Label63.TabIndex = 57
-        Me.Label63.Text = "x_out"
+        Me.Label63.Text = "Xevap_in"
+        '
+        'QA5txt
+        '
+        Me.QA5txt.Location = New System.Drawing.Point(108, 167)
+        Me.QA5txt.Name = "QA5txt"
+        Me.QA5txt.ReadOnly = True
+        Me.QA5txt.Size = New System.Drawing.Size(100, 22)
+        Me.QA5txt.TabIndex = 57
         '
         'Label4
         '
         Me.Label4.AutoSize = True
         Me.Label4.Location = New System.Drawing.Point(12, 27)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(37, 12)
+        Me.Label4.Size = New System.Drawing.Size(77, 12)
         Me.Label4.TabIndex = 2
-        Me.Label4.Text = "T (K) :"
+        Me.Label4.Text = "Tevap_sat (K) :"
+        '
+        'QEtxt
+        '
+        Me.QEtxt.Location = New System.Drawing.Point(109, 195)
+        Me.QEtxt.Name = "QEtxt"
+        Me.QEtxt.ReadOnly = True
+        Me.QEtxt.Size = New System.Drawing.Size(100, 22)
+        Me.QEtxt.TabIndex = 56
+        '
+        'QA4txt
+        '
+        Me.QA4txt.Location = New System.Drawing.Point(109, 139)
+        Me.QA4txt.Name = "QA4txt"
+        Me.QA4txt.ReadOnly = True
+        Me.QA4txt.Size = New System.Drawing.Size(100, 22)
+        Me.QA4txt.TabIndex = 11
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.TextBox11)
+        Me.GroupBox1.Controls.Add(Me.Label46)
         Me.GroupBox1.Controls.Add(Me.T4_1)
+        Me.GroupBox1.Controls.Add(Me.MFR)
         Me.GroupBox1.Controls.Add(Me.Label1)
-        Me.GroupBox1.Location = New System.Drawing.Point(6, 6)
+        Me.GroupBox1.Controls.Add(Me.Label52)
+        Me.GroupBox1.Location = New System.Drawing.Point(754, 358)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(220, 87)
+        Me.GroupBox1.Size = New System.Drawing.Size(250, 323)
         Me.GroupBox1.TabIndex = 2
         Me.GroupBox1.TabStop = False
-        Me.GroupBox1.Text = "State (Evaporator=>Compressor)"
+        Me.GroupBox1.Text = "Compressor"
+        '
+        'TextBox11
+        '
+        Me.TextBox11.Location = New System.Drawing.Point(121, 87)
+        Me.TextBox11.Name = "TextBox11"
+        Me.TextBox11.ReadOnly = True
+        Me.TextBox11.Size = New System.Drawing.Size(102, 22)
+        Me.TextBox11.TabIndex = 62
+        '
+        'Label46
+        '
+        Me.Label46.AutoSize = True
+        Me.Label46.Location = New System.Drawing.Point(6, 90)
+        Me.Label46.Name = "Label46"
+        Me.Label46.Size = New System.Drawing.Size(70, 12)
+        Me.Label46.TabIndex = 61
+        Me.Label46.Text = "Wcomp (kW)"
         '
         'T4_1
         '
-        Me.T4_1.Location = New System.Drawing.Point(62, 24)
+        Me.T4_1.Location = New System.Drawing.Point(121, 28)
         Me.T4_1.Name = "T4_1"
-        Me.T4_1.Size = New System.Drawing.Size(82, 22)
+        Me.T4_1.Size = New System.Drawing.Size(102, 22)
         Me.T4_1.TabIndex = 2
         Me.T4_1.Text = "300"
         Me.T4_1.UseWaitCursor = True
+        '
+        'MFR
+        '
+        Me.MFR.Location = New System.Drawing.Point(121, 59)
+        Me.MFR.Name = "MFR"
+        Me.MFR.Size = New System.Drawing.Size(102, 22)
+        Me.MFR.TabIndex = 50
+        Me.MFR.Text = "0.058"
         '
         'Label1
         '
         Me.Label1.AutoSize = True
         Me.Label1.Location = New System.Drawing.Point(12, 31)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(37, 12)
+        Me.Label1.Size = New System.Drawing.Size(78, 12)
         Me.Label1.TabIndex = 0
-        Me.Label1.Text = "T (K) :"
+        Me.Label1.Text = "Tcomp_in (K) :"
+        '
+        'Label52
+        '
+        Me.Label52.AutoSize = True
+        Me.Label52.Location = New System.Drawing.Point(6, 62)
+        Me.Label52.Name = "Label52"
+        Me.Label52.Size = New System.Drawing.Size(108, 12)
+        Me.Label52.TabIndex = 49
+        Me.Label52.Text = "Mass Flow Rate (kg/s)"
         '
         'Start
         '
-        Me.Start.Location = New System.Drawing.Point(695, 527)
+        Me.Start.Location = New System.Drawing.Point(622, 231)
         Me.Start.Name = "Start"
-        Me.Start.Size = New System.Drawing.Size(83, 50)
+        Me.Start.Size = New System.Drawing.Size(382, 50)
         Me.Start.TabIndex = 0
         Me.Start.Text = "LAUNCH"
         Me.Start.UseVisualStyleBackColor = True
@@ -2524,7 +2433,7 @@ Partial Class Form1
         Me.Cycle.Location = New System.Drawing.Point(12, 3)
         Me.Cycle.Name = "Cycle"
         Me.Cycle.SelectedIndex = 0
-        Me.Cycle.Size = New System.Drawing.Size(1213, 729)
+        Me.Cycle.Size = New System.Drawing.Size(1311, 773)
         Me.Cycle.TabIndex = 16
         '
         'FAQ
@@ -2535,7 +2444,7 @@ Partial Class Form1
         Me.FAQ.Location = New System.Drawing.Point(4, 22)
         Me.FAQ.Name = "FAQ"
         Me.FAQ.Padding = New System.Windows.Forms.Padding(3)
-        Me.FAQ.Size = New System.Drawing.Size(1161, 621)
+        Me.FAQ.Size = New System.Drawing.Size(1303, 747)
         Me.FAQ.TabIndex = 5
         Me.FAQ.Text = "FAQ"
         Me.FAQ.UseVisualStyleBackColor = True
@@ -2572,7 +2481,7 @@ Partial Class Form1
         '
         'Form1
         '
-        Me.ClientSize = New System.Drawing.Size(1228, 735)
+        Me.ClientSize = New System.Drawing.Size(1327, 779)
         Me.Controls.Add(Me.Cycle)
         Me.Name = "Form1"
         Me.Text = "Delta_10kW"
@@ -2603,21 +2512,9 @@ Partial Class Form1
         Me.TabPage6.ResumeLayout(False)
         Me.TabPage6.PerformLayout()
         Me.System.ResumeLayout(False)
-        Me.System.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox15.ResumeLayout(False)
         Me.GroupBox15.PerformLayout()
-        Me.GroupBox14.ResumeLayout(False)
-        Me.GroupBox14.PerformLayout()
-        Me.GroupBox13.ResumeLayout(False)
-        Me.GroupBox13.PerformLayout()
-        Me.GroupBox12.ResumeLayout(False)
-        Me.GroupBox12.PerformLayout()
-        Me.GroupBox11.ResumeLayout(False)
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.GroupBox10.ResumeLayout(False)
-        Me.GroupBox10.PerformLayout()
-        Me.GroupBox9.ResumeLayout(False)
-        Me.GroupBox9.PerformLayout()
         Me.GroupBox4.ResumeLayout(False)
         Me.GroupBox4.PerformLayout()
         Me.GroupBox3.ResumeLayout(False)
@@ -2710,9 +2607,7 @@ Partial Class Form1
     Friend WithEvents TextBox31 As TextBox
     Friend WithEvents Label18 As Label
     Friend WithEvents System As TabPage
-    Friend WithEvents GroupBox10 As GroupBox
     Friend WithEvents Label12 As Label
-    Friend WithEvents GroupBox9 As GroupBox
     Friend WithEvents CTsat As TextBox
     Friend WithEvents Label10 As Label
     Friend WithEvents GroupBox4 As GroupBox
@@ -2730,7 +2625,6 @@ Partial Class Form1
     Friend WithEvents T3_4 As TextBox
     Friend WithEvents Label3 As Label
     Friend WithEvents Label4 As Label
-    Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Start As Button
     Friend WithEvents Cycle As TabControl
     Friend WithEvents ETsat As TextBox
@@ -2797,7 +2691,6 @@ Partial Class Form1
     Friend WithEvents Button1 As Button
     Friend WithEvents TextBox42 As TextBox
     Friend WithEvents Label5 As Label
-    Friend WithEvents GroupBox11 As GroupBox
     Friend WithEvents PictureBox3 As PictureBox
     Friend WithEvents Label75 As Label
     Friend WithEvents Label74 As Label
@@ -2808,9 +2701,6 @@ Partial Class Form1
     Friend WithEvents Label22 As Label
     Friend WithEvents Label17 As Label
     Friend WithEvents GroupBox15 As GroupBox
-    Friend WithEvents GroupBox14 As GroupBox
-    Friend WithEvents GroupBox13 As GroupBox
-    Friend WithEvents GroupBox12 As GroupBox
     Friend WithEvents Label50 As Label
     Friend WithEvents Label51 As Label
     Friend WithEvents Label68 As Label
@@ -2861,7 +2751,6 @@ Partial Class Form1
     Friend WithEvents TextBox25 As TextBox
     Friend WithEvents TextBox30 As TextBox
     Friend WithEvents GroupBox16 As GroupBox
-    Friend WithEvents Button3 As Button
-    Friend WithEvents Button2 As Button
     Friend WithEvents TextBox35 As TextBox
+    Friend WithEvents PictureBox1 As PictureBox
 End Class

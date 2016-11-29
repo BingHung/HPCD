@@ -7,8 +7,7 @@
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
-        PictureBox1.SizeMode = PictureBoxSizeMode.StretchImage
-        PictureBox1.Image = Image.FromFile("CyclePath.PNG")
+
 
         PictureBox2.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox2.Image = Image.FromFile("Cond.PNG")
