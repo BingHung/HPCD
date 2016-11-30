@@ -32,19 +32,19 @@ Partial Class Form1
         Me.Label113 = New System.Windows.Forms.Label()
         Me.Label114 = New System.Windows.Forms.Label()
         Me.Label115 = New System.Windows.Forms.Label()
-        Me.CompressorSpeed = New System.Windows.Forms.TextBox()
+        Me.Comp_CompressorSpeed = New System.Windows.Forms.TextBox()
         Me.Label58 = New System.Windows.Forms.Label()
-        Me.Volumetric_Efficiency = New System.Windows.Forms.TextBox()
+        Me.Comp_Volumetric_Efficiency = New System.Windows.Forms.TextBox()
         Me.Label53 = New System.Windows.Forms.Label()
-        Me.Isentropic_Efficiency = New System.Windows.Forms.TextBox()
+        Me.Comp_Isentropic_Efficiency = New System.Windows.Forms.TextBox()
         Me.Label54 = New System.Windows.Forms.Label()
-        Me.Discharge_Pressure = New System.Windows.Forms.TextBox()
+        Me.Comp_Discharge_Pressure = New System.Windows.Forms.TextBox()
         Me.Label55 = New System.Windows.Forms.Label()
-        Me.Suction_Pressure = New System.Windows.Forms.TextBox()
+        Me.Comp_Suction_Pressure = New System.Windows.Forms.TextBox()
         Me.Label56 = New System.Windows.Forms.Label()
         Me.GroupBox6 = New System.Windows.Forms.GroupBox()
         Me.Label110 = New System.Windows.Forms.Label()
-        Me.SweptVolume = New System.Windows.Forms.TextBox()
+        Me.Comp_SweptVolume = New System.Windows.Forms.TextBox()
         Me.Label57 = New System.Windows.Forms.Label()
         Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
@@ -53,13 +53,13 @@ Partial Class Form1
         Me.Label107 = New System.Windows.Forms.Label()
         Me.Label108 = New System.Windows.Forms.Label()
         Me.Label109 = New System.Windows.Forms.Label()
-        Me.TextBox42 = New System.Windows.Forms.TextBox()
+        Me.Expa_OuterD_txt = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.TextBox9 = New System.Windows.Forms.TextBox()
+        Me.Expa_Roughness_txt = New System.Windows.Forms.TextBox()
         Me.Label30 = New System.Windows.Forms.Label()
-        Me.TextBox12 = New System.Windows.Forms.TextBox()
+        Me.Expa_InnerD_txt = New System.Windows.Forms.TextBox()
         Me.Label65 = New System.Windows.Forms.Label()
-        Me.TextBox13 = New System.Windows.Forms.TextBox()
+        Me.Expa_TubeLength_txt = New System.Windows.Forms.TextBox()
         Me.Label66 = New System.Windows.Forms.Label()
         Me.PictureBox5 = New System.Windows.Forms.PictureBox()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
@@ -80,29 +80,29 @@ Partial Class Form1
         Me.Label96 = New System.Windows.Forms.Label()
         Me.Label97 = New System.Windows.Forms.Label()
         Me.Label98 = New System.Windows.Forms.Label()
-        Me.TextBox33 = New System.Windows.Forms.TextBox()
+        Me.E_kp_txt = New System.Windows.Forms.TextBox()
         Me.Label35 = New System.Windows.Forms.Label()
-        Me.TextBox32 = New System.Windows.Forms.TextBox()
+        Me.E_df_txt = New System.Windows.Forms.TextBox()
         Me.Label33 = New System.Windows.Forms.Label()
-        Me.TextBox15 = New System.Windows.Forms.TextBox()
+        Me.E_Ncr_txt = New System.Windows.Forms.TextBox()
         Me.Label67 = New System.Windows.Forms.Label()
-        Me.TextBox14 = New System.Windows.Forms.TextBox()
+        Me.E_Ntube_txt = New System.Windows.Forms.TextBox()
         Me.Label64 = New System.Windows.Forms.Label()
-        Me.TextBox39 = New System.Windows.Forms.TextBox()
+        Me.E_kf_txt = New System.Windows.Forms.TextBox()
         Me.Label32 = New System.Windows.Forms.Label()
-        Me.TextBox41 = New System.Windows.Forms.TextBox()
+        Me.E_do__txt = New System.Windows.Forms.TextBox()
         Me.Label34 = New System.Windows.Forms.Label()
-        Me.TextBox43 = New System.Windows.Forms.TextBox()
+        Me.E_Xp_txt = New System.Windows.Forms.TextBox()
         Me.Label36 = New System.Windows.Forms.Label()
-        Me.TextBox44 = New System.Windows.Forms.TextBox()
+        Me.E_Pl_txt = New System.Windows.Forms.TextBox()
         Me.Label37 = New System.Windows.Forms.Label()
-        Me.TextBox45 = New System.Windows.Forms.TextBox()
+        Me.E_Pt_txt = New System.Windows.Forms.TextBox()
         Me.Label38 = New System.Windows.Forms.Label()
-        Me.TextBox46 = New System.Windows.Forms.TextBox()
+        Me.E_FinPitch_txt = New System.Windows.Forms.TextBox()
         Me.Label39 = New System.Windows.Forms.Label()
-        Me.TextBox47 = New System.Windows.Forms.TextBox()
-        Me.TextBox48 = New System.Windows.Forms.TextBox()
-        Me.TextBox49 = New System.Windows.Forms.TextBox()
+        Me.E_Rox_txt = New System.Windows.Forms.TextBox()
+        Me.E_W_txt = New System.Windows.Forms.TextBox()
+        Me.E_H_txt = New System.Windows.Forms.TextBox()
         Me.Label40 = New System.Windows.Forms.Label()
         Me.Label41 = New System.Windows.Forms.Label()
         Me.Label42 = New System.Windows.Forms.Label()
@@ -112,15 +112,15 @@ Partial Class Form1
         Me.Label103 = New System.Windows.Forms.Label()
         Me.Label104 = New System.Windows.Forms.Label()
         Me.Label105 = New System.Windows.Forms.Label()
-        Me.TextBox34 = New System.Windows.Forms.TextBox()
+        Me.E_WBT_txt = New System.Windows.Forms.TextBox()
         Me.Label43 = New System.Windows.Forms.Label()
-        Me.TextBox51 = New System.Windows.Forms.TextBox()
+        Me.E_mair_txt = New System.Windows.Forms.TextBox()
         Me.Label44 = New System.Windows.Forms.Label()
-        Me.TextBox52 = New System.Windows.Forms.TextBox()
+        Me.E_RH_txt = New System.Windows.Forms.TextBox()
         Me.Label45 = New System.Windows.Forms.Label()
-        Me.TextBox54 = New System.Windows.Forms.TextBox()
+        Me.E_Patm_txt = New System.Windows.Forms.TextBox()
         Me.Label47 = New System.Windows.Forms.Label()
-        Me.TextBox55 = New System.Windows.Forms.TextBox()
+        Me.E_DBT_txt = New System.Windows.Forms.TextBox()
         Me.Label48 = New System.Windows.Forms.Label()
         Me.Parameters = New System.Windows.Forms.TabPage()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
@@ -138,31 +138,31 @@ Partial Class Form1
         Me.Label79 = New System.Windows.Forms.Label()
         Me.Label80 = New System.Windows.Forms.Label()
         Me.Label81 = New System.Windows.Forms.Label()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.C_ratio_txt = New System.Windows.Forms.TextBox()
         Me.Label29 = New System.Windows.Forms.Label()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.C_Ao_txt = New System.Windows.Forms.TextBox()
+        Me.C_sigma_txt = New System.Windows.Forms.TextBox()
         Me.Label27 = New System.Windows.Forms.Label()
         Me.Label28 = New System.Windows.Forms.Label()
-        Me.TextBox38 = New System.Windows.Forms.TextBox()
+        Me.C_kf_txt = New System.Windows.Forms.TextBox()
         Me.Label31 = New System.Windows.Forms.Label()
-        Me.TextBox27 = New System.Windows.Forms.TextBox()
+        Me.C_di_txt = New System.Windows.Forms.TextBox()
         Me.Label16 = New System.Windows.Forms.Label()
-        Me.TextBox28 = New System.Windows.Forms.TextBox()
+        Me.C_dw_txt = New System.Windows.Forms.TextBox()
         Me.Label23 = New System.Windows.Forms.Label()
-        Me.TextBox29 = New System.Windows.Forms.TextBox()
+        Me.C_dc_txt = New System.Windows.Forms.TextBox()
         Me.Label24 = New System.Windows.Forms.Label()
-        Me.TextBox26 = New System.Windows.Forms.TextBox()
+        Me.C_df_txt = New System.Windows.Forms.TextBox()
         Me.Label15 = New System.Windows.Forms.Label()
-        Me.TextBox24 = New System.Windows.Forms.TextBox()
+        Me.C_Pl_txt = New System.Windows.Forms.TextBox()
         Me.Label21 = New System.Windows.Forms.Label()
-        Me.TextBox23 = New System.Windows.Forms.TextBox()
+        Me.C_Pt_txt = New System.Windows.Forms.TextBox()
         Me.Label20 = New System.Windows.Forms.Label()
-        Me.TextBox22 = New System.Windows.Forms.TextBox()
+        Me.C_FinPitch_txt = New System.Windows.Forms.TextBox()
         Me.Label19 = New System.Windows.Forms.Label()
-        Me.TextBox21 = New System.Windows.Forms.TextBox()
-        Me.TextBox20 = New System.Windows.Forms.TextBox()
-        Me.TextBox19 = New System.Windows.Forms.TextBox()
+        Me.C_Row_txt = New System.Windows.Forms.TextBox()
+        Me.C_W_txt = New System.Windows.Forms.TextBox()
+        Me.C_H_txt = New System.Windows.Forms.TextBox()
         Me.Label14 = New System.Windows.Forms.Label()
         Me.Label13 = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
@@ -173,25 +173,25 @@ Partial Class Form1
         Me.Label85 = New System.Windows.Forms.Label()
         Me.Label82 = New System.Windows.Forms.Label()
         Me.Label83 = New System.Windows.Forms.Label()
-        Me.TextBox8 = New System.Windows.Forms.TextBox()
+        Me.C_air_Pr_txt = New System.Windows.Forms.TextBox()
         Me.Label62 = New System.Windows.Forms.Label()
-        Me.TextBox7 = New System.Windows.Forms.TextBox()
+        Me.C_air_capacity_txt = New System.Windows.Forms.TextBox()
         Me.Label61 = New System.Windows.Forms.Label()
-        Me.TextBox6 = New System.Windows.Forms.TextBox()
+        Me.C_air_viscosity_txt = New System.Windows.Forms.TextBox()
         Me.Label60 = New System.Windows.Forms.Label()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
+        Me.C_air_density_txt = New System.Windows.Forms.TextBox()
         Me.Label59 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.C_noho_txt = New System.Windows.Forms.TextBox()
         Me.Label25 = New System.Windows.Forms.Label()
-        Me.TextBox36 = New System.Windows.Forms.TextBox()
+        Me.C_Vfr_txt = New System.Windows.Forms.TextBox()
         Me.Label26 = New System.Windows.Forms.Label()
-        Me.TextBox31 = New System.Windows.Forms.TextBox()
+        Me.C_Tain_txt = New System.Windows.Forms.TextBox()
         Me.Label18 = New System.Windows.Forms.Label()
         Me.System = New System.Windows.Forms.TabPage()
         Me.GroupBox9 = New System.Windows.Forms.GroupBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.GroupBox15 = New System.Windows.Forms.GroupBox()
-        Me.TextBox35 = New System.Windows.Forms.TextBox()
+        Me.EnegyBalanceCheck = New System.Windows.Forms.TextBox()
         Me.Label75 = New System.Windows.Forms.Label()
         Me.TextBox18 = New System.Windows.Forms.TextBox()
         Me.InFluid = New System.Windows.Forms.TextBox()
@@ -202,41 +202,41 @@ Partial Class Form1
         Me.Condbtn = New System.Windows.Forms.Button()
         Me.Compbtn = New System.Windows.Forms.Button()
         Me.GroupBox4 = New System.Windows.Forms.GroupBox()
-        Me.CTsat = New System.Windows.Forms.TextBox()
+        Me.Tcond_sat = New System.Windows.Forms.TextBox()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Label74 = New System.Windows.Forms.Label()
         Me.QCtxt = New System.Windows.Forms.TextBox()
-        Me.CPsat = New System.Windows.Forms.TextBox()
+        Me.Pcond_sat = New System.Windows.Forms.TextBox()
         Me.Label71 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
-        Me.T1_2 = New System.Windows.Forms.TextBox()
+        Me.Tcond_sup = New System.Windows.Forms.TextBox()
         Me.Label72 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label73 = New System.Windows.Forms.Label()
-        Me.TextBox16 = New System.Windows.Forms.TextBox()
-        Me.QA3txt = New System.Windows.Forms.TextBox()
-        Me.QA1txt = New System.Windows.Forms.TextBox()
-        Me.QA2txt = New System.Windows.Forms.TextBox()
+        Me.C_Q_tot = New System.Windows.Forms.TextBox()
+        Me.C_Q_sub = New System.Windows.Forms.TextBox()
+        Me.C_Q_sup = New System.Windows.Forms.TextBox()
+        Me.C_Q_sat = New System.Windows.Forms.TextBox()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
-        Me.TextBox17 = New System.Windows.Forms.TextBox()
+        Me.Xexpa_in = New System.Windows.Forms.TextBox()
         Me.Label9 = New System.Windows.Forms.Label()
-        Me.T2_3 = New System.Windows.Forms.TextBox()
+        Me.Texpa_in = New System.Windows.Forms.TextBox()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.EPsat = New System.Windows.Forms.TextBox()
+        Me.Pevap_sat = New System.Windows.Forms.TextBox()
         Me.Label49 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.TextBox10 = New System.Windows.Forms.TextBox()
+        Me.Xevap_in = New System.Windows.Forms.TextBox()
         Me.Label22 = New System.Windows.Forms.Label()
         Me.Tevap_sat = New System.Windows.Forms.TextBox()
         Me.Label17 = New System.Windows.Forms.Label()
         Me.Label63 = New System.Windows.Forms.Label()
-        Me.QA5txt = New System.Windows.Forms.TextBox()
+        Me.E_Q_sup = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.QEtxt = New System.Windows.Forms.TextBox()
-        Me.QA4txt = New System.Windows.Forms.TextBox()
+        Me.E_Q_tot = New System.Windows.Forms.TextBox()
+        Me.E_Q_sat = New System.Windows.Forms.TextBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.TextBox11 = New System.Windows.Forms.TextBox()
+        Me.Wcomp = New System.Windows.Forms.TextBox()
         Me.Label46 = New System.Windows.Forms.Label()
         Me.Tcomp_in = New System.Windows.Forms.TextBox()
         Me.MFR = New System.Windows.Forms.TextBox()
@@ -297,15 +297,15 @@ Partial Class Form1
         Me.GroupBox7.Controls.Add(Me.Label113)
         Me.GroupBox7.Controls.Add(Me.Label114)
         Me.GroupBox7.Controls.Add(Me.Label115)
-        Me.GroupBox7.Controls.Add(Me.CompressorSpeed)
+        Me.GroupBox7.Controls.Add(Me.Comp_CompressorSpeed)
         Me.GroupBox7.Controls.Add(Me.Label58)
-        Me.GroupBox7.Controls.Add(Me.Volumetric_Efficiency)
+        Me.GroupBox7.Controls.Add(Me.Comp_Volumetric_Efficiency)
         Me.GroupBox7.Controls.Add(Me.Label53)
-        Me.GroupBox7.Controls.Add(Me.Isentropic_Efficiency)
+        Me.GroupBox7.Controls.Add(Me.Comp_Isentropic_Efficiency)
         Me.GroupBox7.Controls.Add(Me.Label54)
-        Me.GroupBox7.Controls.Add(Me.Discharge_Pressure)
+        Me.GroupBox7.Controls.Add(Me.Comp_Discharge_Pressure)
         Me.GroupBox7.Controls.Add(Me.Label55)
-        Me.GroupBox7.Controls.Add(Me.Suction_Pressure)
+        Me.GroupBox7.Controls.Add(Me.Comp_Suction_Pressure)
         Me.GroupBox7.Controls.Add(Me.Label56)
         Me.GroupBox7.Location = New System.Drawing.Point(105, 243)
         Me.GroupBox7.Name = "GroupBox7"
@@ -360,15 +360,15 @@ Partial Class Form1
         Me.Label115.TabIndex = 53
         Me.Label115.Text = "<低壓測壓力>"
         '
-        'CompressorSpeed
+        'Comp_CompressorSpeed
         '
-        Me.CompressorSpeed.Location = New System.Drawing.Point(156, 137)
-        Me.CompressorSpeed.Name = "CompressorSpeed"
-        Me.CompressorSpeed.ReadOnly = True
-        Me.CompressorSpeed.Size = New System.Drawing.Size(102, 22)
-        Me.CompressorSpeed.TabIndex = 52
-        Me.CompressorSpeed.Text = "8000"
-        Me.CompressorSpeed.Visible = False
+        Me.Comp_CompressorSpeed.Location = New System.Drawing.Point(156, 137)
+        Me.Comp_CompressorSpeed.Name = "Comp_CompressorSpeed"
+        Me.Comp_CompressorSpeed.ReadOnly = True
+        Me.Comp_CompressorSpeed.Size = New System.Drawing.Size(102, 22)
+        Me.Comp_CompressorSpeed.TabIndex = 52
+        Me.Comp_CompressorSpeed.Text = "8000"
+        Me.Comp_CompressorSpeed.Visible = False
         '
         'Label58
         '
@@ -380,13 +380,13 @@ Partial Class Form1
         Me.Label58.Text = "Compressor Speed (rpm)"
         Me.Label58.Visible = False
         '
-        'Volumetric_Efficiency
+        'Comp_Volumetric_Efficiency
         '
-        Me.Volumetric_Efficiency.Location = New System.Drawing.Point(156, 109)
-        Me.Volumetric_Efficiency.Name = "Volumetric_Efficiency"
-        Me.Volumetric_Efficiency.ReadOnly = True
-        Me.Volumetric_Efficiency.Size = New System.Drawing.Size(102, 22)
-        Me.Volumetric_Efficiency.TabIndex = 46
+        Me.Comp_Volumetric_Efficiency.Location = New System.Drawing.Point(156, 109)
+        Me.Comp_Volumetric_Efficiency.Name = "Comp_Volumetric_Efficiency"
+        Me.Comp_Volumetric_Efficiency.ReadOnly = True
+        Me.Comp_Volumetric_Efficiency.Size = New System.Drawing.Size(102, 22)
+        Me.Comp_Volumetric_Efficiency.TabIndex = 46
         '
         'Label53
         '
@@ -397,13 +397,13 @@ Partial Class Form1
         Me.Label53.TabIndex = 45
         Me.Label53.Text = "Volumetric Efficiency"
         '
-        'Isentropic_Efficiency
+        'Comp_Isentropic_Efficiency
         '
-        Me.Isentropic_Efficiency.Location = New System.Drawing.Point(156, 81)
-        Me.Isentropic_Efficiency.Name = "Isentropic_Efficiency"
-        Me.Isentropic_Efficiency.ReadOnly = True
-        Me.Isentropic_Efficiency.Size = New System.Drawing.Size(102, 22)
-        Me.Isentropic_Efficiency.TabIndex = 44
+        Me.Comp_Isentropic_Efficiency.Location = New System.Drawing.Point(156, 81)
+        Me.Comp_Isentropic_Efficiency.Name = "Comp_Isentropic_Efficiency"
+        Me.Comp_Isentropic_Efficiency.ReadOnly = True
+        Me.Comp_Isentropic_Efficiency.Size = New System.Drawing.Size(102, 22)
+        Me.Comp_Isentropic_Efficiency.TabIndex = 44
         '
         'Label54
         '
@@ -414,13 +414,13 @@ Partial Class Form1
         Me.Label54.TabIndex = 43
         Me.Label54.Text = "Isentropic Efficiency"
         '
-        'Discharge_Pressure
+        'Comp_Discharge_Pressure
         '
-        Me.Discharge_Pressure.Location = New System.Drawing.Point(156, 53)
-        Me.Discharge_Pressure.Name = "Discharge_Pressure"
-        Me.Discharge_Pressure.ReadOnly = True
-        Me.Discharge_Pressure.Size = New System.Drawing.Size(102, 22)
-        Me.Discharge_Pressure.TabIndex = 42
+        Me.Comp_Discharge_Pressure.Location = New System.Drawing.Point(156, 53)
+        Me.Comp_Discharge_Pressure.Name = "Comp_Discharge_Pressure"
+        Me.Comp_Discharge_Pressure.ReadOnly = True
+        Me.Comp_Discharge_Pressure.Size = New System.Drawing.Size(102, 22)
+        Me.Comp_Discharge_Pressure.TabIndex = 42
         '
         'Label55
         '
@@ -431,13 +431,13 @@ Partial Class Form1
         Me.Label55.TabIndex = 41
         Me.Label55.Text = "Discharge Pressure (MPa)"
         '
-        'Suction_Pressure
+        'Comp_Suction_Pressure
         '
-        Me.Suction_Pressure.Location = New System.Drawing.Point(156, 25)
-        Me.Suction_Pressure.Name = "Suction_Pressure"
-        Me.Suction_Pressure.ReadOnly = True
-        Me.Suction_Pressure.Size = New System.Drawing.Size(102, 22)
-        Me.Suction_Pressure.TabIndex = 40
+        Me.Comp_Suction_Pressure.Location = New System.Drawing.Point(156, 25)
+        Me.Comp_Suction_Pressure.Name = "Comp_Suction_Pressure"
+        Me.Comp_Suction_Pressure.ReadOnly = True
+        Me.Comp_Suction_Pressure.Size = New System.Drawing.Size(102, 22)
+        Me.Comp_Suction_Pressure.TabIndex = 40
         '
         'Label56
         '
@@ -451,7 +451,7 @@ Partial Class Form1
         'GroupBox6
         '
         Me.GroupBox6.Controls.Add(Me.Label110)
-        Me.GroupBox6.Controls.Add(Me.SweptVolume)
+        Me.GroupBox6.Controls.Add(Me.Comp_SweptVolume)
         Me.GroupBox6.Controls.Add(Me.Label57)
         Me.GroupBox6.Location = New System.Drawing.Point(105, 157)
         Me.GroupBox6.Name = "GroupBox6"
@@ -469,13 +469,13 @@ Partial Class Form1
         Me.Label110.TabIndex = 51
         Me.Label110.Text = "<容積>"
         '
-        'SweptVolume
+        'Comp_SweptVolume
         '
-        Me.SweptVolume.Location = New System.Drawing.Point(155, 25)
-        Me.SweptVolume.Name = "SweptVolume"
-        Me.SweptVolume.Size = New System.Drawing.Size(102, 22)
-        Me.SweptVolume.TabIndex = 50
-        Me.SweptVolume.Text = "0.000015"
+        Me.Comp_SweptVolume.Location = New System.Drawing.Point(155, 25)
+        Me.Comp_SweptVolume.Name = "Comp_SweptVolume"
+        Me.Comp_SweptVolume.Size = New System.Drawing.Size(102, 22)
+        Me.Comp_SweptVolume.TabIndex = 50
+        Me.Comp_SweptVolume.Text = "0.000015"
         '
         'Label57
         '
@@ -513,13 +513,13 @@ Partial Class Form1
         Me.GroupBox16.Controls.Add(Me.Label107)
         Me.GroupBox16.Controls.Add(Me.Label108)
         Me.GroupBox16.Controls.Add(Me.Label109)
-        Me.GroupBox16.Controls.Add(Me.TextBox42)
+        Me.GroupBox16.Controls.Add(Me.Expa_OuterD_txt)
         Me.GroupBox16.Controls.Add(Me.Label5)
-        Me.GroupBox16.Controls.Add(Me.TextBox9)
+        Me.GroupBox16.Controls.Add(Me.Expa_Roughness_txt)
         Me.GroupBox16.Controls.Add(Me.Label30)
-        Me.GroupBox16.Controls.Add(Me.TextBox12)
+        Me.GroupBox16.Controls.Add(Me.Expa_InnerD_txt)
         Me.GroupBox16.Controls.Add(Me.Label65)
-        Me.GroupBox16.Controls.Add(Me.TextBox13)
+        Me.GroupBox16.Controls.Add(Me.Expa_TubeLength_txt)
         Me.GroupBox16.Controls.Add(Me.Label66)
         Me.GroupBox16.Location = New System.Drawing.Point(376, 96)
         Me.GroupBox16.Name = "GroupBox16"
@@ -564,13 +564,13 @@ Partial Class Form1
         Me.Label109.TabIndex = 61
         Me.Label109.Text = "<毛細管長>"
         '
-        'TextBox42
+        'Expa_OuterD_txt
         '
-        Me.TextBox42.Location = New System.Drawing.Point(170, 80)
-        Me.TextBox42.Name = "TextBox42"
-        Me.TextBox42.Size = New System.Drawing.Size(102, 22)
-        Me.TextBox42.TabIndex = 60
-        Me.TextBox42.Text = "0.13"
+        Me.Expa_OuterD_txt.Location = New System.Drawing.Point(170, 80)
+        Me.Expa_OuterD_txt.Name = "Expa_OuterD_txt"
+        Me.Expa_OuterD_txt.Size = New System.Drawing.Size(102, 22)
+        Me.Expa_OuterD_txt.TabIndex = 60
+        Me.Expa_OuterD_txt.Text = "0.13"
         '
         'Label5
         '
@@ -581,13 +581,13 @@ Partial Class Form1
         Me.Label5.TabIndex = 59
         Me.Label5.Text = "Tube Outer Diameter (m)"
         '
-        'TextBox9
+        'Expa_Roughness_txt
         '
-        Me.TextBox9.Location = New System.Drawing.Point(170, 108)
-        Me.TextBox9.Name = "TextBox9"
-        Me.TextBox9.Size = New System.Drawing.Size(102, 22)
-        Me.TextBox9.TabIndex = 58
-        Me.TextBox9.Text = "0.8"
+        Me.Expa_Roughness_txt.Location = New System.Drawing.Point(170, 108)
+        Me.Expa_Roughness_txt.Name = "Expa_Roughness_txt"
+        Me.Expa_Roughness_txt.Size = New System.Drawing.Size(102, 22)
+        Me.Expa_Roughness_txt.TabIndex = 58
+        Me.Expa_Roughness_txt.Text = "0.8"
         '
         'Label30
         '
@@ -598,13 +598,13 @@ Partial Class Form1
         Me.Label30.TabIndex = 57
         Me.Label30.Text = "Surface Roughness"
         '
-        'TextBox12
+        'Expa_InnerD_txt
         '
-        Me.TextBox12.Location = New System.Drawing.Point(170, 53)
-        Me.TextBox12.Name = "TextBox12"
-        Me.TextBox12.Size = New System.Drawing.Size(102, 22)
-        Me.TextBox12.TabIndex = 52
-        Me.TextBox12.Text = "0.0023"
+        Me.Expa_InnerD_txt.Location = New System.Drawing.Point(170, 53)
+        Me.Expa_InnerD_txt.Name = "Expa_InnerD_txt"
+        Me.Expa_InnerD_txt.Size = New System.Drawing.Size(102, 22)
+        Me.Expa_InnerD_txt.TabIndex = 52
+        Me.Expa_InnerD_txt.Text = "0.0023"
         '
         'Label65
         '
@@ -615,13 +615,13 @@ Partial Class Form1
         Me.Label65.TabIndex = 51
         Me.Label65.Text = "Tube Inner Diameter (m)"
         '
-        'TextBox13
+        'Expa_TubeLength_txt
         '
-        Me.TextBox13.Location = New System.Drawing.Point(170, 25)
-        Me.TextBox13.Name = "TextBox13"
-        Me.TextBox13.Size = New System.Drawing.Size(102, 22)
-        Me.TextBox13.TabIndex = 50
-        Me.TextBox13.Text = "2.8"
+        Me.Expa_TubeLength_txt.Location = New System.Drawing.Point(170, 25)
+        Me.Expa_TubeLength_txt.Name = "Expa_TubeLength_txt"
+        Me.Expa_TubeLength_txt.Size = New System.Drawing.Size(102, 22)
+        Me.Expa_TubeLength_txt.TabIndex = 50
+        Me.Expa_TubeLength_txt.Text = "2.8"
         '
         'Label66
         '
@@ -697,29 +697,29 @@ Partial Class Form1
         Me.TabPage8.Controls.Add(Me.Label96)
         Me.TabPage8.Controls.Add(Me.Label97)
         Me.TabPage8.Controls.Add(Me.Label98)
-        Me.TabPage8.Controls.Add(Me.TextBox33)
+        Me.TabPage8.Controls.Add(Me.E_kp_txt)
         Me.TabPage8.Controls.Add(Me.Label35)
-        Me.TabPage8.Controls.Add(Me.TextBox32)
+        Me.TabPage8.Controls.Add(Me.E_df_txt)
         Me.TabPage8.Controls.Add(Me.Label33)
-        Me.TabPage8.Controls.Add(Me.TextBox15)
+        Me.TabPage8.Controls.Add(Me.E_Ncr_txt)
         Me.TabPage8.Controls.Add(Me.Label67)
-        Me.TabPage8.Controls.Add(Me.TextBox14)
+        Me.TabPage8.Controls.Add(Me.E_Ntube_txt)
         Me.TabPage8.Controls.Add(Me.Label64)
-        Me.TabPage8.Controls.Add(Me.TextBox39)
+        Me.TabPage8.Controls.Add(Me.E_kf_txt)
         Me.TabPage8.Controls.Add(Me.Label32)
-        Me.TabPage8.Controls.Add(Me.TextBox41)
+        Me.TabPage8.Controls.Add(Me.E_do__txt)
         Me.TabPage8.Controls.Add(Me.Label34)
-        Me.TabPage8.Controls.Add(Me.TextBox43)
+        Me.TabPage8.Controls.Add(Me.E_Xp_txt)
         Me.TabPage8.Controls.Add(Me.Label36)
-        Me.TabPage8.Controls.Add(Me.TextBox44)
+        Me.TabPage8.Controls.Add(Me.E_Pl_txt)
         Me.TabPage8.Controls.Add(Me.Label37)
-        Me.TabPage8.Controls.Add(Me.TextBox45)
+        Me.TabPage8.Controls.Add(Me.E_Pt_txt)
         Me.TabPage8.Controls.Add(Me.Label38)
-        Me.TabPage8.Controls.Add(Me.TextBox46)
+        Me.TabPage8.Controls.Add(Me.E_FinPitch_txt)
         Me.TabPage8.Controls.Add(Me.Label39)
-        Me.TabPage8.Controls.Add(Me.TextBox47)
-        Me.TabPage8.Controls.Add(Me.TextBox48)
-        Me.TabPage8.Controls.Add(Me.TextBox49)
+        Me.TabPage8.Controls.Add(Me.E_Rox_txt)
+        Me.TabPage8.Controls.Add(Me.E_W_txt)
+        Me.TabPage8.Controls.Add(Me.E_H_txt)
         Me.TabPage8.Controls.Add(Me.Label40)
         Me.TabPage8.Controls.Add(Me.Label41)
         Me.TabPage8.Controls.Add(Me.Label42)
@@ -847,13 +847,13 @@ Partial Class Form1
         Me.Label98.TabIndex = 64
         Me.Label98.Text = "<熱交換器高度>"
         '
-        'TextBox33
+        'E_kp_txt
         '
-        Me.TextBox33.Location = New System.Drawing.Point(109, 368)
-        Me.TextBox33.Name = "TextBox33"
-        Me.TextBox33.Size = New System.Drawing.Size(102, 22)
-        Me.TextBox33.TabIndex = 54
-        Me.TextBox33.Text = "387"
+        Me.E_kp_txt.Location = New System.Drawing.Point(109, 368)
+        Me.E_kp_txt.Name = "E_kp_txt"
+        Me.E_kp_txt.Size = New System.Drawing.Size(102, 22)
+        Me.E_kp_txt.TabIndex = 54
+        Me.E_kp_txt.Text = "387"
         '
         'Label35
         '
@@ -864,13 +864,13 @@ Partial Class Form1
         Me.Label35.TabIndex = 53
         Me.Label35.Text = "kp"
         '
-        'TextBox32
+        'E_df_txt
         '
-        Me.TextBox32.Location = New System.Drawing.Point(109, 284)
-        Me.TextBox32.Name = "TextBox32"
-        Me.TextBox32.Size = New System.Drawing.Size(102, 22)
-        Me.TextBox32.TabIndex = 52
-        Me.TextBox32.Text = "0.000115"
+        Me.E_df_txt.Location = New System.Drawing.Point(109, 284)
+        Me.E_df_txt.Name = "E_df_txt"
+        Me.E_df_txt.Size = New System.Drawing.Size(102, 22)
+        Me.E_df_txt.TabIndex = 52
+        Me.E_df_txt.Text = "0.000115"
         '
         'Label33
         '
@@ -881,13 +881,13 @@ Partial Class Form1
         Me.Label33.TabIndex = 51
         Me.Label33.Text = "df (m)"
         '
-        'TextBox15
+        'E_Ncr_txt
         '
-        Me.TextBox15.Location = New System.Drawing.Point(109, 108)
-        Me.TextBox15.Name = "TextBox15"
-        Me.TextBox15.Size = New System.Drawing.Size(102, 22)
-        Me.TextBox15.TabIndex = 50
-        Me.TextBox15.Text = "2"
+        Me.E_Ncr_txt.Location = New System.Drawing.Point(109, 108)
+        Me.E_Ncr_txt.Name = "E_Ncr_txt"
+        Me.E_Ncr_txt.Size = New System.Drawing.Size(102, 22)
+        Me.E_Ncr_txt.TabIndex = 50
+        Me.E_Ncr_txt.Text = "2"
         '
         'Label67
         '
@@ -899,14 +899,14 @@ Partial Class Form1
         Me.Label67.Text = "Ntube"
         Me.Label67.Visible = False
         '
-        'TextBox14
+        'E_Ntube_txt
         '
-        Me.TextBox14.Location = New System.Drawing.Point(109, 136)
-        Me.TextBox14.Name = "TextBox14"
-        Me.TextBox14.ReadOnly = True
-        Me.TextBox14.Size = New System.Drawing.Size(102, 22)
-        Me.TextBox14.TabIndex = 48
-        Me.TextBox14.Visible = False
+        Me.E_Ntube_txt.Location = New System.Drawing.Point(109, 136)
+        Me.E_Ntube_txt.Name = "E_Ntube_txt"
+        Me.E_Ntube_txt.ReadOnly = True
+        Me.E_Ntube_txt.Size = New System.Drawing.Size(102, 22)
+        Me.E_Ntube_txt.TabIndex = 48
+        Me.E_Ntube_txt.Visible = False
         '
         'Label64
         '
@@ -917,13 +917,13 @@ Partial Class Form1
         Me.Label64.TabIndex = 47
         Me.Label64.Text = "Ncr"
         '
-        'TextBox39
+        'E_kf_txt
         '
-        Me.TextBox39.Location = New System.Drawing.Point(109, 340)
-        Me.TextBox39.Name = "TextBox39"
-        Me.TextBox39.Size = New System.Drawing.Size(102, 22)
-        Me.TextBox39.TabIndex = 46
-        Me.TextBox39.Text = "204"
+        Me.E_kf_txt.Location = New System.Drawing.Point(109, 340)
+        Me.E_kf_txt.Name = "E_kf_txt"
+        Me.E_kf_txt.Size = New System.Drawing.Size(102, 22)
+        Me.E_kf_txt.TabIndex = 46
+        Me.E_kf_txt.Text = "204"
         '
         'Label32
         '
@@ -934,13 +934,13 @@ Partial Class Form1
         Me.Label32.TabIndex = 45
         Me.Label32.Text = "kf"
         '
-        'TextBox41
+        'E_do__txt
         '
-        Me.TextBox41.Location = New System.Drawing.Point(109, 312)
-        Me.TextBox41.Name = "TextBox41"
-        Me.TextBox41.Size = New System.Drawing.Size(102, 22)
-        Me.TextBox41.TabIndex = 42
-        Me.TextBox41.Text = "0.00735"
+        Me.E_do__txt.Location = New System.Drawing.Point(109, 312)
+        Me.E_do__txt.Name = "E_do__txt"
+        Me.E_do__txt.Size = New System.Drawing.Size(102, 22)
+        Me.E_do__txt.TabIndex = 42
+        Me.E_do__txt.Text = "0.00735"
         '
         'Label34
         '
@@ -951,13 +951,13 @@ Partial Class Form1
         Me.Label34.TabIndex = 41
         Me.Label34.Text = "do (m)"
         '
-        'TextBox43
+        'E_Xp_txt
         '
-        Me.TextBox43.Location = New System.Drawing.Point(109, 258)
-        Me.TextBox43.Name = "TextBox43"
-        Me.TextBox43.Size = New System.Drawing.Size(102, 22)
-        Me.TextBox43.TabIndex = 38
-        Me.TextBox43.Text = "0.00026"
+        Me.E_Xp_txt.Location = New System.Drawing.Point(109, 258)
+        Me.E_Xp_txt.Name = "E_Xp_txt"
+        Me.E_Xp_txt.Size = New System.Drawing.Size(102, 22)
+        Me.E_Xp_txt.TabIndex = 38
+        Me.E_Xp_txt.Text = "0.00026"
         '
         'Label36
         '
@@ -968,13 +968,13 @@ Partial Class Form1
         Me.Label36.TabIndex = 37
         Me.Label36.Text = "Xp (m)"
         '
-        'TextBox44
+        'E_Pl_txt
         '
-        Me.TextBox44.Location = New System.Drawing.Point(109, 230)
-        Me.TextBox44.Name = "TextBox44"
-        Me.TextBox44.Size = New System.Drawing.Size(102, 22)
-        Me.TextBox44.TabIndex = 36
-        Me.TextBox44.Text = "0.01905"
+        Me.E_Pl_txt.Location = New System.Drawing.Point(109, 230)
+        Me.E_Pl_txt.Name = "E_Pl_txt"
+        Me.E_Pl_txt.Size = New System.Drawing.Size(102, 22)
+        Me.E_Pl_txt.TabIndex = 36
+        Me.E_Pl_txt.Text = "0.01905"
         '
         'Label37
         '
@@ -985,13 +985,13 @@ Partial Class Form1
         Me.Label37.TabIndex = 35
         Me.Label37.Text = "Pl (m)"
         '
-        'TextBox45
+        'E_Pt_txt
         '
-        Me.TextBox45.Location = New System.Drawing.Point(109, 202)
-        Me.TextBox45.Name = "TextBox45"
-        Me.TextBox45.Size = New System.Drawing.Size(102, 22)
-        Me.TextBox45.TabIndex = 34
-        Me.TextBox45.Text = "0.0254"
+        Me.E_Pt_txt.Location = New System.Drawing.Point(109, 202)
+        Me.E_Pt_txt.Name = "E_Pt_txt"
+        Me.E_Pt_txt.Size = New System.Drawing.Size(102, 22)
+        Me.E_Pt_txt.TabIndex = 34
+        Me.E_Pt_txt.Text = "0.0254"
         '
         'Label38
         '
@@ -1002,13 +1002,13 @@ Partial Class Form1
         Me.Label38.TabIndex = 33
         Me.Label38.Text = "Pt (m)"
         '
-        'TextBox46
+        'E_FinPitch_txt
         '
-        Me.TextBox46.Location = New System.Drawing.Point(109, 174)
-        Me.TextBox46.Name = "TextBox46"
-        Me.TextBox46.Size = New System.Drawing.Size(102, 22)
-        Me.TextBox46.TabIndex = 32
-        Me.TextBox46.Text = "0.0016"
+        Me.E_FinPitch_txt.Location = New System.Drawing.Point(109, 174)
+        Me.E_FinPitch_txt.Name = "E_FinPitch_txt"
+        Me.E_FinPitch_txt.Size = New System.Drawing.Size(102, 22)
+        Me.E_FinPitch_txt.TabIndex = 32
+        Me.E_FinPitch_txt.Text = "0.0016"
         '
         'Label39
         '
@@ -1019,29 +1019,29 @@ Partial Class Form1
         Me.Label39.TabIndex = 31
         Me.Label39.Text = "FinPitch (m)"
         '
-        'TextBox47
+        'E_Rox_txt
         '
-        Me.TextBox47.Location = New System.Drawing.Point(109, 80)
-        Me.TextBox47.Name = "TextBox47"
-        Me.TextBox47.Size = New System.Drawing.Size(102, 22)
-        Me.TextBox47.TabIndex = 30
-        Me.TextBox47.Text = "4"
+        Me.E_Rox_txt.Location = New System.Drawing.Point(109, 80)
+        Me.E_Rox_txt.Name = "E_Rox_txt"
+        Me.E_Rox_txt.Size = New System.Drawing.Size(102, 22)
+        Me.E_Rox_txt.TabIndex = 30
+        Me.E_Rox_txt.Text = "4"
         '
-        'TextBox48
+        'E_W_txt
         '
-        Me.TextBox48.Location = New System.Drawing.Point(109, 41)
-        Me.TextBox48.Name = "TextBox48"
-        Me.TextBox48.Size = New System.Drawing.Size(102, 22)
-        Me.TextBox48.TabIndex = 29
-        Me.TextBox48.Text = "1"
+        Me.E_W_txt.Location = New System.Drawing.Point(109, 41)
+        Me.E_W_txt.Name = "E_W_txt"
+        Me.E_W_txt.Size = New System.Drawing.Size(102, 22)
+        Me.E_W_txt.TabIndex = 29
+        Me.E_W_txt.Text = "1"
         '
-        'TextBox49
+        'E_H_txt
         '
-        Me.TextBox49.Location = New System.Drawing.Point(109, 14)
-        Me.TextBox49.Name = "TextBox49"
-        Me.TextBox49.Size = New System.Drawing.Size(102, 22)
-        Me.TextBox49.TabIndex = 28
-        Me.TextBox49.Text = "0.8"
+        Me.E_H_txt.Location = New System.Drawing.Point(109, 14)
+        Me.E_H_txt.Name = "E_H_txt"
+        Me.E_H_txt.Size = New System.Drawing.Size(102, 22)
+        Me.E_H_txt.TabIndex = 28
+        Me.E_H_txt.Text = "0.8"
         '
         'Label40
         '
@@ -1077,15 +1077,15 @@ Partial Class Form1
         Me.TabPage9.Controls.Add(Me.Label103)
         Me.TabPage9.Controls.Add(Me.Label104)
         Me.TabPage9.Controls.Add(Me.Label105)
-        Me.TabPage9.Controls.Add(Me.TextBox34)
+        Me.TabPage9.Controls.Add(Me.E_WBT_txt)
         Me.TabPage9.Controls.Add(Me.Label43)
-        Me.TabPage9.Controls.Add(Me.TextBox51)
+        Me.TabPage9.Controls.Add(Me.E_mair_txt)
         Me.TabPage9.Controls.Add(Me.Label44)
-        Me.TabPage9.Controls.Add(Me.TextBox52)
+        Me.TabPage9.Controls.Add(Me.E_RH_txt)
         Me.TabPage9.Controls.Add(Me.Label45)
-        Me.TabPage9.Controls.Add(Me.TextBox54)
+        Me.TabPage9.Controls.Add(Me.E_Patm_txt)
         Me.TabPage9.Controls.Add(Me.Label47)
-        Me.TabPage9.Controls.Add(Me.TextBox55)
+        Me.TabPage9.Controls.Add(Me.E_DBT_txt)
         Me.TabPage9.Controls.Add(Me.Label48)
         Me.TabPage9.Location = New System.Drawing.Point(4, 22)
         Me.TabPage9.Name = "TabPage9"
@@ -1140,13 +1140,14 @@ Partial Class Form1
         Me.Label105.TabIndex = 44
         Me.Label105.Text = "<空氣入口乾球溫度>"
         '
-        'TextBox34
+        'E_WBT_txt
         '
-        Me.TextBox34.Location = New System.Drawing.Point(184, 43)
-        Me.TextBox34.Name = "TextBox34"
-        Me.TextBox34.Size = New System.Drawing.Size(102, 22)
-        Me.TextBox34.TabIndex = 43
-        Me.TextBox34.Text = "19.5"
+        Me.E_WBT_txt.Location = New System.Drawing.Point(184, 43)
+        Me.E_WBT_txt.Name = "E_WBT_txt"
+        Me.E_WBT_txt.ReadOnly = True
+        Me.E_WBT_txt.Size = New System.Drawing.Size(102, 22)
+        Me.E_WBT_txt.TabIndex = 43
+        Me.E_WBT_txt.Text = "19.5"
         '
         'Label43
         '
@@ -1157,13 +1158,13 @@ Partial Class Form1
         Me.Label43.TabIndex = 42
         Me.Label43.Text = "Twet (oC)"
         '
-        'TextBox51
+        'E_mair_txt
         '
-        Me.TextBox51.Location = New System.Drawing.Point(181, 140)
-        Me.TextBox51.Name = "TextBox51"
-        Me.TextBox51.Size = New System.Drawing.Size(102, 22)
-        Me.TextBox51.TabIndex = 41
-        Me.TextBox51.Text = "0.5"
+        Me.E_mair_txt.Location = New System.Drawing.Point(181, 140)
+        Me.E_mair_txt.Name = "E_mair_txt"
+        Me.E_mair_txt.Size = New System.Drawing.Size(102, 22)
+        Me.E_mair_txt.TabIndex = 41
+        Me.E_mair_txt.Text = "0.5"
         '
         'Label44
         '
@@ -1174,13 +1175,13 @@ Partial Class Form1
         Me.Label44.TabIndex = 40
         Me.Label44.Text = "m_air (kg/s)"
         '
-        'TextBox52
+        'E_RH_txt
         '
-        Me.TextBox52.Location = New System.Drawing.Point(182, 109)
-        Me.TextBox52.Name = "TextBox52"
-        Me.TextBox52.Size = New System.Drawing.Size(102, 22)
-        Me.TextBox52.TabIndex = 39
-        Me.TextBox52.Text = "0.5"
+        Me.E_RH_txt.Location = New System.Drawing.Point(182, 109)
+        Me.E_RH_txt.Name = "E_RH_txt"
+        Me.E_RH_txt.Size = New System.Drawing.Size(102, 22)
+        Me.E_RH_txt.TabIndex = 39
+        Me.E_RH_txt.Text = "0.5"
         '
         'Label45
         '
@@ -1191,13 +1192,13 @@ Partial Class Form1
         Me.Label45.TabIndex = 38
         Me.Label45.Text = "RH (%)"
         '
-        'TextBox54
+        'E_Patm_txt
         '
-        Me.TextBox54.Location = New System.Drawing.Point(182, 81)
-        Me.TextBox54.Name = "TextBox54"
-        Me.TextBox54.Size = New System.Drawing.Size(102, 22)
-        Me.TextBox54.TabIndex = 35
-        Me.TextBox54.Text = "0.101325"
+        Me.E_Patm_txt.Location = New System.Drawing.Point(182, 81)
+        Me.E_Patm_txt.Name = "E_Patm_txt"
+        Me.E_Patm_txt.Size = New System.Drawing.Size(102, 22)
+        Me.E_Patm_txt.TabIndex = 35
+        Me.E_Patm_txt.Text = "0.101325"
         '
         'Label47
         '
@@ -1208,13 +1209,13 @@ Partial Class Form1
         Me.Label47.TabIndex = 34
         Me.Label47.Text = "Pai (MPa)"
         '
-        'TextBox55
+        'E_DBT_txt
         '
-        Me.TextBox55.Location = New System.Drawing.Point(184, 15)
-        Me.TextBox55.Name = "TextBox55"
-        Me.TextBox55.Size = New System.Drawing.Size(102, 22)
-        Me.TextBox55.TabIndex = 33
-        Me.TextBox55.Text = "27"
+        Me.E_DBT_txt.Location = New System.Drawing.Point(184, 15)
+        Me.E_DBT_txt.Name = "E_DBT_txt"
+        Me.E_DBT_txt.Size = New System.Drawing.Size(102, 22)
+        Me.E_DBT_txt.TabIndex = 33
+        Me.E_DBT_txt.Text = "27"
         '
         'Label48
         '
@@ -1279,31 +1280,31 @@ Partial Class Form1
         Me.TabPage5.Controls.Add(Me.Label79)
         Me.TabPage5.Controls.Add(Me.Label80)
         Me.TabPage5.Controls.Add(Me.Label81)
-        Me.TabPage5.Controls.Add(Me.TextBox4)
+        Me.TabPage5.Controls.Add(Me.C_ratio_txt)
         Me.TabPage5.Controls.Add(Me.Label29)
-        Me.TabPage5.Controls.Add(Me.TextBox2)
-        Me.TabPage5.Controls.Add(Me.TextBox3)
+        Me.TabPage5.Controls.Add(Me.C_Ao_txt)
+        Me.TabPage5.Controls.Add(Me.C_sigma_txt)
         Me.TabPage5.Controls.Add(Me.Label27)
         Me.TabPage5.Controls.Add(Me.Label28)
-        Me.TabPage5.Controls.Add(Me.TextBox38)
+        Me.TabPage5.Controls.Add(Me.C_kf_txt)
         Me.TabPage5.Controls.Add(Me.Label31)
-        Me.TabPage5.Controls.Add(Me.TextBox27)
+        Me.TabPage5.Controls.Add(Me.C_di_txt)
         Me.TabPage5.Controls.Add(Me.Label16)
-        Me.TabPage5.Controls.Add(Me.TextBox28)
+        Me.TabPage5.Controls.Add(Me.C_dw_txt)
         Me.TabPage5.Controls.Add(Me.Label23)
-        Me.TabPage5.Controls.Add(Me.TextBox29)
+        Me.TabPage5.Controls.Add(Me.C_dc_txt)
         Me.TabPage5.Controls.Add(Me.Label24)
-        Me.TabPage5.Controls.Add(Me.TextBox26)
+        Me.TabPage5.Controls.Add(Me.C_df_txt)
         Me.TabPage5.Controls.Add(Me.Label15)
-        Me.TabPage5.Controls.Add(Me.TextBox24)
+        Me.TabPage5.Controls.Add(Me.C_Pl_txt)
         Me.TabPage5.Controls.Add(Me.Label21)
-        Me.TabPage5.Controls.Add(Me.TextBox23)
+        Me.TabPage5.Controls.Add(Me.C_Pt_txt)
         Me.TabPage5.Controls.Add(Me.Label20)
-        Me.TabPage5.Controls.Add(Me.TextBox22)
+        Me.TabPage5.Controls.Add(Me.C_FinPitch_txt)
         Me.TabPage5.Controls.Add(Me.Label19)
-        Me.TabPage5.Controls.Add(Me.TextBox21)
-        Me.TabPage5.Controls.Add(Me.TextBox20)
-        Me.TabPage5.Controls.Add(Me.TextBox19)
+        Me.TabPage5.Controls.Add(Me.C_Row_txt)
+        Me.TabPage5.Controls.Add(Me.C_W_txt)
+        Me.TabPage5.Controls.Add(Me.C_H_txt)
         Me.TabPage5.Controls.Add(Me.Label14)
         Me.TabPage5.Controls.Add(Me.Label13)
         Me.TabPage5.Controls.Add(Me.Label11)
@@ -1414,14 +1415,14 @@ Partial Class Form1
         Me.Label81.TabIndex = 53
         Me.Label81.Text = "<熱交換器高度>"
         '
-        'TextBox4
+        'C_ratio_txt
         '
-        Me.TextBox4.Location = New System.Drawing.Point(116, 412)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.ReadOnly = True
-        Me.TextBox4.Size = New System.Drawing.Size(102, 22)
-        Me.TextBox4.TabIndex = 52
-        Me.TextBox4.Visible = False
+        Me.C_ratio_txt.Location = New System.Drawing.Point(116, 412)
+        Me.C_ratio_txt.Name = "C_ratio_txt"
+        Me.C_ratio_txt.ReadOnly = True
+        Me.C_ratio_txt.Size = New System.Drawing.Size(102, 22)
+        Me.C_ratio_txt.TabIndex = 52
+        Me.C_ratio_txt.Visible = False
         '
         'Label29
         '
@@ -1433,23 +1434,23 @@ Partial Class Form1
         Me.Label29.Text = "Ao/Ai "
         Me.Label29.Visible = False
         '
-        'TextBox2
+        'C_Ao_txt
         '
-        Me.TextBox2.Location = New System.Drawing.Point(116, 384)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.ReadOnly = True
-        Me.TextBox2.Size = New System.Drawing.Size(102, 22)
-        Me.TextBox2.TabIndex = 50
-        Me.TextBox2.Visible = False
+        Me.C_Ao_txt.Location = New System.Drawing.Point(116, 384)
+        Me.C_Ao_txt.Name = "C_Ao_txt"
+        Me.C_Ao_txt.ReadOnly = True
+        Me.C_Ao_txt.Size = New System.Drawing.Size(102, 22)
+        Me.C_Ao_txt.TabIndex = 50
+        Me.C_Ao_txt.Visible = False
         '
-        'TextBox3
+        'C_sigma_txt
         '
-        Me.TextBox3.Location = New System.Drawing.Point(116, 357)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.ReadOnly = True
-        Me.TextBox3.Size = New System.Drawing.Size(102, 22)
-        Me.TextBox3.TabIndex = 49
-        Me.TextBox3.Visible = False
+        Me.C_sigma_txt.Location = New System.Drawing.Point(116, 357)
+        Me.C_sigma_txt.Name = "C_sigma_txt"
+        Me.C_sigma_txt.ReadOnly = True
+        Me.C_sigma_txt.Size = New System.Drawing.Size(102, 22)
+        Me.C_sigma_txt.TabIndex = 49
+        Me.C_sigma_txt.Visible = False
         '
         'Label27
         '
@@ -1471,13 +1472,13 @@ Partial Class Form1
         Me.Label28.Text = "Sigma"
         Me.Label28.Visible = False
         '
-        'TextBox38
+        'C_kf_txt
         '
-        Me.TextBox38.Location = New System.Drawing.Point(116, 321)
-        Me.TextBox38.Name = "TextBox38"
-        Me.TextBox38.Size = New System.Drawing.Size(102, 22)
-        Me.TextBox38.TabIndex = 46
-        Me.TextBox38.Text = "204"
+        Me.C_kf_txt.Location = New System.Drawing.Point(116, 321)
+        Me.C_kf_txt.Name = "C_kf_txt"
+        Me.C_kf_txt.Size = New System.Drawing.Size(102, 22)
+        Me.C_kf_txt.TabIndex = 46
+        Me.C_kf_txt.Text = "204"
         '
         'Label31
         '
@@ -1488,13 +1489,13 @@ Partial Class Form1
         Me.Label31.TabIndex = 45
         Me.Label31.Text = "kf"
         '
-        'TextBox27
+        'C_di_txt
         '
-        Me.TextBox27.Location = New System.Drawing.Point(116, 289)
-        Me.TextBox27.Name = "TextBox27"
-        Me.TextBox27.Size = New System.Drawing.Size(102, 22)
-        Me.TextBox27.TabIndex = 44
-        Me.TextBox27.Text = "0.0095"
+        Me.C_di_txt.Location = New System.Drawing.Point(116, 289)
+        Me.C_di_txt.Name = "C_di_txt"
+        Me.C_di_txt.Size = New System.Drawing.Size(102, 22)
+        Me.C_di_txt.TabIndex = 44
+        Me.C_di_txt.Text = "0.0095"
         '
         'Label16
         '
@@ -1505,13 +1506,13 @@ Partial Class Form1
         Me.Label16.TabIndex = 43
         Me.Label16.Text = "di (m)"
         '
-        'TextBox28
+        'C_dw_txt
         '
-        Me.TextBox28.Location = New System.Drawing.Point(116, 261)
-        Me.TextBox28.Name = "TextBox28"
-        Me.TextBox28.Size = New System.Drawing.Size(102, 22)
-        Me.TextBox28.TabIndex = 42
-        Me.TextBox28.Text = "0.0003"
+        Me.C_dw_txt.Location = New System.Drawing.Point(116, 261)
+        Me.C_dw_txt.Name = "C_dw_txt"
+        Me.C_dw_txt.Size = New System.Drawing.Size(102, 22)
+        Me.C_dw_txt.TabIndex = 42
+        Me.C_dw_txt.Text = "0.0003"
         '
         'Label23
         '
@@ -1522,13 +1523,13 @@ Partial Class Form1
         Me.Label23.TabIndex = 41
         Me.Label23.Text = "dw (m)"
         '
-        'TextBox29
+        'C_dc_txt
         '
-        Me.TextBox29.Location = New System.Drawing.Point(116, 233)
-        Me.TextBox29.Name = "TextBox29"
-        Me.TextBox29.Size = New System.Drawing.Size(102, 22)
-        Me.TextBox29.TabIndex = 40
-        Me.TextBox29.Text = "0.01034"
+        Me.C_dc_txt.Location = New System.Drawing.Point(116, 233)
+        Me.C_dc_txt.Name = "C_dc_txt"
+        Me.C_dc_txt.Size = New System.Drawing.Size(102, 22)
+        Me.C_dc_txt.TabIndex = 40
+        Me.C_dc_txt.Text = "0.01034"
         '
         'Label24
         '
@@ -1539,13 +1540,13 @@ Partial Class Form1
         Me.Label24.TabIndex = 39
         Me.Label24.Text = "dc (m)"
         '
-        'TextBox26
+        'C_df_txt
         '
-        Me.TextBox26.Location = New System.Drawing.Point(116, 197)
-        Me.TextBox26.Name = "TextBox26"
-        Me.TextBox26.Size = New System.Drawing.Size(102, 22)
-        Me.TextBox26.TabIndex = 38
-        Me.TextBox26.Text = "0.00012"
+        Me.C_df_txt.Location = New System.Drawing.Point(116, 197)
+        Me.C_df_txt.Name = "C_df_txt"
+        Me.C_df_txt.Size = New System.Drawing.Size(102, 22)
+        Me.C_df_txt.TabIndex = 38
+        Me.C_df_txt.Text = "0.00012"
         '
         'Label15
         '
@@ -1556,13 +1557,13 @@ Partial Class Form1
         Me.Label15.TabIndex = 37
         Me.Label15.Text = "df (m)"
         '
-        'TextBox24
+        'C_Pl_txt
         '
-        Me.TextBox24.Location = New System.Drawing.Point(116, 169)
-        Me.TextBox24.Name = "TextBox24"
-        Me.TextBox24.Size = New System.Drawing.Size(102, 22)
-        Me.TextBox24.TabIndex = 36
-        Me.TextBox24.Text = "0.022"
+        Me.C_Pl_txt.Location = New System.Drawing.Point(116, 169)
+        Me.C_Pl_txt.Name = "C_Pl_txt"
+        Me.C_Pl_txt.Size = New System.Drawing.Size(102, 22)
+        Me.C_Pl_txt.TabIndex = 36
+        Me.C_Pl_txt.Text = "0.022"
         '
         'Label21
         '
@@ -1573,13 +1574,13 @@ Partial Class Form1
         Me.Label21.TabIndex = 35
         Me.Label21.Text = "Pl (m)"
         '
-        'TextBox23
+        'C_Pt_txt
         '
-        Me.TextBox23.Location = New System.Drawing.Point(116, 141)
-        Me.TextBox23.Name = "TextBox23"
-        Me.TextBox23.Size = New System.Drawing.Size(102, 22)
-        Me.TextBox23.TabIndex = 34
-        Me.TextBox23.Text = "0.0254"
+        Me.C_Pt_txt.Location = New System.Drawing.Point(116, 141)
+        Me.C_Pt_txt.Name = "C_Pt_txt"
+        Me.C_Pt_txt.Size = New System.Drawing.Size(102, 22)
+        Me.C_Pt_txt.TabIndex = 34
+        Me.C_Pt_txt.Text = "0.0254"
         '
         'Label20
         '
@@ -1590,13 +1591,13 @@ Partial Class Form1
         Me.Label20.TabIndex = 33
         Me.Label20.Text = "Pt (m)"
         '
-        'TextBox22
+        'C_FinPitch_txt
         '
-        Me.TextBox22.Location = New System.Drawing.Point(116, 113)
-        Me.TextBox22.Name = "TextBox22"
-        Me.TextBox22.Size = New System.Drawing.Size(102, 22)
-        Me.TextBox22.TabIndex = 32
-        Me.TextBox22.Text = "0.00128"
+        Me.C_FinPitch_txt.Location = New System.Drawing.Point(116, 113)
+        Me.C_FinPitch_txt.Name = "C_FinPitch_txt"
+        Me.C_FinPitch_txt.Size = New System.Drawing.Size(102, 22)
+        Me.C_FinPitch_txt.TabIndex = 32
+        Me.C_FinPitch_txt.Text = "0.00128"
         '
         'Label19
         '
@@ -1607,29 +1608,29 @@ Partial Class Form1
         Me.Label19.TabIndex = 31
         Me.Label19.Text = "FinPitch (m)"
         '
-        'TextBox21
+        'C_Row_txt
         '
-        Me.TextBox21.Location = New System.Drawing.Point(116, 85)
-        Me.TextBox21.Name = "TextBox21"
-        Me.TextBox21.Size = New System.Drawing.Size(102, 22)
-        Me.TextBox21.TabIndex = 30
-        Me.TextBox21.Text = "4"
+        Me.C_Row_txt.Location = New System.Drawing.Point(116, 85)
+        Me.C_Row_txt.Name = "C_Row_txt"
+        Me.C_Row_txt.Size = New System.Drawing.Size(102, 22)
+        Me.C_Row_txt.TabIndex = 30
+        Me.C_Row_txt.Text = "4"
         '
-        'TextBox20
+        'C_W_txt
         '
-        Me.TextBox20.Location = New System.Drawing.Point(116, 46)
-        Me.TextBox20.Name = "TextBox20"
-        Me.TextBox20.Size = New System.Drawing.Size(102, 22)
-        Me.TextBox20.TabIndex = 29
-        Me.TextBox20.Text = "1"
+        Me.C_W_txt.Location = New System.Drawing.Point(116, 46)
+        Me.C_W_txt.Name = "C_W_txt"
+        Me.C_W_txt.Size = New System.Drawing.Size(102, 22)
+        Me.C_W_txt.TabIndex = 29
+        Me.C_W_txt.Text = "1"
         '
-        'TextBox19
+        'C_H_txt
         '
-        Me.TextBox19.Location = New System.Drawing.Point(116, 19)
-        Me.TextBox19.Name = "TextBox19"
-        Me.TextBox19.Size = New System.Drawing.Size(102, 22)
-        Me.TextBox19.TabIndex = 28
-        Me.TextBox19.Text = "0.8"
+        Me.C_H_txt.Location = New System.Drawing.Point(116, 19)
+        Me.C_H_txt.Name = "C_H_txt"
+        Me.C_H_txt.Size = New System.Drawing.Size(102, 22)
+        Me.C_H_txt.TabIndex = 28
+        Me.C_H_txt.Text = "0.8"
         '
         'Label14
         '
@@ -1666,19 +1667,19 @@ Partial Class Form1
         Me.TabPage6.Controls.Add(Me.Label85)
         Me.TabPage6.Controls.Add(Me.Label82)
         Me.TabPage6.Controls.Add(Me.Label83)
-        Me.TabPage6.Controls.Add(Me.TextBox8)
+        Me.TabPage6.Controls.Add(Me.C_air_Pr_txt)
         Me.TabPage6.Controls.Add(Me.Label62)
-        Me.TabPage6.Controls.Add(Me.TextBox7)
+        Me.TabPage6.Controls.Add(Me.C_air_capacity_txt)
         Me.TabPage6.Controls.Add(Me.Label61)
-        Me.TabPage6.Controls.Add(Me.TextBox6)
+        Me.TabPage6.Controls.Add(Me.C_air_viscosity_txt)
         Me.TabPage6.Controls.Add(Me.Label60)
-        Me.TabPage6.Controls.Add(Me.TextBox5)
+        Me.TabPage6.Controls.Add(Me.C_air_density_txt)
         Me.TabPage6.Controls.Add(Me.Label59)
-        Me.TabPage6.Controls.Add(Me.TextBox1)
+        Me.TabPage6.Controls.Add(Me.C_noho_txt)
         Me.TabPage6.Controls.Add(Me.Label25)
-        Me.TabPage6.Controls.Add(Me.TextBox36)
+        Me.TabPage6.Controls.Add(Me.C_Vfr_txt)
         Me.TabPage6.Controls.Add(Me.Label26)
-        Me.TabPage6.Controls.Add(Me.TextBox31)
+        Me.TabPage6.Controls.Add(Me.C_Tain_txt)
         Me.TabPage6.Controls.Add(Me.Label18)
         Me.TabPage6.Location = New System.Drawing.Point(4, 22)
         Me.TabPage6.Name = "TabPage6"
@@ -1742,14 +1743,14 @@ Partial Class Form1
         Me.Label83.TabIndex = 54
         Me.Label83.Text = "<空氣入口溫度>"
         '
-        'TextBox8
+        'C_air_Pr_txt
         '
-        Me.TextBox8.Location = New System.Drawing.Point(184, 244)
-        Me.TextBox8.Name = "TextBox8"
-        Me.TextBox8.ReadOnly = True
-        Me.TextBox8.Size = New System.Drawing.Size(102, 22)
-        Me.TextBox8.TabIndex = 53
-        Me.TextBox8.Text = "0.71"
+        Me.C_air_Pr_txt.Location = New System.Drawing.Point(184, 244)
+        Me.C_air_Pr_txt.Name = "C_air_Pr_txt"
+        Me.C_air_Pr_txt.ReadOnly = True
+        Me.C_air_Pr_txt.Size = New System.Drawing.Size(102, 22)
+        Me.C_air_Pr_txt.TabIndex = 53
+        Me.C_air_Pr_txt.Text = "0.71"
         '
         'Label62
         '
@@ -1760,14 +1761,14 @@ Partial Class Form1
         Me.Label62.TabIndex = 52
         Me.Label62.Text = "Air Pr number"
         '
-        'TextBox7
+        'C_air_capacity_txt
         '
-        Me.TextBox7.Location = New System.Drawing.Point(184, 219)
-        Me.TextBox7.Name = "TextBox7"
-        Me.TextBox7.ReadOnly = True
-        Me.TextBox7.Size = New System.Drawing.Size(102, 22)
-        Me.TextBox7.TabIndex = 51
-        Me.TextBox7.Text = "1007"
+        Me.C_air_capacity_txt.Location = New System.Drawing.Point(184, 219)
+        Me.C_air_capacity_txt.Name = "C_air_capacity_txt"
+        Me.C_air_capacity_txt.ReadOnly = True
+        Me.C_air_capacity_txt.Size = New System.Drawing.Size(102, 22)
+        Me.C_air_capacity_txt.TabIndex = 51
+        Me.C_air_capacity_txt.Text = "1007"
         '
         'Label61
         '
@@ -1778,14 +1779,14 @@ Partial Class Form1
         Me.Label61.TabIndex = 50
         Me.Label61.Text = "Air Capacity (K/Kg.K)"
         '
-        'TextBox6
+        'C_air_viscosity_txt
         '
-        Me.TextBox6.Location = New System.Drawing.Point(184, 192)
-        Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.ReadOnly = True
-        Me.TextBox6.Size = New System.Drawing.Size(102, 22)
-        Me.TextBox6.TabIndex = 49
-        Me.TextBox6.Text = "188.7E-7"
+        Me.C_air_viscosity_txt.Location = New System.Drawing.Point(184, 192)
+        Me.C_air_viscosity_txt.Name = "C_air_viscosity_txt"
+        Me.C_air_viscosity_txt.ReadOnly = True
+        Me.C_air_viscosity_txt.Size = New System.Drawing.Size(102, 22)
+        Me.C_air_viscosity_txt.TabIndex = 49
+        Me.C_air_viscosity_txt.Text = "188.7E-7"
         '
         'Label60
         '
@@ -1796,14 +1797,14 @@ Partial Class Form1
         Me.Label60.TabIndex = 48
         Me.Label60.Text = "Air Viscosity(N.s/m^2)"
         '
-        'TextBox5
+        'C_air_density_txt
         '
-        Me.TextBox5.Location = New System.Drawing.Point(184, 164)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.ReadOnly = True
-        Me.TextBox5.Size = New System.Drawing.Size(102, 22)
-        Me.TextBox5.TabIndex = 47
-        Me.TextBox5.Text = "1.145"
+        Me.C_air_density_txt.Location = New System.Drawing.Point(184, 164)
+        Me.C_air_density_txt.Name = "C_air_density_txt"
+        Me.C_air_density_txt.ReadOnly = True
+        Me.C_air_density_txt.Size = New System.Drawing.Size(102, 22)
+        Me.C_air_density_txt.TabIndex = 47
+        Me.C_air_density_txt.Text = "1.145"
         '
         'Label59
         '
@@ -1814,14 +1815,14 @@ Partial Class Form1
         Me.Label59.TabIndex = 46
         Me.Label59.Text = "Air Density (kg/m^3)"
         '
-        'TextBox1
+        'C_noho_txt
         '
-        Me.TextBox1.Location = New System.Drawing.Point(184, 85)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.ReadOnly = True
-        Me.TextBox1.Size = New System.Drawing.Size(102, 22)
-        Me.TextBox1.TabIndex = 45
-        Me.TextBox1.Visible = False
+        Me.C_noho_txt.Location = New System.Drawing.Point(184, 85)
+        Me.C_noho_txt.Name = "C_noho_txt"
+        Me.C_noho_txt.ReadOnly = True
+        Me.C_noho_txt.Size = New System.Drawing.Size(102, 22)
+        Me.C_noho_txt.TabIndex = 45
+        Me.C_noho_txt.Visible = False
         '
         'Label25
         '
@@ -1833,13 +1834,13 @@ Partial Class Form1
         Me.Label25.Text = "noho"
         Me.Label25.Visible = False
         '
-        'TextBox36
+        'C_Vfr_txt
         '
-        Me.TextBox36.Location = New System.Drawing.Point(184, 48)
-        Me.TextBox36.Name = "TextBox36"
-        Me.TextBox36.Size = New System.Drawing.Size(102, 22)
-        Me.TextBox36.TabIndex = 43
-        Me.TextBox36.Text = "1.5"
+        Me.C_Vfr_txt.Location = New System.Drawing.Point(184, 48)
+        Me.C_Vfr_txt.Name = "C_Vfr_txt"
+        Me.C_Vfr_txt.Size = New System.Drawing.Size(102, 22)
+        Me.C_Vfr_txt.TabIndex = 43
+        Me.C_Vfr_txt.Text = "1.5"
         '
         'Label26
         '
@@ -1850,13 +1851,13 @@ Partial Class Form1
         Me.Label26.TabIndex = 36
         Me.Label26.Text = "AirInlet FrontalVelocity (m/s)"
         '
-        'TextBox31
+        'C_Tain_txt
         '
-        Me.TextBox31.Location = New System.Drawing.Point(184, 15)
-        Me.TextBox31.Name = "TextBox31"
-        Me.TextBox31.Size = New System.Drawing.Size(102, 22)
-        Me.TextBox31.TabIndex = 33
-        Me.TextBox31.Text = "35"
+        Me.C_Tain_txt.Location = New System.Drawing.Point(184, 15)
+        Me.C_Tain_txt.Name = "C_Tain_txt"
+        Me.C_Tain_txt.Size = New System.Drawing.Size(102, 22)
+        Me.C_Tain_txt.TabIndex = 33
+        Me.C_Tain_txt.Text = "35"
         '
         'Label18
         '
@@ -1910,7 +1911,7 @@ Partial Class Form1
         '
         'GroupBox15
         '
-        Me.GroupBox15.Controls.Add(Me.TextBox35)
+        Me.GroupBox15.Controls.Add(Me.EnegyBalanceCheck)
         Me.GroupBox15.Controls.Add(Me.Label75)
         Me.GroupBox15.Controls.Add(Me.TextBox18)
         Me.GroupBox15.Controls.Add(Me.InFluid)
@@ -1922,13 +1923,13 @@ Partial Class Form1
         Me.GroupBox15.TabStop = False
         Me.GroupBox15.Text = "System Monitor"
         '
-        'TextBox35
+        'EnegyBalanceCheck
         '
-        Me.TextBox35.Location = New System.Drawing.Point(200, 31)
-        Me.TextBox35.Name = "TextBox35"
-        Me.TextBox35.ReadOnly = True
-        Me.TextBox35.Size = New System.Drawing.Size(100, 22)
-        Me.TextBox35.TabIndex = 76
+        Me.EnegyBalanceCheck.Location = New System.Drawing.Point(200, 31)
+        Me.EnegyBalanceCheck.Name = "EnegyBalanceCheck"
+        Me.EnegyBalanceCheck.ReadOnly = True
+        Me.EnegyBalanceCheck.Size = New System.Drawing.Size(100, 22)
+        Me.EnegyBalanceCheck.TabIndex = 76
         '
         'Label75
         '
@@ -2016,21 +2017,21 @@ Partial Class Form1
         '
         'GroupBox4
         '
-        Me.GroupBox4.Controls.Add(Me.CTsat)
+        Me.GroupBox4.Controls.Add(Me.Tcond_sat)
         Me.GroupBox4.Controls.Add(Me.Label10)
         Me.GroupBox4.Controls.Add(Me.Label74)
         Me.GroupBox4.Controls.Add(Me.QCtxt)
-        Me.GroupBox4.Controls.Add(Me.CPsat)
+        Me.GroupBox4.Controls.Add(Me.Pcond_sat)
         Me.GroupBox4.Controls.Add(Me.Label71)
         Me.GroupBox4.Controls.Add(Me.Label7)
-        Me.GroupBox4.Controls.Add(Me.T1_2)
+        Me.GroupBox4.Controls.Add(Me.Tcond_sup)
         Me.GroupBox4.Controls.Add(Me.Label72)
         Me.GroupBox4.Controls.Add(Me.Label6)
         Me.GroupBox4.Controls.Add(Me.Label73)
-        Me.GroupBox4.Controls.Add(Me.TextBox16)
-        Me.GroupBox4.Controls.Add(Me.QA3txt)
-        Me.GroupBox4.Controls.Add(Me.QA1txt)
-        Me.GroupBox4.Controls.Add(Me.QA2txt)
+        Me.GroupBox4.Controls.Add(Me.C_Q_tot)
+        Me.GroupBox4.Controls.Add(Me.C_Q_sub)
+        Me.GroupBox4.Controls.Add(Me.C_Q_sup)
+        Me.GroupBox4.Controls.Add(Me.C_Q_sat)
         Me.GroupBox4.Location = New System.Drawing.Point(15, 356)
         Me.GroupBox4.Name = "GroupBox4"
         Me.GroupBox4.Size = New System.Drawing.Size(241, 325)
@@ -2038,13 +2039,13 @@ Partial Class Form1
         Me.GroupBox4.TabStop = False
         Me.GroupBox4.Text = "Condenser"
         '
-        'CTsat
+        'Tcond_sat
         '
-        Me.CTsat.Location = New System.Drawing.Point(115, 52)
-        Me.CTsat.Name = "CTsat"
-        Me.CTsat.Size = New System.Drawing.Size(99, 22)
-        Me.CTsat.TabIndex = 5
-        Me.CTsat.Text = "343.82"
+        Me.Tcond_sat.Location = New System.Drawing.Point(115, 52)
+        Me.Tcond_sat.Name = "Tcond_sat"
+        Me.Tcond_sat.Size = New System.Drawing.Size(99, 22)
+        Me.Tcond_sat.TabIndex = 5
+        Me.Tcond_sat.Text = "343.82"
         '
         'Label10
         '
@@ -2072,13 +2073,13 @@ Partial Class Form1
         Me.QCtxt.Size = New System.Drawing.Size(100, 22)
         Me.QCtxt.TabIndex = 55
         '
-        'CPsat
+        'Pcond_sat
         '
-        Me.CPsat.Location = New System.Drawing.Point(115, 80)
-        Me.CPsat.Name = "CPsat"
-        Me.CPsat.ReadOnly = True
-        Me.CPsat.Size = New System.Drawing.Size(99, 22)
-        Me.CPsat.TabIndex = 7
+        Me.Pcond_sat.Location = New System.Drawing.Point(115, 80)
+        Me.Pcond_sat.Name = "Pcond_sat"
+        Me.Pcond_sat.ReadOnly = True
+        Me.Pcond_sat.Size = New System.Drawing.Size(99, 22)
+        Me.Pcond_sat.TabIndex = 7
         '
         'Label71
         '
@@ -2098,13 +2099,13 @@ Partial Class Form1
         Me.Label7.TabIndex = 5
         Me.Label7.Text = "Pcond_sat  (Mpa) :"
         '
-        'T1_2
+        'Tcond_sup
         '
-        Me.T1_2.Location = New System.Drawing.Point(116, 28)
-        Me.T1_2.Name = "T1_2"
-        Me.T1_2.Size = New System.Drawing.Size(98, 22)
-        Me.T1_2.TabIndex = 8
-        Me.T1_2.Text = "368"
+        Me.Tcond_sup.Location = New System.Drawing.Point(116, 28)
+        Me.Tcond_sup.Name = "Tcond_sup"
+        Me.Tcond_sup.Size = New System.Drawing.Size(98, 22)
+        Me.Tcond_sup.TabIndex = 8
+        Me.Tcond_sup.Text = "368"
         '
         'Label72
         '
@@ -2133,43 +2134,43 @@ Partial Class Form1
         Me.Label73.TabIndex = 71
         Me.Label73.Text = "C_Q_sat (W)"
         '
-        'TextBox16
+        'C_Q_tot
         '
-        Me.TextBox16.Location = New System.Drawing.Point(114, 196)
-        Me.TextBox16.Name = "TextBox16"
-        Me.TextBox16.ReadOnly = True
-        Me.TextBox16.Size = New System.Drawing.Size(100, 22)
-        Me.TextBox16.TabIndex = 63
+        Me.C_Q_tot.Location = New System.Drawing.Point(114, 196)
+        Me.C_Q_tot.Name = "C_Q_tot"
+        Me.C_Q_tot.ReadOnly = True
+        Me.C_Q_tot.Size = New System.Drawing.Size(100, 22)
+        Me.C_Q_tot.TabIndex = 63
         '
-        'QA3txt
+        'C_Q_sub
         '
-        Me.QA3txt.Location = New System.Drawing.Point(114, 168)
-        Me.QA3txt.Name = "QA3txt"
-        Me.QA3txt.ReadOnly = True
-        Me.QA3txt.Size = New System.Drawing.Size(100, 22)
-        Me.QA3txt.TabIndex = 54
+        Me.C_Q_sub.Location = New System.Drawing.Point(114, 168)
+        Me.C_Q_sub.Name = "C_Q_sub"
+        Me.C_Q_sub.ReadOnly = True
+        Me.C_Q_sub.Size = New System.Drawing.Size(100, 22)
+        Me.C_Q_sub.TabIndex = 54
         '
-        'QA1txt
+        'C_Q_sup
         '
-        Me.QA1txt.Location = New System.Drawing.Point(114, 112)
-        Me.QA1txt.Name = "QA1txt"
-        Me.QA1txt.ReadOnly = True
-        Me.QA1txt.Size = New System.Drawing.Size(100, 22)
-        Me.QA1txt.TabIndex = 10
+        Me.C_Q_sup.Location = New System.Drawing.Point(114, 112)
+        Me.C_Q_sup.Name = "C_Q_sup"
+        Me.C_Q_sup.ReadOnly = True
+        Me.C_Q_sup.Size = New System.Drawing.Size(100, 22)
+        Me.C_Q_sup.TabIndex = 10
         '
-        'QA2txt
+        'C_Q_sat
         '
-        Me.QA2txt.Location = New System.Drawing.Point(114, 140)
-        Me.QA2txt.Name = "QA2txt"
-        Me.QA2txt.ReadOnly = True
-        Me.QA2txt.Size = New System.Drawing.Size(100, 22)
-        Me.QA2txt.TabIndex = 53
+        Me.C_Q_sat.Location = New System.Drawing.Point(114, 140)
+        Me.C_Q_sat.Name = "C_Q_sat"
+        Me.C_Q_sat.ReadOnly = True
+        Me.C_Q_sat.Size = New System.Drawing.Size(100, 22)
+        Me.C_Q_sat.TabIndex = 53
         '
         'GroupBox3
         '
-        Me.GroupBox3.Controls.Add(Me.TextBox17)
+        Me.GroupBox3.Controls.Add(Me.Xexpa_in)
         Me.GroupBox3.Controls.Add(Me.Label9)
-        Me.GroupBox3.Controls.Add(Me.T2_3)
+        Me.GroupBox3.Controls.Add(Me.Texpa_in)
         Me.GroupBox3.Controls.Add(Me.Label8)
         Me.GroupBox3.Location = New System.Drawing.Point(502, 356)
         Me.GroupBox3.Name = "GroupBox3"
@@ -2178,30 +2179,30 @@ Partial Class Form1
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "Expanson Device"
         '
-        'TextBox17
+        'Xexpa_in
         '
-        Me.TextBox17.Location = New System.Drawing.Point(96, 46)
-        Me.TextBox17.Name = "TextBox17"
-        Me.TextBox17.ReadOnly = True
-        Me.TextBox17.Size = New System.Drawing.Size(82, 22)
-        Me.TextBox17.TabIndex = 9
+        Me.Xexpa_in.Location = New System.Drawing.Point(96, 46)
+        Me.Xexpa_in.Name = "Xexpa_in"
+        Me.Xexpa_in.ReadOnly = True
+        Me.Xexpa_in.Size = New System.Drawing.Size(82, 22)
+        Me.Xexpa_in.TabIndex = 9
         '
         'Label9
         '
         Me.Label9.AutoSize = True
         Me.Label9.Location = New System.Drawing.Point(16, 52)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(53, 12)
+        Me.Label9.Size = New System.Drawing.Size(69, 12)
         Me.Label9.TabIndex = 8
-        Me.Label9.Text = "Xexpa_in "
+        Me.Label9.Text = "Xexpa_in (X)"
         '
-        'T2_3
+        'Texpa_in
         '
-        Me.T2_3.Location = New System.Drawing.Point(96, 21)
-        Me.T2_3.Name = "T2_3"
-        Me.T2_3.ReadOnly = True
-        Me.T2_3.Size = New System.Drawing.Size(82, 22)
-        Me.T2_3.TabIndex = 6
+        Me.Texpa_in.Location = New System.Drawing.Point(96, 21)
+        Me.Texpa_in.Name = "Texpa_in"
+        Me.Texpa_in.ReadOnly = True
+        Me.Texpa_in.Size = New System.Drawing.Size(82, 22)
+        Me.Texpa_in.TabIndex = 6
         '
         'Label8
         '
@@ -2214,18 +2215,18 @@ Partial Class Form1
         '
         'GroupBox2
         '
-        Me.GroupBox2.Controls.Add(Me.EPsat)
+        Me.GroupBox2.Controls.Add(Me.Pevap_sat)
         Me.GroupBox2.Controls.Add(Me.Label49)
         Me.GroupBox2.Controls.Add(Me.Label3)
-        Me.GroupBox2.Controls.Add(Me.TextBox10)
+        Me.GroupBox2.Controls.Add(Me.Xevap_in)
         Me.GroupBox2.Controls.Add(Me.Label22)
         Me.GroupBox2.Controls.Add(Me.Tevap_sat)
         Me.GroupBox2.Controls.Add(Me.Label17)
         Me.GroupBox2.Controls.Add(Me.Label63)
-        Me.GroupBox2.Controls.Add(Me.QA5txt)
+        Me.GroupBox2.Controls.Add(Me.E_Q_sup)
         Me.GroupBox2.Controls.Add(Me.Label4)
-        Me.GroupBox2.Controls.Add(Me.QEtxt)
-        Me.GroupBox2.Controls.Add(Me.QA4txt)
+        Me.GroupBox2.Controls.Add(Me.E_Q_tot)
+        Me.GroupBox2.Controls.Add(Me.E_Q_sat)
         Me.GroupBox2.Location = New System.Drawing.Point(262, 356)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(225, 325)
@@ -2233,13 +2234,13 @@ Partial Class Form1
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Evaporator"
         '
-        'EPsat
+        'Pevap_sat
         '
-        Me.EPsat.Location = New System.Drawing.Point(108, 52)
-        Me.EPsat.Name = "EPsat"
-        Me.EPsat.ReadOnly = True
-        Me.EPsat.Size = New System.Drawing.Size(100, 22)
-        Me.EPsat.TabIndex = 5
+        Me.Pevap_sat.Location = New System.Drawing.Point(108, 52)
+        Me.Pevap_sat.Name = "Pevap_sat"
+        Me.Pevap_sat.ReadOnly = True
+        Me.Pevap_sat.Size = New System.Drawing.Size(100, 22)
+        Me.Pevap_sat.TabIndex = 5
         '
         'Label49
         '
@@ -2259,13 +2260,13 @@ Partial Class Form1
         Me.Label3.TabIndex = 3
         Me.Label3.Text = "Pevap_sat (Mpa)"
         '
-        'TextBox10
+        'Xevap_in
         '
-        Me.TextBox10.Location = New System.Drawing.Point(107, 80)
-        Me.TextBox10.Name = "TextBox10"
-        Me.TextBox10.Size = New System.Drawing.Size(99, 22)
-        Me.TextBox10.TabIndex = 58
-        Me.TextBox10.Text = "0.2"
+        Me.Xevap_in.Location = New System.Drawing.Point(107, 80)
+        Me.Xevap_in.Name = "Xevap_in"
+        Me.Xevap_in.Size = New System.Drawing.Size(99, 22)
+        Me.Xevap_in.TabIndex = 58
+        Me.Xevap_in.Text = "0.2"
         '
         'Label22
         '
@@ -2298,17 +2299,17 @@ Partial Class Form1
         Me.Label63.AutoSize = True
         Me.Label63.Location = New System.Drawing.Point(12, 83)
         Me.Label63.Name = "Label63"
-        Me.Label63.Size = New System.Drawing.Size(50, 12)
+        Me.Label63.Size = New System.Drawing.Size(67, 12)
         Me.Label63.TabIndex = 57
-        Me.Label63.Text = "Xevap_in"
+        Me.Label63.Text = "Xevap_in (x)"
         '
-        'QA5txt
+        'E_Q_sup
         '
-        Me.QA5txt.Location = New System.Drawing.Point(108, 167)
-        Me.QA5txt.Name = "QA5txt"
-        Me.QA5txt.ReadOnly = True
-        Me.QA5txt.Size = New System.Drawing.Size(100, 22)
-        Me.QA5txt.TabIndex = 57
+        Me.E_Q_sup.Location = New System.Drawing.Point(108, 167)
+        Me.E_Q_sup.Name = "E_Q_sup"
+        Me.E_Q_sup.ReadOnly = True
+        Me.E_Q_sup.Size = New System.Drawing.Size(100, 22)
+        Me.E_Q_sup.TabIndex = 57
         '
         'Label4
         '
@@ -2319,25 +2320,25 @@ Partial Class Form1
         Me.Label4.TabIndex = 2
         Me.Label4.Text = "Tevap_sat (K) :"
         '
-        'QEtxt
+        'E_Q_tot
         '
-        Me.QEtxt.Location = New System.Drawing.Point(109, 195)
-        Me.QEtxt.Name = "QEtxt"
-        Me.QEtxt.ReadOnly = True
-        Me.QEtxt.Size = New System.Drawing.Size(100, 22)
-        Me.QEtxt.TabIndex = 56
+        Me.E_Q_tot.Location = New System.Drawing.Point(109, 195)
+        Me.E_Q_tot.Name = "E_Q_tot"
+        Me.E_Q_tot.ReadOnly = True
+        Me.E_Q_tot.Size = New System.Drawing.Size(100, 22)
+        Me.E_Q_tot.TabIndex = 56
         '
-        'QA4txt
+        'E_Q_sat
         '
-        Me.QA4txt.Location = New System.Drawing.Point(109, 139)
-        Me.QA4txt.Name = "QA4txt"
-        Me.QA4txt.ReadOnly = True
-        Me.QA4txt.Size = New System.Drawing.Size(100, 22)
-        Me.QA4txt.TabIndex = 11
+        Me.E_Q_sat.Location = New System.Drawing.Point(109, 139)
+        Me.E_Q_sat.Name = "E_Q_sat"
+        Me.E_Q_sat.ReadOnly = True
+        Me.E_Q_sat.Size = New System.Drawing.Size(100, 22)
+        Me.E_Q_sat.TabIndex = 11
         '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.TextBox11)
+        Me.GroupBox1.Controls.Add(Me.Wcomp)
         Me.GroupBox1.Controls.Add(Me.Label46)
         Me.GroupBox1.Controls.Add(Me.Tcomp_in)
         Me.GroupBox1.Controls.Add(Me.MFR)
@@ -2350,13 +2351,13 @@ Partial Class Form1
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Compressor"
         '
-        'TextBox11
+        'Wcomp
         '
-        Me.TextBox11.Location = New System.Drawing.Point(121, 87)
-        Me.TextBox11.Name = "TextBox11"
-        Me.TextBox11.ReadOnly = True
-        Me.TextBox11.Size = New System.Drawing.Size(102, 22)
-        Me.TextBox11.TabIndex = 62
+        Me.Wcomp.Location = New System.Drawing.Point(121, 87)
+        Me.Wcomp.Name = "Wcomp"
+        Me.Wcomp.ReadOnly = True
+        Me.Wcomp.Size = New System.Drawing.Size(102, 22)
+        Me.Wcomp.TabIndex = 62
         '
         'Label46
         '
@@ -2507,164 +2508,164 @@ Partial Class Form1
 
     End Sub
     Friend WithEvents TabPage3 As TabPage
-    Friend WithEvents CompressorSpeed As TextBox
+    Friend WithEvents Comp_CompressorSpeed As TextBox
     Friend WithEvents Label58 As Label
-    Friend WithEvents SweptVolume As TextBox
+    Friend WithEvents Comp_SweptVolume As TextBox
     Friend WithEvents Label57 As Label
-    Friend WithEvents Volumetric_Efficiency As TextBox
+    Friend WithEvents Comp_Volumetric_Efficiency As TextBox
     Friend WithEvents Label53 As Label
-    Friend WithEvents Isentropic_Efficiency As TextBox
+    Friend WithEvents Comp_Isentropic_Efficiency As TextBox
     Friend WithEvents Label54 As Label
-    Friend WithEvents Discharge_Pressure As TextBox
+    Friend WithEvents Comp_Discharge_Pressure As TextBox
     Friend WithEvents Label55 As Label
-    Friend WithEvents Suction_Pressure As TextBox
+    Friend WithEvents Comp_Suction_Pressure As TextBox
     Friend WithEvents Label56 As Label
     Friend WithEvents TabPage2 As TabPage
     Friend WithEvents TabPage1 As TabPage
     Friend WithEvents GroupBox8 As GroupBox
     Friend WithEvents TabControl2 As TabControl
     Friend WithEvents TabPage8 As TabPage
-    Friend WithEvents TextBox39 As TextBox
+    Friend WithEvents E_kf_txt As TextBox
     Friend WithEvents Label32 As Label
-    Friend WithEvents TextBox41 As TextBox
+    Friend WithEvents E_do__txt As TextBox
     Friend WithEvents Label34 As Label
-    Friend WithEvents TextBox43 As TextBox
+    Friend WithEvents E_Xp_txt As TextBox
     Friend WithEvents Label36 As Label
-    Friend WithEvents TextBox44 As TextBox
+    Friend WithEvents E_Pl_txt As TextBox
     Friend WithEvents Label37 As Label
-    Friend WithEvents TextBox45 As TextBox
+    Friend WithEvents E_Pt_txt As TextBox
     Friend WithEvents Label38 As Label
-    Friend WithEvents TextBox46 As TextBox
+    Friend WithEvents E_FinPitch_txt As TextBox
     Friend WithEvents Label39 As Label
-    Friend WithEvents TextBox47 As TextBox
-    Friend WithEvents TextBox48 As TextBox
-    Friend WithEvents TextBox49 As TextBox
+    Friend WithEvents E_Rox_txt As TextBox
+    Friend WithEvents E_W_txt As TextBox
+    Friend WithEvents E_H_txt As TextBox
     Friend WithEvents Label40 As Label
     Friend WithEvents Label41 As Label
     Friend WithEvents Label42 As Label
     Friend WithEvents TabPage9 As TabPage
-    Friend WithEvents TextBox51 As TextBox
+    Friend WithEvents E_mair_txt As TextBox
     Friend WithEvents Label44 As Label
-    Friend WithEvents TextBox52 As TextBox
+    Friend WithEvents E_RH_txt As TextBox
     Friend WithEvents Label45 As Label
-    Friend WithEvents TextBox54 As TextBox
+    Friend WithEvents E_Patm_txt As TextBox
     Friend WithEvents Label47 As Label
-    Friend WithEvents TextBox55 As TextBox
+    Friend WithEvents E_DBT_txt As TextBox
     Friend WithEvents Label48 As Label
     Friend WithEvents Parameters As TabPage
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents GroupBox5 As GroupBox
     Friend WithEvents TabControl1 As TabControl
     Friend WithEvents TabPage5 As TabPage
-    Friend WithEvents TextBox38 As TextBox
+    Friend WithEvents C_kf_txt As TextBox
     Friend WithEvents Label31 As Label
-    Friend WithEvents TextBox27 As TextBox
+    Friend WithEvents C_di_txt As TextBox
     Friend WithEvents Label16 As Label
-    Friend WithEvents TextBox28 As TextBox
+    Friend WithEvents C_dw_txt As TextBox
     Friend WithEvents Label23 As Label
-    Friend WithEvents TextBox29 As TextBox
+    Friend WithEvents C_dc_txt As TextBox
     Friend WithEvents Label24 As Label
-    Friend WithEvents TextBox26 As TextBox
+    Friend WithEvents C_df_txt As TextBox
     Friend WithEvents Label15 As Label
-    Friend WithEvents TextBox24 As TextBox
+    Friend WithEvents C_Pl_txt As TextBox
     Friend WithEvents Label21 As Label
-    Friend WithEvents TextBox23 As TextBox
+    Friend WithEvents C_Pt_txt As TextBox
     Friend WithEvents Label20 As Label
-    Friend WithEvents TextBox22 As TextBox
+    Friend WithEvents C_FinPitch_txt As TextBox
     Friend WithEvents Label19 As Label
-    Friend WithEvents TextBox21 As TextBox
-    Friend WithEvents TextBox20 As TextBox
-    Friend WithEvents TextBox19 As TextBox
+    Friend WithEvents C_Row_txt As TextBox
+    Friend WithEvents C_W_txt As TextBox
+    Friend WithEvents C_H_txt As TextBox
     Friend WithEvents Label14 As Label
     Friend WithEvents Label13 As Label
     Friend WithEvents Label11 As Label
     Friend WithEvents TabPage6 As TabPage
-    Friend WithEvents TextBox36 As TextBox
+    Friend WithEvents C_Vfr_txt As TextBox
     Friend WithEvents Label26 As Label
-    Friend WithEvents TextBox31 As TextBox
+    Friend WithEvents C_Tain_txt As TextBox
     Friend WithEvents Label18 As Label
     Friend WithEvents System As TabPage
-    Friend WithEvents CTsat As TextBox
+    Friend WithEvents Tcond_sat As TextBox
     Friend WithEvents Label10 As Label
     Friend WithEvents GroupBox4 As GroupBox
-    Friend WithEvents T1_2 As TextBox
+    Friend WithEvents Tcond_sup As TextBox
     Friend WithEvents Label6 As Label
     Friend WithEvents GroupBox3 As GroupBox
-    Friend WithEvents TextBox17 As TextBox
+    Friend WithEvents Xexpa_in As TextBox
     Friend WithEvents Label9 As Label
-    Friend WithEvents CPsat As TextBox
+    Friend WithEvents Pcond_sat As TextBox
     Friend WithEvents Label7 As Label
-    Friend WithEvents T2_3 As TextBox
+    Friend WithEvents Texpa_in As TextBox
     Friend WithEvents Label8 As Label
     Friend WithEvents GroupBox2 As GroupBox
-    Friend WithEvents EPsat As TextBox
+    Friend WithEvents Pevap_sat As TextBox
     Friend WithEvents Tevap_sat As TextBox
     Friend WithEvents Label3 As Label
     Friend WithEvents Label4 As Label
     Friend WithEvents Start As Button
     Friend WithEvents Cycle As TabControl
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents C_noho_txt As TextBox
     Friend WithEvents Label25 As Label
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents TextBox3 As TextBox
+    Friend WithEvents C_Ao_txt As TextBox
+    Friend WithEvents C_sigma_txt As TextBox
     Friend WithEvents Label27 As Label
     Friend WithEvents Label28 As Label
-    Friend WithEvents TextBox4 As TextBox
+    Friend WithEvents C_ratio_txt As TextBox
     Friend WithEvents Label29 As Label
-    Friend WithEvents TextBox8 As TextBox
+    Friend WithEvents C_air_Pr_txt As TextBox
     Friend WithEvents Label62 As Label
-    Friend WithEvents TextBox7 As TextBox
+    Friend WithEvents C_air_capacity_txt As TextBox
     Friend WithEvents Label61 As Label
-    Friend WithEvents TextBox6 As TextBox
+    Friend WithEvents C_air_viscosity_txt As TextBox
     Friend WithEvents Label60 As Label
-    Friend WithEvents TextBox5 As TextBox
+    Friend WithEvents C_air_density_txt As TextBox
     Friend WithEvents Label59 As Label
     Friend WithEvents PictureBox4 As PictureBox
     Friend WithEvents GroupBox7 As GroupBox
     Friend WithEvents GroupBox6 As GroupBox
     Friend WithEvents PictureBox5 As PictureBox
-    Friend WithEvents TextBox9 As TextBox
+    Friend WithEvents Expa_Roughness_txt As TextBox
     Friend WithEvents Label30 As Label
-    Friend WithEvents TextBox12 As TextBox
+    Friend WithEvents Expa_InnerD_txt As TextBox
     Friend WithEvents Label65 As Label
-    Friend WithEvents TextBox13 As TextBox
+    Friend WithEvents Expa_TubeLength_txt As TextBox
     Friend WithEvents Label66 As Label
-    Friend WithEvents QA1txt As TextBox
-    Friend WithEvents TextBox15 As TextBox
+    Friend WithEvents C_Q_sup As TextBox
+    Friend WithEvents E_Ncr_txt As TextBox
     Friend WithEvents Label67 As Label
-    Friend WithEvents TextBox14 As TextBox
+    Friend WithEvents E_Ntube_txt As TextBox
     Friend WithEvents Label64 As Label
-    Friend WithEvents TextBox32 As TextBox
+    Friend WithEvents E_df_txt As TextBox
     Friend WithEvents Label33 As Label
-    Friend WithEvents TextBox33 As TextBox
+    Friend WithEvents E_kp_txt As TextBox
     Friend WithEvents Label35 As Label
-    Friend WithEvents TextBox34 As TextBox
+    Friend WithEvents E_WBT_txt As TextBox
     Friend WithEvents Label43 As Label
-    Friend WithEvents QA4txt As TextBox
+    Friend WithEvents E_Q_sat As TextBox
     Friend WithEvents InFluid As TextBox
     Friend WithEvents Label2 As Label
     Friend WithEvents MFR As TextBox
     Friend WithEvents Label52 As Label
-    Friend WithEvents TextBox10 As TextBox
+    Friend WithEvents Xevap_in As TextBox
     Friend WithEvents Label63 As Label
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents Tcomp_in As TextBox
     Friend WithEvents Label1 As Label
     Friend WithEvents QCtxt As TextBox
-    Friend WithEvents QA3txt As TextBox
-    Friend WithEvents QA2txt As TextBox
-    Friend WithEvents QA5txt As TextBox
-    Friend WithEvents QEtxt As TextBox
+    Friend WithEvents C_Q_sub As TextBox
+    Friend WithEvents C_Q_sat As TextBox
+    Friend WithEvents E_Q_sup As TextBox
+    Friend WithEvents E_Q_tot As TextBox
     Friend WithEvents Evapbtn As Button
     Friend WithEvents Condbtn As Button
     Friend WithEvents Compbtn As Button
-    Friend WithEvents TextBox11 As TextBox
+    Friend WithEvents Wcomp As TextBox
     Friend WithEvents Label46 As Label
-    Friend WithEvents TextBox16 As TextBox
+    Friend WithEvents C_Q_tot As TextBox
     Friend WithEvents TextBox18 As TextBox
     Friend WithEvents Expabtn As Button
     Friend WithEvents Button1 As Button
-    Friend WithEvents TextBox42 As TextBox
+    Friend WithEvents Expa_OuterD_txt As TextBox
     Friend WithEvents Label5 As Label
     Friend WithEvents PictureBox3 As PictureBox
     Friend WithEvents Label75 As Label
@@ -2725,7 +2726,7 @@ Partial Class Form1
     Friend WithEvents Label116 As Label
     Friend WithEvents TextBox30 As TextBox
     Friend WithEvents GroupBox16 As GroupBox
-    Friend WithEvents TextBox35 As TextBox
+    Friend WithEvents EnegyBalanceCheck As TextBox
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents GroupBox9 As GroupBox
 End Class

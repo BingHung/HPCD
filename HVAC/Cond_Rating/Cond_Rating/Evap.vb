@@ -8,9 +8,9 @@
         ' 2. superheated state
 
 
-        Form1.QA4txt.Text = 0
-        Form1.QA5txt.Text = 0
-        Form1.QEtxt.Text = 0
+        Form1.E_Q_sat.Text = 0
+        Form1.E_Q_sup.Text = 0
+        Form1.E_Q_tot.Text = 0
 
         Dim F As Double
 
@@ -19,33 +19,33 @@
         '----------Plate fin-and-tube Heat Exchanger Parameters
 
         'Heat Exchanger Parameters
-        E_W = CDbl(Form1.TextBox48.Text) '677 / 1000 ' '  '[m] HX width
-        E_H = CDbl(Form1.TextBox49.Text) '189.6 / 1000  ' '  '[m] HX height
-        Nrows = CDbl(Form1.TextBox47.Text) '2 ' '   'Number of rows
-        Ncr = CDbl(Form1.TextBox15.Text) '2 ' '    'Number of passes 冷媒迴路數
+        E_W = CDbl(Form1.E_W_txt.Text) '677 / 1000 ' '  '[m] HX width
+        E_H = CDbl(Form1.E_H_txt.Text) '189.6 / 1000  ' '  '[m] HX height
+        Nrows = CDbl(Form1.E_Rox_txt.Text) '2 ' '   'Number of rows
+        Ncr = CDbl(Form1.E_Ncr_txt.Text) '2 ' '    'Number of passes 冷媒迴路數
 
 
-        Fp = CDbl(Form1.TextBox46.Text) '1.6 / 1000  ' '   '[m] Fin pitch (i.e, distance between fins)
-        thickFIN = CDbl(Form1.TextBox32.Text) '0.115 / 1000 ' '   '[m] Fin thickness
-        kf = CDbl(Form1.TextBox39.Text) '204  '  ' [W/m⋅K] Fin thermal conductivity
+        Fp = CDbl(Form1.E_FinPitch_txt.Text) '1.6 / 1000  ' '   '[m] Fin pitch (i.e, distance between fins)
+        thickFIN = CDbl(Form1.E_df_txt.Text) '0.115 / 1000 ' '   '[m] Fin thickness
+        kf = CDbl(Form1.E_kf_txt.Text) '204  '  ' [W/m⋅K] Fin thermal conductivity
 
         '-Tube
-        Pt = CDbl(Form1.TextBox45.Text) '25.4 / 1000 ' '       '[m] Transversal fin pitch (i.e., normal to the flow)
-        Pl = CDbl(Form1.TextBox44.Text) '19.05 / 1000 ' '       '[m] Longitudinal fin pitch (i.e., Parallel to the flow)
-        d_o = CDbl(Form1.TextBox41.Text) '7.35 / 1000 ' '        '[m] Tube outer diameter     
-        thickTUBE = CDbl(Form1.TextBox43.Text) '0.26 / 1000 ' '  '[m] Tube thickness
-        kp = CDbl(Form1.TextBox33.Text) '387 ' '    ' [W/m⋅K] tube thermal conductivity, for brass[銅管]
+        Pt = CDbl(Form1.E_Pt_txt.Text) '25.4 / 1000 ' '       '[m] Transversal fin pitch (i.e., normal to the flow)
+        Pl = CDbl(Form1.E_Pl_txt.Text) '19.05 / 1000 ' '       '[m] Longitudinal fin pitch (i.e., Parallel to the flow)
+        d_o = CDbl(Form1.E_do__txt.Text) '7.35 / 1000 ' '        '[m] Tube outer diameter     
+        thickTUBE = CDbl(Form1.E_Xp_txt.Text) '0.26 / 1000 ' '  '[m] Tube thickness
+        kp = CDbl(Form1.E_kp_txt.Text) '387 ' '    ' [W/m⋅K] tube thermal conductivity, for brass[銅管]
 
         Ntube = E_H / Pt 'CDbl(Form1.TextBox14.Text) '7 ' '   'Number of tubes per row
-        Form1.TextBox14.Text = Ntube.ToString("0.###")
+        Form1.E_Ntube_txt.Text = Ntube.ToString("0.###")
         '-------------Inlet Conditions-------------------------
 
         '-Air'
-        Tdry = CtoK(CDbl(Form1.TextBox55.Text)) 'CtoK(27) ' CDbl(TextBox55.Text) '              '[K] Dry-bulc temperature
-        Twet = CtoK(CDbl(Form1.TextBox34.Text)) 'CtoK(19.5) 'CDbl(TextBox34.Text) '            '[K] Wet-bulc temperature
-        Pai = CDbl(Form1.TextBox54.Text) '0.101325 ' '               '[MPa]
-        RH = CDbl(Form1.TextBox52.Text) '0.5 ' '                     'Percentage 
-        mair = CDbl(Form1.TextBox51.Text) ' 0.1666 'CDbl(TextBox51.Text) '                '[kg/s]
+        Tdry = CtoK(CDbl(Form1.E_DBT_txt.Text)) 'CtoK(27) ' CDbl(TextBox55.Text) '              '[K] Dry-bulc temperature
+        Twet = CtoK(CDbl(Form1.E_WBT_txt.Text)) 'CtoK(19.5) 'CDbl(TextBox34.Text) '            '[K] Wet-bulc temperature
+        Pai = CDbl(Form1.E_Patm_txt.Text) '0.101325 ' '               '[MPa]
+        RH = CDbl(Form1.E_RH_txt.Text) '0.5 ' '                     'Percentage 
+        mair = CDbl(Form1.E_mair_txt.Text) ' 0.1666 'CDbl(TextBox51.Text) '                '[kg/s]
 
         Tdew = CtoK(TdewPoint(KtoC(Tdry), RH))    '[K] Dew point temperature
         Wai = 0.0110835 'humidityRATIO(Tdry, MPaTOPa(Pai))     '[kg-water-vapor/kg-dry-air]
@@ -53,7 +53,7 @@
         'Refrigerant
         'T3_4.Text = CDbl(TextBox18.Text) 'Saturated temperature ~~~ 
         Tri = CDbl(Form1.Tevap_sat.Text) '288 ' CtoK(8.5) ' CDbl(Tevap_sat.Text) 'CtoK(25.3125) 'CtoK(7.2)  'CtoK(CDbl(T3_4.Text)) 'CtoK(7.2)                '[K] Saturation temperature of refrigerant
-        xri = CDbl(Form1.TextBox10.Text) '0.27 'CDbl(TextBox10.Text) 'CDbl(TextBox37.Text) '0.27                     'Quality of refrigerant
+        xri = CDbl(Form1.Xevap_in.Text) '0.27 'CDbl(TextBox10.Text) 'CDbl(TextBox37.Text) '0.27                     'Quality of refrigerant
         mref = CDbl(Form1.MFR.Text) '0.020833 'CDbl(MFR.Text) 'CDbl(TextBox40.Text) '     0.020833           '[kg/s]
 
 
@@ -159,7 +159,7 @@
         Prsat = mix.Psat(Tri)   'Regrigerant Psat corresponding to Tsat
         mix.SatProp(Tri)
 
-        Form1.EPsat.Text = mix.P.ToString("0.###")
+        Form1.Pevap_sat.Text = mix.P.ToString("0.###")
 
         '_________________________________________________________________________________
 
@@ -439,9 +439,9 @@
         If (state = "Esat") Then
 
             Form1.Tcomp_in.Text = CDbl(Form1.Tevap_sat.Text).ToString("0.###")
-            Form1.QA4txt.Text = Qr
-            Form1.QA5txt.Text = 0
-            Form1.QEtxt.Text = CDbl(Form1.QA4txt.Text) + CDbl(Form1.QA5txt.Text)
+            Form1.E_Q_sat.Text = Qr
+            Form1.E_Q_sup.Text = 0
+            Form1.E_Q_tot.Text = CDbl(Form1.E_Q_sat.Text) + CDbl(Form1.E_Q_sup.Text)
 
 
         ElseIf (state = "Esup") Then
@@ -470,7 +470,7 @@
             'MsgBox(Qr)
             'MsgBox(Q2new)
 
-            Form1.QA4txt.Text = Qr.ToString("0.###")
+            Form1.E_Q_sat.Text = Qr.ToString("0.###")
 
             '------------------------------------
             '_________________________________________________________________________________
@@ -655,7 +655,7 @@
 
                 '[1] calculate ho 
                 Dim E_air As New Fluid("air", "si", "tp")
-                E_air.Properties(CtoK(CDbl(Form1.TextBox55.Text)), 0.101325)
+                E_air.Properties(CtoK(CDbl(Form1.E_DBT_txt.Text)), 0.101325)
 
 
                 Dim Vfr, Redc, Lhsup, Lpsup, EJ5, EJ6, EJ7, EJ8, E_j, Dh, ho, Vc As Double
@@ -781,8 +781,8 @@
 
                 Form1.Tcomp_in.Text = Tsup.ToString("0.###")
 
-                Form1.QA5txt.Text = Qsup
-                Form1.QEtxt.Text = CDbl(Form1.QA4txt.Text) + CDbl(Form1.QA5txt.Text)
+                Form1.E_Q_sup.Text = Qsup
+                Form1.E_Q_tot.Text = CDbl(Form1.E_Q_sat.Text) + CDbl(Form1.E_Q_sup.Text)
 
             End If
 

@@ -29,8 +29,8 @@
 
         'C.Sat_Refrigerants
         Dim C_sat As New Fluid(GlobalVar.Influid, "si", "tp")
-        C_sat.SatProp(CDbl(CTsat.Text))
-        CPsat.Text = C_sat.P.ToString("0.###")
+        C_sat.SatProp(CDbl(Tcond_sat.Text))
+        Pcond_sat.Text = C_sat.P.ToString("0.###")
 
 
         Evap.Evap()
@@ -47,8 +47,8 @@
         Cond_LMTD.Cond_LMTD()
         'MsgBox("COND")
 
-        TextBox16.Text = CDbl(QEtxt.Text) + CDbl(TextBox11.Text)
-        TextBox18.Text = (CDbl(TextBox16.Text) - CDbl(QCtxt.Text) * 1000)
+        C_Q_tot.Text = CDbl(E_Q_tot.Text) + CDbl(Wcomp.Text)
+        TextBox18.Text = (CDbl(C_Q_tot.Text) - CDbl(QCtxt.Text) * 1000)
         MsgBox("done")
         'Dim CondPower As Double
         'CondPower = CDbl(QEtxt.Text) + CDbl(TextBox11.Text)
@@ -60,12 +60,12 @@
 
 
         If Math.Abs(CDbl(TextBox18.Text)) < 25 Then
-            TextBox35.BackColor = Color.Green
-            TextBox35.Text = "Energy Converge"
+            EnegyBalanceCheck.BackColor = Color.Green
+            EnegyBalanceCheck.Text = "Energy Converge"
             counter = counter + 1
         Else
-            TextBox35.BackColor = Color.Red
-            TextBox35.Text = "Energy Diverge"
+            EnegyBalanceCheck.BackColor = Color.Red
+            EnegyBalanceCheck.Text = "Energy Diverge"
             counter = 0
         End If
 
@@ -83,8 +83,8 @@
 
         'C.Sat_Refrigerants
         Dim C_sat As New Fluid(GlobalVar.Influid, "si", "tp")
-        C_sat.SatProp(CDbl(CTsat.Text))
-        CPsat.Text = C_sat.P
+        C_sat.SatProp(CDbl(Tcond_sat.Text))
+        Pcond_sat.Text = C_sat.P
 
         Comp.Comp()
     End Sub
@@ -94,8 +94,8 @@
 
         'C.Sat_Refrigerants
         Dim C_sat As New Fluid(GlobalVar.Influid, "si", "tp")
-        C_sat.SatProp(CDbl(CTsat.Text))
-        CPsat.Text = C_sat.P
+        C_sat.SatProp(CDbl(Tcond_sat.Text))
+        Pcond_sat.Text = C_sat.P
 
         Cond_LMTD.Cond_LMTD()
     End Sub
@@ -105,8 +105,8 @@
 
         'C.Sat_Refrigerants
         Dim C_sat As New Fluid(GlobalVar.Influid, "si", "tp")
-        C_sat.SatProp(CDbl(CTsat.Text))
-        CPsat.Text = C_sat.P
+        C_sat.SatProp(CDbl(Tcond_sat.Text))
+        Pcond_sat.Text = C_sat.P
 
         Evap.Evap()
     End Sub
@@ -117,14 +117,14 @@
 
         'C.Sat_Refrigerants
         Dim C_sat As New Fluid(GlobalVar.Influid, "si", "tp")
-        C_sat.SatProp(CDbl(CTsat.Text))
-        CPsat.Text = C_sat.P
+        C_sat.SatProp(CDbl(Tcond_sat.Text))
+        Pcond_sat.Text = C_sat.P
 
         State_A2 = 2
 
         Expa.Expa()
 
-        Tevap_sat.Text = Temperature(GlobalVar.Influid, "PLIQ", "SI", CDbl(EPsat.Text))
+        Tevap_sat.Text = Temperature(GlobalVar.Influid, "PLIQ", "SI", CDbl(Pevap_sat.Text))
         Tevap_sat.Text = CDbl(Tevap_sat.Text).ToString("0.###")
         Tevap_sat.Text = CDbl(Tevap_sat.Text).ToString("0.###")
 
@@ -136,8 +136,8 @@
 
         'C.Sat_Refrigerants
         Dim C_sat As New Fluid(GlobalVar.Influid, "si", "tp")
-        C_sat.SatProp(CDbl(CTsat.Text))
-        CPsat.Text = C_sat.P
+        C_sat.SatProp(CDbl(Tcond_sat.Text))
+        Pcond_sat.Text = C_sat.P
 
         ' Define working fluid of the system
         ' Define the initial guess of the high pressure CTsat
@@ -145,7 +145,7 @@
         Cond()
         Expa.Expa()
 
-        Tevap_sat.Text = Temperature(GlobalVar.Influid, "PLIQ", "SI", CDbl(EPsat.Text))
+        Tevap_sat.Text = Temperature(GlobalVar.Influid, "PLIQ", "SI", CDbl(Pevap_sat.Text))
         Tevap_sat.Text = CDbl(Tevap_sat.Text)
         'E.Sat_Refrigerants
         Dim E_sat As New Fluid(GlobalVar.Influid, "si", "tp")
@@ -162,35 +162,35 @@
 
         'C.Sat_Refrigerants
         Dim C_sat As New Fluid(GlobalVar.Influid, "si", "tp")
-        C_sat.SatProp(CDbl(CTsat.Text))
+        C_sat.SatProp(CDbl(Tcond_sat.Text))
 
         'C.Sup_Refrigerants
         Dim C_sup As New Fluid(GlobalVar.Influid, "si", "tp")
-        C_sup.Properties(CDbl(T1_2.Text), CDbl(CPsat.Text))
+        C_sup.Properties(CDbl(Tcond_sup.Text), CDbl(Pcond_sat.Text))
 
         'C.In_Air
         Dim C_air As New Fluid("air", "si", "tp")
-        C_air.Properties(CtoK(TextBox31.Text), 0.101325)
+        C_air.Properties(CtoK(C_Tain_txt.Text), 0.101325)
 
         'Initialization <==========================================================================================================================
 
         'S_initial = Entropy("r22", "TP", "SI", CtoK(T1_2.Text), C_sat.P)  ' for Cycle iteration
 
         'refrigerant side'
-        C_Trin = KtoC(CDbl(T1_2.Text))
+        C_Trin = KtoC(CDbl(Tcond_sup.Text))
         C_Cprin = C_sup.cp : C_rhorin = C_sup.rho : C_krin = C_sup.k : C_Viscrin = C_sup.Visc : C_Prin = C_sup.Pr
         C_PrsG = C_sat.PrG : C_PrsL = C_sat.PrL : C_rhosL = C_sat.rhoL : C_rhosG = C_sat.rhoG
         C_ViscsL = C_sat.viscL : C_ViscsG = C_sat.viscG : C_CpsL = C_sat.CpL : C_CpsG = C_sat.CpG : C_ksL = C_sat.kL : C_ksG = C_sat.kG
-        C_Ts = KtoC(CDbl(CTsat.Text)) : C_mr = CDbl(MFR.Text) '0.02083
+        C_Ts = KtoC(CDbl(Tcond_sat.Text)) : C_mr = CDbl(MFR.Text) '0.02083
         C_Pr = 0.437 : C_isLG = C_sat.ifg / 1000
 
         'air side'
-        C_Tain = CDbl(TextBox31.Text) : C_Vfr = CDbl(TextBox36.Text)
-        C_rhoa = CDbl(TextBox5.Text) : C_Visca = CDbl(TextBox6.Text) : C_Cpa = CDbl(TextBox7.Text) : C_Pra = CDbl(TextBox8.Text)
+        C_Tain = CDbl(C_Tain_txt.Text) : C_Vfr = CDbl(C_Vfr_txt.Text)
+        C_rhoa = CDbl(C_air_density_txt.Text) : C_Visca = CDbl(C_air_viscosity_txt.Text) : C_Cpa = CDbl(C_air_capacity_txt.Text) : C_Pra = CDbl(C_air_Pr_txt.Text)
 
         'HX geometry'
-        C_W = TextBox20.Text : C_H = TextBox19.Text : C_N = TextBox21.Text : C_df = TextBox26.Text : C_Fp = TextBox22.Text
-        C_Pt = TextBox23.Text : C_Pl = TextBox24.Text : C_dc = TextBox29.Text : C_dw = TextBox28.Text : C_di = TextBox27.Text
+        C_W = C_W_txt.Text : C_H = C_H_txt.Text : C_N = C_Row_txt.Text : C_df = C_df_txt.Text : C_Fp = C_FinPitch_txt.Text
+        C_Pt = C_Pt_txt.Text : C_Pl = C_Pl_txt.Text : C_dc = C_dc_txt.Text : C_dw = C_dw_txt.Text : C_di = C_di_txt.Text
 
 
         '_________________________________________________________________________________
@@ -206,7 +206,7 @@
         C_Ac = C_Afr - C_NT * (C_dc * C_W + C_NF * C_df * (C_Pt - C_dc))
         C_sigma = C_Ac / C_Afr
 
-        TextBox3.Text = C_sigma
+        C_sigma_txt.Text = C_sigma
 
         'HX total area'
         C_Af = 2 * C_NF * (C_Pl * C_H - pi / 4 * C_dc * C_dc * C_NT) * C_N + 2 * C_df * C_NF * (C_H + C_Pl * C_N)
@@ -215,8 +215,8 @@
         C_Dh = 4 * C_Ac * C_Pl / C_Ao
         C_Ai = pi * C_di * C_W * C_NT * C_N
 
-        TextBox2.Text = C_Ao
-        TextBox4.Text = C_Ao / C_Ai
+        C_Ao_txt.Text = C_Ao
+        C_ratio_txt.Text = C_Ao / C_Ai
 
         'heat transfer coefficient'
         C_Redc = C_rhoa * C_Vfr * C_dc / C_Visca / C_sigma
@@ -226,7 +226,7 @@
         C_Vc = C_Vfr / C_sigma
         C_ho = C_j * C_rhoa * C_Vc * C_Cpa / (C_Pra) ^ (2 / 3)
 
-        C_kf = TextBox38.Text
+        C_kf = C_kf_txt.Text
         C_m = (2 * C_ho / C_kf / C_df) ^ (0.5)
         C_XL = C_Pl / 2
         C_XM = C_Pt / 2 '((Pl / 2) ^ 2 + (Pl) ^ 2) ^ 0.5 / 2'
@@ -237,7 +237,7 @@
         C_no_efficiency = 1 - (C_Af / C_Ao) * (1 - C_nf_efficiency)
         C_noho = C_no_efficiency * C_ho
 
-        TextBox1.Text = C_noho
+        C_noho_txt.Text = C_noho
 
         'Condensor_Superheated_A1 <==========================================================================================================================
         'A1'
@@ -300,7 +300,7 @@
                 NTU_guess = 1
 
                 If state_A1_side = " AirSide" Then
-                    If CDbl(TextBox21.Text) = 1 Then
+                    If CDbl(C_Row_txt.Text) = 1 Then
                         While (1)
                             C_EA1_o = (1 / C_CA1_star) * (1 - Math.Exp(-C_CA1_star * (1 - Math.Exp(-NTU_guess)))) - Offset
                             EA1_dNTU = (1 / C_CA1_star) * (1 - Math.Exp(-C_CA1_star * (1 - Math.Exp(-(NTU_guess + dNTU))))) - Offset
@@ -310,7 +310,7 @@
 
                             If (Math.Abs(C_A1_NTU - NTU_guess) < 0.0001) Then Exit While
                         End While
-                    ElseIf CDbl(TextBox21.Text) = 2 Then
+                    ElseIf CDbl(C_Row_txt.Text) = 2 Then
                         While (1)
                             K = 1 - Math.Exp(-NTU_guess / 2)
                             C_EA1_o = (1 / C_CA1_star) * (1 - Math.Exp(-2 * K * C_CA1_star) * (1 + C_CA1_star * K ^ 2)) - Offset
@@ -322,7 +322,7 @@
 
                             If (Math.Abs(C_A1_NTU - NTU_guess) < 0.0001) Then Exit While
                         End While
-                    ElseIf CDbl(TextBox21.Text) = 3 Then
+                    ElseIf CDbl(C_Row_txt.Text) = 3 Then
                         While (1)
                             K = 1 - Math.Exp(-NTU_guess / 3)
                             C_EA1_o = (1 / C_CA1_star) * (1 - Math.Exp(-3 * K * C_CA1_star) * (1 + C_CA1_star * K ^ 2 * (3 - K) + (3 * (C_CA1_star) ^ 2 * K ^ 4) / 2)) - Offset
@@ -334,7 +334,7 @@
 
                             If (Math.Abs(C_A1_NTU - NTU_guess) < 0.0001) Then Exit While
                         End While
-                    ElseIf CDbl(TextBox21.Text) = 4 Then
+                    ElseIf CDbl(C_Row_txt.Text) = 4 Then
                         While (1)
                             K = 1 - Math.Exp(-NTU_guess / 4)
                             C_EA1_o = (1 / C_CA1_star) * (1 - Math.Exp(-4 * K * C_CA1_star) * (1 + C_CA1_star * K ^ 2 * (6 - 4 * K + K ^ 2) + (4 * (C_CA1_star) ^ 2 * K ^ 4 * (2 - K)) + (8 * C_CA1_star ^ 3 * K ^ 6) / 3)) - Offset
@@ -346,7 +346,7 @@
 
                             If (Math.Abs(C_A1_NTU - NTU_guess) < 0.0001) Then Exit While
                         End While
-                    ElseIf CDbl(TextBox21.Text) > 4 Then
+                    ElseIf CDbl(C_Row_txt.Text) > 4 Then
                         While (1)
                             C_EA1_o = 1 - Math.Exp(NTU_guess ^ 0.22 * (Math.Exp(-C_CA1_star * NTU_guess ^ 0.78) - 1) / C_CA1_star) - Offset
                             EA1_dNTU = 1 - Math.Exp((NTU_guess + dNTU) ^ 0.22 * (Math.Exp(-C_CA1_star * (NTU_guess + dNTU) ^ 0.78) - 1) / C_CA1_star) - Offset
@@ -359,7 +359,7 @@
                     End If
 
                 ElseIf state_A1_side = " TubeSide" Then
-                    If CDbl(TextBox21.Text) = 1 Then
+                    If CDbl(C_Row_txt.Text) = 1 Then
                         While (1)
 
                             C_EA1_o = 1 - Math.Exp(-(1 - Math.Exp(-NTU_guess * C_CA1_star)) / C_CA1_star) - Offset
@@ -370,7 +370,7 @@
 
                             If (Math.Abs(C_A1_NTU - NTU_guess) < 0.0001) Then Exit While
                         End While
-                    ElseIf CDbl(TextBox21.Text) = 2 Then
+                    ElseIf CDbl(C_Row_txt.Text) = 2 Then
                         While (1)
                             K = 1 - Math.Exp(-NTU_guess * C_CA1_star / 2)
                             C_EA1_o = 1 - Math.Exp(-2 * K / C_CA1_star) * (1 + K ^ 2 / C_CA1_star) - Offset
@@ -382,7 +382,7 @@
 
                             If (Math.Abs(C_A1_NTU - NTU_guess) < 0.0001) Then Exit While
                         End While
-                    ElseIf CDbl(TextBox21.Text) = 3 Then
+                    ElseIf CDbl(C_Row_txt.Text) = 3 Then
                         While (1)
                             K = 1 - Math.Exp(-NTU_guess * C_CA1_star / 3)
                             C_EA1_o = 1 - Math.Exp(-3 * K / C_CA1_star) * (1 + K ^ 2 * (3 - K) / C_CA1_star + (3 * K ^ 4) / (2 * C_CA1_star ^ 2)) - Offset
@@ -394,7 +394,7 @@
 
                             If (Math.Abs(C_A1_NTU - NTU_guess) < 0.0001) Then Exit While
                         End While
-                    ElseIf CDbl(TextBox21.Text) = 4 Then
+                    ElseIf CDbl(C_Row_txt.Text) = 4 Then
                         While (1)
                             K = 1 - Math.Exp(-NTU_guess * C_CA1_star / 4)
                             C_EA1_o = 1 - Math.Exp(-4 * K / C_CA1_star) * (1 + K ^ 2 * (6 - 4 * K + K ^ 2) / C_CA1_star + (4 * K ^ 4 * (2 - K)) / (C_CA1_star ^ 2) + 8 * K ^ 6 / (3 * C_CA1_star ^ 3)) - Offset
@@ -406,7 +406,7 @@
 
                             If (Math.Abs(C_A1_NTU - NTU_guess) < 0.0001) Then Exit While
                         End While
-                    ElseIf CDbl(TextBox21.Text) > 4 Then
+                    ElseIf CDbl(C_Row_txt.Text) > 4 Then
                         While (1)
                             C_EA1_o = 1 - Math.Exp(NTU_guess ^ 0.22 * (Math.Exp(-C_CA1_star * NTU_guess ^ 0.78) - 1) / C_CA1_star) - Offset
                             EA1_dNTU = 1 - Math.Exp((NTU_guess + dNTU) ^ 0.22 * (Math.Exp(-C_CA1_star * (NTU_guess + dNTU) ^ 0.78) - 1) / C_CA1_star) - Offset
@@ -467,7 +467,7 @@
         If C_A2_UA_NTU < C_A2_UA_HR Then
             'calculate A2* (0=> 1 - A1*)
             MsgBox("totally condense")
-            TextBox17.Text = 0
+            Xexpa_in.Text = 0
             State_A2 = 2
 
             L = 0
@@ -532,7 +532,7 @@
 
             End While
             ' MsgBox(x)
-            TextBox17.Text = x
+            Xexpa_in.Text = x
         End If
 
 
@@ -556,7 +556,7 @@
 
 
             L = C_Tain
-            R = CDbl(CTsat.Text)
+            R = CDbl(Tcond_sat.Text)
             C_Tout = (L + R) / 2
 
             While (1)
@@ -607,7 +607,7 @@
                     NTU_guess = 1
 
                     If state_A3_side = " AirSide" Then
-                        If CDbl(TextBox21.Text) = 1 Then
+                        If CDbl(C_Row_txt.Text) = 1 Then
                             While (1)
 
                                 C_EA3_o = (1 / C_CA3_Star) * (1 - Math.Exp(-C_CA3_Star * (1 - Math.Exp(-NTU_guess)))) - Offset
@@ -618,7 +618,7 @@
 
                                 If (Math.Abs(C_A3_NTU - NTU_guess) < 0.0001) Then Exit While
                             End While
-                        ElseIf CDbl(TextBox21.Text) = 2 Then
+                        ElseIf CDbl(C_Row_txt.Text) = 2 Then
                             While (1)
                                 K = 1 - Math.Exp(-NTU_guess / 2)
                                 C_EA3_o = (1 / C_CA3_Star) * (1 - Math.Exp(-2 * K * C_CA3_Star) * (1 + C_CA3_Star * K ^ 2)) - Offset
@@ -630,7 +630,7 @@
 
                                 If (Math.Abs(C_A3_NTU - NTU_guess) < 0.0001) Then Exit While
                             End While
-                        ElseIf CDbl(TextBox21.Text) = 3 Then
+                        ElseIf CDbl(C_Row_txt.Text) = 3 Then
                             While (1)
                                 K = 1 - Math.Exp(-NTU_guess / 3)
                                 C_EA3_o = (1 / C_CA3_Star) * (1 - Math.Exp(-3 * K * C_CA3_Star) * (1 + C_CA3_Star * K ^ 2 * (3 - K) + (3 * (C_CA3_Star) ^ 2 * K ^ 4) / 2)) - Offset
@@ -642,7 +642,7 @@
 
                                 If (Math.Abs(C_A3_NTU - NTU_guess) < 0.0001) Then Exit While
                             End While
-                        ElseIf CDbl(TextBox21.Text) = 4 Then
+                        ElseIf CDbl(C_Row_txt.Text) = 4 Then
                             While (1)
                                 K = 1 - Math.Exp(-NTU_guess / 4)
                                 C_EA3_o = (1 / C_CA3_Star) * (1 - Math.Exp(-4 * K * C_CA3_Star) * (1 + C_CA3_Star * K ^ 2 * (6 - 4 * K + K ^ 2) + (4 * (C_CA3_Star) ^ 2 * K ^ 4 * (2 - K)) + (8 * C_CA3_Star ^ 3 * K ^ 6) / 3)) - Offset
@@ -654,7 +654,7 @@
 
                                 If (Math.Abs(C_A3_NTU - NTU_guess) < 0.0001) Then Exit While
                             End While
-                        ElseIf CDbl(TextBox21.Text) > 4 Then
+                        ElseIf CDbl(C_Row_txt.Text) > 4 Then
                             While (1)
                                 C_EA3_o = 1 - Math.Exp(NTU_guess ^ 0.22 * (Math.Exp(-C_CA3_Star * NTU_guess ^ 0.78) - 1) / C_CA3_Star) - Offset
                                 EA3_dNTU = 1 - Math.Exp((NTU_guess + dNTU) ^ 0.22 * (Math.Exp(-C_CA3_Star * (NTU_guess + dNTU) ^ 0.78) - 1) / C_CA3_Star) - Offset
@@ -667,7 +667,7 @@
                         End If
 
                     ElseIf state_A3_side = " TubeSide" Then
-                        If CDbl(TextBox21.Text) = 1 Then
+                        If CDbl(C_Row_txt.Text) = 1 Then
                             While (1)
                                 C_EA3_o = 1 - Math.Exp(-(1 - Math.Exp(-NTU_guess * C_CA3_Star)) / C_CA3_Star) - Offset
                                 EA3_dNTU = 1 - Math.Exp(-(1 - Math.Exp(-(NTU_guess + dNTU) * C_CA3_Star)) / C_CA3_Star) - Offset
@@ -677,7 +677,7 @@
 
                                 If (Math.Abs(C_A3_NTU - NTU_guess) < 0.0001) Then Exit While
                             End While
-                        ElseIf CDbl(TextBox21.Text) = 2 Then
+                        ElseIf CDbl(C_Row_txt.Text) = 2 Then
                             While (1)
                                 K = 1 - Math.Exp(-NTU_guess * C_CA3_Star / 2)
                                 C_EA3_o = 1 - Math.Exp(-2 * K / C_CA3_Star) * (1 + K ^ 2 / C_CA3_Star) - Offset
@@ -689,7 +689,7 @@
 
                                 If (Math.Abs(C_A3_NTU - NTU_guess) < 0.0001) Then Exit While
                             End While
-                        ElseIf CDbl(TextBox21.Text) = 3 Then
+                        ElseIf CDbl(C_Row_txt.Text) = 3 Then
                             While (1)
                                 K = 1 - Math.Exp(-NTU_guess * C_CA3_Star / 3)
                                 C_EA3_o = 1 - Math.Exp(-3 * K / C_CA3_Star) * (1 + K ^ 2 * (3 - K) / C_CA3_Star + (3 * K ^ 4) / (2 * C_CA3_Star ^ 2)) - Offset
@@ -701,7 +701,7 @@
 
                                 If (Math.Abs(C_A3_NTU - NTU_guess) < 0.0001) Then Exit While
                             End While
-                        ElseIf CDbl(TextBox21.Text) = 4 Then
+                        ElseIf CDbl(C_Row_txt.Text) = 4 Then
                             While (1)
                                 K = 1 - Math.Exp(-NTU_guess * C_CA3_Star / 4)
                                 C_EA3_o = 1 - Math.Exp(-4 * K / C_CA3_Star) * (1 + K ^ 2 * (6 - 4 * K + K ^ 2) / C_CA3_Star + (4 * K ^ 4 * (2 - K)) / (C_CA3_Star ^ 2) + 8 * K ^ 6 / (3 * C_CA3_Star ^ 3)) - Offset
@@ -713,7 +713,7 @@
 
                                 If (Math.Abs(C_A3_NTU - NTU_guess) < 0.0001) Then Exit While
                             End While
-                        ElseIf CDbl(TextBox21.Text) > 4 Then
+                        ElseIf CDbl(C_Row_txt.Text) > 4 Then
                             While (1)
                                 C_EA3_o = 1 - Math.Exp(NTU_guess ^ 0.22 * (Math.Exp(-C_CA3_Star * NTU_guess ^ 0.78) - 1) / C_CA3_Star) - Offset
                                 EA3_dNTU = 1 - Math.Exp((NTU_guess + dNTU) ^ 0.22 * (Math.Exp(-C_CA3_Star * (NTU_guess + dNTU) ^ 0.78) - 1) / C_CA3_Star) - Offset
@@ -763,13 +763,13 @@
         If State_A2 = 2 Then
             ' Subcooled Region
             'MsgBox("subcooled")
-            T2_3.Text = CtoK(C_Tout)
-            i_state3 = Enthalpy("r22", "TP", "SI", CtoK(T2_3.Text), C_sat.P)
+            Texpa_in.Text = CtoK(C_Tout)
+            i_state3 = Enthalpy("r22", "TP", "SI", CtoK(Texpa_in.Text), C_sat.P)
         Else
             ' Saturation Region
             'MsgBox("saturation")
-            T2_3.Text = CtoK(C_Ts)
-            i_state3 = Enthalpy("r22", "TP", "SI", CtoK(T2_3.Text), C_sat.P)
+            Texpa_in.Text = CtoK(C_Ts)
+            i_state3 = Enthalpy("r22", "TP", "SI", CtoK(Texpa_in.Text), C_sat.P)
         End If
 
         ' Test
@@ -790,14 +790,14 @@
 
         '[1] initialization capillary tube
         Dim Pin, mr, xin, Tpre, L, D, e, N, dL, A, G, xout As Double
-        Pin = CDbl(EPsat.Text)
+        Pin = CDbl(Pevap_sat.Text)
         mr = CDbl(MFR.Text)
-        xin = CDbl(TextBox10.Text)
+        xin = CDbl(Xevap_in.Text)
         Tpre = CDbl(Tevap_sat.Text)
 
-        L = CDbl(TextBox13.Text)
-        D = CDbl(TextBox12.Text)
-        e = CDbl(TextBox9.Text)
+        L = CDbl(Expa_TubeLength_txt.Text)
+        D = CDbl(Expa_InnerD_txt.Text)
+        e = CDbl(Expa_Roughness_txt.Text)
         N = 10 '100
 
         dL = L / N
@@ -817,21 +817,21 @@
 
         ' guess end state
         Dim EndState As New Fluid(GlobalVar.Influid, "SI", "tp")
-        EndState.SatProp(CDbl(CTsat.Text))
+        EndState.SatProp(CDbl(Tcond_sat.Text))
 
         Dim CapillaryEnd As String
 
         If hi > EndState.iL Then
             CapillaryEnd = "A2"
             xout = (hi - EndState.iL) / (EndState.ifg)
-            TextBox17.Text = xout
+            Xexpa_in.Text = xout
 
 
 
         ElseIf hi < EndState.iL Then
             CapillaryEnd = "A3"
             xout = 0
-            TextBox17.Text = xout
+            Xexpa_in.Text = xout
 
 
 

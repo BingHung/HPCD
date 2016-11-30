@@ -11,20 +11,20 @@
 
         'C.Sat_Refrigerants // declare condenser saturation property(Tsat(K))
         Dim C_sat As New Fluid(Influid, "si", "tp")
-        C_sat.SatProp(CDbl(Form1.CTsat.Text))
+        C_sat.SatProp(CDbl(Form1.Tcond_sat.Text))
 
         'C.Sup_Refrigerants // declare condenser superheated region property (Tsup(K) , P(Psat))
         Dim C_sup As New Fluid(Influid, "si", "tp")
-        C_sup.Properties(CDbl(Form1.T1_2.Text), CDbl(Form1.CPsat.Text))
+        C_sup.Properties(CDbl(Form1.Tcond_sup.Text), CDbl(Form1.Pcond_sat.Text))
 
         'C.In_Air // declare air inlet propery (Tain(oC) -> (K), P (atmosphere pressure(MPa)) )
         Dim C_air As New Fluid("air", "si", "tp")
-        C_air.Properties(CtoK(Form1.TextBox31.Text), 0.101325)
+        C_air.Properties(CtoK(Form1.C_Tain_txt.Text), 0.101325)
 
         'Initialization <=================================================================================================================================================================
 
         'refrigerant side'
-        C_Trin = KtoC(CDbl(Form1.T1_2.Text))    '(oC)
+        C_Trin = KtoC(CDbl(Form1.Tcond_sup.Text))    '(oC)
         C_Cprin = C_sup.cp                      '(J/kg.K)
         C_rhorin = C_sup.rho                    '(kg/m^3)
         C_krin = C_sup.k                        '(W/m.k)
@@ -40,30 +40,30 @@
         C_CpsG = C_sat.CpG                      '(J/kg.K)
         C_ksL = C_sat.kL                        '(W/m.k)
         C_ksG = C_sat.kG                        '(W/m.k)
-        C_Ts = KtoC(CDbl(Form1.CTsat.Text))     '(oC)
+        C_Ts = KtoC(CDbl(Form1.Tcond_sat.Text))     '(oC)
         C_mr = CDbl(Form1.MFR.Text) '0.02083    '(kg/s)
         C_Pr = 0.437                            '(reduce pressure)
         C_isLG = C_sat.ifg / 1000               '(kJ/kg)
 
         'air side'
-        C_Tain = CDbl(Form1.TextBox31.Text)     '(oC)
-        C_Vfr = CDbl(Form1.TextBox36.Text)      '(m/s)
-        C_rhoa = CDbl(Form1.TextBox5.Text)      '(kg/m^3)
-        C_Visca = CDbl(Form1.TextBox6.Text)     '(N.s/m^2)
-        C_Cpa = CDbl(Form1.TextBox7.Text)       '(J/kg.K)
-        C_Pra = CDbl(Form1.TextBox8.Text)       '(X)
+        C_Tain = CDbl(Form1.C_Tain_txt.Text)     '(oC)
+        C_Vfr = CDbl(Form1.C_Vfr_txt.Text)      '(m/s)
+        C_rhoa = CDbl(Form1.C_air_density_txt.Text)      '(kg/m^3)
+        C_Visca = CDbl(Form1.C_air_viscosity_txt.Text)     '(N.s/m^2)
+        C_Cpa = CDbl(Form1.C_air_capacity_txt.Text)       '(J/kg.K)
+        C_Pra = CDbl(Form1.C_air_Pr_txt.Text)       '(X)
 
         'HX geometry'
-        C_W = Form1.TextBox20.Text              '(m)
-        C_H = Form1.TextBox19.Text              '(m)
-        C_N = Form1.TextBox21.Text              '(m)
-        C_df = Form1.TextBox26.Text             '(m)
-        C_Fp = Form1.TextBox22.Text             '(m)
-        C_Pt = Form1.TextBox23.Text             '(m)
-        C_Pl = Form1.TextBox24.Text             '(m)
-        C_dc = Form1.TextBox29.Text             '(m)
-        C_dw = Form1.TextBox28.Text             '(m)
-        C_di = Form1.TextBox27.Text             '(m)
+        C_W = Form1.C_W_txt.Text              '(m)
+        C_H = Form1.C_H_txt.Text              '(m)
+        C_N = Form1.C_Row_txt.Text              '(m)
+        C_df = Form1.C_df_txt.Text             '(m)
+        C_Fp = Form1.C_FinPitch_txt.Text             '(m)
+        C_Pt = Form1.C_Pt_txt.Text             '(m)
+        C_Pl = Form1.C_Pl_txt.Text             '(m)
+        C_dc = Form1.C_dc_txt.Text             '(m)
+        C_dw = Form1.C_dw_txt.Text             '(m)
+        C_di = Form1.C_di_txt.Text             '(m)
 
 
         '_________________________________________________________________________________
@@ -79,7 +79,7 @@
         C_Ac = C_Afr - C_NT * (C_dc * C_W + C_NF * C_df * (C_Pt - C_dc))        '(#)
         C_sigma = C_Ac / C_Afr                                                  '(X)
 
-        Form1.TextBox3.Text = C_sigma.ToString("0.###")
+        Form1.C_sigma_txt.Text = C_sigma.ToString("0.###")
 
         'HX total area'
         C_Af = 2 * C_NF * (C_Pl * C_H - pi / 4 * C_dc * C_dc * C_NT) * C_N + 2 * C_df * C_NF * (C_H + C_Pl * C_N)   '(m^2)
@@ -88,8 +88,8 @@
         C_Dh = 4 * C_Ac * C_Pl * C_N / C_Ao                                                                         '(m)
         C_Ai = pi * C_di * C_W * C_NT * C_N                                                                         '(m^2)
 
-        Form1.TextBox2.Text = C_Ao.ToString("0.###")
-        Form1.TextBox4.Text = (C_Ao / C_Ai).ToString("0.###")
+        Form1.C_Ao_txt.Text = C_Ao.ToString("0.###")
+        Form1.C_ratio_txt.Text = (C_Ao / C_Ai).ToString("0.###")
         Dim ratio As Double
         ratio = C_Ao / C_Ai                                                                                         '(X)
 
@@ -119,7 +119,7 @@
         C_Vc = C_Vfr / C_sigma                                                      '(m/s)
         C_ho = C_j * C_rhoa * C_Vc * C_Cpa / (C_Pra) ^ (2 / 3)                      '(W/m^2.K)
 
-        C_kf = Form1.TextBox38.Text                                                 '(X)
+        C_kf = Form1.C_kf_txt.Text                                                 '(X)
         C_m = (2 * C_ho / C_kf / C_df) ^ (0.5)                                      '(m^-1)
         C_XL = ((C_Pt / 2) ^ 2 + C_Pl ^ 2) ^ 0.5 / 2 'staggerd 'C_Pl / 2 Inline     '(m)
         C_XM = C_Pt / 2 '((Pl / 2) ^ 2 + (Pl) ^ 2) ^ 0.5 / 2'                       '(m)
@@ -130,7 +130,7 @@
         C_no_efficiency = 1 - (C_Af / C_Ao) * (1 - C_nf_efficiency)                 '(X)
         C_noho = C_no_efficiency * C_ho                                             '(W/m^K)
 
-        Form1.TextBox1.Text = C_noho.ToString("0.###")
+        Form1.C_noho_txt.Text = C_noho.ToString("0.###")
 
         ' [End]=============================================================================================== Pre processing
 
@@ -219,8 +219,8 @@
             End While
 
             'MsgBox(x)
-            Form1.TextBox17.Text = x.ToString("0.###")
-            Form1.T2_3.Text = CDbl(Form1.CTsat.Text).ToString("0.###")
+            Form1.Xexpa_in.Text = x.ToString("0.###")
+            Form1.Texpa_in.Text = CDbl(Form1.Tcond_sat.Text).ToString("0.###")
 
         ElseIf A2 < A2_real Then
             'MsgBox("subcooled region") ===============================================================================================
@@ -236,7 +236,7 @@
 
             Dim TL, TR As Double
             TL = C_Tain
-            TR = KtoC(CDbl(Form1.CTsat.Text))
+            TR = KtoC(CDbl(Form1.Tcond_sat.Text))
             C_Tout = (TL + TR) / 2
 
             While (1)
@@ -300,14 +300,14 @@
             End While
 
             ' MsgBox(C_Tout)
-            Form1.TextBox17.Text = 0.ToString("0.###")
-            Form1.T2_3.Text = (CtoK(CDbl(C_Tout)))
-            Form1.T2_3.Text = CDbl(Form1.T2_3.Text).ToString("0.###")
+            Form1.Xexpa_in.Text = 0.ToString("0.###")
+            Form1.Texpa_in.Text = (CtoK(CDbl(C_Tout)))
+            Form1.Texpa_in.Text = CDbl(Form1.Texpa_in.Text).ToString("0.###")
         End If
 
-        Form1.QA1txt.Text = C_QA1.ToString("0.###")
-        Form1.QA2txt.Text = C_QA2.ToString("0.###")
-        Form1.QA3txt.Text = Q3.ToString("0.###")
+        Form1.C_Q_sup.Text = C_QA1.ToString("0.###")
+        Form1.C_Q_sat.Text = C_QA2.ToString("0.###")
+        Form1.C_Q_sub.Text = Q3.ToString("0.###")
         Form1.QCtxt.Text = ((C_QA1 + C_QA2 + Q3) / 1000).ToString("0.###")
 
     End Sub
