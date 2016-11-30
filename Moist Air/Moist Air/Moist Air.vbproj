@@ -70,6 +70,7 @@
   <ItemGroup>
     <Compile Include="API_REFPROP.VB" />
     <Compile Include="Fluid.vb" />
+    <Compile Include="GlobalVar.vb" />
     <Compile Include="Module1.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">

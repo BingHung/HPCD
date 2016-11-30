@@ -40,7 +40,7 @@ Public Class Fluid
     End Function
 
 
-    Sub SatProp(ByVal Tsat As Double) 'receives saturarion temperature  - returns saturation properties
+    Public Sub SatProp(ByVal Tsat As Double) 'receives saturarion temperature  - returns saturation properties
         iL = Enthalpy(name, "Tliq", "SI", Tsat) * 1000              '[J/kg]
         iG = Enthalpy(name, "Tvap", "SI", Tsat) * 1000              '[J/kg]
         ifg = iG - iL

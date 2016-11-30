@@ -24,6 +24,10 @@
 
 
     Private Sub Start_Click(sender As Object, e As EventArgs) Handles Start.Click
+
+
+
+
         GlobalVar.Influid = InFluid.Text '"R134a" '"r22" 
         'Influid = "R32;0.5;R125;0.5"
 

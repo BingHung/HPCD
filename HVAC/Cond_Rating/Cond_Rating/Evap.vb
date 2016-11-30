@@ -57,7 +57,7 @@
         '-Air'
         MoistAir()
 
-        Tdry = CtoK(CDbl(HPCD.E_DBT_txt.Text)) '[K] Dry-bulc temperature
+        Tdry = CtoK(CDbl(HPCD.E_DBT_txt.Text)) '[K] Dry-bulk temperature
         RH = CDbl(HPCD.E_RH_txt.Text) 'Percentage 
         Pai = CDbl(HPCD.E_Patm_txt.Text) '[MPa]
         mair = CDbl(HPCD.E_mair_txt.Text) ' 0.1666 '[kg/s]
@@ -129,15 +129,13 @@
         ' hco = (ja * Gc * air.cp) * air.Pr ^ (-2 / 3) 'wet heat transfer coefficient
         fa = 28.209 * (Rea ^ -0.5653) * Nrows ^ -0.1026 * ((Fp / d_c) ^ -1.3405) * eFiningF ^ -1.3343
 
-        Dim j1 As Double '<............................................................................Debug
-        'j1 = 0.3745 - 1.554 * (Fp / d_c) ^ 0.24 * (Pl / Pt) ^ 0.12 * Nrows ^ -0.19
+
+
         'ja = 19.36 * Rea ^ j1 * (Fp / d_c) ^ 1.352 * (Pl / Pt) ^ 0.6795 * Nrows ^ -1.291 ' for plain fin
 
         Dim jl1, jl2, jl3 As Double
-        Dim Lp, angle As Double
-        'MsgBox(Math.Sin(30))
+        Dim Lp As Double
         Lp = 0.0025
-        'angle = 20F
         jl1 = -0.023634 - 1.2475 * (Fp / d_c) ^ 0.65 * (Pl / Pt) ^ 0.2 * Nrows ^ -0.18
         jl2 = 0.856 * Math.Exp(0.36397) '(Math.Tan(angle))0.36397
         jl3 = 0.25 * Math.Log(Rea)
@@ -727,7 +725,7 @@
                     hisup = Nusup * k_avg / d_i
 
                     '[5] LMTD to satisfy Qnew =Q
-                    Dim UA, AoAi, Asup, Fsup As Double
+                    Dim UA, AoAi, Asup As Double
                     AoAi = Ao / Api
                     Asup = A5 * Ao
                     UA = (1 / noho / Asup + AoAi / hisup / Asup) ^ -1
@@ -1073,5 +1071,6 @@
         End If
 
     End Sub
+
 
 End Module

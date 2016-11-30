@@ -226,7 +226,7 @@
             'MsgBox("subcooled region") ===============================================================================================
             State_A2 = 2
 
-            Dim A3, UA_A3, LMTD_A3, dT1_A3, dT2_A3, TAir_A3_out, Q3_check As Double
+            Dim A3, UA_A3, Q3_check As Double
             A3 = C_Ao - A1 - A2
             Q3 = 0
 
@@ -281,7 +281,7 @@
                     E = 1 - Math.Exp(NTU ^ 0.22 * (Math.Exp(-Cstar * NTU ^ 0.78) - 1) / Cstar)
                 End If
 
-                Dim Qmax, Qsub, QsubNew As Double
+                Dim Qmax As Double
                 Qmax = Cr * (C_Ts - C_Tain)
                 Q3_check = E * Qmax
                 Q3 = Cr * (C_Ts - C_Tout)
