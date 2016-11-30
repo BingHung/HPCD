@@ -58,11 +58,15 @@
 
         MoistAirProperty.DBT = 27
 
-        Dim SatWater As New Fluid("Water", "SI", "TP")
-        SatWater.SatProp(CtoK(MoistAirProperty.DBT))
+        'Dim TEST As New Fluid("r22", "SI", "TP")
+        'TEST.SatProp(CtoK(MoistAirProperty.DBT))
+        'MsgBox(TEST.iL)
 
-        MoistAirProperty.Ps = SatWater.P * 1000
-        MsgBox(MoistAirProperty.Ps)
+        'Dim SatWater As New Fluid("WATER.FLD", "si", "tp")
+        'SatWater.SatProp(CtoK(MoistAirProperty.DBT))
+
+        'MoistAirProperty.Ps = SatWater.P * 1000
+        'MsgBox(MoistAirProperty.Ps)
 
         MoistAir()
 
@@ -71,13 +75,13 @@
         Pai = CDbl(HPCD.E_Patm_txt.Text) '[MPa]
         mair = CDbl(HPCD.E_mair_txt.Text) ' 0.1666 '[kg/s]
 
-        Twet = CtoK(CDbl(HPCD.E_WBT_txt.Text)) '[K] Wet-bulc temperature
-        Tdew = CtoK(TdewPoint(KtoC(Tdry), RH)) '[K] Dew point temperature
-        Wai = 0.0110835 '[kg-water-vapor/kg-dry-air]
+        'Twet = CtoK(CDbl(HPCD.E_WBT_txt.Text)) '[K] Wet-bulc temperature
+        'Tdew = CtoK(TdewPoint(KtoC(Tdry), RH)) '[K] Dew point temperature
+        'Wai = 0.0110835 '[kg-water-vapor/kg-dry-air]
 
-        'Twet = WBT '[K] Wet-bulc temperature
-        'Tdew = CtoK(Dew) '[K] Dew point temperature
-        'Wai = W '[kg-water-vapor/kg-dry-air]
+        Twet = MoistAirProperty.WBT '[K] Wet-bulc temperature
+        Tdew = CtoK(MoistAirProperty.Dew) '[K] Dew point temperature
+        Wai = MoistAirProperty.W '[kg-water-vapor/kg-dry-air]
 
         ' // [Air_Property_derived]  <===========================================================================
 

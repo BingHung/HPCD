@@ -238,7 +238,7 @@
         ' [ Patm ] Abosulte Pressure (kPa)
         ' [ Ra ] gas constant (J/kg.K)
 
-        MoistAirProperty.Patm = 101.325
+        MoistAirProperty.Patm = CDbl(HPCD.E_Patm_txt.Text) * 1000 '101.325
         MoistAirProperty.Ra = 287.055
 
         'Dim RH, DBT, Ps, Pv As Double
@@ -248,13 +248,13 @@
         ' [ Ps ] Sat Pressure of water , in DBT (kPa) 
         ' [ Pv ] Vapor Pressure (kPa)
 
-        MoistAirProperty.RH = 0.5
-        MoistAirProperty.DBT = 27
+        MoistAirProperty.RH = CDbl(HPCD.E_RH_txt.Text)
+        MoistAirProperty.DBT = CDbl(HPCD.E_DBT_txt.Text)
 
         'Dim SatWater As New Fluid("water", "si", "tp")
         'SatWater.SatProp(CtoK(MoistAirProperty.DBT))
 
-        MoistAirProperty.Ps = Pressure("water", "Tliq", "SI", CtoK(MoistAirProperty.DBT)) * 1000
+        MoistAirProperty.Ps = Pressure("WATER.FLD", "Tliq", "SI", CtoK(MoistAirProperty.DBT)) * 1000
         'Console.WriteLine("Sat Pressure : {0} kPa ", MoistAirProperty.Ps)
 
         MoistAirProperty.Pv = MoistAirProperty.Ps * MoistAirProperty.RH
@@ -308,10 +308,10 @@
 
             'hg1 = SatWater.iG / 1000        'kJ/kg
 
-            hg1 = Enthalpy("water", "Tvap", "SI", CtoK(MoistAirProperty.DBT))
+            hg1 = Enthalpy("WATER.FLD", "Tvap", "SI", CtoK(MoistAirProperty.DBT))
             'WBT = 30
 
-            Dim WBSatWater As New Fluid("water", "si", "tp")
+            Dim WBSatWater As New Fluid("WATER.FLD", "si", "tp")
             WBSatWater.SatProp(WBT)
 
             WBT = KtoC(WBT)
