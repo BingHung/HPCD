@@ -1,4 +1,5 @@
 
+
 ' class for  function prototypes in VB.NET
 Imports System.Runtime.InteropServices
 Public Module RefProp

@@ -55,6 +55,15 @@
         ' // [Air_Property_init]  <===========================================================================
 
         '-Air'
+
+        MoistAirProperty.DBT = 27
+
+        Dim SatWater As New Fluid("Water", "SI", "TP")
+        SatWater.SatProp(CtoK(MoistAirProperty.DBT))
+
+        MoistAirProperty.Ps = SatWater.P * 1000
+        MsgBox(MoistAirProperty.Ps)
+
         MoistAir()
 
         Tdry = CtoK(CDbl(HPCD.E_DBT_txt.Text)) '[K] Dry-bulk temperature

@@ -1,9 +1,11 @@
-﻿Module Module1
+﻿
+Module Module1
 
 
 
     Sub Main()
 
+        R_TEST()
         '# Initial Set up 
 
         'Dim Patm, Ra As Double
@@ -99,10 +101,10 @@
             If Math.Abs(MoistAirProperty.W - W1) < 0.0001 Then
                 Console.WriteLine("WBT : {0}", WBT)
                 Exit While
-            ElseIf (MoistAirProperty.w - W1) > 0.0001 Then
+            ElseIf (MoistAirProperty.W - W1) > 0.0001 Then
                 L = CtoK(WBT)
                 WBT = (R + L) / 2
-            ElseIf (W1 - MoistAirProperty.w) > 0.0001 Then
+            ElseIf (W1 - MoistAirProperty.W) > 0.0001 Then
                 R = CtoK(WBT)
                 WBT = (R + L) / 2
             End If

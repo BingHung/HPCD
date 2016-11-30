@@ -1,4 +1,4 @@
-﻿Module PublicFunctions
+﻿Public Module PublicFunctions
     Public Function createRefpropName(ByVal name) As String
         Dim refpropName As String = ""
         If name = "Ar" Then refpropName = "argon" : Return refpropName
@@ -251,14 +251,14 @@
         MoistAirProperty.RH = 0.5
         MoistAirProperty.DBT = 27
 
-        Dim SatWater As New Fluid("water", "si", "tp")
-        SatWater.SatProp(CtoK(MoistAirProperty.DBT))
+        'Dim SatWater As New Fluid("water", "si", "tp")
+        'SatWater.SatProp(CtoK(MoistAirProperty.DBT))
 
-        MoistAirProperty.Ps = SatWater.P * 1000
-        Console.WriteLine("Sat Pressure : {0} kPa ", MoistAirProperty.Ps)
+        MoistAirProperty.Ps = Pressure("water", "Tliq", "SI", CtoK(MoistAirProperty.DBT)) * 1000
+        'Console.WriteLine("Sat Pressure : {0} kPa ", MoistAirProperty.Ps)
 
         MoistAirProperty.Pv = MoistAirProperty.Ps * MoistAirProperty.RH
-        Console.WriteLine("Vap Pressure : {0} kPa ", MoistAirProperty.Pv)
+        'Console.WriteLine("Vap Pressure : {0} kPa ", MoistAirProperty.Pv)
 
         'Dim Dew, W, rhoai, iai As Double
         Dim a As Double
@@ -269,17 +269,17 @@
         ' [ iai ]                     (kJ/kg)   //6-20
 
         MoistAirProperty.W = 0.62198 * MoistAirProperty.Pv / (MoistAirProperty.Patm - MoistAirProperty.Pv)
-        Console.WriteLine("Humidity Ratio  : {0} (kg/kg dry air) ", MoistAirProperty.W)
+        'Console.WriteLine("Humidity Ratio  : {0} (kg/kg dry air) ", MoistAirProperty.W)
 
         a = Math.Log(MoistAirProperty.Pv)
         MoistAirProperty.Dew = 6.54 + 14.526 * a + 0.7398 * a ^ 2 + 0.09486 * a ^ 3 + 0.4569 * MoistAirProperty.Pv ^ 0.1984
-        Console.WriteLine("Dew Point Temperature  : {0} (oC) ", MoistAirProperty.Dew)
+        'Console.WriteLine("Dew Point Temperature  : {0} (oC) ", MoistAirProperty.Dew)
 
         MoistAirProperty.rhoai = MoistAirProperty.Patm * 1000 / (MoistAirProperty.Ra * CtoK(MoistAirProperty.DBT) * (1 + 1.6078 * MoistAirProperty.W))
-        Console.WriteLine("rhoai  : {0} (kg/m^3) ", MoistAirProperty.rhoai)
+        'Console.WriteLine("rhoai  : {0} (kg/m^3) ", MoistAirProperty.rhoai)
 
         MoistAirProperty.iai = 1.006 * MoistAirProperty.DBT + MoistAirProperty.W * (2501 + 1.805 * MoistAirProperty.DBT)
-        Console.WriteLine("iai  : {0} (kJ/kg) ", MoistAirProperty.iai)
+        'Console.WriteLine("iai  : {0} (kJ/kg) ", MoistAirProperty.iai)
 
 
 
@@ -292,7 +292,7 @@
         MoistAirProperty.Visca = Air.Visc    'N.s/m^2
         MoistAirProperty.Pra = Air.Pr        'X
 
-        Console.WriteLine("Cpa : {0} ; Visca : {1} ; Pra : {2}", MoistAirProperty.Cpa, MoistAirProperty.Visca, MoistAirProperty.Pra)
+        'Console.WriteLine("Cpa : {0} ; Visca : {1} ; Pra : {2}", MoistAirProperty.Cpa, MoistAirProperty.Visca, MoistAirProperty.Pra)
 
         '# WBT iteration => To get WBT
 
@@ -306,8 +306,9 @@
 
         While (1)
 
-            hg1 = SatWater.iG / 1000        'kJ/kg
+            'hg1 = SatWater.iG / 1000        'kJ/kg
 
+            hg1 = Enthalpy("water", "Tvap", "SI", CtoK(MoistAirProperty.DBT))
             'WBT = 30
 
             Dim WBSatWater As New Fluid("water", "si", "tp")
@@ -324,7 +325,7 @@
 
 
             If Math.Abs(MoistAirProperty.W - W1) < 0.0001 Then
-                Console.WriteLine("WBT : {0}", WBT)
+                'Console.WriteLine("WBT : {0}", WBT)
                 Exit While
             ElseIf (MoistAirProperty.W - W1) > 0.0001 Then
                 L = CtoK(WBT)
@@ -336,7 +337,6 @@
 
         End While
 
-        Console.Read()
     End Sub
 
 
