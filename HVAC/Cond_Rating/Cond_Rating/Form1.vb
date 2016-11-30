@@ -124,9 +124,9 @@
 
         Expa.Expa()
 
-        ETsat.Text = Temperature(GlobalVar.Influid, "PLIQ", "SI", CDbl(EPsat.Text))
-        ETsat.Text = CDbl(ETsat.Text).ToString("0.###")
-        T3_4.Text = CDbl(ETsat.Text).ToString("0.###")
+        Tevap_sat.Text = Temperature(GlobalVar.Influid, "PLIQ", "SI", CDbl(EPsat.Text))
+        Tevap_sat.Text = CDbl(Tevap_sat.Text).ToString("0.###")
+        Tevap_sat.Text = CDbl(Tevap_sat.Text).ToString("0.###")
 
     End Sub
 
@@ -145,11 +145,11 @@
         Cond()
         Expa.Expa()
 
-        ETsat.Text = Temperature(GlobalVar.Influid, "PLIQ", "SI", CDbl(EPsat.Text))
-        T3_4.Text = CDbl(ETsat.Text)
+        Tevap_sat.Text = Temperature(GlobalVar.Influid, "PLIQ", "SI", CDbl(EPsat.Text))
+        Tevap_sat.Text = CDbl(Tevap_sat.Text)
         'E.Sat_Refrigerants
         Dim E_sat As New Fluid(GlobalVar.Influid, "si", "tp")
-        E_sat.SatProp(CDbl(ETsat.Text))
+        E_sat.SatProp(CDbl(Tevap_sat.Text))
         'EPsat.Text = E_sat.P
 
         Evap.Evap()
@@ -793,7 +793,7 @@
         Pin = CDbl(EPsat.Text)
         mr = CDbl(MFR.Text)
         xin = CDbl(TextBox10.Text)
-        Tpre = CDbl(ETsat.Text)
+        Tpre = CDbl(Tevap_sat.Text)
 
         L = CDbl(TextBox13.Text)
         D = CDbl(TextBox12.Text)
@@ -809,7 +809,7 @@
         ' start state 
         Dim hi As Double
         Dim InitialState As New Fluid(GlobalVar.Influid, "SI", "tp")
-        InitialState.SatProp(CDbl(ETsat.Text))
+        InitialState.SatProp(CDbl(Tevap_sat.Text))
         hi = (InitialState.iG - InitialState.iL) * xin + InitialState.iL
 
 

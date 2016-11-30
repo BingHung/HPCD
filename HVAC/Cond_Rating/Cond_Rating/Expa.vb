@@ -36,7 +36,7 @@
 
             Dim Tx, xzero, Px As Double
             Dim zeroL, zeroR As Double
-            zeroL = CDbl(Form1.ETsat.Text)  '273.15 'CDbl(ETsat.Text)  '10 'T state1 guess (Low Pressure Saturation)
+            zeroL = CDbl(Form1.Tevap_sat.Text)  '273.15 'CDbl(ETsat.Text)  '10 'T state1 guess (Low Pressure Saturation)
             zeroR = TA3  ' T initial state temperature
             Tx = (zeroL + zeroR) / 2
 

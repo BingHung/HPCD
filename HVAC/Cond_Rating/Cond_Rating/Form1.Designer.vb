@@ -188,6 +188,7 @@ Partial Class Form1
         Me.TextBox31 = New System.Windows.Forms.TextBox()
         Me.Label18 = New System.Windows.Forms.Label()
         Me.System = New System.Windows.Forms.TabPage()
+        Me.GroupBox9 = New System.Windows.Forms.GroupBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.GroupBox15 = New System.Windows.Forms.GroupBox()
         Me.TextBox35 = New System.Windows.Forms.TextBox()
@@ -224,12 +225,10 @@ Partial Class Form1
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.EPsat = New System.Windows.Forms.TextBox()
         Me.Label49 = New System.Windows.Forms.Label()
-        Me.ETsat = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.TextBox10 = New System.Windows.Forms.TextBox()
-        Me.Label12 = New System.Windows.Forms.Label()
         Me.Label22 = New System.Windows.Forms.Label()
-        Me.T3_4 = New System.Windows.Forms.TextBox()
+        Me.Tevap_sat = New System.Windows.Forms.TextBox()
         Me.Label17 = New System.Windows.Forms.Label()
         Me.Label63 = New System.Windows.Forms.Label()
         Me.QA5txt = New System.Windows.Forms.TextBox()
@@ -239,7 +238,7 @@ Partial Class Form1
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.TextBox11 = New System.Windows.Forms.TextBox()
         Me.Label46 = New System.Windows.Forms.Label()
-        Me.T4_1 = New System.Windows.Forms.TextBox()
+        Me.Tcomp_in = New System.Windows.Forms.TextBox()
         Me.MFR = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label52 = New System.Windows.Forms.Label()
@@ -248,7 +247,6 @@ Partial Class Form1
         Me.FAQ = New System.Windows.Forms.TabPage()
         Me.TextBox30 = New System.Windows.Forms.TextBox()
         Me.Label116 = New System.Windows.Forms.Label()
-        Me.GroupBox9 = New System.Windows.Forms.GroupBox()
         Me.TabPage3.SuspendLayout()
         Me.GroupBox7.SuspendLayout()
         Me.GroupBox6.SuspendLayout()
@@ -287,7 +285,7 @@ Partial Class Form1
         Me.TabPage3.Location = New System.Drawing.Point(4, 22)
         Me.TabPage3.Name = "TabPage3"
         Me.TabPage3.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage3.Size = New System.Drawing.Size(1303, 747)
+        Me.TabPage3.Size = New System.Drawing.Size(1284, 738)
         Me.TabPage3.TabIndex = 4
         Me.TabPage3.Text = "Compressor"
         Me.TabPage3.UseVisualStyleBackColor = True
@@ -504,7 +502,7 @@ Partial Class Form1
         Me.TabPage2.Location = New System.Drawing.Point(4, 22)
         Me.TabPage2.Name = "TabPage2"
         Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage2.Size = New System.Drawing.Size(1303, 747)
+        Me.TabPage2.Size = New System.Drawing.Size(1284, 738)
         Me.TabPage2.TabIndex = 3
         Me.TabPage2.Text = "ExpansionDevice"
         Me.TabPage2.UseVisualStyleBackColor = True
@@ -650,7 +648,7 @@ Partial Class Form1
         Me.TabPage1.Location = New System.Drawing.Point(4, 22)
         Me.TabPage1.Name = "TabPage1"
         Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage1.Size = New System.Drawing.Size(1303, 747)
+        Me.TabPage1.Size = New System.Drawing.Size(1284, 738)
         Me.TabPage1.TabIndex = 2
         Me.TabPage1.Text = "Evaporator"
         Me.TabPage1.UseVisualStyleBackColor = True
@@ -1234,7 +1232,7 @@ Partial Class Form1
         Me.Parameters.Location = New System.Drawing.Point(4, 22)
         Me.Parameters.Name = "Parameters"
         Me.Parameters.Padding = New System.Windows.Forms.Padding(3)
-        Me.Parameters.Size = New System.Drawing.Size(1303, 747)
+        Me.Parameters.Size = New System.Drawing.Size(1284, 738)
         Me.Parameters.TabIndex = 1
         Me.Parameters.Text = "Condensor"
         Me.Parameters.UseVisualStyleBackColor = True
@@ -1891,14 +1889,22 @@ Partial Class Form1
         Me.System.TabIndex = 0
         Me.System.Text = "SystemOverview"
         '
+        'GroupBox9
+        '
+        Me.GroupBox9.Location = New System.Drawing.Point(1010, 358)
+        Me.GroupBox9.Name = "GroupBox9"
+        Me.GroupBox9.Size = New System.Drawing.Size(246, 325)
+        Me.GroupBox9.TabIndex = 10
+        Me.GroupBox9.TabStop = False
+        Me.GroupBox9.Text = "Dryer"
+        '
         'PictureBox1
         '
         Me.PictureBox1.BackgroundImage = Global.Cond_Rating.My.Resources.Resources.Compressor1
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(122, 19)
+        Me.PictureBox1.Location = New System.Drawing.Point(195, 29)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(626, 311)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.Size = New System.Drawing.Size(553, 285)
         Me.PictureBox1.TabIndex = 80
         Me.PictureBox1.TabStop = False
         '
@@ -2077,7 +2083,7 @@ Partial Class Form1
         'Label71
         '
         Me.Label71.AutoSize = True
-        Me.Label71.Location = New System.Drawing.Point(19, 199)
+        Me.Label71.Location = New System.Drawing.Point(15, 199)
         Me.Label71.Name = "Label71"
         Me.Label71.Size = New System.Drawing.Size(67, 12)
         Me.Label71.TabIndex = 73
@@ -2103,7 +2109,7 @@ Partial Class Form1
         'Label72
         '
         Me.Label72.AutoSize = True
-        Me.Label72.Location = New System.Drawing.Point(19, 171)
+        Me.Label72.Location = New System.Drawing.Point(15, 171)
         Me.Label72.Name = "Label72"
         Me.Label72.Size = New System.Drawing.Size(71, 12)
         Me.Label72.TabIndex = 72
@@ -2210,12 +2216,10 @@ Partial Class Form1
         '
         Me.GroupBox2.Controls.Add(Me.EPsat)
         Me.GroupBox2.Controls.Add(Me.Label49)
-        Me.GroupBox2.Controls.Add(Me.ETsat)
         Me.GroupBox2.Controls.Add(Me.Label3)
         Me.GroupBox2.Controls.Add(Me.TextBox10)
-        Me.GroupBox2.Controls.Add(Me.Label12)
         Me.GroupBox2.Controls.Add(Me.Label22)
-        Me.GroupBox2.Controls.Add(Me.T3_4)
+        Me.GroupBox2.Controls.Add(Me.Tevap_sat)
         Me.GroupBox2.Controls.Add(Me.Label17)
         Me.GroupBox2.Controls.Add(Me.Label63)
         Me.GroupBox2.Controls.Add(Me.QA5txt)
@@ -2231,7 +2235,7 @@ Partial Class Form1
         '
         'EPsat
         '
-        Me.EPsat.Location = New System.Drawing.Point(108, 109)
+        Me.EPsat.Location = New System.Drawing.Point(108, 52)
         Me.EPsat.Name = "EPsat"
         Me.EPsat.ReadOnly = True
         Me.EPsat.Size = New System.Drawing.Size(100, 22)
@@ -2246,18 +2250,10 @@ Partial Class Form1
         Me.Label49.TabIndex = 70
         Me.Label49.Text = "E_Q_tot (W)"
         '
-        'ETsat
-        '
-        Me.ETsat.Location = New System.Drawing.Point(109, 81)
-        Me.ETsat.Name = "ETsat"
-        Me.ETsat.Size = New System.Drawing.Size(99, 22)
-        Me.ETsat.TabIndex = 5
-        Me.ETsat.Text = "280.15"
-        '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(16, 112)
+        Me.Label3.Location = New System.Drawing.Point(12, 56)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(83, 12)
         Me.Label3.TabIndex = 3
@@ -2265,20 +2261,11 @@ Partial Class Form1
         '
         'TextBox10
         '
-        Me.TextBox10.Location = New System.Drawing.Point(109, 53)
+        Me.TextBox10.Location = New System.Drawing.Point(107, 80)
         Me.TextBox10.Name = "TextBox10"
         Me.TextBox10.Size = New System.Drawing.Size(99, 22)
         Me.TextBox10.TabIndex = 58
         Me.TextBox10.Text = "0.2"
-        '
-        'Label12
-        '
-        Me.Label12.AutoSize = True
-        Me.Label12.Location = New System.Drawing.Point(14, 84)
-        Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(44, 12)
-        Me.Label12.TabIndex = 4
-        Me.Label12.Text = "TL (K) :"
         '
         'Label22
         '
@@ -2289,13 +2276,13 @@ Partial Class Form1
         Me.Label22.TabIndex = 69
         Me.Label22.Text = "E_Q_sup (W)"
         '
-        'T3_4
+        'Tevap_sat
         '
-        Me.T3_4.Location = New System.Drawing.Point(108, 25)
-        Me.T3_4.Name = "T3_4"
-        Me.T3_4.Size = New System.Drawing.Size(101, 22)
-        Me.T3_4.TabIndex = 4
-        Me.T3_4.Text = "280.15"
+        Me.Tevap_sat.Location = New System.Drawing.Point(108, 25)
+        Me.Tevap_sat.Name = "Tevap_sat"
+        Me.Tevap_sat.Size = New System.Drawing.Size(101, 22)
+        Me.Tevap_sat.TabIndex = 4
+        Me.Tevap_sat.Text = "280.15"
         '
         'Label17
         '
@@ -2309,7 +2296,7 @@ Partial Class Form1
         'Label63
         '
         Me.Label63.AutoSize = True
-        Me.Label63.Location = New System.Drawing.Point(14, 56)
+        Me.Label63.Location = New System.Drawing.Point(12, 83)
         Me.Label63.Name = "Label63"
         Me.Label63.Size = New System.Drawing.Size(50, 12)
         Me.Label63.TabIndex = 57
@@ -2352,7 +2339,7 @@ Partial Class Form1
         '
         Me.GroupBox1.Controls.Add(Me.TextBox11)
         Me.GroupBox1.Controls.Add(Me.Label46)
-        Me.GroupBox1.Controls.Add(Me.T4_1)
+        Me.GroupBox1.Controls.Add(Me.Tcomp_in)
         Me.GroupBox1.Controls.Add(Me.MFR)
         Me.GroupBox1.Controls.Add(Me.Label1)
         Me.GroupBox1.Controls.Add(Me.Label52)
@@ -2380,14 +2367,14 @@ Partial Class Form1
         Me.Label46.TabIndex = 61
         Me.Label46.Text = "Wcomp (kW)"
         '
-        'T4_1
+        'Tcomp_in
         '
-        Me.T4_1.Location = New System.Drawing.Point(121, 28)
-        Me.T4_1.Name = "T4_1"
-        Me.T4_1.Size = New System.Drawing.Size(102, 22)
-        Me.T4_1.TabIndex = 2
-        Me.T4_1.Text = "300"
-        Me.T4_1.UseWaitCursor = True
+        Me.Tcomp_in.Location = New System.Drawing.Point(121, 28)
+        Me.Tcomp_in.Name = "Tcomp_in"
+        Me.Tcomp_in.Size = New System.Drawing.Size(102, 22)
+        Me.Tcomp_in.TabIndex = 2
+        Me.Tcomp_in.Text = "300"
+        Me.Tcomp_in.UseWaitCursor = True
         '
         'MFR
         '
@@ -2445,7 +2432,7 @@ Partial Class Form1
         Me.FAQ.Location = New System.Drawing.Point(4, 22)
         Me.FAQ.Name = "FAQ"
         Me.FAQ.Padding = New System.Windows.Forms.Padding(3)
-        Me.FAQ.Size = New System.Drawing.Size(1303, 747)
+        Me.FAQ.Size = New System.Drawing.Size(1284, 738)
         Me.FAQ.TabIndex = 5
         Me.FAQ.Text = "FAQ"
         Me.FAQ.UseVisualStyleBackColor = True
@@ -2468,15 +2455,6 @@ Partial Class Form1
         Me.Label116.Name = "Label116"
         Me.Label116.Size = New System.Drawing.Size(0, 12)
         Me.Label116.TabIndex = 0
-        '
-        'GroupBox9
-        '
-        Me.GroupBox9.Location = New System.Drawing.Point(1010, 358)
-        Me.GroupBox9.Name = "GroupBox9"
-        Me.GroupBox9.Size = New System.Drawing.Size(246, 325)
-        Me.GroupBox9.TabIndex = 10
-        Me.GroupBox9.TabStop = False
-        Me.GroupBox9.Text = "Dryer"
         '
         'Form1
         '
@@ -2606,7 +2584,6 @@ Partial Class Form1
     Friend WithEvents TextBox31 As TextBox
     Friend WithEvents Label18 As Label
     Friend WithEvents System As TabPage
-    Friend WithEvents Label12 As Label
     Friend WithEvents CTsat As TextBox
     Friend WithEvents Label10 As Label
     Friend WithEvents GroupBox4 As GroupBox
@@ -2621,12 +2598,11 @@ Partial Class Form1
     Friend WithEvents Label8 As Label
     Friend WithEvents GroupBox2 As GroupBox
     Friend WithEvents EPsat As TextBox
-    Friend WithEvents T3_4 As TextBox
+    Friend WithEvents Tevap_sat As TextBox
     Friend WithEvents Label3 As Label
     Friend WithEvents Label4 As Label
     Friend WithEvents Start As Button
     Friend WithEvents Cycle As TabControl
-    Friend WithEvents ETsat As TextBox
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents Label25 As Label
     Friend WithEvents TextBox2 As TextBox
@@ -2672,7 +2648,7 @@ Partial Class Form1
     Friend WithEvents TextBox10 As TextBox
     Friend WithEvents Label63 As Label
     Friend WithEvents GroupBox1 As GroupBox
-    Friend WithEvents T4_1 As TextBox
+    Friend WithEvents Tcomp_in As TextBox
     Friend WithEvents Label1 As Label
     Friend WithEvents QCtxt As TextBox
     Friend WithEvents QA3txt As TextBox

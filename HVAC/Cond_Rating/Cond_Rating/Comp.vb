@@ -14,7 +14,7 @@
 
         'E.Sat_Refrigerants
         Dim E_sat As New Fluid(Influid, "si", "tp")
-        E_sat.SatProp(CDbl(Form1.ETsat.Text))
+        E_sat.SatProp(CDbl(Form1.Tevap_sat.Text))
 
         Form1.Suction_Pressure.Text = E_sat.P.ToString("0.###")
         Psuc = E_sat.P
@@ -26,7 +26,7 @@
         'C.Sup_Refrigerants
         'T1 = 300 ' Initial Guess ===== for debug
         'T4_1.Text = T1
-        T1 = CDbl(Form1.T4_1.Text)
+        T1 = CDbl(Form1.Tcomp_in.Text)
 
         Dim E_sup As New Fluid(Influid, "si", "tp")
         E_sup.Properties(T1, E_sat.P)

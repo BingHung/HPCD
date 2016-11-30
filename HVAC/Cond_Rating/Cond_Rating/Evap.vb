@@ -52,7 +52,7 @@
 
         'Refrigerant
         'T3_4.Text = CDbl(TextBox18.Text) 'Saturated temperature ~~~ 
-        Tri = CDbl(Form1.ETsat.Text) '288 ' CtoK(8.5) ' CDbl(ETsat.Text) 'CtoK(25.3125) 'CtoK(7.2)  'CtoK(CDbl(T3_4.Text)) 'CtoK(7.2)                '[K] Saturation temperature of refrigerant
+        Tri = CDbl(Form1.Tevap_sat.Text) '288 ' CtoK(8.5) ' CDbl(Tevap_sat.Text) 'CtoK(25.3125) 'CtoK(7.2)  'CtoK(CDbl(T3_4.Text)) 'CtoK(7.2)                '[K] Saturation temperature of refrigerant
         xri = CDbl(Form1.TextBox10.Text) '0.27 'CDbl(TextBox10.Text) 'CDbl(TextBox37.Text) '0.27                     'Quality of refrigerant
         mref = CDbl(Form1.MFR.Text) '0.020833 'CDbl(MFR.Text) 'CDbl(TextBox40.Text) '     0.020833           '[kg/s]
 
@@ -438,8 +438,7 @@
 
         If (state = "Esat") Then
 
-            Form1.T4_1.Text = CDbl(Form1.T3_4.Text).ToString("0.###")
-
+            Form1.Tcomp_in.Text = CDbl(Form1.Tevap_sat.Text).ToString("0.###")
             Form1.QA4txt.Text = Qr
             Form1.QA5txt.Text = 0
             Form1.QEtxt.Text = CDbl(Form1.QA4txt.Text) + CDbl(Form1.QA5txt.Text)
@@ -704,13 +703,13 @@
                     E_sup.Properties(Tsup, mix.P)
 
                     'Dim Qsup, Taout, LMTD As Double
-                    'Qsup = mref * (mix.CpG + E_sup.cp) / 2 * (Tsup - CDbl(Form1.ETsat.Text))
+                    'Qsup = mref * (mix.CpG + E_sup.cp) / 2 * (Tsup - CDbl(Form1.Tevap_sat.Text))
                     'Taout = Tdry - Qsup / mair / E_air.cp
 
                     'Dim Thi, Tho, Tci, Tco As Double
                     'Thi = Tdry
                     'Tho = Taout
-                    'Tci = CDbl(Form1.ETsat.Text)
+                    'Tci = CDbl(Form1.Tevap_sat.Text)
                     'Tco = Tsup
 
                     'LMTD = ((Thi - Tco) - (Tho - Tci)) / Math.Log((Thi - Tco) / (Tho - Tci))
@@ -780,7 +779,7 @@
                 'MsgBox(QsupNew)
                 'MsgBox("ESup")
 
-                Form1.T4_1.Text = Tsup.ToString("0.###")
+                Form1.Tcomp_in.Text = Tsup.ToString("0.###")
 
                 Form1.QA5txt.Text = Qsup
                 Form1.QEtxt.Text = CDbl(Form1.QA4txt.Text) + CDbl(Form1.QA5txt.Text)
