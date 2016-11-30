@@ -10,14 +10,14 @@
         Dim Atp, Asp, Btp, Bsp As Double
         Dim Tin, Tout, Tpre As Double
 
-        Pin = CDbl(Form1.Pcond_sat.Text)
-        mr = CDbl(Form1.MFR.Text)
-        x = CDbl(Form1.Xexpa_in.Text)
-        Tpre = CDbl(Form1.Tcond_sat.Text) ' Tcond.sat for A2 expand '(K)
+        Pin = CDbl(HPCD.Pcond_sat.Text)
+        mr = CDbl(HPCD.MFR.Text)
+        x = CDbl(HPCD.Xexpa_in.Text)
+        Tpre = CDbl(HPCD.Tcond_sat.Text) ' Tcond.sat for A2 expand '(K)
 
-        L = CDbl(Form1.Expa_TubeLength_txt.Text)
-        D = CDbl(Form1.Expa_InnerD_txt.Text)
-        e = CDbl(Form1.Expa_Roughness_txt.Text)
+        L = CDbl(HPCD.Expa_TubeLength_txt.Text)
+        D = CDbl(HPCD.Expa_InnerD_txt.Text)
+        e = CDbl(HPCD.Expa_Roughness_txt.Text)
         N = 10 '100
 
         dL = L / N
@@ -32,11 +32,11 @@
             'XXXXXXXXXXXXXXXXXXXXXXXXXXXX   Subcooled Capillary XXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
             Dim TA3 As Double
-            TA3 = (CDbl((Form1.Texpa_in.Text))) '(K)
+            TA3 = (CDbl((HPCD.Texpa_in.Text))) '(K)
 
             Dim Tx, xzero, Px As Double
             Dim zeroL, zeroR As Double
-            zeroL = CDbl(Form1.Tevap_sat.Text)  '273.15 'CDbl(ETsat.Text)  '10 'T state1 guess (Low Pressure Saturation)
+            zeroL = CDbl(HPCD.Tevap_sat.Text)  '273.15 'CDbl(ETsat.Text)  '10 'T state1 guess (Low Pressure Saturation)
             zeroR = TA3  ' T initial state temperature
             Tx = (zeroL + zeroR) / 2
 
@@ -184,15 +184,15 @@
             '** Dc:         coiled diameter(m)
             '** L = length Of the capillary tube
             '/****************************************************************************
-            Dim Dc As Double = CDbl(Form1.Expa_OuterD_txt.Text) '(m)
+            Dim Dc As Double = CDbl(HPCD.Expa_OuterD_txt.Text) '(m)
             'MsgBox(Pout_guess)
             Pout_guess = Pout_guess * (2.011 * (Dc / L) ^ 0.0527 * (D / L) ^ 0.094)
 
             'MsgBox(vout)
             'MsgBox(count)
             'MsgBox(Pout_guess)
-            Form1.Pevap_sat.Text = Pout_guess.ToString("0.###")
-            Form1.Xevap_in.Text = xout.ToString("0.###")
+            HPCD.Pevap_sat.Text = Pout_guess.ToString("0.###")
+            HPCD.Xevap_in.Text = xout.ToString("0.###")
 
 
 
@@ -208,7 +208,7 @@
 
             Dim Lp, Rp, count, cplus As Double
             Lp = 0.101325 'E_sat.P '2
-            Rp = CDbl(Form1.Pcond_sat.Text) '2.13
+            Rp = CDbl(HPCD.Pcond_sat.Text) '2.13
             Pout = (Lp + Rp) / 2
             count = 1
 
@@ -298,13 +298,13 @@
             '** Dc:         coiled diameter(m)
             '** L = length Of the capillary tube
             '/****************************************************************************
-            Dim Dc As Double = CDbl(Form1.Expa_OuterD_txt.Text) '(m)
+            Dim Dc As Double = CDbl(HPCD.Expa_OuterD_txt.Text) '(m)
 
             Pout_guess = Pout_guess * (2.011 * (Dc / L) ^ 0.0527 * (D / L) ^ 0.094)
 
             ' MsgBox(Pout_guess)
-            Form1.Pevap_sat.Text = Pout_guess.ToString("0.###")
-            Form1.Xevap_in.Text = xout.ToString("0.###")
+            HPCD.Pevap_sat.Text = Pout_guess.ToString("0.###")
+            HPCD.Xevap_in.Text = xout.ToString("0.###")
 
         End If
 

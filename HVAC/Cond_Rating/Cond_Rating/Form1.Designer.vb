@@ -1,7 +1,7 @@
 ﻿Imports System.Windows
 
 <Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class Form1
+Partial Class HPCD
     Inherits System.Windows.Forms.Form
 
     'Form 覆寫 Dispose 以清除元件清單。
@@ -24,7 +24,7 @@ Partial Class Form1
     '請勿使用程式碼編輯器進行修改。
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(HPCD))
         Me.TabPage3 = New System.Windows.Forms.TabPage()
         Me.GroupBox7 = New System.Windows.Forms.GroupBox()
         Me.Label111 = New System.Windows.Forms.Label()
@@ -285,7 +285,7 @@ Partial Class Form1
         Me.TabPage3.Location = New System.Drawing.Point(4, 22)
         Me.TabPage3.Name = "TabPage3"
         Me.TabPage3.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage3.Size = New System.Drawing.Size(1284, 738)
+        Me.TabPage3.Size = New System.Drawing.Size(1281, 728)
         Me.TabPage3.TabIndex = 4
         Me.TabPage3.Text = "Compressor"
         Me.TabPage3.UseVisualStyleBackColor = True
@@ -648,7 +648,7 @@ Partial Class Form1
         Me.TabPage1.Location = New System.Drawing.Point(4, 22)
         Me.TabPage1.Name = "TabPage1"
         Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage1.Size = New System.Drawing.Size(1284, 738)
+        Me.TabPage1.Size = New System.Drawing.Size(1281, 741)
         Me.TabPage1.TabIndex = 2
         Me.TabPage1.Text = "Evaporator"
         Me.TabPage1.UseVisualStyleBackColor = True
@@ -1107,7 +1107,7 @@ Partial Class Form1
         'Label102
         '
         Me.Label102.AutoSize = True
-        Me.Label102.Location = New System.Drawing.Point(314, 143)
+        Me.Label102.Location = New System.Drawing.Point(315, 140)
         Me.Label102.Name = "Label102"
         Me.Label102.Size = New System.Drawing.Size(89, 12)
         Me.Label102.TabIndex = 47
@@ -1160,7 +1160,7 @@ Partial Class Form1
         '
         'E_mair_txt
         '
-        Me.E_mair_txt.Location = New System.Drawing.Point(181, 140)
+        Me.E_mair_txt.Location = New System.Drawing.Point(182, 137)
         Me.E_mair_txt.Name = "E_mair_txt"
         Me.E_mair_txt.Size = New System.Drawing.Size(102, 22)
         Me.E_mair_txt.TabIndex = 41
@@ -1169,7 +1169,7 @@ Partial Class Form1
         'Label44
         '
         Me.Label44.AutoSize = True
-        Me.Label44.Location = New System.Drawing.Point(20, 143)
+        Me.Label44.Location = New System.Drawing.Point(21, 140)
         Me.Label44.Name = "Label44"
         Me.Label44.Size = New System.Drawing.Size(62, 12)
         Me.Label44.TabIndex = 40
@@ -1886,7 +1886,7 @@ Partial Class Form1
         Me.System.Location = New System.Drawing.Point(4, 22)
         Me.System.Name = "System"
         Me.System.Padding = New System.Windows.Forms.Padding(3)
-        Me.System.Size = New System.Drawing.Size(1284, 738)
+        Me.System.Size = New System.Drawing.Size(1281, 741)
         Me.System.TabIndex = 0
         Me.System.Text = "SystemOverview"
         '
@@ -2420,10 +2420,10 @@ Partial Class Form1
         Me.Cycle.Controls.Add(Me.TabPage2)
         Me.Cycle.Controls.Add(Me.TabPage3)
         Me.Cycle.Controls.Add(Me.FAQ)
-        Me.Cycle.Location = New System.Drawing.Point(12, 3)
+        Me.Cycle.Location = New System.Drawing.Point(12, 12)
         Me.Cycle.Name = "Cycle"
         Me.Cycle.SelectedIndex = 0
-        Me.Cycle.Size = New System.Drawing.Size(1292, 764)
+        Me.Cycle.Size = New System.Drawing.Size(1289, 767)
         Me.Cycle.TabIndex = 16
         '
         'FAQ
@@ -2457,12 +2457,12 @@ Partial Class Form1
         Me.Label116.Size = New System.Drawing.Size(0, 12)
         Me.Label116.TabIndex = 0
         '
-        'Form1
+        'HPCD
         '
         Me.ClientSize = New System.Drawing.Size(1313, 778)
         Me.Controls.Add(Me.Cycle)
-        Me.Name = "Form1"
-        Me.Text = "HPCD"
+        Me.Name = "HPCD"
+        Me.Text = "HPCD System "
         Me.TabPage3.ResumeLayout(False)
         Me.GroupBox7.ResumeLayout(False)
         Me.GroupBox7.PerformLayout()

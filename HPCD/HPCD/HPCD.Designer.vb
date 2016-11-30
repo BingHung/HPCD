@@ -202,7 +202,7 @@ Partial Class HPCD
         Me.Label59 = New System.Windows.Forms.Label()
         Me.Tevap_ain_txt = New System.Windows.Forms.TextBox()
         Me.Label14 = New System.Windows.Forms.Label()
-        Me.E_mair_txt = New System.Windows.Forms.TextBox()
+        Me.TextBox3 = New System.Windows.Forms.TextBox()
         Me.TabPage3.SuspendLayout()
         Me.TabPage2.SuspendLayout()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -1773,7 +1773,7 @@ Partial Class HPCD
         'GroupBox3
         '
         Me.GroupBox3.Controls.Add(Me.Label14)
-        Me.GroupBox3.Controls.Add(Me.E_mair_txt)
+        Me.GroupBox3.Controls.Add(Me.TextBox3)
         Me.GroupBox3.Controls.Add(Me.Label52)
         Me.GroupBox3.Controls.Add(Me.RH_txt)
         Me.GroupBox3.Controls.Add(Me.Label59)
@@ -1964,13 +1964,13 @@ Partial Class HPCD
         Me.Label14.TabIndex = 33
         Me.Label14.Text = "E_mair"
         '
-        'E_mair_txt
+        'TextBox3
         '
-        Me.E_mair_txt.Location = New System.Drawing.Point(75, 188)
-        Me.E_mair_txt.Name = "E_mair_txt"
-        Me.E_mair_txt.Size = New System.Drawing.Size(114, 22)
-        Me.E_mair_txt.TabIndex = 32
-        Me.E_mair_txt.Text = "0.1666"
+        Me.TextBox3.Location = New System.Drawing.Point(75, 188)
+        Me.TextBox3.Name = "TextBox3"
+        Me.TextBox3.Size = New System.Drawing.Size(114, 22)
+        Me.TextBox3.TabIndex = 32
+        Me.TextBox3.Text = "0.1666"
         '
         'HPCD
         '
@@ -2192,5 +2192,5 @@ Partial Class HPCD
     Friend WithEvents Label59 As Label
     Friend WithEvents Tevap_ain_txt As TextBox
     Friend WithEvents Label14 As Label
-    Friend WithEvents E_mair_txt As TextBox
+    Friend WithEvents TextBox3 As TextBox
 End Class

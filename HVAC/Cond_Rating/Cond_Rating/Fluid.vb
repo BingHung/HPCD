@@ -44,7 +44,7 @@ Public Class Fluid
         iL = Enthalpy(name, "Tliq", "SI", Tsat) * 1000              '[J/kg]
         iG = Enthalpy(name, "Tvap", "SI", Tsat) * 1000              '[J/kg]
         ifg = iG - iL
-        ism = (iG + iL) / 2                                         ''[J/kg] Mean saturation enthalpy
+        ism = (iG + iL) / 2                                         '[J/kg] Mean saturation enthalpy
         CpL = IsobaricHeatCapacity(name, "Tliq", "SI", Tsat) * 1000 '[J/kg-K]
         CpG = IsobaricHeatCapacity(name, "Tvap", "SI", Tsat) * 1000 '[J/kg-K]
         rhoL = Density(name, "Tliq", "SI", Tsat)                    '[kg/m^3]

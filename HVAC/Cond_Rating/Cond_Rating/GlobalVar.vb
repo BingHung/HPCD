@@ -61,4 +61,13 @@
     Public Afr, Ac, contractionR, Apo, Api, Apm, Afin, Ao, hi, Af As Double
     Public A4, A5, T5, Ta5 As Double
 
+
+    'Moist Air properties <=====================================================
+    Public Patm, Ra As Double
+    Public DBT, Ps, Pv, WBT As Double
+    Public Dew, W, rhoai, iai As Double
+    Public Cpa, Visca, Pra As Double
+
+
+
 End Module

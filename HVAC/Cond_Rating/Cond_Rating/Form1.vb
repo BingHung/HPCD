@@ -1,4 +1,4 @@
-﻿Public Class Form1
+﻿Public Class HPCD
 
     Dim fileNum As Integer   ' 檔案代號變數，供所有事件共用
     Dim fileName As String   ' 檔案名稱變數，供所有事件共用
