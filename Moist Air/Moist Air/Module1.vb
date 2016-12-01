@@ -23,8 +23,14 @@ Module Module1
         ' [ Ps ] Sat Pressure of water , in DBT (kPa) 
         ' [ Pv ] Vapor Pressure (kPa)
 
-        MoistAirProperty.RH = 0.5
-        MoistAirProperty.DBT = 27
+        'MoistAirProperty.RH = 0.5
+        'MoistAirProperty.DBT = 27
+
+        Console.Write("Please Enter Dry Ball Temerature (oC) :  ")
+        MoistAirProperty.RH = Console.ReadLine()
+        Console.Write("Please Enter Moist Air Relative Humidity :  ")
+        MoistAirProperty.DBT = Console.ReadLine()
+
 
         Dim SatWater As New Fluid("water", "si", "tp")
         SatWater.SatProp(CtoK(MoistAirProperty.DBT))
