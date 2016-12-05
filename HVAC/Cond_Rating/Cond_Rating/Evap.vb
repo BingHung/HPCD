@@ -56,7 +56,7 @@
 
         '-Air'
 
-        MoistAirProperty.DBT = 27
+        'MoistAirProperty.DBT = 27
 
         'Dim TEST As New Fluid("r22", "SI", "TP")
         'TEST.SatProp(CtoK(MoistAirProperty.DBT))
@@ -104,16 +104,14 @@
 
 
 
-
-
         'Properties of air
         'Create Fluid
         Dim outFluid, inFluid As String
-
         outFluid = "air"
         ' outFluid = "nitrogen;7812;argon;0092;oxygen;2096"
+
+        Dim vapor As New Fluid("water.FLD", "SI", "TP")
         Dim air As New Fluid(outFluid, "SI", "TP")
-        Dim vapor As New Fluid("water", "SI", "TP")
         air.Properties(Tdry, Pai)
 
 
@@ -121,20 +119,12 @@
         Dim Q3avg, xre2, delta_Q As Double
 
 
-
-
-
         Dim Rea, Gc As Double
         Gc = mair / Ac                      ' [kg/m²s] Mass Flux maximum (i.e, at minimum free flow area, Ac)
-
-
         Rea = Gc * d_c / air.Visc           ' [] Reynolds number of air
-
-
 
         Dim ja, fa, eFiningF, hco As Double
         eFiningF = Ao / Apo
-
 
 
 
@@ -491,22 +481,49 @@
             Dim Tai, igt, W, W1, W2, i1, Wswm, nLe, delta_iLe As Double
             Dim Le, LeCO2, LeR410A, i2, Ta2, igt2 As Double
 
-            nLe = 40   ' number of segments, 40 is finite enough
+            '///////////////////// Testing ////////////////////////////
+            iao = 36248.59  'J/kg [p243,Cal Result]
+            iai = 55260.2   'J/kg [p234,Moist Air]
+            Wai = 0.0110835 'kg/kg-dry-air [p234,Moist Air] 
+            Tdry = 300.15   'K [p231 for given]
+            Pai = 0.101325  'MPa [p231,Cal Result]
+
+            hi = 4422.58    'W/m^2.K [p243,Cal Result]
+            Api = 0.20399   'm^2 [p234, Initial Area]
+            br = 2209.21    'J/kg.K [p239, br',bp',bwp',bwm']
+
+            Xp = 0.00026    'm [p240, geometry basic]
+            bp = 2345.06    'J/kg.K [p239, br',bp',bwp',bwm']
+            kp = 387        'W/m.K [p240, geometry basic]
+            Apm = 0.21466   'm^2 [p234, Initial Area]
+
+            i = 55260.2     'J/kg [~ iai ]
+            irm = 23135.5   'J/kg [p238 ]
+
+            Uow = 0.02452   'kg/m^2.s [p243,Cal Result]
+            Ao = 5.82165    'm^2 [p234, Initial Area]
+
+            nwetf = 0.6613   'X [p243,Cal Result]
+
+            '///////////////////// Testing ////////////////////////////
+
+            nLe = 40        ' number of segments, 40 is finite enough
             delta_iLe = (iao - iai) / nLe
 
-            W1 = Wai '[kg-water-vapor/kg-dry-air]
-            i1 = iai 'air inlet enthalpy
+            W1 = Wai        '[kg-water-vapor/kg-dry-air]
+            i1 = iai        'air inlet enthalpy
             W = Wai
-            nLe = 19 '<----------------------------------------------------DEBUG Temp, enough number of iterations, delete after writing humidity ratio for water
+            'nLe = 19 '<----------------------------------------------------DEBUG Temp, enough number of iterations, delete after writing humidity ratio for water
 
             For i = 0 To nLe Step 1
 
                 '-(2)-----Find Wswm, humidity ration for water film
                 Tai = Tdry 'Water inlet temperature dry
-                vapor.Properties(Tdry, Pai)
+                vapor.SatProp(Tdry)
+                '[error]vapor.Properties(Tdry, Pai)
 
 
-                igt = vapor.i '[J/kg] water vapor enthalpy at Tai
+                igt = vapor.iG '[J/kg] water vapor enthalpy at Tai
                 ' igt = 2676
 
 
@@ -514,9 +531,11 @@
                 A_iswm = (br / (hi * Api)) + (Xp * bp) / (kp * Apm)
                 braket = (1 - Uow * Ao * A_iswm)
 
-                iswm = i1 - nwetf * braket * (i - irm)
-                Twm = TwSat(iswm) 'water film temperature for correspondant Tw,m 
-                Wswm = waterHumidityRATIO(Twm, Pai)
+                iswm = i1 - nwetf * braket * (i1 - irm)
+
+                '[TODO] module P6-10 equations
+                '[error] -> Twm = TwSat(iswm) 'water film temperature for correspondant Tw,m 
+                '[error] -> Wswm = waterHumidityRATIO(Twm, Pai)
 
                 'Wswm = 0.0105237 '[kg-water-vapor/kg-dry-air]  <----------------------------------------------------DEBUG Temp
 
@@ -526,10 +545,11 @@
 
                 LeCO2 = 0.94
                 LeR410A = 0.847
+
                 Le = LeR410A
 
                 'Relative humidity of second segment, n=2
-                W2 = W1 + delta_iLe / ((Le * ((i - iswm) / (W - Wswm))) + (igt - 2501000 * Le))
+                W2 = W1 + delta_iLe / ((Le * ((i1 - iswm) / (W - Wswm))) + (igt - 2501000 * Le))
 
                 i2 = i1 + delta_iLe ' new air inlet enthalpy
                 'from i2 = Cp,a * Ta,2  +  W2*(2501 + 1.805 *Ta2)
@@ -549,7 +569,7 @@
             Next
 
             Tdry_out = KtoC(Ta2) '[C] Air outlet temperature
-            Wair_out = W2
+            Wair_out = W2        ' humidity ratio 
 
             Tdry_out = KtoC(Ta2)
             'MsgBox(Tdry_out)
@@ -706,8 +726,6 @@
                 Tsup = (Lsup + Rsup) / 2
 
                 While (1)
-
-
 
                     Dim E_sup As New Fluid(inFluid, "si", "tp")
                     E_sup.Properties(Tsup, mix.P)
