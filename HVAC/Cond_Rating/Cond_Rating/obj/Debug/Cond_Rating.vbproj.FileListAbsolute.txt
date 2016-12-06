@@ -234,3 +234,13 @@ C:\Users\LBH\Desktop\HPCD-master\HVAC\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rat
 C:\Users\LBH\Desktop\HPCD-master\HVAC\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.HPCD.resources
 C:\Users\LBH\Desktop\HPCD-master\HVAC\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.Resources.resources
 C:\Users\LBH\Desktop\HPCD-master\HVAC\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.vbproj.GenerateResource.Cache
+C:\Users\BH\Desktop\HPCD-master\HVAC\Cond_Rating\Cond_Rating\bin\Debug\Cond_Rating.exe
+C:\Users\BH\Desktop\HPCD-master\HVAC\Cond_Rating\Cond_Rating\bin\Debug\Cond_Rating.pdb
+C:\Users\BH\Desktop\HPCD-master\HVAC\Cond_Rating\Cond_Rating\bin\Debug\Cond_Rating.xml
+C:\Users\BH\Desktop\HPCD-master\HVAC\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.vbprojResolveAssemblyReference.cache
+C:\Users\BH\Desktop\HPCD-master\HVAC\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.HPCD.resources
+C:\Users\BH\Desktop\HPCD-master\HVAC\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.Resources.resources
+C:\Users\BH\Desktop\HPCD-master\HVAC\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.vbproj.GenerateResource.Cache
+C:\Users\BH\Desktop\HPCD-master\HVAC\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.exe
+C:\Users\BH\Desktop\HPCD-master\HVAC\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.xml
+C:\Users\BH\Desktop\HPCD-master\HVAC\Cond_Rating\Cond_Rating\obj\Debug\Cond_Rating.pdb

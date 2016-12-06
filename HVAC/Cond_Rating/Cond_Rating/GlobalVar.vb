@@ -61,6 +61,8 @@
     Public Afr, Ac, contractionR, Apo, Api, Apm, Afin, Ao, hi, Af As Double
     Public A4, A5, T5, Ta5 As Double
 
+    Public E_Tair_out, E_Tair_sup_out, E_Tair_sat_out As Double
+
 
     'Moist Air properties <=====================================================
     Public Structure MoistAirProperties

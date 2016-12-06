@@ -339,5 +339,59 @@
 
     End Sub
 
+    ' 6-10
+    Function TstoWs(ByVal Ts As Double) As Double
+
+        Dim a, b, c, d, e, f, g, h, i, j, k, y, x As Double
+
+        x = Ts
+
+        If (x > 0.088 Or x < 0.003) Then
+            'error
+        End If
+
+        a = 0.0037898538
+        b = 0.00027729932
+        c = 0.0000090170663
+        d = 0.00000017328516
+        e = 0.0000000023687104
+        f = 0.000000000010699736
+        g = -0.000000000000010535545
+        h = 0.000000000000025175346
+        i = -0.00000000000000067656523
+        j = 8.7402708E-18
+        k = -3.3684172E-20
+
+        y = a + b * x + c * x ^ 2 + d * x ^ 3 + e * x ^ 4 + f * x ^ 5 + g * x ^ 6 + h * x ^ 7 + i * x ^ 8 + j * x ^ 9 + k * x ^ 10
+        Return y
+
+    End Function
+
+    ' 6-10
+    Function istoTs(ByVal isat As Double) As Double
+        Dim a, b, c, d, e, f, g, h, i, j, k, y, x As Double
+
+        x = isat
+
+        If (x > 280 Or x < 9) Then
+            'error
+        End If
+
+        a = -7.4658608
+        b = 2.114808
+        c = -0.61629354
+        d = 0.43864504
+        e = -0.094121714
+        f = 0.010943011
+        g = -0.0007868236
+        h = 0.000035899762
+        i = -0.0000010052862
+        j = 0.000000015510775
+        k = -0.00000000009758174
+
+        y = a + b * x ^ 0.5 + c * x + d * x ^ 1.5 + e * x ^ 2 + f * x ^ 2.5 + g * x ^ 3 + h * x ^ 3.5 + i * x ^ 4 + j * x ^ 4.5 + k * x ^ 5
+        Return y
+
+    End Function
 
 End Module

@@ -481,29 +481,48 @@
             Dim Tai, igt, W, W1, W2, i1, Wswm, nLe, delta_iLe As Double
             Dim Le, LeCO2, LeR410A, i2, Ta2, igt2 As Double
 
+            '///////////////////// Initial Setup ///////////////////////
+            iao = iao
+            iai = MoistAirProperty.iai * 1000
+            Wai = MoistAirProperty.W
+            Tdry = MoistAirProperty.DBT + 273.15
+            Pai = MoistAirProperty.Patm / 1000
+            hi = hi
+            Api = Api
+            br = br
+            Xp = Xp
+            bp = bp
+            kp = kp
+            Apm = Apm
+            i = iai
+            irm = irm
+            Uow = Uow
+            Ao = Ao
+            nwetf = nwetf
+
             '///////////////////// Testing ////////////////////////////
-            iao = 36248.59  'J/kg [p243,Cal Result]
-            iai = 55260.2   'J/kg [p234,Moist Air]
-            Wai = 0.0110835 'kg/kg-dry-air [p234,Moist Air] 
-            Tdry = 300.15   'K [p231 for given]
-            Pai = 0.101325  'MPa [p231,Cal Result]
+            'iao = 36248.59  'J/kg [p243,Cal Result]
+            'iai = 55260.2   'J/kg [p234,Moist Air]
+            'Wai = 0.0110835 'kg/kg-dry-air [p234,Moist Air] 
+            'Tdry = 300.15   'K [p231 for given]
+            'Pai = 0.101325  'MPa [p231,Cal Result]
 
-            hi = 4422.58    'W/m^2.K [p243,Cal Result]
-            Api = 0.20399   'm^2 [p234, Initial Area]
-            br = 2209.21    'J/kg.K [p239, br',bp',bwp',bwm']
+            'hi = 4422.58    'W/m^2.K [p243,Cal Result]
+            'Api = 0.20399   'm^2 [p234, Initial Area]
+            'br = 2209.21    'J/kg.K [p239, br',bp',bwp',bwm']
 
-            Xp = 0.00026    'm [p240, geometry basic]
-            bp = 2345.06    'J/kg.K [p239, br',bp',bwp',bwm']
-            kp = 387        'W/m.K [p240, geometry basic]
-            Apm = 0.21466   'm^2 [p234, Initial Area]
+            'Xp = 0.00026    'm [p240, geometry basic]
+            'bp = 2345.06    'J/kg.K [p239, br',bp',bwp',bwm']
+            'kp = 387        'W/m.K [p240, geometry basic]
+            'Apm = 0.21466   'm^2 [p234, Initial Area]
 
-            i = 55260.2     'J/kg [~ iai ]
-            irm = 23135.5   'J/kg [p238 ]
+            'i = 55260.2     'J/kg [~ iai ]
+            'irm = 23135.5   'J/kg [p238 ]
 
-            Uow = 0.02452   'kg/m^2.s [p243,Cal Result]
-            Ao = 5.82165    'm^2 [p234, Initial Area]
+            'Uow = 0.02452   'kg/m^2.s [p243,Cal Result]
+            'Ao = 5.82165    'm^2 [p234, Initial Area]
 
-            nwetf = 0.6613   'X [p243,Cal Result]
+            'nwetf = 0.6613   'X [p243,Cal Result]
 
             '///////////////////// Testing ////////////////////////////
 
@@ -514,15 +533,26 @@
             i1 = iai        'air inlet enthalpy
             W = Wai
             'nLe = 19 '<----------------------------------------------------DEBUG Temp, enough number of iterations, delete after writing humidity ratio for water
+            Dim firstTime As Boolean = True
+
+
 
             For i = 0 To nLe Step 1
 
-                '-(2)-----Find Wswm, humidity ration for water film
-                Tai = Tdry 'Water inlet temperature dry
-                vapor.SatProp(Tdry)
-                '[error]vapor.Properties(Tdry, Pai)
+
+                If firstTime = True Then
+                    '-(2)-----Find Wswm, humidity ration for water film
+                    Tai = Tdry 'Water inlet temperature dry
+                    '[error]vapor.Properties(Tdry, Pai)
+                End If
+
+                If firstTime = False Then
+                    Tai = Ta2 'Water inlet temperature dry
+                End If
 
 
+
+                vapor.SatProp(Tai)
                 igt = vapor.iG '[J/kg] water vapor enthalpy at Tai
                 ' igt = 2676
 
@@ -533,13 +563,16 @@
 
                 iswm = i1 - nwetf * braket * (i1 - irm)
 
-                '[TODO] module P6-10 equations
-                '[error] -> Twm = TwSat(iswm) 'water film temperature for correspondant Tw,m 
-                '[error] -> Wswm = waterHumidityRATIO(Twm, Pai)
+                '[TODO] module P6-10 equations/////////////////////////////////
+                '       [error] -> Twm = TwSat(iswm) 'water film temperature for correspondant Tw,m 
+                '       [error] -> Wswm = waterHumidityRATIO(Twm, Pai)
 
-                'Wswm = 0.0105237 '[kg-water-vapor/kg-dry-air]  <----------------------------------------------------DEBUG Temp
+                Twm = istoTs(iswm / 1000)  'oC
+                Wswm = TstoWs(Twm)         'kg/kg dry-air
 
+                '       Wswm = 0.0105237 '[kg-water-vapor/kg-dry-air]  <----------------------------------------------------DEBUG Temp
 
+                '[TODO] /////////////////////////////////
 
                 '-(3)----- Find W2
 
@@ -549,12 +582,14 @@
                 Le = LeR410A
 
                 'Relative humidity of second segment, n=2
-                W2 = W1 + delta_iLe / ((Le * ((i1 - iswm) / (W - Wswm))) + (igt - 2501000 * Le))
+                W2 = W1 + delta_iLe / ((Le * ((i1 - iswm) / (W1 - Wswm))) + (igt - 2501000 * Le))
 
                 i2 = i1 + delta_iLe ' new air inlet enthalpy
                 'from i2 = Cp,a * Ta,2  +  W2*(2501 + 1.805 *Ta2)
-                Ta2 = -(i2 - 2501000 * W2) / (air.cp + 1805 * W2) ' [C] new Air temperature 
+                Ta2 = (i2 - 2501000 * W2) / (air.cp + 1805 * W2) ' [C] new Air temperature 
                 Ta2 = CtoK(Ta2) ' [K] new Air temperature 
+
+                vapor.SatProp(Ta2)
 
                 igt2 = vapor.iG '[J/kg] water vapor enthalpy at Ta2
 
@@ -565,6 +600,7 @@
                 W1 = W2
                 i1 = i2
 
+                firstTime = False
 
             Next
 
@@ -574,6 +610,7 @@
             Tdry_out = KtoC(Ta2)
             'MsgBox(Tdry_out)
 
+            E_Tair_sat_out = Tdry_out
 
 
             '======================================================================================================
@@ -810,10 +847,19 @@
                 HPCD.Tcomp_in.Text = Tsup.ToString("0.###")
 
                 HPCD.E_Q_sup.Text = Qsup
+
+
+
+                ' Air outlet Tempeature of Superheated region 
+                air.Properties(CtoK(MoistAirProperty.DBT), MoistAirProperty.Patm / 1000)
+                E_Tair_sup_out = MoistAirProperty.DBT - Qsup / air.cp / mair
+
+
                 HPCD.E_Q_tot.Text = CDbl(HPCD.E_Q_sat.Text) + CDbl(HPCD.E_Q_sup.Text)
 
             End If
 
+            E_Tair_out = E_Tair_sup_out * A5 + E_Tair_sat_out * A4 ' Air outlet temperature of Evap 
 
 
             ''****************************************Initialize R5**************************************************************
