@@ -46,12 +46,24 @@
         C_isLG = C_sat.ifg / 1000               '(kJ/kg)
 
         'air side'
-        C_Tain = CDbl(HPCD.C_Tain_txt.Text)     '(oC)
+
+
+        'C_Tain = CDbl(HPCD.C_Tain_txt.Text)     '(oC)
+        C_Tain = E_Tair_out
         C_Vfr = CDbl(HPCD.C_Vfr_txt.Text)      '(m/s)
-        C_rhoa = CDbl(HPCD.C_air_density_txt.Text)      '(kg/m^3)
-        C_Visca = CDbl(HPCD.C_air_viscosity_txt.Text)     '(N.s/m^2)
-        C_Cpa = CDbl(HPCD.C_air_capacity_txt.Text)       '(J/kg.K)
-        C_Pra = CDbl(HPCD.C_air_Pr_txt.Text)       '(X)
+
+        Dim Cond_Air As New Fluid("air", "si", "tp")
+        Cond_Air.Properties(CtoK(C_Tain), 0.101325)
+
+        C_rhoa = Cond_Air.rho
+        C_Visca = Cond_Air.Visc
+        C_Cpa = Cond_Air.cp
+        C_Pra = Cond_Air.Pr
+
+        'C_rhoa = CDbl(HPCD.C_air_density_txt.Text)      '(kg/m^3)
+        'C_Visca = CDbl(HPCD.C_air_viscosity_txt.Text)     '(N.s/m^2)
+        'C_Cpa = CDbl(HPCD.C_air_capacity_txt.Text)       '(J/kg.K)
+        'C_Pra = CDbl(HPCD.C_air_Pr_txt.Text)       '(X)
 
         'HX geometry'
         C_W = HPCD.C_W_txt.Text              '(m)
