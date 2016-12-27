@@ -77,6 +77,16 @@
 
     Public MoistAirProperty As New MoistAirProperties
 
+    'Dryer_Properties <=====================================================
+    Public Structure DryerAir
+        Public DWT_In, RH_In As Double
+        Public DWT_Out, RH_Out As Double
+        Public TimeSlot As Double
+    End Structure
+
+    Public DAP As New DryerAir ' DryerAirProperties (DAP)
+
+
 
 
 End Module

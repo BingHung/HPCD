@@ -75,6 +75,7 @@
     <Compile Include="API_wet_reduction.vb" />
     <Compile Include="Comp.vb" />
     <Compile Include="Cond_LMTD.vb" />
+    <Compile Include="Dryer.vb" />
     <Compile Include="Evap.vb" />
     <Compile Include="Expa.vb" />
     <Compile Include="Fluid.vb" />

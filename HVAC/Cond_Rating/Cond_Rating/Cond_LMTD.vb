@@ -2,7 +2,7 @@
 
     Sub Cond_LMTD()
 
-
+        Dim A3 As Double
         'Class Fluid Setup (C_Sat / C_Sup / C_Air_Inlet) <===============================================================================================================================
         Dim Q3 As Double
         C_QA1 = 0
@@ -59,6 +59,8 @@
         C_Visca = Cond_Air.Visc
         C_Cpa = Cond_Air.cp
         C_Pra = Cond_Air.Pr
+
+
 
         'C_rhoa = CDbl(HPCD.C_air_density_txt.Text)      '(kg/m^3)
         'C_Visca = CDbl(HPCD.C_air_viscosity_txt.Text)     '(N.s/m^2)
@@ -238,7 +240,7 @@
             'MsgBox("subcooled region") ===============================================================================================
             State_A2 = 2
 
-            Dim A3, UA_A3, Q3_check As Double
+            Dim UA_A3, Q3_check As Double
             A3 = C_Ao - A1 - A2
             Q3 = 0
 
@@ -321,6 +323,18 @@
         HPCD.C_Q_sat.Text = C_QA2.ToString("0.###")
         HPCD.C_Q_sub.Text = Q3.ToString("0.###")
         HPCD.QCtxt.Text = ((C_QA1 + C_QA2 + Q3) / 1000).ToString("0.###")
+
+        ' Air outlet temperature of Cond (oC)
+        Dim Cond_Tair_sup_out, Cond_Tair_sat_out, Cond_Tair_sub_out, Cond_Tair_out As Double
+
+        Cond_Tair_sup_out = C_QA1 / (C_ma * C_air.cp) + C_Tain
+        Cond_Tair_sat_out = C_QA2 / (C_ma * C_air.cp) + C_Tain
+        Cond_Tair_sub_out = Q3 / (C_ma * C_air.cp) + C_Tain
+        Cond_Tair_out = (Cond_Tair_sup_out * A1 + Cond_Tair_sat_out * A2 + Cond_Tair_sub_out * A3) / C_Ao
+
+        DAP.DWT_In = CtoK(Cond_Tair_out)
+        HPCD.Dryer_DBT_In_txt.Text = DAP.DWT_In.ToString("0.###")
+
 
     End Sub
 

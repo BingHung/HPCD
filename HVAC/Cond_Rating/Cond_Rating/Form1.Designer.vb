@@ -188,7 +188,24 @@ Partial Class HPCD
         Me.C_Tain_txt = New System.Windows.Forms.TextBox()
         Me.Label18 = New System.Windows.Forms.Label()
         Me.System = New System.Windows.Forms.TabPage()
+        Me.Dryerbtn = New System.Windows.Forms.Button()
         Me.GroupBox9 = New System.Windows.Forms.GroupBox()
+        Me.Label122 = New System.Windows.Forms.Label()
+        Me.Label123 = New System.Windows.Forms.Label()
+        Me.Dryer_RH_Out_txt = New System.Windows.Forms.TextBox()
+        Me.Dryer_DBT_Out_txt = New System.Windows.Forms.TextBox()
+        Me.Label119 = New System.Windows.Forms.Label()
+        Me.Dryer_P_txt = New System.Windows.Forms.TextBox()
+        Me.Label120 = New System.Windows.Forms.Label()
+        Me.Label121 = New System.Windows.Forms.Label()
+        Me.Water_h_txt = New System.Windows.Forms.TextBox()
+        Me.Dryer_A_txt = New System.Windows.Forms.TextBox()
+        Me.Label118 = New System.Windows.Forms.Label()
+        Me.Time_Slot_txt = New System.Windows.Forms.TextBox()
+        Me.Label117 = New System.Windows.Forms.Label()
+        Me.Label12 = New System.Windows.Forms.Label()
+        Me.Dryer_RH_In_txt = New System.Windows.Forms.TextBox()
+        Me.Dryer_DBT_In_txt = New System.Windows.Forms.TextBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.GroupBox15 = New System.Windows.Forms.GroupBox()
         Me.EnegyBalanceCheck = New System.Windows.Forms.TextBox()
@@ -267,6 +284,7 @@ Partial Class HPCD
         Me.TabPage5.SuspendLayout()
         Me.TabPage6.SuspendLayout()
         Me.System.SuspendLayout()
+        Me.GroupBox9.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox15.SuspendLayout()
         Me.GroupBox4.SuspendLayout()
@@ -285,7 +303,7 @@ Partial Class HPCD
         Me.TabPage3.Location = New System.Drawing.Point(4, 22)
         Me.TabPage3.Name = "TabPage3"
         Me.TabPage3.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage3.Size = New System.Drawing.Size(1281, 728)
+        Me.TabPage3.Size = New System.Drawing.Size(1281, 741)
         Me.TabPage3.TabIndex = 4
         Me.TabPage3.Text = "Compressor"
         Me.TabPage3.UseVisualStyleBackColor = True
@@ -502,7 +520,7 @@ Partial Class HPCD
         Me.TabPage2.Location = New System.Drawing.Point(4, 22)
         Me.TabPage2.Name = "TabPage2"
         Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage2.Size = New System.Drawing.Size(1284, 738)
+        Me.TabPage2.Size = New System.Drawing.Size(1281, 741)
         Me.TabPage2.TabIndex = 3
         Me.TabPage2.Text = "ExpansionDevice"
         Me.TabPage2.UseVisualStyleBackColor = True
@@ -1233,7 +1251,7 @@ Partial Class HPCD
         Me.Parameters.Location = New System.Drawing.Point(4, 22)
         Me.Parameters.Name = "Parameters"
         Me.Parameters.Padding = New System.Windows.Forms.Padding(3)
-        Me.Parameters.Size = New System.Drawing.Size(1284, 738)
+        Me.Parameters.Size = New System.Drawing.Size(1281, 741)
         Me.Parameters.TabIndex = 1
         Me.Parameters.Text = "Condensor"
         Me.Parameters.UseVisualStyleBackColor = True
@@ -1870,6 +1888,7 @@ Partial Class HPCD
         '
         'System
         '
+        Me.System.Controls.Add(Me.Dryerbtn)
         Me.System.Controls.Add(Me.GroupBox9)
         Me.System.Controls.Add(Me.PictureBox1)
         Me.System.Controls.Add(Me.GroupBox15)
@@ -1890,8 +1909,33 @@ Partial Class HPCD
         Me.System.TabIndex = 0
         Me.System.Text = "SystemOverview"
         '
+        'Dryerbtn
+        '
+        Me.Dryerbtn.Location = New System.Drawing.Point(1011, 685)
+        Me.Dryerbtn.Name = "Dryerbtn"
+        Me.Dryerbtn.Size = New System.Drawing.Size(245, 50)
+        Me.Dryerbtn.TabIndex = 81
+        Me.Dryerbtn.Text = "Dryer Model"
+        Me.Dryerbtn.UseVisualStyleBackColor = True
+        '
         'GroupBox9
         '
+        Me.GroupBox9.Controls.Add(Me.Label122)
+        Me.GroupBox9.Controls.Add(Me.Label123)
+        Me.GroupBox9.Controls.Add(Me.Dryer_RH_Out_txt)
+        Me.GroupBox9.Controls.Add(Me.Dryer_DBT_Out_txt)
+        Me.GroupBox9.Controls.Add(Me.Label119)
+        Me.GroupBox9.Controls.Add(Me.Dryer_P_txt)
+        Me.GroupBox9.Controls.Add(Me.Label120)
+        Me.GroupBox9.Controls.Add(Me.Label121)
+        Me.GroupBox9.Controls.Add(Me.Water_h_txt)
+        Me.GroupBox9.Controls.Add(Me.Dryer_A_txt)
+        Me.GroupBox9.Controls.Add(Me.Label118)
+        Me.GroupBox9.Controls.Add(Me.Time_Slot_txt)
+        Me.GroupBox9.Controls.Add(Me.Label117)
+        Me.GroupBox9.Controls.Add(Me.Label12)
+        Me.GroupBox9.Controls.Add(Me.Dryer_RH_In_txt)
+        Me.GroupBox9.Controls.Add(Me.Dryer_DBT_In_txt)
         Me.GroupBox9.Location = New System.Drawing.Point(1010, 358)
         Me.GroupBox9.Name = "GroupBox9"
         Me.GroupBox9.Size = New System.Drawing.Size(246, 325)
@@ -1899,13 +1943,149 @@ Partial Class HPCD
         Me.GroupBox9.TabStop = False
         Me.GroupBox9.Text = "Dryer"
         '
+        'Label122
+        '
+        Me.Label122.AutoSize = True
+        Me.Label122.Location = New System.Drawing.Point(20, 293)
+        Me.Label122.Name = "Label122"
+        Me.Label122.Size = New System.Drawing.Size(77, 12)
+        Me.Label122.TabIndex = 23
+        Me.Label122.Text = "Dryer_RH_Out"
+        '
+        'Label123
+        '
+        Me.Label123.AutoSize = True
+        Me.Label123.Location = New System.Drawing.Point(20, 263)
+        Me.Label123.Name = "Label123"
+        Me.Label123.Size = New System.Drawing.Size(103, 12)
+        Me.Label123.TabIndex = 21
+        Me.Label123.Text = "Dryer_DBT_Out (K)"
+        '
+        'Dryer_RH_Out_txt
+        '
+        Me.Dryer_RH_Out_txt.Location = New System.Drawing.Point(129, 290)
+        Me.Dryer_RH_Out_txt.Name = "Dryer_RH_Out_txt"
+        Me.Dryer_RH_Out_txt.ReadOnly = True
+        Me.Dryer_RH_Out_txt.Size = New System.Drawing.Size(98, 22)
+        Me.Dryer_RH_Out_txt.TabIndex = 22
+        '
+        'Dryer_DBT_Out_txt
+        '
+        Me.Dryer_DBT_Out_txt.Location = New System.Drawing.Point(129, 259)
+        Me.Dryer_DBT_Out_txt.Name = "Dryer_DBT_Out_txt"
+        Me.Dryer_DBT_Out_txt.ReadOnly = True
+        Me.Dryer_DBT_Out_txt.Size = New System.Drawing.Size(98, 22)
+        Me.Dryer_DBT_Out_txt.TabIndex = 20
+        '
+        'Label119
+        '
+        Me.Label119.AutoSize = True
+        Me.Label119.Location = New System.Drawing.Point(20, 185)
+        Me.Label119.Name = "Label119"
+        Me.Label119.Size = New System.Drawing.Size(99, 12)
+        Me.Label119.TabIndex = 19
+        Me.Label119.Text = "Pressure Inside(kPa)"
+        '
+        'Dryer_P_txt
+        '
+        Me.Dryer_P_txt.Location = New System.Drawing.Point(129, 182)
+        Me.Dryer_P_txt.Name = "Dryer_P_txt"
+        Me.Dryer_P_txt.Size = New System.Drawing.Size(98, 22)
+        Me.Dryer_P_txt.TabIndex = 18
+        Me.Dryer_P_txt.Text = "101.325"
+        '
+        'Label120
+        '
+        Me.Label120.AutoSize = True
+        Me.Label120.Location = New System.Drawing.Point(20, 154)
+        Me.Label120.Name = "Label120"
+        Me.Label120.Size = New System.Drawing.Size(65, 12)
+        Me.Label120.TabIndex = 17
+        Me.Label120.Text = "Water_h (m)"
+        '
+        'Label121
+        '
+        Me.Label121.AutoSize = True
+        Me.Label121.Location = New System.Drawing.Point(20, 124)
+        Me.Label121.Name = "Label121"
+        Me.Label121.Size = New System.Drawing.Size(77, 12)
+        Me.Label121.TabIndex = 15
+        Me.Label121.Text = "Dryer_A (m^3)"
+        '
+        'Water_h_txt
+        '
+        Me.Water_h_txt.Location = New System.Drawing.Point(129, 151)
+        Me.Water_h_txt.Name = "Water_h_txt"
+        Me.Water_h_txt.Size = New System.Drawing.Size(98, 22)
+        Me.Water_h_txt.TabIndex = 16
+        Me.Water_h_txt.Text = "0.1"
+        '
+        'Dryer_A_txt
+        '
+        Me.Dryer_A_txt.Location = New System.Drawing.Point(129, 120)
+        Me.Dryer_A_txt.Name = "Dryer_A_txt"
+        Me.Dryer_A_txt.Size = New System.Drawing.Size(98, 22)
+        Me.Dryer_A_txt.TabIndex = 14
+        Me.Dryer_A_txt.Text = "1"
+        '
+        'Label118
+        '
+        Me.Label118.AutoSize = True
+        Me.Label118.Location = New System.Drawing.Point(20, 93)
+        Me.Label118.Name = "Label118"
+        Me.Label118.Size = New System.Drawing.Size(68, 12)
+        Me.Label118.TabIndex = 13
+        Me.Label118.Text = "Time_Slot (s)"
+        '
+        'Time_Slot_txt
+        '
+        Me.Time_Slot_txt.Location = New System.Drawing.Point(129, 90)
+        Me.Time_Slot_txt.Name = "Time_Slot_txt"
+        Me.Time_Slot_txt.Size = New System.Drawing.Size(98, 22)
+        Me.Time_Slot_txt.TabIndex = 12
+        Me.Time_Slot_txt.Text = "20"
+        '
+        'Label117
+        '
+        Me.Label117.AutoSize = True
+        Me.Label117.Location = New System.Drawing.Point(20, 62)
+        Me.Label117.Name = "Label117"
+        Me.Label117.Size = New System.Drawing.Size(73, 12)
+        Me.Label117.TabIndex = 11
+        Me.Label117.Text = "Dryer_RH_In "
+        '
+        'Label12
+        '
+        Me.Label12.AutoSize = True
+        Me.Label12.Location = New System.Drawing.Point(20, 32)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(96, 12)
+        Me.Label12.TabIndex = 10
+        Me.Label12.Text = "Dryer_DBT_In (K)"
+        '
+        'Dryer_RH_In_txt
+        '
+        Me.Dryer_RH_In_txt.Location = New System.Drawing.Point(129, 59)
+        Me.Dryer_RH_In_txt.Name = "Dryer_RH_In_txt"
+        Me.Dryer_RH_In_txt.ReadOnly = True
+        Me.Dryer_RH_In_txt.Size = New System.Drawing.Size(98, 22)
+        Me.Dryer_RH_In_txt.TabIndex = 10
+        '
+        'Dryer_DBT_In_txt
+        '
+        Me.Dryer_DBT_In_txt.Location = New System.Drawing.Point(129, 28)
+        Me.Dryer_DBT_In_txt.Name = "Dryer_DBT_In_txt"
+        Me.Dryer_DBT_In_txt.ReadOnly = True
+        Me.Dryer_DBT_In_txt.Size = New System.Drawing.Size(98, 22)
+        Me.Dryer_DBT_In_txt.TabIndex = 9
+        '
         'PictureBox1
         '
         Me.PictureBox1.BackgroundImage = Global.Cond_Rating.My.Resources.Resources.Compressor1
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(195, 29)
+        Me.PictureBox1.Location = New System.Drawing.Point(171, 29)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(553, 285)
+        Me.PictureBox1.Size = New System.Drawing.Size(556, 285)
         Me.PictureBox1.TabIndex = 80
         Me.PictureBox1.TabStop = False
         '
@@ -2041,7 +2221,7 @@ Partial Class HPCD
         '
         'Tcond_sat
         '
-        Me.Tcond_sat.Location = New System.Drawing.Point(115, 52)
+        Me.Tcond_sat.Location = New System.Drawing.Point(136, 53)
         Me.Tcond_sat.Name = "Tcond_sat"
         Me.Tcond_sat.Size = New System.Drawing.Size(99, 22)
         Me.Tcond_sat.TabIndex = 5
@@ -2050,7 +2230,7 @@ Partial Class HPCD
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(16, 55)
+        Me.Label10.Location = New System.Drawing.Point(37, 56)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(72, 12)
         Me.Label10.TabIndex = 4
@@ -2181,16 +2361,16 @@ Partial Class HPCD
         '
         'Xexpa_in
         '
-        Me.Xexpa_in.Location = New System.Drawing.Point(96, 46)
+        Me.Xexpa_in.Location = New System.Drawing.Point(117, 49)
         Me.Xexpa_in.Name = "Xexpa_in"
         Me.Xexpa_in.ReadOnly = True
-        Me.Xexpa_in.Size = New System.Drawing.Size(82, 22)
+        Me.Xexpa_in.Size = New System.Drawing.Size(108, 22)
         Me.Xexpa_in.TabIndex = 9
         '
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(16, 52)
+        Me.Label9.Location = New System.Drawing.Point(17, 55)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(69, 12)
         Me.Label9.TabIndex = 8
@@ -2198,16 +2378,16 @@ Partial Class HPCD
         '
         'Texpa_in
         '
-        Me.Texpa_in.Location = New System.Drawing.Point(96, 21)
+        Me.Texpa_in.Location = New System.Drawing.Point(117, 24)
         Me.Texpa_in.Name = "Texpa_in"
         Me.Texpa_in.ReadOnly = True
-        Me.Texpa_in.Size = New System.Drawing.Size(82, 22)
+        Me.Texpa_in.Size = New System.Drawing.Size(108, 22)
         Me.Texpa_in.TabIndex = 6
         '
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(16, 24)
+        Me.Label8.Location = New System.Drawing.Point(17, 27)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(68, 12)
         Me.Label8.TabIndex = 4
@@ -2433,7 +2613,7 @@ Partial Class HPCD
         Me.FAQ.Location = New System.Drawing.Point(4, 22)
         Me.FAQ.Name = "FAQ"
         Me.FAQ.Padding = New System.Windows.Forms.Padding(3)
-        Me.FAQ.Size = New System.Drawing.Size(1284, 738)
+        Me.FAQ.Size = New System.Drawing.Size(1281, 741)
         Me.FAQ.TabIndex = 5
         Me.FAQ.Text = "FAQ"
         Me.FAQ.UseVisualStyleBackColor = True
@@ -2490,6 +2670,8 @@ Partial Class HPCD
         Me.TabPage6.ResumeLayout(False)
         Me.TabPage6.PerformLayout()
         Me.System.ResumeLayout(False)
+        Me.GroupBox9.ResumeLayout(False)
+        Me.GroupBox9.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox15.ResumeLayout(False)
         Me.GroupBox15.PerformLayout()
@@ -2729,4 +2911,21 @@ Partial Class HPCD
     Friend WithEvents EnegyBalanceCheck As TextBox
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents GroupBox9 As GroupBox
+    Friend WithEvents Dryer_RH_In_txt As TextBox
+    Friend WithEvents Dryer_DBT_In_txt As TextBox
+    Friend WithEvents Label117 As Label
+    Friend WithEvents Label12 As Label
+    Friend WithEvents Label119 As Label
+    Friend WithEvents Dryer_P_txt As TextBox
+    Friend WithEvents Label120 As Label
+    Friend WithEvents Label121 As Label
+    Friend WithEvents Water_h_txt As TextBox
+    Friend WithEvents Dryer_A_txt As TextBox
+    Friend WithEvents Label118 As Label
+    Friend WithEvents Time_Slot_txt As TextBox
+    Friend WithEvents Dryerbtn As Button
+    Friend WithEvents Label122 As Label
+    Friend WithEvents Label123 As Label
+    Friend WithEvents Dryer_RH_Out_txt As TextBox
+    Friend WithEvents Dryer_DBT_Out_txt As TextBox
 End Class

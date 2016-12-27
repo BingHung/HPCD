@@ -845,5 +845,7 @@
 
     End Sub
 
-
+    Private Sub Dryerbtn_Click(sender As Object, e As EventArgs) Handles Dryerbtn.Click
+        DryerModel()
+    End Sub
 End Class
