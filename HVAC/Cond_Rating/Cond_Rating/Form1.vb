@@ -113,6 +113,8 @@
         Pcond_sat.Text = C_sat.P
 
         Evap.Evap()
+
+
     End Sub
 
 
@@ -132,6 +134,7 @@
         Tevap_sat.Text = CDbl(Tevap_sat.Text).ToString("0.###")
         Tevap_sat.Text = CDbl(Tevap_sat.Text).ToString("0.###")
 
+        MsgBox("Expa Done")
     End Sub
 
 
@@ -847,5 +850,6 @@
 
     Private Sub Dryerbtn_Click(sender As Object, e As EventArgs) Handles Dryerbtn.Click
         DryerModel()
+        MsgBox("Dryer Done")
     End Sub
 End Class

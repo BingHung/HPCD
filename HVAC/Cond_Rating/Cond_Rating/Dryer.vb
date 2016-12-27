@@ -101,6 +101,10 @@
         HPCD.Dryer_DBT_Out_txt.Text = DryerAirIn.T.ToString("0.###")
         HPCD.Dryer_RH_Out_txt.Text = DryerAirOut.RH.ToString("0.###")
 
+        HPCD.E_DBT_txt.Text = DryerAirIn.T.ToString("0.###")
+        HPCD.E_RH_txt.Text = DryerAirOut.RH.ToString("0.###")
+
+
     End Sub
 
     Public Function Fun_Pws(T As Double) As Double

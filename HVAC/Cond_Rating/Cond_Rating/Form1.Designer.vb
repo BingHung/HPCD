@@ -2225,7 +2225,7 @@ Partial Class HPCD
         Me.Tcond_sat.Name = "Tcond_sat"
         Me.Tcond_sat.Size = New System.Drawing.Size(99, 22)
         Me.Tcond_sat.TabIndex = 5
-        Me.Tcond_sat.Text = "343.82"
+        Me.Tcond_sat.Text = "336.34"
         '
         'Label10
         '
