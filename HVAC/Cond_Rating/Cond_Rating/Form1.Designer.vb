@@ -1926,16 +1926,16 @@ Partial Class HPCD
         Me.GroupBox9.Controls.Add(Me.Dryer_DBT_Out_txt)
         Me.GroupBox9.Controls.Add(Me.Label119)
         Me.GroupBox9.Controls.Add(Me.Dryer_P_txt)
+        Me.GroupBox9.Controls.Add(Me.Dryer_RH_In_txt)
         Me.GroupBox9.Controls.Add(Me.Label120)
+        Me.GroupBox9.Controls.Add(Me.Dryer_DBT_In_txt)
+        Me.GroupBox9.Controls.Add(Me.Label12)
         Me.GroupBox9.Controls.Add(Me.Label121)
+        Me.GroupBox9.Controls.Add(Me.Label117)
         Me.GroupBox9.Controls.Add(Me.Water_h_txt)
         Me.GroupBox9.Controls.Add(Me.Dryer_A_txt)
         Me.GroupBox9.Controls.Add(Me.Label118)
         Me.GroupBox9.Controls.Add(Me.Time_Slot_txt)
-        Me.GroupBox9.Controls.Add(Me.Label117)
-        Me.GroupBox9.Controls.Add(Me.Label12)
-        Me.GroupBox9.Controls.Add(Me.Dryer_RH_In_txt)
-        Me.GroupBox9.Controls.Add(Me.Dryer_DBT_In_txt)
         Me.GroupBox9.Location = New System.Drawing.Point(1010, 358)
         Me.GroupBox9.Name = "GroupBox9"
         Me.GroupBox9.Size = New System.Drawing.Size(246, 325)
@@ -1965,7 +1965,6 @@ Partial Class HPCD
         '
         Me.Dryer_RH_Out_txt.Location = New System.Drawing.Point(129, 290)
         Me.Dryer_RH_Out_txt.Name = "Dryer_RH_Out_txt"
-        Me.Dryer_RH_Out_txt.ReadOnly = True
         Me.Dryer_RH_Out_txt.Size = New System.Drawing.Size(98, 22)
         Me.Dryer_RH_Out_txt.TabIndex = 22
         '
@@ -1973,14 +1972,13 @@ Partial Class HPCD
         '
         Me.Dryer_DBT_Out_txt.Location = New System.Drawing.Point(129, 259)
         Me.Dryer_DBT_Out_txt.Name = "Dryer_DBT_Out_txt"
-        Me.Dryer_DBT_Out_txt.ReadOnly = True
         Me.Dryer_DBT_Out_txt.Size = New System.Drawing.Size(98, 22)
         Me.Dryer_DBT_Out_txt.TabIndex = 20
         '
         'Label119
         '
         Me.Label119.AutoSize = True
-        Me.Label119.Location = New System.Drawing.Point(20, 185)
+        Me.Label119.Location = New System.Drawing.Point(20, 116)
         Me.Label119.Name = "Label119"
         Me.Label119.Size = New System.Drawing.Size(99, 12)
         Me.Label119.TabIndex = 19
@@ -1988,7 +1986,7 @@ Partial Class HPCD
         '
         'Dryer_P_txt
         '
-        Me.Dryer_P_txt.Location = New System.Drawing.Point(129, 182)
+        Me.Dryer_P_txt.Location = New System.Drawing.Point(129, 113)
         Me.Dryer_P_txt.Name = "Dryer_P_txt"
         Me.Dryer_P_txt.Size = New System.Drawing.Size(98, 22)
         Me.Dryer_P_txt.TabIndex = 18
@@ -1997,7 +1995,7 @@ Partial Class HPCD
         'Label120
         '
         Me.Label120.AutoSize = True
-        Me.Label120.Location = New System.Drawing.Point(20, 154)
+        Me.Label120.Location = New System.Drawing.Point(20, 85)
         Me.Label120.Name = "Label120"
         Me.Label120.Size = New System.Drawing.Size(65, 12)
         Me.Label120.TabIndex = 17
@@ -2006,7 +2004,7 @@ Partial Class HPCD
         'Label121
         '
         Me.Label121.AutoSize = True
-        Me.Label121.Location = New System.Drawing.Point(20, 124)
+        Me.Label121.Location = New System.Drawing.Point(20, 55)
         Me.Label121.Name = "Label121"
         Me.Label121.Size = New System.Drawing.Size(77, 12)
         Me.Label121.TabIndex = 15
@@ -2014,7 +2012,7 @@ Partial Class HPCD
         '
         'Water_h_txt
         '
-        Me.Water_h_txt.Location = New System.Drawing.Point(129, 151)
+        Me.Water_h_txt.Location = New System.Drawing.Point(129, 82)
         Me.Water_h_txt.Name = "Water_h_txt"
         Me.Water_h_txt.Size = New System.Drawing.Size(98, 22)
         Me.Water_h_txt.TabIndex = 16
@@ -2022,7 +2020,7 @@ Partial Class HPCD
         '
         'Dryer_A_txt
         '
-        Me.Dryer_A_txt.Location = New System.Drawing.Point(129, 120)
+        Me.Dryer_A_txt.Location = New System.Drawing.Point(129, 51)
         Me.Dryer_A_txt.Name = "Dryer_A_txt"
         Me.Dryer_A_txt.Size = New System.Drawing.Size(98, 22)
         Me.Dryer_A_txt.TabIndex = 14
@@ -2031,7 +2029,7 @@ Partial Class HPCD
         'Label118
         '
         Me.Label118.AutoSize = True
-        Me.Label118.Location = New System.Drawing.Point(20, 93)
+        Me.Label118.Location = New System.Drawing.Point(20, 24)
         Me.Label118.Name = "Label118"
         Me.Label118.Size = New System.Drawing.Size(68, 12)
         Me.Label118.TabIndex = 13
@@ -2039,7 +2037,7 @@ Partial Class HPCD
         '
         'Time_Slot_txt
         '
-        Me.Time_Slot_txt.Location = New System.Drawing.Point(129, 90)
+        Me.Time_Slot_txt.Location = New System.Drawing.Point(129, 21)
         Me.Time_Slot_txt.Name = "Time_Slot_txt"
         Me.Time_Slot_txt.Size = New System.Drawing.Size(98, 22)
         Me.Time_Slot_txt.TabIndex = 12
@@ -2048,7 +2046,7 @@ Partial Class HPCD
         'Label117
         '
         Me.Label117.AutoSize = True
-        Me.Label117.Location = New System.Drawing.Point(20, 62)
+        Me.Label117.Location = New System.Drawing.Point(20, 221)
         Me.Label117.Name = "Label117"
         Me.Label117.Size = New System.Drawing.Size(73, 12)
         Me.Label117.TabIndex = 11
@@ -2057,7 +2055,7 @@ Partial Class HPCD
         'Label12
         '
         Me.Label12.AutoSize = True
-        Me.Label12.Location = New System.Drawing.Point(20, 32)
+        Me.Label12.Location = New System.Drawing.Point(20, 191)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(96, 12)
         Me.Label12.TabIndex = 10
@@ -2065,17 +2063,15 @@ Partial Class HPCD
         '
         'Dryer_RH_In_txt
         '
-        Me.Dryer_RH_In_txt.Location = New System.Drawing.Point(129, 59)
+        Me.Dryer_RH_In_txt.Location = New System.Drawing.Point(129, 218)
         Me.Dryer_RH_In_txt.Name = "Dryer_RH_In_txt"
-        Me.Dryer_RH_In_txt.ReadOnly = True
         Me.Dryer_RH_In_txt.Size = New System.Drawing.Size(98, 22)
         Me.Dryer_RH_In_txt.TabIndex = 10
         '
         'Dryer_DBT_In_txt
         '
-        Me.Dryer_DBT_In_txt.Location = New System.Drawing.Point(129, 28)
+        Me.Dryer_DBT_In_txt.Location = New System.Drawing.Point(129, 187)
         Me.Dryer_DBT_In_txt.Name = "Dryer_DBT_In_txt"
-        Me.Dryer_DBT_In_txt.ReadOnly = True
         Me.Dryer_DBT_In_txt.Size = New System.Drawing.Size(98, 22)
         Me.Dryer_DBT_In_txt.TabIndex = 9
         '
@@ -2239,7 +2235,7 @@ Partial Class HPCD
         'Label74
         '
         Me.Label74.AutoSize = True
-        Me.Label74.Location = New System.Drawing.Point(16, 115)
+        Me.Label74.Location = New System.Drawing.Point(16, 161)
         Me.Label74.Name = "Label74"
         Me.Label74.Size = New System.Drawing.Size(71, 12)
         Me.Label74.TabIndex = 74
@@ -2247,24 +2243,22 @@ Partial Class HPCD
         '
         'QCtxt
         '
-        Me.QCtxt.Location = New System.Drawing.Point(114, 236)
+        Me.QCtxt.Location = New System.Drawing.Point(114, 282)
         Me.QCtxt.Name = "QCtxt"
-        Me.QCtxt.ReadOnly = True
         Me.QCtxt.Size = New System.Drawing.Size(100, 22)
         Me.QCtxt.TabIndex = 55
         '
         'Pcond_sat
         '
-        Me.Pcond_sat.Location = New System.Drawing.Point(115, 80)
+        Me.Pcond_sat.Location = New System.Drawing.Point(115, 126)
         Me.Pcond_sat.Name = "Pcond_sat"
-        Me.Pcond_sat.ReadOnly = True
         Me.Pcond_sat.Size = New System.Drawing.Size(99, 22)
         Me.Pcond_sat.TabIndex = 7
         '
         'Label71
         '
         Me.Label71.AutoSize = True
-        Me.Label71.Location = New System.Drawing.Point(15, 199)
+        Me.Label71.Location = New System.Drawing.Point(15, 245)
         Me.Label71.Name = "Label71"
         Me.Label71.Size = New System.Drawing.Size(67, 12)
         Me.Label71.TabIndex = 73
@@ -2273,7 +2267,7 @@ Partial Class HPCD
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(16, 86)
+        Me.Label7.Location = New System.Drawing.Point(16, 132)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(93, 12)
         Me.Label7.TabIndex = 5
@@ -2290,7 +2284,7 @@ Partial Class HPCD
         'Label72
         '
         Me.Label72.AutoSize = True
-        Me.Label72.Location = New System.Drawing.Point(15, 171)
+        Me.Label72.Location = New System.Drawing.Point(15, 217)
         Me.Label72.Name = "Label72"
         Me.Label72.Size = New System.Drawing.Size(71, 12)
         Me.Label72.TabIndex = 72
@@ -2308,7 +2302,7 @@ Partial Class HPCD
         'Label73
         '
         Me.Label73.AutoSize = True
-        Me.Label73.Location = New System.Drawing.Point(16, 143)
+        Me.Label73.Location = New System.Drawing.Point(16, 189)
         Me.Label73.Name = "Label73"
         Me.Label73.Size = New System.Drawing.Size(67, 12)
         Me.Label73.TabIndex = 71
@@ -2316,33 +2310,29 @@ Partial Class HPCD
         '
         'C_Q_tot
         '
-        Me.C_Q_tot.Location = New System.Drawing.Point(114, 196)
+        Me.C_Q_tot.Location = New System.Drawing.Point(114, 242)
         Me.C_Q_tot.Name = "C_Q_tot"
-        Me.C_Q_tot.ReadOnly = True
         Me.C_Q_tot.Size = New System.Drawing.Size(100, 22)
         Me.C_Q_tot.TabIndex = 63
         '
         'C_Q_sub
         '
-        Me.C_Q_sub.Location = New System.Drawing.Point(114, 168)
+        Me.C_Q_sub.Location = New System.Drawing.Point(114, 214)
         Me.C_Q_sub.Name = "C_Q_sub"
-        Me.C_Q_sub.ReadOnly = True
         Me.C_Q_sub.Size = New System.Drawing.Size(100, 22)
         Me.C_Q_sub.TabIndex = 54
         '
         'C_Q_sup
         '
-        Me.C_Q_sup.Location = New System.Drawing.Point(114, 112)
+        Me.C_Q_sup.Location = New System.Drawing.Point(114, 158)
         Me.C_Q_sup.Name = "C_Q_sup"
-        Me.C_Q_sup.ReadOnly = True
         Me.C_Q_sup.Size = New System.Drawing.Size(100, 22)
         Me.C_Q_sup.TabIndex = 10
         '
         'C_Q_sat
         '
-        Me.C_Q_sat.Location = New System.Drawing.Point(114, 140)
+        Me.C_Q_sat.Location = New System.Drawing.Point(114, 186)
         Me.C_Q_sat.Name = "C_Q_sat"
-        Me.C_Q_sat.ReadOnly = True
         Me.C_Q_sat.Size = New System.Drawing.Size(100, 22)
         Me.C_Q_sat.TabIndex = 53
         '
@@ -2361,16 +2351,15 @@ Partial Class HPCD
         '
         'Xexpa_in
         '
-        Me.Xexpa_in.Location = New System.Drawing.Point(117, 49)
+        Me.Xexpa_in.Location = New System.Drawing.Point(117, 267)
         Me.Xexpa_in.Name = "Xexpa_in"
-        Me.Xexpa_in.ReadOnly = True
         Me.Xexpa_in.Size = New System.Drawing.Size(108, 22)
         Me.Xexpa_in.TabIndex = 9
         '
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(17, 55)
+        Me.Label9.Location = New System.Drawing.Point(17, 273)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(69, 12)
         Me.Label9.TabIndex = 8
@@ -2378,16 +2367,15 @@ Partial Class HPCD
         '
         'Texpa_in
         '
-        Me.Texpa_in.Location = New System.Drawing.Point(117, 24)
+        Me.Texpa_in.Location = New System.Drawing.Point(117, 242)
         Me.Texpa_in.Name = "Texpa_in"
-        Me.Texpa_in.ReadOnly = True
         Me.Texpa_in.Size = New System.Drawing.Size(108, 22)
         Me.Texpa_in.TabIndex = 6
         '
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(17, 27)
+        Me.Label8.Location = New System.Drawing.Point(17, 245)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(68, 12)
         Me.Label8.TabIndex = 4
@@ -2416,16 +2404,15 @@ Partial Class HPCD
         '
         'Pevap_sat
         '
-        Me.Pevap_sat.Location = New System.Drawing.Point(108, 52)
+        Me.Pevap_sat.Location = New System.Drawing.Point(106, 184)
         Me.Pevap_sat.Name = "Pevap_sat"
-        Me.Pevap_sat.ReadOnly = True
         Me.Pevap_sat.Size = New System.Drawing.Size(100, 22)
         Me.Pevap_sat.TabIndex = 5
         '
         'Label49
         '
         Me.Label49.AutoSize = True
-        Me.Label49.Location = New System.Drawing.Point(16, 198)
+        Me.Label49.Location = New System.Drawing.Point(14, 274)
         Me.Label49.Name = "Label49"
         Me.Label49.Size = New System.Drawing.Size(66, 12)
         Me.Label49.TabIndex = 70
@@ -2434,7 +2421,7 @@ Partial Class HPCD
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(12, 56)
+        Me.Label3.Location = New System.Drawing.Point(10, 188)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(83, 12)
         Me.Label3.TabIndex = 3
@@ -2442,7 +2429,7 @@ Partial Class HPCD
         '
         'Xevap_in
         '
-        Me.Xevap_in.Location = New System.Drawing.Point(107, 80)
+        Me.Xevap_in.Location = New System.Drawing.Point(107, 52)
         Me.Xevap_in.Name = "Xevap_in"
         Me.Xevap_in.Size = New System.Drawing.Size(99, 22)
         Me.Xevap_in.TabIndex = 58
@@ -2451,7 +2438,7 @@ Partial Class HPCD
         'Label22
         '
         Me.Label22.AutoSize = True
-        Me.Label22.Location = New System.Drawing.Point(16, 170)
+        Me.Label22.Location = New System.Drawing.Point(14, 246)
         Me.Label22.Name = "Label22"
         Me.Label22.Size = New System.Drawing.Size(70, 12)
         Me.Label22.TabIndex = 69
@@ -2468,7 +2455,7 @@ Partial Class HPCD
         'Label17
         '
         Me.Label17.AutoSize = True
-        Me.Label17.Location = New System.Drawing.Point(16, 142)
+        Me.Label17.Location = New System.Drawing.Point(14, 218)
         Me.Label17.Name = "Label17"
         Me.Label17.Size = New System.Drawing.Size(66, 12)
         Me.Label17.TabIndex = 68
@@ -2477,7 +2464,7 @@ Partial Class HPCD
         'Label63
         '
         Me.Label63.AutoSize = True
-        Me.Label63.Location = New System.Drawing.Point(12, 83)
+        Me.Label63.Location = New System.Drawing.Point(12, 55)
         Me.Label63.Name = "Label63"
         Me.Label63.Size = New System.Drawing.Size(67, 12)
         Me.Label63.TabIndex = 57
@@ -2485,9 +2472,8 @@ Partial Class HPCD
         '
         'E_Q_sup
         '
-        Me.E_Q_sup.Location = New System.Drawing.Point(108, 167)
+        Me.E_Q_sup.Location = New System.Drawing.Point(106, 243)
         Me.E_Q_sup.Name = "E_Q_sup"
-        Me.E_Q_sup.ReadOnly = True
         Me.E_Q_sup.Size = New System.Drawing.Size(100, 22)
         Me.E_Q_sup.TabIndex = 57
         '
@@ -2502,17 +2488,15 @@ Partial Class HPCD
         '
         'E_Q_tot
         '
-        Me.E_Q_tot.Location = New System.Drawing.Point(109, 195)
+        Me.E_Q_tot.Location = New System.Drawing.Point(107, 271)
         Me.E_Q_tot.Name = "E_Q_tot"
-        Me.E_Q_tot.ReadOnly = True
         Me.E_Q_tot.Size = New System.Drawing.Size(100, 22)
         Me.E_Q_tot.TabIndex = 56
         '
         'E_Q_sat
         '
-        Me.E_Q_sat.Location = New System.Drawing.Point(109, 139)
+        Me.E_Q_sat.Location = New System.Drawing.Point(107, 215)
         Me.E_Q_sat.Name = "E_Q_sat"
-        Me.E_Q_sat.ReadOnly = True
         Me.E_Q_sat.Size = New System.Drawing.Size(100, 22)
         Me.E_Q_sat.TabIndex = 11
         '
@@ -2533,16 +2517,15 @@ Partial Class HPCD
         '
         'Wcomp
         '
-        Me.Wcomp.Location = New System.Drawing.Point(121, 87)
+        Me.Wcomp.Location = New System.Drawing.Point(121, 240)
         Me.Wcomp.Name = "Wcomp"
-        Me.Wcomp.ReadOnly = True
         Me.Wcomp.Size = New System.Drawing.Size(102, 22)
         Me.Wcomp.TabIndex = 62
         '
         'Label46
         '
         Me.Label46.AutoSize = True
-        Me.Label46.Location = New System.Drawing.Point(6, 90)
+        Me.Label46.Location = New System.Drawing.Point(6, 243)
         Me.Label46.Name = "Label46"
         Me.Label46.Size = New System.Drawing.Size(70, 12)
         Me.Label46.TabIndex = 61
